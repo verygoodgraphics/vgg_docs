@@ -2,22 +2,27 @@
 site_name: VGG Docs
 
 # Repository
-repo_url: https://github.com/verygoodgraphics/vgg_docs
-edit_uri: blob/main/docs/
+edit_uri: https://github.com/verygoodgraphics/vgg_docs/blob/main/docs/
+
+# Copyright
+copyright: Copyright &copy; 2023 VGG, Inc.
 
 # Page tree
 nav:
   - 'Get Started': 'index.md'
   - 'Quick Start': 'quick_start.md'
   - 'Tutorial':
+    - 'tutorial/index.md'
     - 'Import a layout': 'tutorial/import_layout.md'
     - 'Bind elements': 'tutorial/bind_elements.md'
     - 'Write codes': 'tutorial/write_codes.md'
     - 'Generate the APP': 'tutorial/generate_app.md'
   - 'Products':
-    - Editor: 'products/editor.md'
+    - 'products/index.md'
+    - 'Editor': 'products/editor.md'
     - 'Dev Tools': 'products/dev_tools.md'
   - 'Examples':
+    - 'examples/index.md'
     - 'Widget gallery': 'examples/widget_gallery.md'
   - 'API': 'api.md'
   - 'FAQ': 'faq.md'
@@ -28,6 +33,8 @@ theme:
   palette:
     primary: white
   logo: assets/images/favicon.svg
+  icon:
+    edit: material/pencil
   features:
     # - announce.dismiss
     - content.action.edit
@@ -38,12 +45,12 @@ theme:
     # - content.tabs.link
     - content.tooltips
     # - header.autohide
-    # - navigation.expand
+    - navigation.expand
     - navigation.footer
     - navigation.indexes
     # - navigation.instant
     # - navigation.prune
-    - navigation.sections
+    # - navigation.sections     # don't enable. if too many items, enable tabs
     # - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.top

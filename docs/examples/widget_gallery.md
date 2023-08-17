@@ -1,1 +1,2 @@
-- Several examples.
+# Widget gallery
+- Example.
