@@ -9,23 +9,31 @@ copyright: Copyright &copy; 2023 VGG, Inc.
 
 # Page tree
 nav:
-  - 'Get Started': 'index.md'
-  - 'Quick Start': 'quick_start.md'
-  - 'Tutorial':
-    - 'tutorial/index.md'
-    - 'Import a layout': 'tutorial/import_layout.md'
-    - 'Bind elements': 'tutorial/bind_elements.md'
-    - 'Write codes': 'tutorial/write_codes.md'
-    - 'Generate the APP': 'tutorial/generate_app.md'
+  - 'Home':
+    - 'index.md'
+    - 'Quick Start': 'quick_start.md'
+    - 'Tutorial':
+      - 'tutorial/index.md'
+      - 'Step 1': 'tutorial/1.md'
+      - 'Step 2': 'tutorial/2.md'
+    - 'Change Log': 'changelog.md'
+    - 'FAQ': 'faq.md'
   - 'Products':
     - 'products/index.md'
-    - 'Editor': 'products/editor.md'
-    - 'Dev Tools': 'products/dev_tools.md'
+    - 'Editor': 'products/editor.md'    
+    - "Widgets":
+      - 'products/widgets/index.md'
+    - "Runtime": "products/runtime.md"
+    - "Components":
+      - 'products/components/index.md'
+      - 'React': 'products/components/react.md'
   - 'Examples':
     - 'examples/index.md'
-    - 'Widget gallery': 'examples/widget_gallery.md'
-  - 'API': 'api.md'
-  - 'FAQ': 'faq.md'
+    - 'Hello VGG': 'examples/hello_vgg.md'
+    - 'Counter': 'examples/counter.md'
+  - 'API Documentation':
+    - 'JavaScript SDK':
+      - 'API/js_sdk/index.md'
 
 # Configuration
 theme:
@@ -33,6 +41,7 @@ theme:
   palette:
     primary: white
   logo: assets/images/favicon.svg
+  favicon: assets/images/favicon.svg
   icon:
     edit: material/pencil
   features:
@@ -50,9 +59,9 @@ theme:
     - navigation.indexes
     # - navigation.instant
     # - navigation.prune
-    # - navigation.sections     # don't enable. if too many items, enable tabs
-    # - navigation.tabs
-    # - navigation.tabs.sticky
+    # - navigation.sections     # don't enable
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
