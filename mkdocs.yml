@@ -17,7 +17,6 @@ nav:
       - 'Their Relationship': 'what/relation.md'
       - 'Developer Tools': 'what/tools.md'
     - 'Quick Start': 'quick_start.md'
-    - 'Change Log': 'changelog.md'
     - 'FAQ': 'faq.md'
   - 'Examples':
     - 'Overview': 'examples/index.md'

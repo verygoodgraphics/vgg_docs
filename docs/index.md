@@ -1,11 +1,12 @@
 # Introduction
 
-VeryGoodGraphics (VGG) is an innovative application development toolkit for
-full stack front-end developers uniting both worlds of design and code.
+VeryGoodGraphics (VGG) is an innovative application development toolkit that
+seamlessly unites two worlds of design and code for full-stack front-end
+developers.
 
 ![first_principle](assets/images/principle.png){: style="width:50%;margin:0 auto;display:block;"}
 
-VGG was designed from ground up with developer experience (DX) bare in mind,
+VGG was designed from the ground up with developer experience (DX) in mind,
 along with three main features.
 
 - Design as Code
@@ -17,7 +18,8 @@ along with three main features.
 Thanks to [VGG Daruma](what/daruma.md), which is a file format with an open
 standard specification containing both design part and code part, VGG allows
 you to develop applications directly on design drafts, eliminating the need to
-write UI code on your own.
+write UI code on your own. More details could be found in [Quick
+Start](quick_start.md).
 
 ![design_as_code](assets/images/dac.png)
 
