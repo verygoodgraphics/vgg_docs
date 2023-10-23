@@ -1,6 +1,6 @@
-# VGG Documentation
+# VGG Docs
 
-This repo hosts the documentation of VeryGoodGraphics.
+This repo hosts the docs of VeryGoodGraphics.
 
 ## How to build
 
