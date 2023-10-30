@@ -16,7 +16,7 @@ nav:
       - 'VGG Runtime': 'what/runtime.md'
       - 'Their Relationship': 'what/relation.md'
       - 'Developer Tools': 'what/tools.md'
-    - 'Quick Start': 'quick_start.md'
+    - 'Tutorial': 'tutorial.md'
     - 'FAQ': 'faq.md'
   - 'Examples':
     - 'Overview': 'examples/index.md'

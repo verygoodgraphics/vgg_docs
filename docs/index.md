@@ -18,8 +18,8 @@ along with three main features.
 Thanks to [VGG Daruma](what/daruma.md), which is a file format with an open
 standard specification containing both design part and code part, VGG allows
 you to develop applications directly on design drafts, eliminating the need to
-write UI code on your own. More details could be found in [Quick
-Start](quick_start.md).
+write UI code on your own. More details could be found in
+[Tutorial](tutorial.md).
 
 ![design_as_code](assets/images/dac.svg)
 
