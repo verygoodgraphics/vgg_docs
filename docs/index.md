@@ -21,7 +21,7 @@ you to develop applications directly on design drafts, eliminating the need to
 write UI code on your own. More details could be found in [Quick
 Start](quick_start.md).
 
-![design_as_code](assets/images/dac.png)
+![design_as_code](assets/images/dac.svg)
 
 This so-called _Design as Code_ workflow will save your time abundantly as it
 has great advantages over the traditional application development workflow or
@@ -35,7 +35,7 @@ able to run on all major platforms including desktop, mobile and web, with
 consistent UI visual effects and interaction behaviors independent of the
 platform.
 
-![cross_platform](assets/images/platform.png)
+![cross_platform](assets/images/platform.svg)
 
 ## Ecosystem Compatibility
 
