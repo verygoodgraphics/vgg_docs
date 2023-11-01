@@ -73,7 +73,7 @@ visualizing and interacting with a Daruma file.
 
 However, if you wish to run a Daruma file natively, you have the option to
 build VGG Runtime on your own. Please refer to [Build
-instructions](https://github.com/verygoodgraphics/vgg_runtime/blob/main/README.md)
+Instructions](https://github.com/verygoodgraphics/vgg_runtime/blob/main/README.md)
 for more details.
 
 ## Deploy
@@ -84,10 +84,17 @@ your VGG applications, say
 - As a Web application. You can deploy it independently or embedded through
   [vgg_html](#), [vgg_react](../components/react) and more.
 
-- As a Desktop application. You can deploy it independently or embedded
-  through [sdl_runtime](#), [vgg_qt](#) and more.
+- As a Desktop application. You can deploy it independently through
+  [vgg_runtime](https://github.com/verygoodgraphics/vgg_runtime), or embedded
+  through [vgg_qt](#) and more.
 
 - As a mobile application. You can deploy it independently or embedded through
   [vgg_android](#) or [vgg_ios](#).
 
-> Note currently only `vgg_react` is available.
+Please note that currently only `vgg_react` and a standalone `sdl_runtime`
+produced by `vgg_runtime` are available.
+
+> Similar to development, deployment has two methods. You can choose to host
+> your Daruma file on your own, online or shipped with your local applications.
+> You can also choose to use Daruma CDN service for application hosting.
+
