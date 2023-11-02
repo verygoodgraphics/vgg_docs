@@ -4,22 +4,20 @@
 
 VGG is designed for two kinds of people:
 
-- Designer who wants to make serious applications (rather than using low-code
-  platforms).
-- Developer who don't want to write manual UI code (by utilizing mainstream
-  design tools as UI builders).
+- Designers who want to make serious applications, rather than simple
+  prototypes.
+- Developers who want to spend more time on business logic, rather than UI
+  code.
 
-These two roles combined, VGG is best suited for indepedent developers (i.e.,
-indie hackers) because, by nature, they are both full-stack frontend designers
-and developers.
+When these two roles are combined, VGG serves independent developers, or as
+they are commonly called, indie hackers. They are both full-stack frontend
+designers and developers that always want a quick development process to turn
+ideas into real applications.
 
 ## What's the goal of VGG?
 
 The application development process, and particularly UI design and
-development, can be tedious and monotonous, but we often have no better
-options. The design problem may be mitigated with the help of AIGC, but
-development still requires manual effort if you want a project with clean code
-and a flexible architecture.
+development, can be tedious, monotonous and low efficient.
 
 VGG aims to make the process of application UI design and development more
 efficient by:
@@ -41,6 +39,10 @@ and an application format.
 We use the term __design-as-code__ because VGG seamlessly combined design and
 code, which led us to coin this phrase.
 
+## Is it a low-code product?
+
+Not really.
+
 ## What can I do with VGG Runtime?
 
 [VGG Runtime](https://github.com/verygoodgraphics/vgg_runtime) is an engine
@@ -53,9 +55,12 @@ with two primary functionalities:
   providing more power than simple prototypes.
 
 VGG achieves its goal with the combination of these two features. However, you
-can also use the first graphics capability to create a professional vector
-graphics editor like Figma or even Illustrator. It's important to note that VGG
-is free and open source, but please read the [VGG
-License](https://verygoodgraphics.com/licenses/LICENSE-1.0) before utilizing
-it.
+can also build a professional vector graphics editor like Figma or even
+Illustrator based solely on the first graphics capability. VGG already builds a
+solid foundation for it with a graphics definition ([Daruma Design
+Format](https://verygoodgraphics.com/daruma/formats/design)) and a rendering
+implementation.
+
+Please note that VGG is free and open source, released under the [VGG
+License](https://verygoodgraphics.com/licenses/LICENSE-1.0).
 
