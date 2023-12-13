@@ -11,7 +11,10 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "gen:formats-doc": "node scripts/generateFormatsDoc.mjs",
+    "gen:layout-doc": "node scripts/generateLayoutDoc.mjs",
+    "gen:search-records": "node --experimental-json-modules scripts/generateSearchRecords.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.0.1",
@@ -23,8 +26,20 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
+    "@adobe/helix-log": "^6.0.1",
     "@docusaurus/module-type-aliases": "3.0.1",
-    "@docusaurus/types": "3.0.1"
+    "@docusaurus/types": "3.0.1",
+    "es2015-i18n-tag": "^1.6.1",
+    "ferrum": "^1.9.4",
+    "fs-extra": "^11.2.0",
+    "github-slugger": "^2.0.0",
+    "js-yaml": "^4.1.0",
+    "mdast-builder": "^1.1.1",
+    "mdast-util-to-string": "^4.0.0",
+    "remark-gfm": "^4.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-stringify": "^11.0.0",
+    "unified": "^11.0.4"
   },
   "browserslist": {
     "production": [
