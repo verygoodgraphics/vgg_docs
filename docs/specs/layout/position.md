@@ -17,7 +17,7 @@ This property is used to control the positioning of an element within the docume
 
 | Property        | Type      | Required                                            |
 | :-------------- | :-------- | :-------------------------------------------------- |
-| [class](#class) | `const`   | <span className="property-required">Required</span> |
+| [class](#class) | `string`  | <span className="property-required">Required</span> |
 | [value](#value) | `integer` | <span className="property-required">Required</span> |
 
 </div>
@@ -38,7 +38,7 @@ This property is used to control the positioning of an element within the docume
 
 Type
 
-`const`
+`string`
 
 </div>
 

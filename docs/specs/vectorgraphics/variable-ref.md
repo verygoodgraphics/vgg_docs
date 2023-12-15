@@ -75,7 +75,7 @@ Value
 
 Description
 
-The ID of the referenced variable which defined in `Variable Define`.
+The ID of the referenced variable which defined in `VariableDefine`.
 
 </div>
 
@@ -104,8 +104,8 @@ Type
 Description
 
 Describes how a referenced variable acts on a specific property of an object.
-When the `varType` of the variable is `2`, the field is fixed to 'text\_data'.
-When the `varType` is anything else, the field points to a property of the object (see `overrideName` in `Override Value`).
+When the `varType` of the variable is `2`, the field is fixed to `text_data`.
+When the `varType` is anything else, the field points to a property of the object (check `overrideName` in `OverrideValue`).
 
 </div>
 

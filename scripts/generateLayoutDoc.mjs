@@ -2,11 +2,11 @@ import path from "node:path"
 import fs from "node:fs/promises"
 
 import { jsonschema2md } from "../lib/jsonschema2md/index.mjs"
-import schema from "../schemas/layout.schema.json" assert { type: "json" }
+import schema from "../static/schemas/layout.schema.json" assert { type: "json" }
 
 const rootDir = path.resolve(process.cwd())
 const docDir = rootDir + "/docs/specs/layout"
-const outputPath = rootDir + "/schemas/layout-search-params.json"
+const outputPath = rootDir + "/static/schemas/layout-search-params.json"
 
 for (const file of await fs.readdir(docDir)) {
   await fs.unlink(path.join(docDir, file))

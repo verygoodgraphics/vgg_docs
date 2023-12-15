@@ -1,5 +1,5 @@
 ---
-title: AlignStyle
+title: Alignment
 sidebar_class_name: show
 ---
 

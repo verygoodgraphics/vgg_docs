@@ -17,7 +17,7 @@ sidebar_class_name: show
 
 | Property        | Type      | Required                                            |
 | :-------------- | :-------- | :-------------------------------------------------- |
-| [class](#class) | `const`   | <span className="property-required">Required</span> |
+| [class](#class) | `string`  | <span className="property-required">Required</span> |
 | [value](#value) | `number`  | <span className="property-required">Required</span> |
 | [types](#types) | `integer` | <span className="property-required">Required</span> |
 
@@ -39,7 +39,7 @@ sidebar_class_name: show
 
 Type
 
-`const`
+`string`
 
 </div>
 

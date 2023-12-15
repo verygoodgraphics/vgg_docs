@@ -1,5 +1,5 @@
 ---
-title: ExpandStrategy
+title: DynamicColumn
 sidebar_class_name: show
 ---
 
@@ -18,12 +18,12 @@ Only when there is insufficient space in the current row to accommodate new grid
 
 <div className="property-table">
 
-| Property                       | Type      | Required                                            |
-| :----------------------------- | :-------- | :-------------------------------------------------- |
-| [class](#class)                | `const`   | <span className="property-required">Required</span> |
-| [strategy](#strategy)          | `integer` | <span className="property-required">Required</span> |
-| [min\_row](#min_row)           | `integer` | <span className="property-required">Required</span> |
-| [column\_count](#column_count) | `integer` | <span className="property-required">Required</span> |
+| Property                    | Type      | Required                                            |
+| :-------------------------- | :-------- | :-------------------------------------------------- |
+| [class](#class)             | `string`  | <span className="property-required">Required</span> |
+| [strategy](#strategy)       | `integer` | <span className="property-required">Required</span> |
+| [minRow](#minrow)           | `integer` | <span className="property-required">Required</span> |
+| [columnCount](#columncount) | `integer` | <span className="property-required">Required</span> |
 
 </div>
 
@@ -43,7 +43,7 @@ Only when there is insufficient space in the current row to accommodate new grid
 
 Type
 
-`const`
+`string`
 
 </div>
 
@@ -56,7 +56,7 @@ Value
 **constant**: the value of this property must be equal to:
 
 ```json
-"expand_strategy"
+"dynamicColumn"
 ```
 
 </div>
@@ -114,7 +114,7 @@ Value
 
 <div className="property-heading">
 
-## min\_row
+## minRow
 
 <span className="property-required">Required</span>
 
@@ -142,7 +142,7 @@ Type
 
 <div className="property-heading">
 
-## column\_count
+## columnCount
 
 <span className="property-required">Required</span>
 

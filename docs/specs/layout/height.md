@@ -17,7 +17,7 @@ This property is used to set the height of an element. By setting the height pro
 
 | Property        | Type                             | Required                                            |
 | :-------------- | :------------------------------- | :-------------------------------------------------- |
-| [class](#class) | `const`                          | <span className="property-required">Required</span> |
+| [class](#class) | `string`                         | <span className="property-required">Required</span> |
 | [value](#value) | [`Length`](/specs/layout/length) | <span className="property-required">Required</span> |
 
 </div>
@@ -38,7 +38,7 @@ This property is used to set the height of an element. By setting the height pro
 
 Type
 
-`const`
+`string`
 
 </div>
 

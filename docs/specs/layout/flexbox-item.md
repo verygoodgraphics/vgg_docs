@@ -16,11 +16,11 @@ The style and layout of child elements can be adjusted by setting corresponding 
 
 <div className="property-table">
 
-| Property                                | Type                                 | Required                                            |
-| :-------------------------------------- | :----------------------------------- | :-------------------------------------------------- |
-| [class](#class)                         | `const`                              | <span className="property-required">Required</span> |
-| [position](#position)                   | [`Position`](/specs/layout/position) | <span className="property-required">Required</span> |
-| [flex\_grow\_shrink](#flex_grow_shrink) | `number`                             | <span className="property-required">Required</span> |
+| Property                | Type                                 | Required                                            |
+| :---------------------- | :----------------------------------- | :-------------------------------------------------- |
+| [class](#class)         | `string`                             | <span className="property-required">Required</span> |
+| [position](#position)   | [`Position`](/specs/layout/position) | <span className="property-required">Required</span> |
+| [flexBasis](#flexbasis) | `number`                             | <span className="property-required">Required</span> |
 
 </div>
 
@@ -40,7 +40,7 @@ The style and layout of child elements can be adjusted by setting corresponding 
 
 Type
 
-`const`
+`string`
 
 </div>
 
@@ -53,7 +53,7 @@ Value
 **constant**: the value of this property must be equal to:
 
 ```json
-"flexbox_item"
+"flexboxItem"
 ```
 
 </div>
@@ -94,7 +94,7 @@ Type
 
 <div className="property-heading">
 
-## flex\_grow\_shrink
+## flexBasis
 
 <span className="property-required">Required</span>
 
