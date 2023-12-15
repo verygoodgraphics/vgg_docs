@@ -15,19 +15,19 @@ This property provides control over the layout-related properties of design elem
 
 <div className="property-table">
 
-| Property                            | Type                                                                                                                                                                                                  | Required                                            |
-| :---------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
-| [class](#class)                     | `const`                                                                                                                                                                                               | <span className="property-required">Required</span> |
-| [id](#id)                           | `string`                                                                                                                                                                                              | <span className="property-required">Required</span> |
-| [layout](#layout)                   | <code className="type-merged">oneOf&lt;<span className="type-merged-types"><a href="flexbox-layout"><code>FlexboxLayout</code></a><a href="grid-layout"><code>GridLayout</code></a></span>&gt;</code> | <span className="property-optional">Optional</span> |
-| [item\_in\_layout](#item_in_layout) | <code className="type-merged">oneOf&lt;<span className="type-merged-types"><a href="flexbox-item"><code>FlexboxItem</code></a><a href="grid-item"><code>GridItem</code></a></span>&gt;</code>         | <span className="property-optional">Optional</span> |
-| [width](#width)                     | [`Width`](/specs/layout/width)                                                                                                                                                                        | <span className="property-required">Required</span> |
-| [max\_width](#max_width)            | [`MaxWidth`](/specs/layout/max-width)                                                                                                                                                                 | <span className="property-optional">Optional</span> |
-| [min\_width](#min_width)            | [`MinWidth`](/specs/layout/min-width)                                                                                                                                                                 | <span className="property-optional">Optional</span> |
-| [height](#height)                   | [`Height`](/specs/layout/height)                                                                                                                                                                      | <span className="property-required">Required</span> |
-| [max\_height](#max_height)          | [`MaxHeight`](/specs/layout/max-height)                                                                                                                                                               | <span className="property-optional">Optional</span> |
-| [min\_height](#min_height)          | [`MinHeight`](/specs/layout/min-height)                                                                                                                                                               | <span className="property-optional">Optional</span> |
-| [aspect\_ratio](#aspect_ratio)      | `number`                                                                                                                                                                                              | <span className="property-optional">Optional</span> |
+| Property                      | Type                                                                                                                                                                                                  | Required                                            |
+| :---------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| [class](#class)               | `string`                                                                                                                                                                                              | <span className="property-required">Required</span> |
+| [id](#id)                     | `string`                                                                                                                                                                                              | <span className="property-required">Required</span> |
+| [layout](#layout)             | <code className="type-merged">oneOf&lt;<span className="type-merged-types"><a href="flexbox-layout"><code>FlexboxLayout</code></a><a href="grid-layout"><code>GridLayout</code></a></span>&gt;</code> | <span className="property-optional">Optional</span> |
+| [itemInLayout](#iteminlayout) | <code className="type-merged">oneOf&lt;<span className="type-merged-types"><a href="flexbox-item"><code>FlexboxItem</code></a><a href="grid-item"><code>GridItem</code></a></span>&gt;</code>         | <span className="property-optional">Optional</span> |
+| [width](#width)               | [`Width`](/specs/layout/width)                                                                                                                                                                        | <span className="property-required">Required</span> |
+| [maxWidth](#maxwidth)         | [`MaxWidth`](/specs/layout/max-width)                                                                                                                                                                 | <span className="property-optional">Optional</span> |
+| [minWidth](#minwidth)         | [`MinWidth`](/specs/layout/min-width)                                                                                                                                                                 | <span className="property-optional">Optional</span> |
+| [height](#height)             | [`Height`](/specs/layout/height)                                                                                                                                                                      | <span className="property-required">Required</span> |
+| [maxHeight](#maxheight)       | [`MaxHeight`](/specs/layout/max-height)                                                                                                                                                               | <span className="property-optional">Optional</span> |
+| [minHeight](#minheight)       | [`MinHeight`](/specs/layout/min-height)                                                                                                                                                               | <span className="property-optional">Optional</span> |
+| [aspectRatio](#aspectratio)   | `number`                                                                                                                                                                                              | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -47,7 +47,7 @@ This property provides control over the layout-related properties of design elem
 
 Type
 
-`const`
+`string`
 
 </div>
 
@@ -83,7 +83,7 @@ Value
 
 Description
 
-This property is used in the layout to uniquely identify a specific object. Use this value to associate objects in VGG format.
+This property is used in the layout to uniquely identify a specific object. Use this value to associate objects in VGG Vector Graphics Specification.
 
 </div>
 
@@ -143,7 +143,7 @@ oneOf&lt;
 
 <div className="property-heading">
 
-## item\_in\_layout
+## itemInLayout
 
 <span className="property-optional">Optional</span>
 
@@ -213,7 +213,7 @@ Type
 
 <div className="property-heading">
 
-## max\_width
+## maxWidth
 
 <span className="property-optional">Optional</span>
 
@@ -241,7 +241,7 @@ Type
 
 <div className="property-heading">
 
-## min\_width
+## minWidth
 
 <span className="property-optional">Optional</span>
 
@@ -297,7 +297,7 @@ Type
 
 <div className="property-heading">
 
-## max\_height
+## maxHeight
 
 <span className="property-optional">Optional</span>
 
@@ -325,7 +325,7 @@ Type
 
 <div className="property-heading">
 
-## min\_height
+## minHeight
 
 <span className="property-optional">Optional</span>
 
@@ -353,7 +353,7 @@ Type
 
 <div className="property-heading">
 
-## aspect\_ratio
+## aspectRatio
 
 <span className="property-optional">Optional</span>
 

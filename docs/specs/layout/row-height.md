@@ -16,11 +16,11 @@ By setting this property of an element, you can specify the size of rows in a gr
 
 <div className="property-table">
 
-| Property                     | Type      | Required                                            |
-| :--------------------------- | :-------- | :-------------------------------------------------- |
-| [class](#class)              | `const`   | <span className="property-required">Required</span> |
-| [strategy](#strategy)        | `integer` | <span className="property-required">Required</span> |
-| [fixed\_value](#fixed_value) | `number`  | <span className="property-required">Required</span> |
+| Property                  | Type      | Required                                            |
+| :------------------------ | :-------- | :-------------------------------------------------- |
+| [class](#class)           | `string`  | <span className="property-required">Required</span> |
+| [strategy](#strategy)     | `integer` | <span className="property-required">Required</span> |
+| [fixedValue](#fixedvalue) | `number`  | <span className="property-required">Required</span> |
 
 </div>
 
@@ -40,7 +40,7 @@ By setting this property of an element, you can specify the size of rows in a gr
 
 Type
 
-`const`
+`string`
 
 </div>
 
@@ -53,7 +53,7 @@ Value
 **constant**: the value of this property must be equal to:
 
 ```json
-"row_height"
+"rowHeight"
 ```
 
 </div>
@@ -112,7 +112,7 @@ Value
 
 <div className="property-heading">
 
-## fixed\_value
+## fixedValue
 
 <span className="property-required">Required</span>
 

@@ -15,12 +15,12 @@ In grid layout, the position of grid items is determined by the grid lines defin
 
 <div className="property-table">
 
-| Property                 | Type      | Required                                            |
-| :----------------------- | :-------- | :-------------------------------------------------- |
-| [class](#class)          | `const`   | <span className="property-required">Required</span> |
-| [strategy](#strategy)    | `integer` | <span className="property-required">Required</span> |
-| [row\_id](#row_id)       | `integer` | <span className="property-required">Required</span> |
-| [column\_id](#column_id) | `integer` | <span className="property-required">Required</span> |
+| Property              | Type      | Required                                            |
+| :-------------------- | :-------- | :-------------------------------------------------- |
+| [class](#class)       | `string`  | <span className="property-required">Required</span> |
+| [strategy](#strategy) | `integer` | <span className="property-required">Required</span> |
+| [rowId](#rowid)       | `integer` | <span className="property-required">Required</span> |
+| [columnId](#columnid) | `integer` | <span className="property-required">Required</span> |
 
 </div>
 
@@ -40,7 +40,7 @@ In grid layout, the position of grid items is determined by the grid lines defin
 
 Type
 
-`const`
+`string`
 
 </div>
 
@@ -53,7 +53,7 @@ Value
 **constant**: the value of this property must be equal to:
 
 ```json
-"grid_item_pos"
+"gridItemPos"
 ```
 
 </div>
@@ -111,7 +111,7 @@ Value
 
 <div className="property-heading">
 
-## row\_id
+## rowId
 
 <span className="property-required">Required</span>
 
@@ -151,7 +151,7 @@ Value
 
 <div className="property-heading">
 
-## column\_id
+## columnId
 
 <span className="property-required">Required</span>
 

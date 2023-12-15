@@ -9,7 +9,7 @@ sidebar_class_name: hidden
 
 </div>
 
-VGG Design Format is a JSON-based format for describing the content of various design pieces.
+VGG Vector Graphics Specification is a JSON-based spec for describing vector graphics.
 
 <div className="property-preview">
 
@@ -42,7 +42,7 @@ VGG Design Format is a JSON-based format for describing the content of various d
 
 Description
 
-Version number information in the format: `major.minor.patch`.
+Current VGG specs version, conforming to semantic version format like `major.minor.patch`.
 
 </div>
 
@@ -63,7 +63,7 @@ Value
 **constant**: the value of this property must be equal to:
 
 ```json
-"1.0.8"
+"1.0.9"
 ```
 
 </div>
@@ -108,6 +108,7 @@ Value
 
 | Value | Explanation                                               |
 | :---- | :-------------------------------------------------------- |
+| `0`   | <div className="enum-description">unknown</div>           |
 | `1`   | <div className="enum-description">sketch</div>            |
 | `3`   | <div className="enum-description">figma</div>             |
 | `4`   | <div className="enum-description">adobe illustrator</div> |

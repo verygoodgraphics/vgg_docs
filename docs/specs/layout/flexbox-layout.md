@@ -16,18 +16,18 @@ Flexbox provides a more efficient and predictable way to arrange, align, and dis
 
 <div className="property-table">
 
-| Property                             | Type                                      | Required                                            |
-| :----------------------------------- | :---------------------------------------- | :-------------------------------------------------- |
-| [class](#class)                      | `const`                                   | <span className="property-required">Required</span> |
-| [direction](#direction)              | `integer`                                 | <span className="property-required">Required</span> |
-| [justify\_content](#justify_content) | `integer`                                 | <span className="property-required">Required</span> |
-| [align\_items](#align_items)         | [`AlignStyle`](/specs/layout/align-style) | <span className="property-required">Required</span> |
-| [align\_content](#align_content)     | [`AlignStyle`](/specs/layout/align-style) | <span className="property-required">Required</span> |
-| [wrap](#wrap)                        | `integer`                                 | <span className="property-required">Required</span> |
-| [row\_gap](#row_gap)                 | `number`                                  | <span className="property-required">Required</span> |
-| [column\_gap](#column_gap)           | `number`                                  | <span className="property-required">Required</span> |
-| [padding](#padding)                  | `Array<number>`                           | <span className="property-required">Required</span> |
-| [z\_order](#z_order)                 | `boolean`                                 | <span className="property-optional">Optional</span> |
+| Property                          | Type                                   | Required                                            |
+| :-------------------------------- | :------------------------------------- | :-------------------------------------------------- |
+| [class](#class)                   | `string`                               | <span className="property-required">Required</span> |
+| [direction](#direction)           | `integer`                              | <span className="property-required">Required</span> |
+| [justifyContent](#justifycontent) | `integer`                              | <span className="property-required">Required</span> |
+| [alignItems](#alignitems)         | [`Alignment`](/specs/layout/alignment) | <span className="property-required">Required</span> |
+| [alignContent](#aligncontent)     | [`Alignment`](/specs/layout/alignment) | <span className="property-required">Required</span> |
+| [wrap](#wrap)                     | `integer`                              | <span className="property-required">Required</span> |
+| [rowGap](#rowgap)                 | `number`                               | <span className="property-required">Required</span> |
+| [columnGap](#columngap)           | `number`                               | <span className="property-required">Required</span> |
+| [padding](#padding)               | `Array<number>`                        | <span className="property-required">Required</span> |
+| [zOrder](#zorder)                 | `boolean`                              | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -47,7 +47,7 @@ Flexbox provides a more efficient and predictable way to arrange, align, and dis
 
 Type
 
-`const`
+`string`
 
 </div>
 
@@ -60,7 +60,7 @@ Value
 **constant**: the value of this property must be equal to:
 
 ```json
-"flexbox_layout"
+"flexboxLayout"
 ```
 
 </div>
@@ -118,7 +118,7 @@ Value
 
 <div className="property-heading">
 
-## justify\_content
+## justifyContent
 
 <span className="property-required">Required</span>
 
@@ -167,7 +167,7 @@ Value
 
 <div className="property-heading">
 
-## align\_items
+## alignItems
 
 <span className="property-required">Required</span>
 
@@ -185,7 +185,7 @@ This property is used to set the alignment of flex container's children along th
 
 Type
 
-[`AlignStyle`](/specs/layout/align-style)
+[`Alignment`](/specs/layout/alignment)
 
 </div>
 
@@ -195,7 +195,7 @@ Type
 
 <div className="property-heading">
 
-## align\_content
+## alignContent
 
 <span className="property-required">Required</span>
 
@@ -213,7 +213,7 @@ This property is used to align the children of a flex container along the cross 
 
 Type
 
-[`AlignStyle`](/specs/layout/align-style)
+[`Alignment`](/specs/layout/alignment)
 
 </div>
 
@@ -268,7 +268,7 @@ Value
 
 <div className="property-heading">
 
-## row\_gap
+## rowGap
 
 <span className="property-required">Required</span>
 
@@ -296,7 +296,7 @@ Type
 
 <div className="property-heading">
 
-## column\_gap
+## columnGap
 
 <span className="property-required">Required</span>
 
@@ -366,7 +366,7 @@ Value
 
 <div className="property-heading">
 
-## z\_order
+## zOrder
 
 <span className="property-optional">Optional</span>
 

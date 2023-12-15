@@ -75,7 +75,7 @@ Value
 
 Description
 
-The ID of the reassigned variable defined in `Variable Define`.
+The ID of the reassigned variable defined in `VariableDefine`.
 
 </div>
 

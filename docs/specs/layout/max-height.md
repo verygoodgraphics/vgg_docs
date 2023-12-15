@@ -17,7 +17,7 @@ This property is used to limit the height of an element and is only available wh
 
 | Property        | Type                             | Required                                            |
 | :-------------- | :------------------------------- | :-------------------------------------------------- |
-| [class](#class) | `const`                          | <span className="property-required">Required</span> |
+| [class](#class) | `string`                         | <span className="property-required">Required</span> |
 | [value](#value) | [`Length`](/specs/layout/length) | <span className="property-required">Required</span> |
 
 </div>
@@ -38,7 +38,7 @@ This property is used to limit the height of an element and is only available wh
 
 Type
 
-`const`
+`string`
 
 </div>
 
@@ -51,7 +51,7 @@ Value
 **constant**: the value of this property must be equal to:
 
 ```json
-"max_height"
+"maxHeight"
 ```
 
 </div>

@@ -16,11 +16,11 @@ By setting this property of an element, you can specify either a fixed width or 
 
 <div className="property-table">
 
-| Property                     | Type      | Required                                            |
-| :--------------------------- | :-------- | :-------------------------------------------------- |
-| [class](#class)              | `const`   | <span className="property-required">Required</span> |
-| [strategy](#strategy)        | `integer` | <span className="property-required">Required</span> |
-| [width\_value](#width_value) | `number`  | <span className="property-required">Required</span> |
+| Property                  | Type      | Required                                            |
+| :------------------------ | :-------- | :-------------------------------------------------- |
+| [class](#class)           | `string`  | <span className="property-required">Required</span> |
+| [strategy](#strategy)     | `integer` | <span className="property-required">Required</span> |
+| [widthValue](#widthvalue) | `number`  | <span className="property-required">Required</span> |
 
 </div>
 
@@ -40,7 +40,7 @@ By setting this property of an element, you can specify either a fixed width or 
 
 Type
 
-`const`
+`string`
 
 </div>
 
@@ -53,7 +53,7 @@ Value
 **constant**: the value of this property must be equal to:
 
 ```json
-"column_width"
+"columnWidth"
 ```
 
 </div>
@@ -111,7 +111,7 @@ Value
 
 <div className="property-heading">
 
-## width\_value
+## widthValue
 
 <span className="property-required">Required</span>
 

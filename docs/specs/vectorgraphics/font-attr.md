@@ -25,6 +25,8 @@ The font attributes of a text fragment.
 | [horizontalAlignment](#horizontalalignment) | `integer`                                                                   | <span className="property-optional">Optional</span> |
 | [name](#name)                               | `string`                                                                    | <span className="property-optional">Optional</span> |
 | [subFamilyName](#subfamilyname)             | `string`                                                                    | <span className="property-optional">Optional</span> |
+| [weight](#weight)                           | `number`                                                                    | <span className="property-optional">Optional</span> |
+| [width](#width)                             | `number`                                                                    | <span className="property-optional">Optional</span> |
 | [size](#size)                               | `number`                                                                    | <span className="property-optional">Optional</span> |
 | [letterSpacingValue](#letterspacingvalue)   | `number`                                                                    | <span className="property-optional">Optional</span> |
 | [letterSpacingUnit](#letterspacingunit)     | `integer`                                                                   | <span className="property-optional">Optional</span> |
@@ -317,6 +319,62 @@ The value may be empty.
 Type
 
 `string`
+
+</div>
+
+</div>
+
+<div className="property">
+
+<div className="property-heading">
+
+## weight
+
+<span className="property-optional">Optional</span>
+
+</div>
+
+<div className="property-item">
+
+Description
+
+The weight of the font.
+
+</div>
+
+<div className="property-item">
+
+Type
+
+`number`
+
+</div>
+
+</div>
+
+<div className="property">
+
+<div className="property-heading">
+
+## width
+
+<span className="property-optional">Optional</span>
+
+</div>
+
+<div className="property-item">
+
+Description
+
+The width of the font.
+
+</div>
+
+<div className="property-item">
+
+Type
+
+`number`
 
 </div>
 

@@ -15,18 +15,18 @@ Grid Layout is a module designed for webpage layout. It allows you to create a t
 
 <div className="property-table">
 
-| Property                             | Type                                              | Required                                            |
-| :----------------------------------- | :------------------------------------------------ | :-------------------------------------------------- |
-| [class](#class)                      | `const`                                           | <span className="property-required">Required</span> |
-| [expand\_strategy](#expand_strategy) | [`ExpandStrategy`](/specs/layout/expand-strategy) | <span className="property-required">Required</span> |
-| [column\_width](#column_width)       | [`ColumnWidth`](/specs/layout/column-width)       | <span className="property-required">Required</span> |
-| [row\_height](#row_height)           | [`RowHeight`](/specs/layout/row-height)           | <span className="property-required">Required</span> |
-| [base\_height](#base_height)         | `number`                                          | <span className="property-required">Required</span> |
-| [column\_gap](#column_gap)           | `number`                                          | <span className="property-required">Required</span> |
-| [row\_gap](#row_gap)                 | `number`                                          | <span className="property-required">Required</span> |
-| [grid\_auto\_flow](#grid_auto_flow)  | `integer`                                         | <span className="property-required">Required</span> |
-| [padding](#padding)                  | `Array<number>`                                   | <span className="property-required">Required</span> |
-| [cell\_align](#cell_align)           | [`AlignStyle`](/specs/layout/align-style)         | <span className="property-required">Required</span> |
+| Property                        | Type                                            | Required                                            |
+| :------------------------------ | :---------------------------------------------- | :-------------------------------------------------- |
+| [class](#class)                 | `string`                                        | <span className="property-required">Required</span> |
+| [dynamicColumn](#dynamiccolumn) | [`DynamicColumn`](/specs/layout/dynamic-column) | <span className="property-required">Required</span> |
+| [columnWidth](#columnwidth)     | [`ColumnWidth`](/specs/layout/column-width)     | <span className="property-required">Required</span> |
+| [rowHeight](#rowheight)         | [`RowHeight`](/specs/layout/row-height)         | <span className="property-required">Required</span> |
+| [baseHeight](#baseheight)       | `number`                                        | <span className="property-required">Required</span> |
+| [columnGap](#columngap)         | `number`                                        | <span className="property-required">Required</span> |
+| [rowGap](#rowgap)               | `number`                                        | <span className="property-required">Required</span> |
+| [gridAutoFlow](#gridautoflow)   | `integer`                                       | <span className="property-required">Required</span> |
+| [padding](#padding)             | `Array<number>`                                 | <span className="property-required">Required</span> |
+| [cellAlign](#cellalign)         | [`Alignment`](/specs/layout/alignment)          | <span className="property-required">Required</span> |
 
 </div>
 
@@ -46,7 +46,7 @@ Grid Layout is a module designed for webpage layout. It allows you to create a t
 
 Type
 
-`const`
+`string`
 
 </div>
 
@@ -59,7 +59,7 @@ Value
 **constant**: the value of this property must be equal to:
 
 ```json
-"grid_layout"
+"gridLayout"
 ```
 
 </div>
@@ -72,7 +72,7 @@ Value
 
 <div className="property-heading">
 
-## expand\_strategy
+## dynamicColumn
 
 <span className="property-required">Required</span>
 
@@ -90,7 +90,7 @@ no description
 
 Type
 
-[`ExpandStrategy`](/specs/layout/expand-strategy)
+[`DynamicColumn`](/specs/layout/dynamic-column)
 
 </div>
 
@@ -100,7 +100,7 @@ Type
 
 <div className="property-heading">
 
-## column\_width
+## columnWidth
 
 <span className="property-required">Required</span>
 
@@ -128,7 +128,7 @@ Type
 
 <div className="property-heading">
 
-## row\_height
+## rowHeight
 
 <span className="property-required">Required</span>
 
@@ -156,7 +156,7 @@ Type
 
 <div className="property-heading">
 
-## base\_height
+## baseHeight
 
 <span className="property-required">Required</span>
 
@@ -184,7 +184,7 @@ Type
 
 <div className="property-heading">
 
-## column\_gap
+## columnGap
 
 <span className="property-required">Required</span>
 
@@ -212,7 +212,7 @@ Type
 
 <div className="property-heading">
 
-## row\_gap
+## rowGap
 
 <span className="property-required">Required</span>
 
@@ -240,7 +240,7 @@ Type
 
 <div className="property-heading">
 
-## grid\_auto\_flow
+## gridAutoFlow
 
 <span className="property-required">Required</span>
 
@@ -328,7 +328,7 @@ Value
 
 <div className="property-heading">
 
-## cell\_align
+## cellAlign
 
 <span className="property-required">Required</span>
 
@@ -348,7 +348,7 @@ This property applies to all grid items, allowing you to uniformly adjust the po
 
 Type
 
-[`AlignStyle`](/specs/layout/align-style)
+[`Alignment`](/specs/layout/alignment)
 
 </div>
 

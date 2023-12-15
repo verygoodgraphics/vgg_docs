@@ -15,15 +15,15 @@ This property refers to the individual grid item or cell in a grid layout and it
 
 <div className="property-table">
 
-| Property                       | Type                                         | Required                                            |
-| :----------------------------- | :------------------------------------------- | :-------------------------------------------------- |
-| [class](#class)                | `const`                                      | <span className="property-required">Required</span> |
-| [item\_pos](#item_pos)         | [`GridItemPos`](/specs/layout/grid-item-pos) | <span className="property-required">Required</span> |
-| [row\_span](#row_span)         | `integer`                                    | <span className="property-required">Required</span> |
-| [column\_span](#column_span)   | `integer`                                    | <span className="property-required">Required</span> |
-| [position](#position)          | [`Position`](/specs/layout/position)         | <span className="property-required">Required</span> |
-| [row\_align](#row_align)       | [`AlignStyle`](/specs/layout/align-style)    | <span className="property-required">Required</span> |
-| [column\_align](#column_align) | [`AlignStyle`](/specs/layout/align-style)    | <span className="property-required">Required</span> |
+| Property                    | Type                                         | Required                                            |
+| :-------------------------- | :------------------------------------------- | :-------------------------------------------------- |
+| [class](#class)             | `string`                                     | <span className="property-required">Required</span> |
+| [itemPos](#itempos)         | [`GridItemPos`](/specs/layout/grid-item-pos) | <span className="property-required">Required</span> |
+| [rowSpan](#rowspan)         | `integer`                                    | <span className="property-required">Required</span> |
+| [columnSpan](#columnspan)   | `integer`                                    | <span className="property-required">Required</span> |
+| [position](#position)       | [`Position`](/specs/layout/position)         | <span className="property-required">Required</span> |
+| [rowAlign](#rowalign)       | [`Alignment`](/specs/layout/alignment)       | <span className="property-required">Required</span> |
+| [columnAlign](#columnalign) | [`Alignment`](/specs/layout/alignment)       | <span className="property-required">Required</span> |
 
 </div>
 
@@ -43,7 +43,7 @@ This property refers to the individual grid item or cell in a grid layout and it
 
 Type
 
-`const`
+`string`
 
 </div>
 
@@ -56,7 +56,7 @@ Value
 **constant**: the value of this property must be equal to:
 
 ```json
-"grid_item"
+"gridItem"
 ```
 
 </div>
@@ -69,7 +69,7 @@ Value
 
 <div className="property-heading">
 
-## item\_pos
+## itemPos
 
 <span className="property-required">Required</span>
 
@@ -97,7 +97,7 @@ Type
 
 <div className="property-heading">
 
-## row\_span
+## rowSpan
 
 <span className="property-required">Required</span>
 
@@ -137,7 +137,7 @@ Value
 
 <div className="property-heading">
 
-## column\_span
+## columnSpan
 
 <span className="property-required">Required</span>
 
@@ -205,7 +205,7 @@ Type
 
 <div className="property-heading">
 
-## row\_align
+## rowAlign
 
 <span className="property-required">Required</span>
 
@@ -223,7 +223,7 @@ Valid when the position type is relative or sticky, specifies how the element's 
 
 Type
 
-[`AlignStyle`](/specs/layout/align-style)
+[`Alignment`](/specs/layout/alignment)
 
 </div>
 
@@ -233,7 +233,7 @@ Type
 
 <div className="property-heading">
 
-## column\_align
+## columnAlign
 
 <span className="property-required">Required</span>
 
@@ -251,7 +251,7 @@ Valid when the position type is relative or sticky, specifies how the element's 
 
 Type
 
-[`AlignStyle`](/specs/layout/align-style)
+[`Alignment`](/specs/layout/alignment)
 
 </div>
 

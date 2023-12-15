@@ -1,8 +1,8 @@
 {
-  "title": "VGG Layout",
-  "description": "VGG Layout describes the layout information of an element. VGG Layout does not contain hierarchical relationships between objects, which are described in VGG-Format.",
+  "title": "VGG Layout Specification",
+  "description": "VGG Layout Specification describes the layout information of an element. VGG Layout Specification does not contain hierarchical relationships between objects, which are described in VGG Vector Graphics Specification.",
   "type": "object",
-  "$id": "https://git.vgg.cool/verygoodgraphics/vgg_format/src/branch/master/sketch-document-6.4.0/packages/layout-format/src/vgg-layout.json",
+  "$id": "https://docs.verygoodgraphics.com/shcemas/layout.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "definitions": {
     "Object": {
@@ -13,11 +13,12 @@
       "required": ["class", "id", "width", "height"],
       "properties": {
         "class": {
+          "type": "string",
           "const": "object"
         },
         "id": {
           "type": "string",
-          "description": "This property is used in the layout to uniquely identify a specific object. Use this value to associate objects in VGG format."
+          "description": "This property is used in the layout to uniquely identify a specific object. Use this value to associate objects in VGG Vector Graphics Specification."
         },
         "layout": {
           "oneOf": [
@@ -30,7 +31,7 @@
           ],
           "description": "This property describes the layout characteristics of the current object and can be used to determine its layout type."
         },
-        "item_in_layout": {
+        "itemInLayout": {
           "oneOf": [
             {
               "$ref": "#/definitions/FlexboxItem"
@@ -44,22 +45,22 @@
         "width": {
           "$ref": "#/definitions/Width"
         },
-        "max_width": {
+        "maxWidth": {
           "$ref": "#/definitions/MaxWidth"
         },
-        "min_width": {
+        "minWidth": {
           "$ref": "#/definitions/MinWidth"
         },
         "height": {
           "$ref": "#/definitions/Height"
         },
-        "max_height": {
+        "maxHeight": {
           "$ref": "#/definitions/MaxHeight"
         },
-        "min_height": {
+        "minHeight": {
           "$ref": "#/definitions/MinHeight"
         },
-        "aspect_ratio": {
+        "aspectRatio": {
           "type": "number",
           "exclusiveMinimum": 0,
           "description": "This property refers to the proportional relationship between the width and height of an element. This property can be used to define the aspect ratio of an element, allowing you to set the desired width-to-height ratio. It ensures that the element maintains the same aspect ratio in containers of different sizes."
@@ -75,17 +76,18 @@
       "required": [
         "class",
         "direction",
-        "justify_content",
-        "align_items",
-        "align_content",
+        "justifyContent",
+        "alignItems",
+        "alignContent",
         "wrap",
-        "row_gap",
-        "column_gap",
+        "rowGap",
+        "columnGap",
         "padding"
       ],
       "properties": {
         "class": {
-          "const": "flexbox_layout"
+          "type": "string",
+          "const": "flexboxLayout"
         },
         "direction": {
           "description": "This property is used to set the arrangement of child elements within a flex container.",
@@ -93,7 +95,7 @@
           "enum": [1, 2],
           "enumDescriptions": ["horizontal", "vertical"]
         },
-        "justify_content": {
+        "justifyContent": {
           "description": "This property is used to set the alignment of flex container's child elements along the main axis.",
           "type": "integer",
           "enum": [1, 2, 3, 4, 5, 6],
@@ -106,13 +108,13 @@
             "space evenly"
           ]
         },
-        "align_items": {
+        "alignItems": {
           "description": "This property is used to set the alignment of flex container's children along the cross axis.",
-          "$ref": "#/definitions/AlignStyle"
+          "$ref": "#/definitions/Alignment"
         },
-        "align_content": {
+        "alignContent": {
           "description": "This property is used to align the children of a flex container along the cross axis. It applies to multi-line flex containers and affects the alignment of multiple lines.",
-          "$ref": "#/definitions/AlignStyle"
+          "$ref": "#/definitions/Alignment"
         },
         "wrap": {
           "description": "This property sets whether flex items are forced to be placed on a single line or can wrap onto multiple lines.",
@@ -123,11 +125,11 @@
             "wrap: The parent container under the wrap definition is a multi-line container. When the parent container does not have enough space left to hold the minimum size of the child,  the child items are wrapped in rows or columns along the layout direction"
           ]
         },
-        "row_gap": {
+        "rowGap": {
           "type": "number",
           "description": "This property is used to set the size of the gap between rows in a grid layout. It defines the whitespace distance between adjacent rows within the grid container, allowing for a certain vertical spacing between grid items. This property accepts values in pixels (px) as units."
         },
-        "column_gap": {
+        "columnGap": {
           "type": "number",
           "description": "This property is used to set the size of the gap between columns in a grid layout. It defines the whitespace distance between adjacent columns within the grid container, allowing for a certain amount of spacing horizontally for grid items. This property accepts values in pixels (px) as units."
         },
@@ -140,20 +142,20 @@
             "type": "number"
           }
         },
-        "z_order": {
+        "zOrder": {
           "type": "boolean",
           "description": "This property is used in the layout to define the arrangement order of child elements within a flex container. By default, all child elements have an order value of false, and you can change their display order to reverse by setting the order value to true."
         }
       },
       "additionalProperties": false
     },
-    "AlignStyle": {
-      "title": "AlignStyle",
+    "Alignment": {
+      "title": "Alignment",
       "description": "This property refers to adjusting the position of elements on a page. With different property values, you can control the alignment of elements in both horizontal and vertical directions.",
       "type": "integer",
       "enum": [1, 2, 3],
       "enumDescriptions": ["start", "center", "end"],
-      "$id": "#AlignStyle"
+      "$id": "#Alignment"
     },
     "GridLayout": {
       "title": "Grid Layout",
@@ -162,42 +164,43 @@
       "$id": "#GridLayout",
       "required": [
         "class",
-        "expand_strategy",
-        "column_width",
-        "row_height",
-        "base_height",
-        "column_gap",
-        "row_gap",
-        "grid_auto_flow",
+        "dynamicColumn",
+        "columnWidth",
+        "rowHeight",
+        "baseHeight",
+        "columnGap",
+        "rowGap",
+        "gridAutoFlow",
         "padding",
-        "cell_align"
+        "cellAlign"
       ],
       "properties": {
         "class": {
-          "const": "grid_layout"
+          "type": "string",
+          "const": "gridLayout"
         },
-        "expand_strategy": {
-          "$ref": "#/definitions/ExpandStrategy"
+        "dynamicColumn": {
+          "$ref": "#/definitions/DynamicColumn"
         },
-        "column_width": {
+        "columnWidth": {
           "$ref": "#/definitions/ColumnWidth"
         },
-        "row_height": {
+        "rowHeight": {
           "$ref": "#/definitions/RowHeight"
         },
-        "base_height": {
+        "baseHeight": {
           "type": "number",
           "description": "When there are empty rows or row height cyclic dependencies within the grid container, this value is used as a reference value. To avoid this issue, it is generally recommended that you explicitly set the height of subgrids or elements in the grid layout, either by using fixed heights or automatic heights to avoid height cyclic dependencies."
         },
-        "column_gap": {
+        "columnGap": {
           "type": "number",
           "description": "This property sets the size of the gap (gutter) between an element's columns. This property accepts values in pixels (px) as units."
         },
-        "row_gap": {
+        "rowGap": {
           "type": "number",
           "description": "This property sets the size of the gap (gutter) between an element's rows. This property accepts values in pixels (px) as units."
         },
-        "grid_auto_flow": {
+        "gridAutoFlow": {
           "type": "integer",
           "description": "This property used to set the automatic placement behavior of items in a grid layout. \nThis property defines how items are automatically placed within the grid container when their position is not explicitly specified. \n",
           "enum": [1, 2],
@@ -215,22 +218,23 @@
             "type": "number"
           }
         },
-        "cell_align": {
+        "cellAlign": {
           "description": "This property is used to control the alignment of content within cells in the horizontal direction.\nIt is effective when the sum of column widths is less than the container width. Columns are fixed at \"start\" by default. \nThis property applies to all grid items, allowing you to uniformly adjust the position of all content within cells in the horizontal direction.\n",
-          "$ref": "#/definitions/AlignStyle"
+          "$ref": "#/definitions/Alignment"
         }
       },
       "additionalProperties": false
     },
-    "ExpandStrategy": {
-      "title": "Expand Strategy",
+    "DynamicColumn": {
+      "title": "Dynamic Column",
       "type": "object",
       "description": "The algorithm is a strategy for dynamically determining the number of columns in a grid container based on content and container size. \nWhen using the `auto-fill` property, the algorithm will attempt to place grid items within the current row and create new columns as needed. \nIt flexibly adjusts the number of columns based on the available space in the current row, prioritizing existing space. \nOnly when there is insufficient space in the current row to accommodate new grid items will it create new columns to achieve a more flexible layout.\n",
-      "$id": "#ExpandStrategy",
-      "required": ["class", "strategy", "min_row", "column_count"],
+      "$id": "#DynamicColumn",
+      "required": ["class", "strategy", "minRow", "columnCount"],
       "properties": {
         "class": {
-          "const": "expand_strategy"
+          "type": "string",
+          "const": "dynamicColumn"
         },
         "strategy": {
           "type": "integer",
@@ -240,11 +244,11 @@
             "fix-column (A fixed number of columns is specified by the user. The number of rows is automatically adjusted as needed and is always greater than or equal to the minimum number of rows.)"
           ]
         },
-        "min_row": {
+        "minRow": {
           "type": "integer",
           "description": "Takes effect only in fix-column mode and indicates the minimum number of rows."
         },
-        "column_count": {
+        "columnCount": {
           "type": "integer",
           "description": "Takes effect only in fix-column mode, indicating a fixed number of columns."
         }
@@ -256,10 +260,11 @@
       "description": "This property is used to set the width of columns in a multi-column layout. \nBy setting this property of an element, you can specify either a fixed width or minimum width for each column, thus affecting the appearance of the multi-column layout.\n",
       "type": "object",
       "$id": "#ColumnWidth",
-      "required": ["class", "strategy", "width_value"],
+      "required": ["class", "strategy", "widthValue"],
       "properties": {
         "class": {
-          "const": "column_width"
+          "type": "string",
+          "const": "columnWidth"
         },
         "strategy": {
           "type": "integer",
@@ -269,7 +274,7 @@
             "fix (Specifies the fixed width of the column.)"
           ]
         },
-        "width_value": {
+        "widthValue": {
           "type": "number",
           "description": "You can set this value to a uniform fixed width value or minimum width value for all columns in the grid, with a minimum column width of 1. This property accepts values in pixels (px) as units."
         }
@@ -281,10 +286,11 @@
       "description": "This property is used to define the size of rows in a grid layout.\nBy setting this property of an element, you can specify the size of rows in a grid container.\n",
       "type": "object",
       "$id": "#RowHeight",
-      "required": ["class", "strategy", "fixed_value"],
+      "required": ["class", "strategy", "fixedValue"],
       "properties": {
         "class": {
-          "const": "row_height"
+          "type": "string",
+          "const": "rowHeight"
         },
         "strategy": {
           "type": "integer",
@@ -295,7 +301,7 @@
             "fixed (decided by row height)"
           ]
         },
-        "fixed_value": {
+        "fixedValue": {
           "type": "number",
           "description": "Only applies when strategy is fixed, indicating a fixed row height value."
         }
@@ -307,15 +313,16 @@
       "description": "This property refers to the child elements within a flex container, which will be controlled by the Flexbox layout model. \nThe style and layout of child elements can be adjusted by setting corresponding properties on the flex container.\n",
       "type": "object",
       "$id": "#FlexboxItem",
-      "required": ["class", "position", "flex_grow_shrink"],
+      "required": ["class", "position", "flexBasis"],
       "properties": {
         "class": {
-          "const": "flexbox_item"
+          "type": "string",
+          "const": "flexboxItem"
         },
         "position": {
           "$ref": "#/definitions/Position"
         },
-        "flex_grow_shrink": {
+        "flexBasis": {
           "type": "number",
           "description": "This property is used to control the growth or shrinkage ratio of child elements in the allocation of remaining space within a flex container. The values of flex-grow and flex-shrink for all Flex items are the same, and based on the size of the remaining space in the container, flex items will automatically adjust its size to grow or shrink base on this property value."
         }
@@ -330,6 +337,7 @@
       "required": ["class", "value"],
       "properties": {
         "class": {
+          "type": "string",
           "const": "position"
         },
         "value": {
@@ -348,26 +356,27 @@
       "$id": "#GridItem",
       "required": [
         "class",
-        "item_pos",
-        "row_span",
-        "column_span",
+        "itemPos",
+        "rowSpan",
+        "columnSpan",
         "position",
-        "row_align",
-        "column_align"
+        "rowAlign",
+        "columnAlign"
       ],
       "properties": {
         "class": {
-          "const": "grid_item"
+          "type": "string",
+          "const": "gridItem"
         },
-        "item_pos": {
+        "itemPos": {
           "$ref": "#/definitions/GridItemPos"
         },
-        "row_span": {
+        "rowSpan": {
           "type": "integer",
           "description": "The number of rows occupied by the element.",
           "minimum": 1
         },
-        "column_span": {
+        "columnSpan": {
           "type": "integer",
           "description": "The number of columns occupied by the element.",
           "minimum": 1
@@ -375,13 +384,13 @@
         "position": {
           "$ref": "#/definitions/Position"
         },
-        "row_align": {
+        "rowAlign": {
           "description": "Valid when the position type is relative or sticky, specifies how the element's row direction is aligned to it.",
-          "$ref": "#/definitions/AlignStyle"
+          "$ref": "#/definitions/Alignment"
         },
-        "column_align": {
+        "columnAlign": {
           "description": "Valid when the position type is relative or sticky, specifies how the element's column direction is aligned to it.",
-          "$ref": "#/definitions/AlignStyle"
+          "$ref": "#/definitions/Alignment"
         }
       },
       "additionalProperties": false
@@ -391,10 +400,11 @@
       "description": "In grid layout, the position of grid items is determined by the grid lines defined by the rows and columns of the grid container. Grid rows and grid columns are used to specify the properties for positioning grid items within the grid.",
       "type": "object",
       "$id": "#GridItemPos",
-      "required": ["class", "strategy", "row_id", "column_id"],
+      "required": ["class", "strategy", "rowId", "columnId"],
       "properties": {
         "class": {
-          "const": "grid_item_pos"
+          "type": "string",
+          "const": "gridItemPos"
         },
         "strategy": {
           "description": " This property is used to define the position of grid items on the row and column axes in a grid.  By default, grid items will be automatically placed from left to right in the direction of rows.  However, you can also specify specific fixed positions for grid items on both rows and columns. ",
@@ -405,12 +415,12 @@
             "fix (Coordinates are specified by the user.)"
           ]
         },
-        "row_id": {
+        "rowId": {
           "type": "integer",
           "description": "Takes effect only in fix mode, specifies the element start row coordinates. Value start with 0.",
           "minimum": 0
         },
-        "column_id": {
+        "columnId": {
           "type": "integer",
           "description": "Takes effect only in fix mode, specifies the element start column coordinates. Value start with 0.",
           "minimum": 0
@@ -426,6 +436,7 @@
       "required": ["class", "value"],
       "properties": {
         "class": {
+          "type": "string",
           "const": "width"
         },
         "value": {
@@ -441,6 +452,7 @@
       "required": ["class", "value", "types"],
       "properties": {
         "class": {
+          "type": "string",
           "const": "length"
         },
         "value": {
@@ -467,7 +479,8 @@
       "required": ["class", "value"],
       "properties": {
         "class": {
-          "const": "max_width"
+          "type": "string",
+          "const": "maxWidth"
         },
         "value": {
           "$ref": "#/definitions/Length",
@@ -484,7 +497,8 @@
       "required": ["class", "value"],
       "properties": {
         "class": {
-          "const": "min_width"
+          "type": "string",
+          "const": "minWidth"
         },
         "value": {
           "$ref": "#/definitions/Length",
@@ -501,6 +515,7 @@
       "required": ["class", "value"],
       "properties": {
         "class": {
+          "type": "string",
           "const": "height"
         },
         "value": {
@@ -517,7 +532,8 @@
       "required": ["class", "value"],
       "properties": {
         "class": {
-          "const": "max_height"
+          "type": "string",
+          "const": "maxHeight"
         },
         "value": {
           "$ref": "#/definitions/Length",
@@ -534,7 +550,8 @@
       "required": ["class", "value"],
       "properties": {
         "class": {
-          "const": "min_height"
+          "type": "string",
+          "const": "minHeight"
         },
         "value": {
           "$ref": "#/definitions/Length",
@@ -544,11 +561,8 @@
       "additionalProperties": false
     }
   },
-  "required": ["class", "obj"],
+  "required": ["obj"],
   "properties": {
-    "class": {
-      "const": "Daruma_Layout"
-    },
     "obj": {
       "type": "array",
       "items": {
