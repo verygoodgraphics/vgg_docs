@@ -11,28 +11,28 @@ const features = [
   {
     name: "Specs",
     description:
-      "Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.",
+      "VGG Specs is a set of JSON-based specifications for vector graphics.",
     href: "/specs/overview",
     icon: DocumentTextIcon,
   },
   {
     name: "Containers",
     description:
-      "Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.",
+      "VGG containers help deploy VGG applications to multiple platforms.",
     href: "/containers/overview",
     icon: RectangleGroupIcon,
   },
   {
     name: "Tutorials",
     description:
-      "Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.",
+      "VGG tutorials help you get started with VGG dev workflow.",
     href: "/tutorials/overview",
     icon: AcademicCapIcon,
   },
   {
     name: "Examples",
     description:
-      "Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.",
+      "Various VGG examples demonstrating VGG capabilities.",
     href: "/examples/overview",
     icon: ArrowPathIcon,
   },
@@ -42,23 +42,17 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext()
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      description=""
     >
       <main>
         <div className="py-24 sm:py-32">
           <div className="container container-fluid">
             <div className="mx-auto w-full py-16 lg:text-center border border-[var(--ifm-color-primary)] rounded-2xl px-8 bg-[var(--ifm-table-stripe-background)]">
-              <h2 className="text-base font-semibold leading-7 opacity-60">
-                Deploy faster
-              </h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-                Everything you need to deploy your app
-              </p>
+              <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+                VeryGoodGraphics
+              </h1>
               <p className="mt-6 text-lg leading-8">
-                Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-                Suspendisse eget egestas a elementum pulvinar et feugiat blandit
-                at. In mi viverra elit nunc.
+                Documentation Center
               </p>
             </div>
             <div className="mx-auto mt-24 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
