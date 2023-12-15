@@ -12,9 +12,9 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "gen:formats-doc": "node scripts/generateVectorGraphicsDoc.mjs",
+    "gen:vectorgraphics-doc": "node scripts/generateVectorGraphicsDoc.mjs",
     "gen:layout-doc": "node scripts/generateLayoutDoc.mjs",
-    "gen:specs": "pnpm gen:formats-doc && pnpm gen:layout-doc",
+    "gen:specs": "pnpm gen:vectorgraphics-doc && pnpm gen:layout-doc",
     "gen:search-records": "node --experimental-json-modules scripts/generateSearchRecords.mjs"
   },
   "dependencies": {
