@@ -44,15 +44,15 @@ export default function Home() {
         <div className="py-24 sm:py-32">
           <div className="container container-fluid">
             <div
-              className="text-white mx-auto w-full bg-top bg-cover h-[480px] flex flex-col justify-center items-center py-16 lg:text-center border border-[var(--ifm-color-primary)] rounded-2xl px-8 bg-[var(--ifm-table-stripe-background)]"
+              className="text-white mx-auto w-full bg-top bg-cover lg:h-[480px] md:h-[360px] flex flex-col justify-center items-center py-16 lg:text-center border border-[var(--ifm-color-primary)] rounded-2xl px-8 bg-[var(--ifm-table-stripe-background)]"
               style={{
                 backgroundImage: "url(/img/vgg_docs_bg.png)",
               }}
             >
-              <h1 className="mt-2 text-[72px] font-bold tracking-tight sm:text-[96px]">
+              <h1 className="mt-2 font-bold tracking-tight lg:text-[96px] md:text-[56px] sm:text-[48px] text-[32px]">
                 VeryGoodGraphics
               </h1>
-              <p className="mt-6 text-lg leading-8 sm:text-3xl">
+              <p className="sm:mt-6 mt-1 text-lg leading-8 sm:text-3xl">
                 Documentation Center
               </p>
             </div>
