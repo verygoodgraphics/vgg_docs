@@ -114,23 +114,19 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "VGG Sites",
+            title: "Sites",
             items: [
               {
                 label: "VGG Home",
                 href: "https://verygoodgraphics.com",
               },
               {
-                label: "VGG Docs",
-                href: "https://docs.verygoodgraphics.com",
-              },
-              {
-                label: "VGG Playground",
-                href: "https://verygoodgraphics.com/playground",
-              },
-              {
-                label: "VGG Daruma",
+                label: "Daruma",
                 href: "https://verygoodgraphics.com/daruma",
+              },
+              {
+                label: "Playground",
+                href: "https://verygoodgraphics.com/playground",
               },
             ],
           },
