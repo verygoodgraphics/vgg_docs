@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <Layout description="">
       <main>
-        <div className="py-24 sm:py-32">
+        <div className="py-12 sm:py-16">
           <div className="container container-fluid">
             <div
               className="text-white mx-auto w-full bg-top bg-cover lg:h-[480px] md:h-[360px] flex flex-col justify-center items-center py-16 lg:text-center border border-[var(--ifm-color-primary)] rounded-2xl px-8 bg-[var(--ifm-table-stripe-background)]"
@@ -56,22 +56,23 @@ export default function Home() {
                 Documentation Center
               </p>
             </div>
-            <div className="mx-auto mt-24 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+            <div className="mx-auto mt-12 max-w-2xl sm:mt-10 lg:mt-12 lg:max-w-none">
               <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4">
                 {features.map((feature) => (
-                  <div
+                  <a
                     key={feature.name}
-                    className="flex flex-col dark:bg-white/5 rounded-2xl p-6 bg-zinc-100"
+                    className="flex flex-col dark:bg-white/5 rounded-2xl p-6 bg-zinc-100 hover:no-underline"
+                    href={feature.href}
                   >
-                    <dt className="flex items-center gap-x-3 text-sm dark:text-white/50 text-zinc-500 leading-7 font-medium">
+                    <dt className="flex items-center gap-x-3 text-xl dark:text-white/50 text-zinc-500 leading-7 font-medium">
                       <feature.icon
-                        className="h-5 w-5 flex-none text-zinc-500"
+                        className="h-8 w-8 flex-none text-zinc-500"
                         aria-hidden="true"
                       />
                       {feature.name}
                     </dt>
                     <dd className="flex flex-auto flex-col text-base leading-7 m-0 mt-20">
-                      <h2 className="flex-auto mb-0 text-xl">
+                      <h2 className="flex-auto mb-0 text-lg font-normal dark:text-white/50 text-zinc-500">
                         {feature.description}
                       </h2>
                       <p className="mt-6 mb-0">
@@ -83,7 +84,7 @@ export default function Home() {
                         </a>
                       </p>
                     </dd>
-                  </div>
+                  </a>
                 ))}
               </dl>
             </div>
