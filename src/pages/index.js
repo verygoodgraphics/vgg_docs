@@ -61,7 +61,7 @@ export default function Home() {
                 {features.map((feature) => (
                   <a
                     key={feature.name}
-                    className="flex flex-col dark:bg-white/5 rounded-2xl p-6 bg-zinc-100 hover:no-underline"
+                    className="flex flex-col dark:bg-white/5 rounded-2xl p-6 bg-zinc-100 hover:no-underline border-solid border-transparent hover:border-[var(--ifm-color-primary)] hover:shadow-md"
                     href={feature.href}
                   >
                     <dt className="flex items-center gap-x-3 text-xl dark:text-white/50 text-zinc-500 leading-7 font-medium">
