@@ -11,22 +11,22 @@ const features = [
   {
     name: "Specs",
     description:
-      "VGG Specs is a set of JSON-based specifications for vector graphics.",
+      "Descriptions of a set of JSON-based specifications for vector graphics.",
     href: "/specs/overview",
     icon: DocumentTextIcon,
   },
   {
-    name: "Containers",
+    name: "Guides",
     description:
-      "VGG containers help deploy VGG applications to multiple platforms.",
-    href: "/containers/overview",
-    icon: RectangleGroupIcon,
+      "Describes how to integrate VGG into your design and development workflow.",
+    icon: AcademicCapIcon,
   },
   {
-    name: "Tutorials",
-    description: "VGG tutorials help you get started with VGG dev workflow.",
-    href: "/tutorials/overview",
-    icon: AcademicCapIcon,
+    name: "Containers",
+    description:
+      "VGG containers for multiple platforms to help with the deployment of VGG applications.",
+    href: "/containers/overview",
+    icon: RectangleGroupIcon,
   },
   {
     name: "Examples",
@@ -71,7 +71,7 @@ export default function Home() {
                       />
                       {feature.name}
                     </dt>
-                    <dd className="flex flex-auto flex-col text-base leading-7 m-0 mt-20">
+                    <dd className="flex flex-auto flex-col text-base leading-7 m-0 mt-12">
                       <h2 className="flex-auto mb-0 text-lg font-normal dark:text-white/50 text-zinc-500">
                         {feature.description}
                       </h2>
