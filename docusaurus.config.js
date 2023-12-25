@@ -87,15 +87,15 @@ const config = {
           },
           {
             type: "docSidebar",
-            sidebarId: "containerSidebar",
+            sidebarId: "guideSidebar",
             position: "left",
-            label: "Containers",
+            label: "Guides",
           },
           {
             type: "docSidebar",
-            sidebarId: "tutorialSidebar",
+            sidebarId: "containerSidebar",
             position: "left",
-            label: "Tutorials",
+            label: "Containers",
           },
           {
             type: "docSidebar",
@@ -121,12 +121,12 @@ const config = {
                 href: "https://verygoodgraphics.com",
               },
               {
-                label: "Daruma",
-                href: "https://verygoodgraphics.com/daruma",
+                label: "VGG Playground",
+                href: "https://verygoodgraphics.com/playground",
               },
               {
-                label: "Playground",
-                href: "https://verygoodgraphics.com/playground",
+                label: "Daruma",
+                href: "https://verygoodgraphics.com/daruma",
               },
             ],
           },
@@ -147,12 +147,12 @@ const config = {
             title: "More",
             items: [
               {
-                label: "Blog",
-                href: "https://blog.verygoodgraphics.com",
-              },
-              {
                 label: "GitHub",
                 href: "https://github.com/verygoodgraphics",
+              },
+              {
+                label: "Blog",
+                href: "https://blog.verygoodgraphics.com",
               },
             ],
           },
