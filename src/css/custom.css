@@ -79,7 +79,7 @@
 }
 
 .property-item p:first-child {
-  width: 120px;
+  min-width: 120px;
   flex: none;
 }
 
