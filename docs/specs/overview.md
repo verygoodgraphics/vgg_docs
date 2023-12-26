@@ -14,9 +14,11 @@ VGG Specs is designed from the ground up with the following characteristics in m
 - __Readable__: It must be readable by ordinary users. Not only should the specs
   be well and clearly documented with illustrations, but also the data that
   conforms to the specs should be human-readable and parser-developable.
-- __Compatible__: It should be compatible not only with common design software
+- __Compatible__: It should be compatible not only with popular design software
   such as Figma or Adobe Illustrator, but also with public graphics
-  specifications such as SVG, making it a super-set of existing formats.
+  specifications such as SVG, making it a super-set of existing formats. This
+  means that it should include all the advanced graphic effects such as
+  gradients, shadows and blurs.
 - __Scriptable__: It should have built-in scripting capability for vector graphics
   animation and more advanced interaction semantics.
 - __Compact__: While being readable, it should be as compact as possible for
@@ -29,6 +31,7 @@ VGG Specs is designed from the ground up with the following characteristics in m
 As VGG Specs is extensible, more specs could be added separately, such as upcoming
 animation specification and 3D specification.
 
-[VGG Runtime](https://github.com/verygoodgraphics/vgg_runtime) is an official
-implementation of the VGG specs with cross-platform rendering and scripting
-capabilities.
+By the way, VGG Specs comes along with an official implementation. VGG Runtime
+is an open-source implementation of the VGG Specs with cross-platform rendering
+and scripting capabilities. You can check it out
+[here](https://github.com/verygoodgraphics/vgg_runtime).
