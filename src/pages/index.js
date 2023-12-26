@@ -19,6 +19,7 @@ const features = [
     name: "Guides",
     description:
       "Describes how to integrate VGG into your design and development workflow.",
+    href: "/guides/overview",
     icon: AcademicCapIcon,
   },
   {
@@ -75,14 +76,13 @@ export default function Home() {
                       <h2 className="flex-auto mb-0 text-lg font-normal dark:text-white/50 text-zinc-500">
                         {feature.description}
                       </h2>
-                      <p className="mt-6 mb-0">
-                        <a
-                          href={feature.href}
-                          className="text-sm font-semibold leading-6"
+                      <div className="mt-6 mb-0">
+                        <div
+                          className="text-sm font-semibold leading-6 hover:underline"
                         >
                           Learn more <span aria-hidden="true">→</span>
-                        </a>
-                      </p>
+                        </div>
+                      </div>
                     </dd>
                   </a>
                 ))}
