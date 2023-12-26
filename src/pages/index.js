@@ -18,7 +18,7 @@ const features = [
   {
     name: "Guides",
     description:
-      "Describes how to integrate VGG into your design and development workflow.",
+      "Introduces VGG's Design-as-Code workflow and describes how to integrate it well with your existing dev workflow.",
     href: "/guides/overview",
     icon: AcademicCapIcon,
   },
