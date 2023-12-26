@@ -3,8 +3,8 @@ title: Specs Overview
 ---
 
 VGG Specs is a set of JSON-based specifications for the next generation of vector graphics.
-It currently includes specs for general [vector
-graphics](/specs/vectorgraphics/overview) and [layout
+It currently includes specs for VGG [file](/specs/file), general [vector
+graphics](/specs/vectorgraphics/overview), and [layout
 semantics](/specs/layout/overview).
 
 VGG Specs is designed from the ground up with the following characteristics in mind:
@@ -28,10 +28,10 @@ VGG Specs is designed from the ground up with the following characteristics in m
   Curves](https://pomax.github.io/bezierinfo/) or [Vector
   Networks](https://help.figma.com/hc/en-us/articles/360040450213-Vector-Networks).
 
-As VGG Specs is extensible, more specs could be added separately, such as upcoming
+As VGG Specs is extensible, more specs could be added separately, such as an upcoming
 animation specification and 3D specification.
 
-By the way, VGG Specs comes along with an official implementation. VGG Runtime
+Additionally, VGG Specs comes along with an official implementation. VGG Runtime
 is an open-source implementation of the VGG Specs with cross-platform rendering
 and scripting capabilities. You can check it out
 [here](https://github.com/verygoodgraphics/vgg_runtime).

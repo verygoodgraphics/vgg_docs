@@ -23,8 +23,8 @@ implementations are available.
 
 Currently [Daruma](https://verygoodgraphics.com/daruma) will produce `.daruma`
 file and [VGG Runtime](https://github.com/verygoodgraphics/vgg_runtime) reads
-it.  This `.daruma` file is actually of Form 1, with its own customization. A
-typical `.daruma` file looks like this after unzipping:
+it.  This `.daruma` file is actually of Form 1, with its own customization. The
+structure of a typical `.daruma` file looks like this after unzipping:
 
 ```
 ├── design.json
@@ -40,8 +40,7 @@ typical `.daruma` file looks like this after unzipping:
 where `design.json` conforms to VGG [Vector Graphics
 Spec](/specs/vectorgraphics/overview) and `layout.json` conforms to VGG [Layout
 Spec](/specs/layout/overview). The images files under `resources` directory are
-referenced in `design.json` for some filed, for example, the `imageFileName`
-field in
+referenced in `design.json` in some filed, like the `imageFileName` field in
 [PatternImageFill](/specs/vectorgraphics/pattern-image-fill#imagefilename).
 
 ## Form 2: Streaming binary blob (WIP)
