@@ -25,7 +25,7 @@ const features = [
   {
     name: "Containers",
     description:
-      "VGG containers for multiple platforms to help with the deployment of VGG applications.",
+      "VGG containers for multiple platforms to help with both development and deployment of VGG applications.",
     href: "/containers/overview",
     icon: RectangleGroupIcon,
   },
