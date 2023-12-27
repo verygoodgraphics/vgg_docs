@@ -1,4 +1,5 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext"
+import Head from "@docusaurus/Head"
 import Layout from "@theme/Layout"
 import {
   ArrowPathIcon,
@@ -41,6 +42,9 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext()
   return (
     <Layout description="">
+      <Head>
+        <script defer data-domain="docs.verygoodgraphics.com" src="https://t.vgg.cool/js/script.js"></script>
+      </Head>
       <main>
         <div className="py-12 sm:py-16">
           <div className="container container-fluid">
