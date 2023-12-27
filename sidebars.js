@@ -46,6 +46,7 @@ const sidebars = {
     },
     "specs/animation",
     "specs/3d",
+    "specs/script",
   ],
 
   guideSidebar: [
