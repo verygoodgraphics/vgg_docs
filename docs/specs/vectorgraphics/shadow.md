@@ -144,6 +144,18 @@ The horizontal offset of the shadow in relation to the object. Direction to the 
 
 <div className="property-item">
 
+<p></p>
+
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Shadow/offset.png" alt="" />
+
+</div>
+
+</div>
+
+<div className="property-item">
+
 Type
 
 `number`
@@ -200,6 +212,18 @@ The degree of shadow blur.
 
 <div className="property-item">
 
+<p></p>
+
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Shadow/blur.png" alt="" />
+
+</div>
+
+</div>
+
+<div className="property-item">
+
 Type
 
 `number`
@@ -223,6 +247,18 @@ Type
 Description
 
 The distance that the shadow spreads from the object, the farther it is, the larger the shadow.
+
+</div>
+
+<div className="property-item">
+
+<p></p>
+
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Shadow/spread.png" alt="" />
+
+</div>
 
 </div>
 
@@ -284,6 +320,18 @@ If `true`, it's an inner shadow.
 
 <div className="property-item">
 
+<p></p>
+
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Shadow/inner.png" alt="" />
+
+</div>
+
+</div>
+
+<div className="property-item">
+
 Type
 
 `boolean`
@@ -308,6 +356,18 @@ Description
 
 When the object has a transparent fill and a non-inner shadow, whether the shadow is visible through the transparent area.
 Default value is `false`.
+
+</div>
+
+<div className="property-item">
+
+<p></p>
+
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Shadow/showBehindTransparentAreas.png" alt="" />
+
+</div>
 
 </div>
 

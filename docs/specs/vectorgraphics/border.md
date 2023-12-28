@@ -514,6 +514,18 @@ A list of values that describe the lengths of dashes (filled regions) and gaps (
 
 <div className="property-item">
 
+<p></p>
+
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Border/dashedPattern.png" alt="" />
+
+</div>
+
+</div>
+
+<div className="property-item">
+
 Type
 
 `Array<number>`

@@ -132,3 +132,7 @@ code.type-merged {
 .hidden {
   display: none !important;
 }
+
+.property-images {
+  margin-bottom: 12px;
+}

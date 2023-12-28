@@ -133,6 +133,18 @@ Value
 
 </div>
 
+<div className="property-item">
+
+<p></p>
+
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Path/windingRule.png" alt="" />
+
+</div>
+
+</div>
+
 </div>
 
 <div className="property">
@@ -160,6 +172,18 @@ The `radius` of the subshapes override this radius.
 Type
 
 `number`
+
+</div>
+
+<div className="property-item">
+
+<p></p>
+
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Path/radius.png" alt="" />
+
+</div>
 
 </div>
 

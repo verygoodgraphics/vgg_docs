@@ -1,0 +1,206 @@
+{
+    "#Frame": [
+        {
+            "path": "properties/styleEffectMaskArea/value",
+            "_enumImg": [["/img/vector/Mask/styleEffectMaskArea_0.png"], ["/img/vector/Mask/styleEffectMaskArea_1.png"], ["/img/vector/Mask/styleEffectMaskArea_2.png"]]
+        },
+        {
+            "path": "properties/keepShapeWhenResize/description",
+            "_img": ["/img/vector/Constraniant/keepShapeWhenResize_false.png", "/img/vector/Constraniant/keepShapeWhenResize_true.png"]
+        }
+    ],
+    "#Path": [
+        {
+            "path": "properties/styleEffectMaskArea/value",
+            "_enumImg": [["/img/vector/Mask/styleEffectMaskArea_0.png"], ["/img/vector/Mask/styleEffectMaskArea_1.png"], ["/img/vector/Mask/styleEffectMaskArea_2.png"]]
+        },
+        {
+            "path": "properties/keepShapeWhenResize/description",
+            "_img": ["/img/vector/Constraniant/keepShapeWhenResize_false.png", "/img/vector/Constraniant/keepShapeWhenResize_true.png"]
+        }
+    ],
+    "#Text": [
+        {
+            "path": "properties/styleEffectMaskArea/value",
+            "_enumImg": [["/img/vector/Mask/styleEffectMaskArea_0.png"], ["/img/vector/Mask/styleEffectMaskArea_1.png"], ["/img/vector/Mask/styleEffectMaskArea_2.png"]]
+        },
+        {
+            "path": "properties/keepShapeWhenResize/description",
+            "_img": ["/img/vector/Constraniant/keepShapeWhenResize_false.png", "/img/vector/Constraniant/keepShapeWhenResize_true.png"]
+        },
+        {
+            "path": "properties/truncatedHeight/description",
+            "_img": ["/img/vector/Text/truncatedHeight.png"]
+        }
+    ],
+    "#Image": [
+        {
+            "path": "properties/styleEffectMaskArea/value",
+            "_enumImg": [["/img/vector/Mask/styleEffectMaskArea_0.png"], ["/img/vector/Mask/styleEffectMaskArea_1.png"], ["/img/vector/Mask/styleEffectMaskArea_2.png"]]
+        },
+        {
+            "path": "properties/keepShapeWhenResize/description",
+            "_img": ["/img/vector/Constraniant/keepShapeWhenResize_false.png", "/img/vector/Constraniant/keepShapeWhenResize_true.png"]
+        }
+    ],
+    "#Group": [
+        {
+            "path": "properties/styleEffectMaskArea/value",
+            "_enumImg": [["/img/vector/Mask/styleEffectMaskArea_0.png"], ["/img/vector/Mask/styleEffectMaskArea_1.png"], ["/img/vector/Mask/styleEffectMaskArea_2.png"]]
+        },
+        {
+            "path": "properties/keepShapeWhenResize/description",
+            "_img": ["/img/vector/Constraniant/keepShapeWhenResize_false.png", "/img/vector/Constraniant/keepShapeWhenResize_true.png"]
+        }
+    ],
+    "#SymbolInstance": [
+        {
+            "path": "properties/styleEffectMaskArea/value",
+            "_enumImg": [["/img/vector/Mask/styleEffectMaskArea_0.png"], ["/img/vector/Mask/styleEffectMaskArea_1.png"], ["/img/vector/Mask/styleEffectMaskArea_2.png"]]
+        },
+        {
+            "path": "properties/keepShapeWhenResize/description",
+            "_img": ["/img/vector/Constraniant/keepShapeWhenResize_false.png", "/img/vector/Constraniant/keepShapeWhenResize_true.png"]
+        }
+    ],
+    "#SymbolMaster": [
+        {
+            "path": "properties/styleEffectMaskArea/value",
+            "_enumImg": [["/img/vector/Mask/styleEffectMaskArea_0.png"], ["/img/vector/Mask/styleEffectMaskArea_1.png"], ["/img/vector/Mask/styleEffectMaskArea_2.png"]]
+        },
+        {
+            "path": "properties/keepShapeWhenResize/description",
+            "_img": ["/img/vector/Constraniant/keepShapeWhenResize_false.png", "/img/vector/Constraniant/keepShapeWhenResize_true.png"]
+        }
+    ],
+    "#PatternLayerDef": [
+        {
+            "path": "properties/styleEffectMaskArea/value",
+            "_enumImg": [["/img/vector/Mask/styleEffectMaskArea_0.png"], ["/img/vector/Mask/styleEffectMaskArea_1.png"], ["/img/vector/Mask/styleEffectMaskArea_2.png"]]
+        },
+        {
+            "path": "properties/keepShapeWhenResize/description",
+            "_img": ["/img/vector/Constraniant/keepShapeWhenResize_false.png", "/img/vector/Constraniant/keepShapeWhenResize_true.png"]
+        }
+    ],
+    "#Blur": [
+        {
+            "path": "properties/radius/description",
+            "_img": ["/img/vector/Blur/radius.png"]
+        },
+        {
+            "path": "properties/motionAngle/description",
+            "_img": ["/img/vector/Blur/motionAngle.png"]
+        },
+        {
+            "path": "properties/center/description",
+            "_img": ["/img/vector/Blur/center.png"]
+        },
+        {
+            "path": "properties/saturation/description",
+            "_img": ["/img/vector/Blur/saturation.png"]
+        }
+    ],
+    "#BlurType": [
+        {
+            "path": "value",
+            "_enumImg": [["/img/vector/Blur/gaussian.png"], ["/img/vector/Blur/motion.png"], ["/img/vector/Blur/zoom.png"], ["/img/vector/Blur/background.png"]]
+        }
+    ],
+    "#Shadow": [
+        {
+            "path": "properties/offsetX/description",
+            "_img": ["/img/vector/Shadow/offset.png"]
+        },
+        {
+            "path": "properties/blur/description",
+            "_img": ["/img/vector/Shadow/blur.png"]
+        },
+        {
+            "path": "properties/spread/description",
+            "_img": ["/img/vector/Shadow/spread.png"]
+        },
+        {
+            "path": "properties/inner/description",
+            "_img": ["/img/vector/Shadow/inner.png"]
+        },
+        {
+            "path": "properties/showBehindTransparentAreas/description",
+            "_img": ["/img/vector/Shadow/showBehindTransparentAreas.png"]
+        }
+    ],
+    "#Border": [
+        {
+            "path": "properties/dashedPattern/description",
+            "_img": ["/img/vector/Border/dashedPattern.png"]
+        }
+    ],
+    "#BorderPosition": [
+        {
+            "path": "value",
+            "_img": ["/img/vector/Border/position.png"]
+        }
+    ],
+    "#LineCapStyle": [
+        {
+            "path": "value",
+            "_img": ["/img/vector/Border/lineCap.png"]
+        }
+    ],
+    "#MarkerType": [
+        {
+            "path": "value",
+            "_img": ["/img/vector/Border/markerType.png"]
+        }
+    ],
+    "#LineJoinStyle": [
+        {
+            "path": "value",
+            "_img": ["/img/vector/Border/lineJoin.png"]
+        }
+    ],
+    "#Shape": [
+        {
+            "path": "properties/windingRule/value",
+            "_img": ["/img/vector/Path/windingRule.png"]
+        },
+        {
+            "path": "properties/radius/value",
+            "_img": ["/img/vector/Path/radius.png"]
+        }
+    ],
+    "#PointAttr": [
+        {
+            "path": "properties/cornerStyle/value",
+            "_img": ["/img/vector/Path/cornerStyle.png"]
+        }
+    ],
+    "#Ellipse": [
+        {
+            "path": "properties/startingAngle/description",
+            "_img": ["/img/vector/Path/ellipse_angle.png"]
+        },
+        {
+            "path": "properties/innerRadius/description",
+            "_img": ["/img/vector/Path/ellispse_inner.png"]
+        }
+    ],
+    "#Star": [
+        {
+            "path": "properties/ratio/description",
+            "_img": ["/img/vector/Path/star_ratio.png"]
+        }
+    ],
+    "#Constraint": [
+        {
+            "path": "value",
+            "_enumImg": [["/img/vector/Constraint/fix_start_fix_end.png"], ["/img/vector/Constraint/fix_start_fix_size.png"], ["/img/vector/Constraint/fix_start_scale.png"], ["/img/vector/Constraint/fix_end_fix_size.png"], ["/img/vector/Constraint/fix_end_scale.png"], ["/img/vector/Constraint/scale.png"], ["/img/vector/Constraint/fix_center_fix_size.png"], ["/img/vector/Constraint/keep_centerline.png"]]
+        }
+    ],
+    "#OverrideValue": [
+        {
+            "path": "properties/objectId/description",
+            "_img": ["/img/vector/Symbol/overrideValue_objectId.png"]
+        }
+    ]
+}

@@ -1,0 +1,440 @@
+[
+  {
+    "title": "obj",
+    "structuredData": {},
+    "url": "/specs/layout#obj",
+    "slug": "obj"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/object#class",
+    "slug": "class"
+  },
+  {
+    "title": "id",
+    "structuredData": {},
+    "url": "/specs/layout/object#id",
+    "slug": "id"
+  },
+  {
+    "title": "layout",
+    "structuredData": {},
+    "url": "/specs/layout/object#layout",
+    "slug": "layout"
+  },
+  {
+    "title": "itemInLayout",
+    "structuredData": {},
+    "url": "/specs/layout/object#iteminlayout",
+    "slug": "itemInLayout"
+  },
+  {
+    "title": "width",
+    "structuredData": {},
+    "url": "/specs/layout/object#width",
+    "slug": "width"
+  },
+  {
+    "title": "maxWidth",
+    "structuredData": {},
+    "url": "/specs/layout/object#maxwidth",
+    "slug": "maxWidth"
+  },
+  {
+    "title": "minWidth",
+    "structuredData": {},
+    "url": "/specs/layout/object#minwidth",
+    "slug": "minWidth"
+  },
+  {
+    "title": "height",
+    "structuredData": {},
+    "url": "/specs/layout/object#height",
+    "slug": "height"
+  },
+  {
+    "title": "maxHeight",
+    "structuredData": {},
+    "url": "/specs/layout/object#maxheight",
+    "slug": "maxHeight"
+  },
+  {
+    "title": "minHeight",
+    "structuredData": {},
+    "url": "/specs/layout/object#minheight",
+    "slug": "minHeight"
+  },
+  {
+    "title": "aspectRatio",
+    "structuredData": {},
+    "url": "/specs/layout/object#aspectratio",
+    "slug": "aspectRatio"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/flexbox-layout#class",
+    "slug": "class"
+  },
+  {
+    "title": "direction",
+    "structuredData": {},
+    "url": "/specs/layout/flexbox-layout#direction",
+    "slug": "direction"
+  },
+  {
+    "title": "justifyContent",
+    "structuredData": {},
+    "url": "/specs/layout/flexbox-layout#justifycontent",
+    "slug": "justifyContent"
+  },
+  {
+    "title": "alignItems",
+    "structuredData": {},
+    "url": "/specs/layout/flexbox-layout#alignitems",
+    "slug": "alignItems"
+  },
+  {
+    "title": "alignContent",
+    "structuredData": {},
+    "url": "/specs/layout/flexbox-layout#aligncontent",
+    "slug": "alignContent"
+  },
+  {
+    "title": "wrap",
+    "structuredData": {},
+    "url": "/specs/layout/flexbox-layout#wrap",
+    "slug": "wrap"
+  },
+  {
+    "title": "rowGap",
+    "structuredData": {},
+    "url": "/specs/layout/flexbox-layout#rowgap",
+    "slug": "rowGap"
+  },
+  {
+    "title": "columnGap",
+    "structuredData": {},
+    "url": "/specs/layout/flexbox-layout#columngap",
+    "slug": "columnGap"
+  },
+  {
+    "title": "padding",
+    "structuredData": {},
+    "url": "/specs/layout/flexbox-layout#padding",
+    "slug": "padding"
+  },
+  {
+    "title": "zOrder",
+    "structuredData": {},
+    "url": "/specs/layout/flexbox-layout#zorder",
+    "slug": "zOrder"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/grid-layout#class",
+    "slug": "class"
+  },
+  {
+    "title": "dynamicColumn",
+    "structuredData": {},
+    "url": "/specs/layout/grid-layout#dynamiccolumn",
+    "slug": "dynamicColumn"
+  },
+  {
+    "title": "columnWidth",
+    "structuredData": {},
+    "url": "/specs/layout/grid-layout#columnwidth",
+    "slug": "columnWidth"
+  },
+  {
+    "title": "rowHeight",
+    "structuredData": {},
+    "url": "/specs/layout/grid-layout#rowheight",
+    "slug": "rowHeight"
+  },
+  {
+    "title": "baseHeight",
+    "structuredData": {},
+    "url": "/specs/layout/grid-layout#baseheight",
+    "slug": "baseHeight"
+  },
+  {
+    "title": "columnGap",
+    "structuredData": {},
+    "url": "/specs/layout/grid-layout#columngap",
+    "slug": "columnGap"
+  },
+  {
+    "title": "rowGap",
+    "structuredData": {},
+    "url": "/specs/layout/grid-layout#rowgap",
+    "slug": "rowGap"
+  },
+  {
+    "title": "gridAutoFlow",
+    "structuredData": {},
+    "url": "/specs/layout/grid-layout#gridautoflow",
+    "slug": "gridAutoFlow"
+  },
+  {
+    "title": "padding",
+    "structuredData": {},
+    "url": "/specs/layout/grid-layout#padding",
+    "slug": "padding"
+  },
+  {
+    "title": "cellAlign",
+    "structuredData": {},
+    "url": "/specs/layout/grid-layout#cellalign",
+    "slug": "cellAlign"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/dynamic-column#class",
+    "slug": "class"
+  },
+  {
+    "title": "strategy",
+    "structuredData": {},
+    "url": "/specs/layout/dynamic-column#strategy",
+    "slug": "strategy"
+  },
+  {
+    "title": "minRow",
+    "structuredData": {},
+    "url": "/specs/layout/dynamic-column#minrow",
+    "slug": "minRow"
+  },
+  {
+    "title": "columnCount",
+    "structuredData": {},
+    "url": "/specs/layout/dynamic-column#columncount",
+    "slug": "columnCount"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/column-width#class",
+    "slug": "class"
+  },
+  {
+    "title": "strategy",
+    "structuredData": {},
+    "url": "/specs/layout/column-width#strategy",
+    "slug": "strategy"
+  },
+  {
+    "title": "widthValue",
+    "structuredData": {},
+    "url": "/specs/layout/column-width#widthvalue",
+    "slug": "widthValue"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/row-height#class",
+    "slug": "class"
+  },
+  {
+    "title": "strategy",
+    "structuredData": {},
+    "url": "/specs/layout/row-height#strategy",
+    "slug": "strategy"
+  },
+  {
+    "title": "fixedValue",
+    "structuredData": {},
+    "url": "/specs/layout/row-height#fixedvalue",
+    "slug": "fixedValue"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/flexbox-item#class",
+    "slug": "class"
+  },
+  {
+    "title": "position",
+    "structuredData": {},
+    "url": "/specs/layout/flexbox-item#position",
+    "slug": "position"
+  },
+  {
+    "title": "flexBasis",
+    "structuredData": {},
+    "url": "/specs/layout/flexbox-item#flexbasis",
+    "slug": "flexBasis"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/position#class",
+    "slug": "class"
+  },
+  {
+    "title": "value",
+    "structuredData": {},
+    "url": "/specs/layout/position#value",
+    "slug": "value"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/grid-item#class",
+    "slug": "class"
+  },
+  {
+    "title": "itemPos",
+    "structuredData": {},
+    "url": "/specs/layout/grid-item#itempos",
+    "slug": "itemPos"
+  },
+  {
+    "title": "rowSpan",
+    "structuredData": {},
+    "url": "/specs/layout/grid-item#rowspan",
+    "slug": "rowSpan"
+  },
+  {
+    "title": "columnSpan",
+    "structuredData": {},
+    "url": "/specs/layout/grid-item#columnspan",
+    "slug": "columnSpan"
+  },
+  {
+    "title": "position",
+    "structuredData": {},
+    "url": "/specs/layout/grid-item#position",
+    "slug": "position"
+  },
+  {
+    "title": "rowAlign",
+    "structuredData": {},
+    "url": "/specs/layout/grid-item#rowalign",
+    "slug": "rowAlign"
+  },
+  {
+    "title": "columnAlign",
+    "structuredData": {},
+    "url": "/specs/layout/grid-item#columnalign",
+    "slug": "columnAlign"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/grid-item-pos#class",
+    "slug": "class"
+  },
+  {
+    "title": "strategy",
+    "structuredData": {},
+    "url": "/specs/layout/grid-item-pos#strategy",
+    "slug": "strategy"
+  },
+  {
+    "title": "rowId",
+    "structuredData": {},
+    "url": "/specs/layout/grid-item-pos#rowid",
+    "slug": "rowId"
+  },
+  {
+    "title": "columnId",
+    "structuredData": {},
+    "url": "/specs/layout/grid-item-pos#columnid",
+    "slug": "columnId"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/width#class",
+    "slug": "class"
+  },
+  {
+    "title": "value",
+    "structuredData": {},
+    "url": "/specs/layout/width#value",
+    "slug": "value"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/length#class",
+    "slug": "class"
+  },
+  {
+    "title": "value",
+    "structuredData": {},
+    "url": "/specs/layout/length#value",
+    "slug": "value"
+  },
+  {
+    "title": "types",
+    "structuredData": {},
+    "url": "/specs/layout/length#types",
+    "slug": "types"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/max-width#class",
+    "slug": "class"
+  },
+  {
+    "title": "value",
+    "structuredData": {},
+    "url": "/specs/layout/max-width#value",
+    "slug": "value"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/min-width#class",
+    "slug": "class"
+  },
+  {
+    "title": "value",
+    "structuredData": {},
+    "url": "/specs/layout/min-width#value",
+    "slug": "value"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/height#class",
+    "slug": "class"
+  },
+  {
+    "title": "value",
+    "structuredData": {},
+    "url": "/specs/layout/height#value",
+    "slug": "value"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/max-height#class",
+    "slug": "class"
+  },
+  {
+    "title": "value",
+    "structuredData": {},
+    "url": "/specs/layout/max-height#value",
+    "slug": "value"
+  },
+  {
+    "title": "class",
+    "structuredData": {},
+    "url": "/specs/layout/min-height#class",
+    "slug": "class"
+  },
+  {
+    "title": "value",
+    "structuredData": {},
+    "url": "/specs/layout/min-height#value",
+    "slug": "value"
+  }
+]
