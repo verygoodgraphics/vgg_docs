@@ -83,6 +83,18 @@ The three o'clock direction is defined as `0`, and increasing angles rotate cloc
 
 <div className="property-item">
 
+<p></p>
+
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Path/ellipse_angle.png" alt="" />
+
+</div>
+
+</div>
+
+<div className="property-item">
+
 Type
 
 `number`
@@ -135,6 +147,18 @@ Type
 Description
 
 A ratio of inner radius to the outer radius.
+
+</div>
+
+<div className="property-item">
+
+<p></p>
+
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Path/ellispse_inner.png" alt="" />
+
+</div>
 
 </div>
 

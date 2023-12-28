@@ -109,6 +109,20 @@ no description
 
 <div className="property-item">
 
+<p></p>
+
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/elff1/testOpen/main/docs/docs/tx1.jpg" alt="" />
+
+<img src="https://raw.githubusercontent.com/elff1/testOpen/main/docs/docs/tx1.jpg" alt="" />
+
+</div>
+
+</div>
+
+<div className="property-item">
+
 Type
 
 `integer`
@@ -123,11 +137,11 @@ Value
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value | Explanation                                                                                                                                                                                                                  |
-| :---- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `1`   | <div className="enum-description">fixed (px): Width or height is a fixed value.</div>                                                                                                                                        |
-| `2`   | <div className="enum-description">relative (percent): The width or height of the child is the percentage relative to the width or height of the parent. Only children whose parents apply layout are available.</div>        |
-| `4`   | <div className="enum-description">fit content (auto): The size of the parent is calculated from the sum of the size of the child nodes. In this case, the value of value is meaningless. Only the parent is available.</div> |
+| Value | Explanation                                                                                                                                                                                                                                                                                                                                                 |
+| :---- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `1`   | <div className="enum-description">fixed (px): Width or height is a fixed value.<div className="enum-images"><img src="https://raw.githubusercontent.com/elff1/testOpen/main/docs/docs/tx1.jpg" alt="" /></div></div>                                                                                                                                        |
+| `2`   | <div className="enum-description">relative (percent): The width or height of the child is the percentage relative to the width or height of the parent. Only children whose parents apply layout are available.<div className="enum-images"><img src="https://raw.githubusercontent.com/elff1/testOpen/main/docs/docs/tx1.jpg" alt="" /></div></div>        |
+| `4`   | <div className="enum-description">fit content (auto): The size of the parent is calculated from the sum of the size of the child nodes. In this case, the value of value is meaningless. Only the parent is available.<div className="enum-images"><img src="https://raw.githubusercontent.com/elff1/testOpen/main/docs/docs/tx1.jpg" alt="" /></div></div> |
 
 </div>
 

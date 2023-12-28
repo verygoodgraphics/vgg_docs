@@ -3,6 +3,7 @@ import fs from "node:fs/promises"
 
 import { jsonschema2md } from "../lib/jsonschema2md/index.mjs"
 import schema from "../static/schemas/layout.schema.json" assert { type: "json" }
+import imagesMap from "../resources/schemas/layout.json" assert { type: "json" }
 
 const rootDir = path.resolve(process.cwd())
 const docDir = rootDir + "/docs/specs/layout"
@@ -17,6 +18,11 @@ const { propsForSearch } = jsonschema2md(schema, {
   urlPrefix: "/specs/layout/",
   fileName: "overview.schema.json",
   rootDefinitionName: "Layout",
+  assets: {
+    images: imagesMap,
+    assetPrefix:
+      "https://raw.githubusercontent.com/verygoodgraphics/resource/main",
+  },
 })
 
 const searchParamsJSON = JSON.stringify(

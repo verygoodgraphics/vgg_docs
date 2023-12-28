@@ -111,6 +111,18 @@ Ratio refers to the size of the star within the polygon shape.
 
 <div className="property-item">
 
+<p></p>
+
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Path/star_ratio.png" alt="" />
+
+</div>
+
+</div>
+
+<div className="property-item">
+
 Type
 
 `number`
