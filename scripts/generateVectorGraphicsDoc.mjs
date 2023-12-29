@@ -7,13 +7,13 @@ import imagesMap from "../resources/schemas/vector.json" assert { type: "json" }
 
 const rootDir = path.resolve(process.cwd())
 const docDir = rootDir + "/docs/specs/vectorgraphics"
-const outputPath = rootDir + "/static/schemas/vectorgraphics-search-params.json"
+// const outputPath = rootDir + "/static/schemas/vectorgraphics-search-params.json"
 
 for (const file of await fs.readdir(docDir)) {
   await fs.unlink(path.join(docDir, file))
 }
 
-const { propsForSearch } = jsonschema2md(schema, {
+jsonschema2md(schema, {
   outDir: docDir,
   urlPrefix: "/specs/vectorgraphics/",
   fileName: "overview.schema.json",
@@ -25,13 +25,13 @@ const { propsForSearch } = jsonschema2md(schema, {
   },
 })
 
-const searchParamsJSON = JSON.stringify(
-  Array.from(propsForSearch, ([key, value]) => value),
-  null,
-  2
-)
+// const searchParamsJSON = JSON.stringify(
+//   Array.from(propsForSearch, ([key, value]) => value),
+//   null,
+//   2
+// )
 
-fs.writeFile(outputPath, searchParamsJSON, (err) => {
-  if (err) throw err
-  console.log("JSON data is saved to " + outputPath)
-})
+// fs.writeFile(outputPath, searchParamsJSON, (err) => {
+//   if (err) throw err
+//   console.log("JSON data is saved to " + outputPath)
+// })
