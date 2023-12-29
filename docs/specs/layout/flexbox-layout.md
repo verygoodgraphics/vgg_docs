@@ -161,6 +161,18 @@ Value
 
 </div>
 
+<div className="property-item">
+
+<p></p>
+
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/flexbox/justifyContent.png" alt="" />
+
+</div>
+
+</div>
+
 </div>
 
 <div className="property">
@@ -189,6 +201,18 @@ Type
 
 </div>
 
+<div className="property-item">
+
+<p></p>
+
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/flexbox/alignItems.png" alt="" />
+
+</div>
+
+</div>
+
 </div>
 
 <div className="property">
@@ -214,6 +238,18 @@ This property is used to align the children of a flex container along the cross 
 Type
 
 [`Alignment`](/specs/layout/alignment)
+
+</div>
+
+<div className="property-item">
+
+<p></p>
+
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/flexbox/alignContent.png" alt="" />
+
+</div>
 
 </div>
 

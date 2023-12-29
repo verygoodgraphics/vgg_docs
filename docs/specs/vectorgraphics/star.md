@@ -89,6 +89,18 @@ Type
 
 </div>
 
+<div className="property-item">
+
+<p></p>
+
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Path/radius_star.png" alt="" />
+
+</div>
+
+</div>
+
 </div>
 
 <div className="property">
@@ -111,6 +123,14 @@ Ratio refers to the size of the star within the polygon shape.
 
 <div className="property-item">
 
+Type
+
+`number`
+
+</div>
+
+<div className="property-item">
+
 <p></p>
 
 <div className="property-images">
@@ -118,14 +138,6 @@ Ratio refers to the size of the star within the polygon shape.
 <img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Path/star_ratio.png" alt="" />
 
 </div>
-
-</div>
-
-<div className="property-item">
-
-Type
-
-`number`
 
 </div>
 

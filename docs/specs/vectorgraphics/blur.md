@@ -141,6 +141,14 @@ The range of the area where the blur takes effect.
 
 <div className="property-item">
 
+Type
+
+`number`
+
+</div>
+
+<div className="property-item">
+
 <p></p>
 
 <div className="property-images">
@@ -148,14 +156,6 @@ The range of the area where the blur takes effect.
 <img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Blur/radius.png" alt="" />
 
 </div>
-
-</div>
-
-<div className="property-item">
-
-Type
-
-`number`
 
 </div>
 
@@ -181,6 +181,14 @@ The angle of the blur direction applies only to the `motion` blur.
 
 <div className="property-item">
 
+Type
+
+`number`
+
+</div>
+
+<div className="property-item">
+
 <p></p>
 
 <div className="property-images">
@@ -188,14 +196,6 @@ The angle of the blur direction applies only to the `motion` blur.
 <img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Blur/motionAngle.png" alt="" />
 
 </div>
-
-</div>
-
-<div className="property-item">
-
-Type
-
-`number`
 
 </div>
 
@@ -221,6 +221,14 @@ The center of the blur applies only to the `zoom` blur.
 
 <div className="property-item">
 
+Type
+
+[`Point`](/specs/vectorgraphics/point)
+
+</div>
+
+<div className="property-item">
+
 <p></p>
 
 <div className="property-images">
@@ -228,14 +236,6 @@ The center of the blur applies only to the `zoom` blur.
 <img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Blur/center.png" alt="" />
 
 </div>
-
-</div>
-
-<div className="property-item">
-
-Type
-
-[`Point`](/specs/vectorgraphics/point)
 
 </div>
 
@@ -261,6 +261,14 @@ The saturation level of the blur applies only to the `background` blur.
 
 <div className="property-item">
 
+Type
+
+`number`
+
+</div>
+
+<div className="property-item">
+
 <p></p>
 
 <div className="property-images">
@@ -268,14 +276,6 @@ The saturation level of the blur applies only to the `background` blur.
 <img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Blur/saturation.png" alt="" />
 
 </div>
-
-</div>
-
-<div className="property-item">
-
-Type
-
-`number`
 
 </div>
 
