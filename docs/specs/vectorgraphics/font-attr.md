@@ -15,33 +15,32 @@ The font attributes of a text fragment.
 
 <div className="property-table">
 
-| Property                                    | Type                                                                        | Required                                            |
-| :------------------------------------------ | :-------------------------------------------------------------------------- | :-------------------------------------------------- |
-| [class](#class)                             | `string`                                                                    | <span className="property-required">Required</span> |
-| [length](#length)                           | `integer`                                                                   | <span className="property-optional">Optional</span> |
-| [borders](#borders)                         | <code>Array&lt;<a href="/specs/vectorgraphics/border">Border</a>&gt;</code> | <span className="property-optional">Optional</span> |
-| [fills](#fills)                             | <code>Array&lt;<a href="/specs/vectorgraphics/fill">Fill</a>&gt;</code>     | <span className="property-optional">Optional</span> |
-| [fillUseType](#fillusetype)                 | `integer`                                                                   | <span className="property-optional">Optional</span> |
-| [horizontalAlignment](#horizontalalignment) | `integer`                                                                   | <span className="property-optional">Optional</span> |
-| [name](#name)                               | `string`                                                                    | <span className="property-optional">Optional</span> |
-| [subFamilyName](#subfamilyname)             | `string`                                                                    | <span className="property-optional">Optional</span> |
-| [weight](#weight)                           | `number`                                                                    | <span className="property-optional">Optional</span> |
-| [width](#width)                             | `number`                                                                    | <span className="property-optional">Optional</span> |
-| [size](#size)                               | `number`                                                                    | <span className="property-optional">Optional</span> |
-| [letterSpacingValue](#letterspacingvalue)   | `number`                                                                    | <span className="property-optional">Optional</span> |
-| [letterSpacingUnit](#letterspacingunit)     | `integer`                                                                   | <span className="property-optional">Optional</span> |
-| [lineSpaceValue](#linespacevalue)           | `number`                                                                    | <span className="property-optional">Optional</span> |
-| [lineSpaceUnit](#linespaceunit)             | `integer`                                                                   | <span className="property-optional">Optional</span> |
-| [underline](#underline)                     | `integer`                                                                   | <span className="property-optional">Optional</span> |
-| [linethrough](#linethrough)                 | `boolean`                                                                   | <span className="property-optional">Optional</span> |
-| [textCase](#textcase)                       | `integer`                                                                   | <span className="property-optional">Optional</span> |
-| [fontVariantCaps](#fontvariantcaps)         | `integer`                                                                   | <span className="property-optional">Optional</span> |
-| [baselineShift](#baselineshift)             | `number`                                                                    | <span className="property-optional">Optional</span> |
-| [baseline](#baseline)                       | `integer`                                                                   | <span className="property-optional">Optional</span> |
-| [horizontalScale](#horizontalscale)         | `number`                                                                    | <span className="property-optional">Optional</span> |
-| [verticalScale](#verticalscale)             | `number`                                                                    | <span className="property-optional">Optional</span> |
-| [rotate](#rotate)                           | `number`                                                                    | <span className="property-optional">Optional</span> |
-| [textParagraph](#textparagraph)             | [`TextParagraph`](/specs/vectorgraphics/text-paragraph)                     | <span className="property-optional">Optional</span> |
+| Property                                    | Type                                                                                       | Required                                            |
+| :------------------------------------------ | :----------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| [class](#class)                             | `string`                                                                                   | <span className="property-required">Required</span> |
+| [length](#length)                           | `integer`                                                                                  | <span className="property-optional">Optional</span> |
+| [borders](#borders)                         | <code>Array&lt;<a href="/specs/vectorgraphics/border">Border</a>&gt;</code>                | <span className="property-optional">Optional</span> |
+| [fills](#fills)                             | <code>Array&lt;<a href="/specs/vectorgraphics/fill">Fill</a>&gt;</code>                    | <span className="property-optional">Optional</span> |
+| [fillUseType](#fillusetype)                 | `integer`                                                                                  | <span className="property-optional">Optional</span> |
+| [name](#name)                               | `string`                                                                                   | <span className="property-optional">Optional</span> |
+| [subFamilyName](#subfamilyname)             | `string`                                                                                   | <span className="property-optional">Optional</span> |
+| [postScript](#postscript)                   | `string`                                                                                   | <span className="property-optional">Optional</span> |
+| [fontVariations](#fontvariations)           | <code>Array&lt;<a href="/specs/vectorgraphics/font-variation">FontVariation</a>&gt;</code> | <span className="property-optional">Optional</span> |
+| [size](#size)                               | `number`                                                                                   | <span className="property-optional">Optional</span> |
+| [letterSpacingValue](#letterspacingvalue)   | `number`                                                                                   | <span className="property-optional">Optional</span> |
+| [letterSpacingUnit](#letterspacingunit)     | `integer`                                                                                  | <span className="property-optional">Optional</span> |
+| [lineSpacingValue](#linespacingvalue)       | `number`                                                                                   | <span className="property-optional">Optional</span> |
+| [lineSpacingUnit](#linespacingunit)         | `integer`                                                                                  | <span className="property-optional">Optional</span> |
+| [underline](#underline)                     | `integer`                                                                                  | <span className="property-optional">Optional</span> |
+| [linethrough](#linethrough)                 | `boolean`                                                                                  | <span className="property-optional">Optional</span> |
+| [textCase](#textcase)                       | `integer`                                                                                  | <span className="property-optional">Optional</span> |
+| [fontVariantCaps](#fontvariantcaps)         | `integer`                                                                                  | <span className="property-optional">Optional</span> |
+| [baselineShift](#baselineshift)             | `number`                                                                                   | <span className="property-optional">Optional</span> |
+| [fontVariantPosition](#fontvariantposition) | `integer`                                                                                  | <span className="property-optional">Optional</span> |
+| [horizontalScale](#horizontalscale)         | `number`                                                                                   | <span className="property-optional">Optional</span> |
+| [verticalScale](#verticalscale)             | `number`                                                                                   | <span className="property-optional">Optional</span> |
+| [rotate](#rotate)                           | `number`                                                                                   | <span className="property-optional">Optional</span> |
+| [textParagraph](#textparagraph)             | [`TextParagraph`](/specs/vectorgraphics/text-paragraph)                                    | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -98,7 +97,7 @@ Value
 Description
 
 The number of characters(UTF-8) that these attributes apply to.
-If this item is missing, it means these attributes apply to all remaining characters in the text.
+If this property is missing, it means these attributes apply to all remaining characters in the text.
 **Note**:
 If a UTF-8 character is `4` bytes, its length counts as `2`.
 If a UTF-8 character is `1 ~ 3` bytes, its length counts as `1`.
@@ -208,56 +207,8 @@ Value
 
 | Value | Explanation                                                                                                                                                                                                                                                                                   |
 | :---- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `0`   | <div className="enum-description">Priority of the `fills`. The `fills` of the text fragment > the `fills` in `defaultAttr` of the text > the `fills` in the text object's `style`. (Default value)</div>                                                                                      |
+| `0`   | <div className="enum-description">The `fills` of the text fragment > the `fills` in `defaultAttr` of the text > the `fills` in the text object's `style`. (Default value)</div>                                                                                                               |
 | `1`   | <div className="enum-description">The corresponding property of the object takes precedence over `fills`. When `style.fills` and `fills` each have only one valid solid color object, the opacity of the two solid color objects is combined into the `style.fills` solid color object.</div> |
-
-</div>
-
-</div>
-
-</div>
-
-<div className="property">
-
-<div className="property-heading">
-
-## horizontalAlignment
-
-<span className="property-optional">Optional</span>
-
-</div>
-
-<div className="property-item">
-
-Description
-
-The type of horizontal alignment for the text.
-
-</div>
-
-<div className="property-item">
-
-Type
-
-`integer`
-
-</div>
-
-<div className="property-item">
-
-Value
-
-<div className="value-description">
-
-**enum**: the value of this property must be equal to one of the following values:
-
-| Value | Explanation                                                  |
-| :---- | :----------------------------------------------------------- |
-| `0`   | <div className="enum-description">left (default value)</div> |
-| `1`   | <div className="enum-description">right</div>                |
-| `2`   | <div className="enum-description">center</div>               |
-| `3`   | <div className="enum-description">justified</div>            |
-| `4`   | <div className="enum-description">natural</div>              |
 
 </div>
 
@@ -281,7 +232,7 @@ Description
 
 Common name of the font.
 The font name may contain subfamily, in which case the `subFamilyName` will not appear.
-If this item does not exist or is empty, the application can fall back to using its default font name.
+If this property does not exist or is empty, the application can fall back to using its default font name.
 
 </div>
 
@@ -328,7 +279,7 @@ Type
 
 <div className="property-heading">
 
-## weight
+## postScript
 
 <span className="property-optional">Optional</span>
 
@@ -338,7 +289,8 @@ Type
 
 Description
 
-The weight of the font.
+The PostScript name of the font.
+The value may be empty.
 
 </div>
 
@@ -346,7 +298,7 @@ The weight of the font.
 
 Type
 
-`number`
+`string`
 
 </div>
 
@@ -356,7 +308,7 @@ Type
 
 <div className="property-heading">
 
-## width
+## fontVariations
 
 <span className="property-optional">Optional</span>
 
@@ -366,7 +318,7 @@ Type
 
 Description
 
-The width of the font.
+A list of font variations.
 
 </div>
 
@@ -374,7 +326,7 @@ The width of the font.
 
 Type
 
-`number`
+<code>Array&lt;<a href="/specs/vectorgraphics/font-variation">FontVariation</a>&gt;</code>
 
 </div>
 
@@ -488,7 +440,7 @@ Value
 
 <div className="property-heading">
 
-## lineSpaceValue
+## lineSpacingValue
 
 <span className="property-optional">Optional</span>
 
@@ -499,7 +451,7 @@ Value
 Description
 
 The spacing value of the text lines.
-Must be used together with `lineSpaceUnit`.
+Must be used together with `lineSpacingUnit`.
 Default value is `0`.
 
 </div>
@@ -518,7 +470,7 @@ Type
 
 <div className="property-heading">
 
-## lineSpaceUnit
+## lineSpacingUnit
 
 <span className="property-optional">Optional</span>
 
@@ -528,7 +480,7 @@ Type
 
 Description
 
-The unit of `lineSpaceValue` value.
+The unit of `lineSpacingValue` value.
 
 </div>
 
@@ -548,11 +500,11 @@ Value
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value | Explanation                                                                                                        |
-| :---- | :----------------------------------------------------------------------------------------------------------------- |
-| `0`   | <div className="enum-description">pixel (default value)</div>                                                      |
-| `1`   | <div className="enum-description">percent. Final pixel value equals to `size * lineSpaceValue * 1.25 / 100`.</div> |
-| `2`   | <div className="enum-description">raw. Final pixel value equals to `size * lineSpaceValue`.</div>                  |
+| Value | Explanation                                                                                                          |
+| :---- | :------------------------------------------------------------------------------------------------------------------- |
+| `0`   | <div className="enum-description">pixel (default value)</div>                                                        |
+| `1`   | <div className="enum-description">percent. Final pixel value equals to `size * lineSpacingValue * 1.25 / 100`.</div> |
+| `2`   | <div className="enum-description">raw. Final pixel value equals to `size * lineSpacingValue`.</div>                  |
 
 </div>
 
@@ -765,7 +717,7 @@ Type
 
 <div className="property-heading">
 
-## baseline
+## fontVariantPosition
 
 <span className="property-optional">Optional</span>
 
@@ -775,7 +727,7 @@ Type
 
 Description
 
-The type of the text baseline's position.
+The position of the text characters.
 
 </div>
 
@@ -885,7 +837,7 @@ Type
 
 Description
 
-Rotation angle of text characters.
+Rotation angle of the text characters.
 Default value is `0`.
 
 </div>

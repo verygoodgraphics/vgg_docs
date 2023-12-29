@@ -15,43 +15,44 @@ Details of a text.
 
 <div className="property-table">
 
-| Property                                      | Type                                                                                                     | Required                                            |
-| :-------------------------------------------- | :------------------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
-| [id](#id)                                     | `string`                                                                                                 | <span className="property-required">Required</span> |
-| [name](#name)                                 | `string`                                                                                                 | <span className="property-optional">Optional</span> |
-| [isLocked](#islocked)                         | `boolean`                                                                                                | <span className="property-required">Required</span> |
-| [visible](#visible)                           | `boolean`                                                                                                | <span className="property-required">Required</span> |
-| [contextSettings](#contextsettings)           | [`GraphicsContextSettings`](/specs/vectorgraphics/graphics-context-settings)                             | <span className="property-required">Required</span> |
-| [style](#style)                               | [`Style`](/specs/vectorgraphics/style)                                                                   | <span className="property-required">Required</span> |
-| [bounds](#bounds)                             | [`Rect`](/specs/vectorgraphics/rect)                                                                     | <span className="property-required">Required</span> |
-| [frame](#frame)                               | [`Rect`](/specs/vectorgraphics/rect)                                                                     | <span className="property-required">Required</span> |
-| [matrix](#matrix)                             | [`Matrix`](/specs/vectorgraphics/matrix)                                                                 | <span className="property-required">Required</span> |
-| [alphaMaskBy](#alphamaskby)                   | <code>Array&lt;<a href="/specs/vectorgraphics/alpha-mask">AlphaMask</a>&gt;</code>                       | <span className="property-required">Required</span> |
-| [outlineMaskBy](#outlinemaskby)               | `Array<string>`                                                                                          | <span className="property-required">Required</span> |
-| [maskType](#masktype)                         | `integer`                                                                                                | <span className="property-required">Required</span> |
-| [styleEffectMaskArea](#styleeffectmaskarea)   | `integer`                                                                                                | <span className="property-required">Required</span> |
-| [maskShowType](#maskshowtype)                 | `integer`                                                                                                | <span className="property-optional">Optional</span> |
-| [overflow](#overflow)                         | `integer`                                                                                                | <span className="property-required">Required</span> |
-| [cornerSmoothing](#cornersmoothing)           | `number`                                                                                                 | <span className="property-optional">Optional</span> |
-| [overrideKey](#overridekey)                   | `string`                                                                                                 | <span className="property-optional">Optional</span> |
-| [horizontalConstraint](#horizontalconstraint) | [`Constraint`](/specs/vectorgraphics/constraint)                                                         | <span className="property-optional">Optional</span> |
-| [verticalConstraint](#verticalconstraint)     | [`Constraint`](/specs/vectorgraphics/constraint)                                                         | <span className="property-optional">Optional</span> |
-| [resizesContent](#resizescontent)             | `integer`                                                                                                | <span className="property-optional">Optional</span> |
-| [keepShapeWhenResize](#keepshapewhenresize)   | `boolean`                                                                                                | <span className="property-optional">Optional</span> |
-| [variableDefs](#variabledefs)                 | <code>Array&lt;<a href="/specs/vectorgraphics/variable-def">VariableDef</a>&gt;</code>                   | <span className="property-optional">Optional</span> |
-| [variableRefs](#variablerefs)                 | <code>Array&lt;<a href="/specs/vectorgraphics/variable-ref">VariableRef</a>&gt;</code>                   | <span className="property-optional">Optional</span> |
-| [styleEffectBoolean](#styleeffectboolean)     | `integer`                                                                                                | <span className="property-optional">Optional</span> |
-| [class](#class)                               | `string`                                                                                                 | <span className="property-required">Required</span> |
-| [content](#content)                           | `string`                                                                                                 | <span className="property-required">Required</span> |
-| [textOnPath](#textonpath)                     | [`TextOnPath`](/specs/vectorgraphics/text-on-path)                                                       | <span className="property-optional">Optional</span> |
-| [frameMode](#framemode)                       | `integer`                                                                                                | <span className="property-required">Required</span> |
-| [truncatedHeight](#truncatedheight)           | `number`                                                                                                 | <span className="property-optional">Optional</span> |
-| [verticalAlignment](#verticalalignment)       | `integer`                                                                                                | <span className="property-required">Required</span> |
-| [defaultAttr](#defaultattr)                   | [`FontAttr`](/specs/vectorgraphics/font-attr)                                                            | <span className="property-optional">Optional</span> |
-| [attr](#attr)                                 | <code>Array&lt;<a href="/specs/vectorgraphics/font-attr">FontAttr</a>&gt;</code>                         | <span className="property-required">Required</span> |
-| [lineType](#linetype)                         | <code>Array&lt;<a href="/specs/vectorgraphics/line-type">LineType</a>&gt;</code>                         | <span className="property-optional">Optional</span> |
-| [verticalTrim](#verticaltrim)                 | `boolean`                                                                                                | <span className="property-optional">Optional</span> |
-| [lineAnchorPoint](#lineanchorpoint)           | <code>Array&lt;<a href="/specs/vectorgraphics/text-line-anchor-point">TextLineAnchorPoint</a>&gt;</code> | <span className="property-optional">Optional</span> |
+| Property                                      | Type                                                                                   | Required                                            |
+| :-------------------------------------------- | :------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| [id](#id)                                     | `string`                                                                               | <span className="property-required">Required</span> |
+| [name](#name)                                 | `string`                                                                               | <span className="property-optional">Optional</span> |
+| [isLocked](#islocked)                         | `boolean`                                                                              | <span className="property-required">Required</span> |
+| [visible](#visible)                           | `boolean`                                                                              | <span className="property-required">Required</span> |
+| [contextSettings](#contextsettings)           | [`GraphicsContextSettings`](/specs/vectorgraphics/graphics-context-settings)           | <span className="property-required">Required</span> |
+| [style](#style)                               | [`Style`](/specs/vectorgraphics/style)                                                 | <span className="property-required">Required</span> |
+| [bounds](#bounds)                             | [`Rect`](/specs/vectorgraphics/rect)                                                   | <span className="property-required">Required</span> |
+| [frame](#frame)                               | [`Rect`](/specs/vectorgraphics/rect)                                                   | <span className="property-required">Required</span> |
+| [matrix](#matrix)                             | [`Matrix`](/specs/vectorgraphics/matrix)                                               | <span className="property-required">Required</span> |
+| [alphaMaskBy](#alphamaskby)                   | <code>Array&lt;<a href="/specs/vectorgraphics/alpha-mask">AlphaMask</a>&gt;</code>     | <span className="property-required">Required</span> |
+| [outlineMaskBy](#outlinemaskby)               | `Array<string>`                                                                        | <span className="property-required">Required</span> |
+| [maskType](#masktype)                         | `integer`                                                                              | <span className="property-required">Required</span> |
+| [styleEffectMaskArea](#styleeffectmaskarea)   | `integer`                                                                              | <span className="property-required">Required</span> |
+| [maskShowType](#maskshowtype)                 | `integer`                                                                              | <span className="property-optional">Optional</span> |
+| [overflow](#overflow)                         | `integer`                                                                              | <span className="property-required">Required</span> |
+| [cornerSmoothing](#cornersmoothing)           | `number`                                                                               | <span className="property-optional">Optional</span> |
+| [overrideKey](#overridekey)                   | `string`                                                                               | <span className="property-optional">Optional</span> |
+| [horizontalConstraint](#horizontalconstraint) | [`Constraint`](/specs/vectorgraphics/constraint)                                       | <span className="property-optional">Optional</span> |
+| [verticalConstraint](#verticalconstraint)     | [`Constraint`](/specs/vectorgraphics/constraint)                                       | <span className="property-optional">Optional</span> |
+| [resizesContent](#resizescontent)             | `integer`                                                                              | <span className="property-optional">Optional</span> |
+| [keepShapeWhenResize](#keepshapewhenresize)   | `boolean`                                                                              | <span className="property-optional">Optional</span> |
+| [variableDefs](#variabledefs)                 | <code>Array&lt;<a href="/specs/vectorgraphics/variable-def">VariableDef</a>&gt;</code> | <span className="property-optional">Optional</span> |
+| [variableRefs](#variablerefs)                 | <code>Array&lt;<a href="/specs/vectorgraphics/variable-ref">VariableRef</a>&gt;</code> | <span className="property-optional">Optional</span> |
+| [styleEffectBoolean](#styleeffectboolean)     | `integer`                                                                              | <span className="property-optional">Optional</span> |
+| [class](#class)                               | `string`                                                                               | <span className="property-required">Required</span> |
+| [content](#content)                           | `string`                                                                               | <span className="property-required">Required</span> |
+| [anchorPoint](#anchorpoint)                   | [`Point`](/specs/vectorgraphics/point)                                                 | <span className="property-optional">Optional</span> |
+| [textOnPath](#textonpath)                     | [`TextOnPath`](/specs/vectorgraphics/text-on-path)                                     | <span className="property-optional">Optional</span> |
+| [frameMode](#framemode)                       | `integer`                                                                              | <span className="property-required">Required</span> |
+| [truncatedHeight](#truncatedheight)           | `number`                                                                               | <span className="property-optional">Optional</span> |
+| [verticalAlignment](#verticalalignment)       | `integer`                                                                              | <span className="property-required">Required</span> |
+| [horizontalAlignment](#horizontalalignment)   | `Array<integer>`                                                                       | <span className="property-required">Required</span> |
+| [defaultAttr](#defaultattr)                   | [`FontAttr`](/specs/vectorgraphics/font-attr)                                          | <span className="property-optional">Optional</span> |
+| [attr](#attr)                                 | <code>Array&lt;<a href="/specs/vectorgraphics/font-attr">FontAttr</a>&gt;</code>       | <span className="property-required">Required</span> |
+| [lineType](#linetype)                         | <code>Array&lt;<a href="/specs/vectorgraphics/line-type">LineType</a>&gt;</code>       | <span className="property-optional">Optional</span> |
+| [verticalTrim](#verticaltrim)                 | `boolean`                                                                              | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -911,6 +912,36 @@ Type
 
 <div className="property-heading">
 
+## anchorPoint
+
+<span className="property-optional">Optional</span>
+
+</div>
+
+<div className="property-item">
+
+Description
+
+The position of the first character baseline when text is drawn.
+Horizontal and vertical alignments have been considered. The given coordinates are in the object's own coordinate system.
+If this property doesn't exist, text is drawn using `bounds`.
+
+</div>
+
+<div className="property-item">
+
+Type
+
+[`Point`](/specs/vectorgraphics/point)
+
+</div>
+
+</div>
+
+<div className="property">
+
+<div className="property-heading">
+
 ## textOnPath
 
 <span className="property-optional">Optional</span>
@@ -1071,6 +1102,34 @@ Value
 
 <div className="property-heading">
 
+## horizontalAlignment
+
+<span className="property-required">Required</span>
+
+</div>
+
+<div className="property-item">
+
+Description
+
+The type of horizontal alignment for the text. When the number of items is less than the number of rows, the last value is reused.
+
+</div>
+
+<div className="property-item">
+
+Type
+
+`Array<integer>`
+
+</div>
+
+</div>
+
+<div className="property">
+
+<div className="property-heading">
+
 ## defaultAttr
 
 <span className="property-optional">Optional</span>
@@ -1177,47 +1236,6 @@ Default value is `false`.
 Type
 
 `boolean`
-
-</div>
-
-</div>
-
-<div className="property">
-
-<div className="property-heading">
-
-## lineAnchorPoint
-
-<span className="property-optional">Optional</span>
-
-</div>
-
-<div className="property-item">
-
-Description
-
-**IF** item doesn't exist,
-The anchor point is at the top-left corner of the object.
-The internal horizontal alignment of the object is determined by `attr.horizontalAlignment`.
-**IF** it exists and the `frameMode` is `auto width`,
-The items in the object's bounds are all `0`.
-There are as many lines of text as there are elements in the field.
-Ignore the `attr.horizontalAlignment` property.
-The values `tx` and `ty` in the matrix of the object, together with the values at the head of this item, determine where the text is drawn.
-For non-first lines of text, this corresponds to the horizontal alignment between the line and the anchor.
-**IF** it exists and `frameMode` is not `auto width`,
-The anchor is at the top-left corner of the object.
-There are as many lines of text as there are elements in the field.
-Ignore the `attr.horizontalAlignment` property.
-Each element of this field determines the horizontal alignment of the corresponding line.
-
-</div>
-
-<div className="property-item">
-
-Type
-
-<code>Array&lt;<a href="/specs/vectorgraphics/text-line-anchor-point">TextLineAnchorPoint</a>&gt;</code>
 
 </div>
 
