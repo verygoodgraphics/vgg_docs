@@ -730,23 +730,23 @@ Description
 
 <div className="property-item">
 
-<p></p>
+Type
 
-<div className="property-images">
-
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Constraniant/keepShapeWhenResize_false.png" alt="" />
-
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Constraniant/keepShapeWhenResize_true.png" alt="" />
-
-</div>
+`boolean`
 
 </div>
 
 <div className="property-item">
 
-Type
+<p></p>
 
-`boolean`
+<div className="property-images">
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Constraint/keepShapeWhenResize_false.png" alt="" />
+
+<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Constraint/keepShapeWhenResize_true.png" alt="" />
+
+</div>
 
 </div>
 

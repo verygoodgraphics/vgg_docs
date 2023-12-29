@@ -144,6 +144,14 @@ The horizontal offset of the shadow in relation to the object. Direction to the 
 
 <div className="property-item">
 
+Type
+
+`number`
+
+</div>
+
+<div className="property-item">
+
 <p></p>
 
 <div className="property-images">
@@ -151,14 +159,6 @@ The horizontal offset of the shadow in relation to the object. Direction to the 
 <img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Shadow/offset.png" alt="" />
 
 </div>
-
-</div>
-
-<div className="property-item">
-
-Type
-
-`number`
 
 </div>
 
@@ -212,6 +212,14 @@ The degree of shadow blur.
 
 <div className="property-item">
 
+Type
+
+`number`
+
+</div>
+
+<div className="property-item">
+
 <p></p>
 
 <div className="property-images">
@@ -219,14 +227,6 @@ The degree of shadow blur.
 <img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Shadow/blur.png" alt="" />
 
 </div>
-
-</div>
-
-<div className="property-item">
-
-Type
-
-`number`
 
 </div>
 
@@ -252,6 +252,14 @@ The distance that the shadow spreads from the object, the farther it is, the lar
 
 <div className="property-item">
 
+Type
+
+`number`
+
+</div>
+
+<div className="property-item">
+
 <p></p>
 
 <div className="property-images">
@@ -259,14 +267,6 @@ The distance that the shadow spreads from the object, the farther it is, the lar
 <img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Shadow/spread.png" alt="" />
 
 </div>
-
-</div>
-
-<div className="property-item">
-
-Type
-
-`number`
 
 </div>
 
@@ -320,18 +320,6 @@ If `true`, it's an inner shadow.
 
 <div className="property-item">
 
-<p></p>
-
-<div className="property-images">
-
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Shadow/inner.png" alt="" />
-
-</div>
-
-</div>
-
-<div className="property-item">
-
 Type
 
 `boolean`
@@ -361,6 +349,14 @@ Default value is `false`.
 
 <div className="property-item">
 
+Type
+
+`boolean`
+
+</div>
+
+<div className="property-item">
+
 <p></p>
 
 <div className="property-images">
@@ -368,14 +364,6 @@ Default value is `false`.
 <img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Shadow/showBehindTransparentAreas.png" alt="" />
 
 </div>
-
-</div>
-
-<div className="property-item">
-
-Type
-
-`boolean`
 
 </div>
 

@@ -48,6 +48,8 @@ const config = {
         },
       }
     },
+
+    require.resolve("docusaurus-plugin-image-zoom"),
   ],
 
   presets: [
@@ -192,6 +194,16 @@ const config = {
         // searchPagePath: "search",
 
         //... other Algolia params
+      },
+      zoom: {
+        selector: ".property img",
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+          background: {
+            light: "rgba(255, 255, 255, 0.5)",
+            dark: "rgba(50, 50, 50, 0.5)",
+          },
+        },
       },
     }),
 }
