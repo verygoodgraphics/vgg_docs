@@ -189,7 +189,7 @@ Not specified
 
 Description
 
-If the value of this item is `true`, the current override applies to the layout.
+If the value of this property is `true`, the current override applies to the layout.
 Default value is `false`.
 **Note**: Layout information is defined in `layout.json`, not `design.json`.
 

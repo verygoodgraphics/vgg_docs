@@ -63,7 +63,7 @@ Value
 **constant**: the value of this property must be equal to:
 
 ```json
-"1.0.9"
+"1.0.10"
 ```
 
 </div>
@@ -108,10 +108,10 @@ Value
 
 | Value | Explanation                                               |
 | :---- | :-------------------------------------------------------- |
-| `0`   | <div className="enum-description">unknown</div>           |
-| `1`   | <div className="enum-description">sketch</div>            |
-| `3`   | <div className="enum-description">figma</div>             |
-| `4`   | <div className="enum-description">adobe illustrator</div> |
+| `0`   | <div className="enum-description">Unknown</div>           |
+| `1`   | <div className="enum-description">Sketch</div>            |
+| `3`   | <div className="enum-description">Figma</div>             |
+| `4`   | <div className="enum-description">Adobe Illustrator</div> |
 
 </div>
 

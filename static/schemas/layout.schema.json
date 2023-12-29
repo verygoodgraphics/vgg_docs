@@ -2,7 +2,7 @@
   "title": "VGG Layout Specification",
   "description": "VGG Layout Specification describes the layout information of an element. VGG Layout Specification does not contain hierarchical relationships between objects, which are described in VGG Vector Graphics Specification.",
   "type": "object",
-  "$id": "https://docs.verygoodgraphics.com/shcemas/layout.schema.json",
+  "$id": "https://docs.verygoodgraphics.com/schemas/layout.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "definitions": {
     "Object": {
