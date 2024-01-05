@@ -9,6 +9,16 @@ sidebar_class_name: show
 
 </div>
 
+<div className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/layout/grid-layout#columnwidth'>GridLayout.properties.columnWidth</Link>
+      </div>
+
+</div>
+
 This property is used to set the width of columns in a multi-column layout.
 By setting this property of an element, you can specify either a fixed width or minimum width for each column, thus affecting the appearance of the multi-column layout.
 

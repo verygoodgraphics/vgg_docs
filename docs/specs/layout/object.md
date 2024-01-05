@@ -9,25 +9,31 @@ sidebar_class_name: show
 
 </div>
 
+<div className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+</div>
+
 This property provides control over the layout-related properties of design elements, including controlling the size, position, and layout behavior of elements to ensure their correct display and layout on the page.
 
 <div className="property-preview">
 
 <div className="property-table">
 
-| Property                      | Type                                                                                                                                                                                                  | Required                                            |
-| :---------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
-| [class](#class)               | `string`                                                                                                                                                                                              | <span className="property-required">Required</span> |
-| [id](#id)                     | `string`                                                                                                                                                                                              | <span className="property-required">Required</span> |
-| [layout](#layout)             | <code className="type-merged">oneOf&lt;<span className="type-merged-types"><a href="flexbox-layout"><code>FlexboxLayout</code></a><a href="grid-layout"><code>GridLayout</code></a></span>&gt;</code> | <span className="property-optional">Optional</span> |
-| [itemInLayout](#iteminlayout) | <code className="type-merged">oneOf&lt;<span className="type-merged-types"><a href="flexbox-item"><code>FlexboxItem</code></a><a href="grid-item"><code>GridItem</code></a></span>&gt;</code>         | <span className="property-optional">Optional</span> |
-| [width](#width)               | [`Width`](/specs/layout/width)                                                                                                                                                                        | <span className="property-required">Required</span> |
-| [maxWidth](#maxwidth)         | [`MaxWidth`](/specs/layout/max-width)                                                                                                                                                                 | <span className="property-optional">Optional</span> |
-| [minWidth](#minwidth)         | [`MinWidth`](/specs/layout/min-width)                                                                                                                                                                 | <span className="property-optional">Optional</span> |
-| [height](#height)             | [`Height`](/specs/layout/height)                                                                                                                                                                      | <span className="property-required">Required</span> |
-| [maxHeight](#maxheight)       | [`MaxHeight`](/specs/layout/max-height)                                                                                                                                                               | <span className="property-optional">Optional</span> |
-| [minHeight](#minheight)       | [`MinHeight`](/specs/layout/min-height)                                                                                                                                                               | <span className="property-optional">Optional</span> |
-| [aspectRatio](#aspectratio)   | `number`                                                                                                                                                                                              | <span className="property-optional">Optional</span> |
+| Property                      | Type                                                                                                                                                                                                          | Required                                            |
+| :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------- |
+| [class](#class)               | `string`                                                                                                                                                                                                      | <span className="property-required">Required</span> |
+| [id](#id)                     | `string`                                                                                                                                                                                                      | <span className="property-required">Required</span> |
+| [layout](#layout)             | <code className="type-merged">oneOf&lt;<span className="type-merged-types"><Link to="flexbox-layout"><code>FlexboxLayout</code></Link><Link to="grid-layout"><code>GridLayout</code></Link></span>&gt;</code> | <span className="property-optional">Optional</span> |
+| [itemInLayout](#iteminlayout) | <code className="type-merged">oneOf&lt;<span className="type-merged-types"><Link to="flexbox-item"><code>FlexboxItem</code></Link><Link to="grid-item"><code>GridItem</code></Link></span>&gt;</code>         | <span className="property-optional">Optional</span> |
+| [width](#width)               | [`Width`](/specs/layout/width)                                                                                                                                                                                | <span className="property-required">Required</span> |
+| [maxWidth](#maxwidth)         | [`MaxWidth`](/specs/layout/max-width)                                                                                                                                                                         | <span className="property-optional">Optional</span> |
+| [minWidth](#minwidth)         | [`MinWidth`](/specs/layout/min-width)                                                                                                                                                                         | <span className="property-optional">Optional</span> |
+| [height](#height)             | [`Height`](/specs/layout/height)                                                                                                                                                                              | <span className="property-required">Required</span> |
+| [maxHeight](#maxheight)       | [`MaxHeight`](/specs/layout/max-height)                                                                                                                                                                       | <span className="property-optional">Optional</span> |
+| [minHeight](#minheight)       | [`MinHeight`](/specs/layout/min-height)                                                                                                                                                                       | <span className="property-optional">Optional</span> |
+| [aspectRatio](#aspectratio)   | `number`                                                                                                                                                                                                      | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -125,9 +131,9 @@ oneOf&lt;
 
 <span className="type-merged-types">
 
-<a href="flexbox-layout"><code>FlexboxLayout</code></a>
+<Link to="flexbox-layout"><code>FlexboxLayout</code></Link>
 
-<a href="grid-layout"><code>GridLayout</code></a>
+<Link to="grid-layout"><code>GridLayout</code></Link>
 
 </span>
 
@@ -167,9 +173,9 @@ oneOf&lt;
 
 <span className="type-merged-types">
 
-<a href="flexbox-item"><code>FlexboxItem</code></a>
+<Link to="flexbox-item"><code>FlexboxItem</code></Link>
 
-<a href="grid-item"><code>GridItem</code></a>
+<Link to="grid-item"><code>GridItem</code></Link>
 
 </span>
 

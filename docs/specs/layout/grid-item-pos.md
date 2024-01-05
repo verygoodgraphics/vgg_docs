@@ -9,6 +9,16 @@ sidebar_class_name: show
 
 </div>
 
+<div className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/layout/grid-item#itempos'>GridItem.properties.itemPos</Link>
+      </div>
+
+</div>
+
 In grid layout, the position of grid items is determined by the grid lines defined by the rows and columns of the grid container. Grid rows and grid columns are used to specify the properties for positioning grid items within the grid.
 
 <div className="property-preview">

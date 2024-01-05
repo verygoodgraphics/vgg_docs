@@ -9,6 +9,16 @@ sidebar_class_name: show
 
 </div>
 
+<div className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/layout/grid-layout#dynamiccolumn'>GridLayout.properties.dynamicColumn</Link>
+      </div>
+
+</div>
+
 The algorithm is a strategy for dynamically determining the number of columns in a grid container based on content and container size.
 When using the `auto-fill` property, the algorithm will attempt to place grid items within the current row and create new columns as needed.
 It flexibly adjusts the number of columns based on the available space in the current row, prioritizing existing space.

@@ -9,6 +9,16 @@ sidebar_class_name: show
 
 </div>
 
+<div className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/layout/object#layout'>Object.properties.layout.oneOf.0</Link>
+      </div>
+
+</div>
+
 Flexbox is a layout model used to design flexible and efficient page layouts.
 Flexbox provides a more efficient and predictable way to arrange, align, and distribute elements within containers, especially suitable for building responsive and dynamic layouts.
 

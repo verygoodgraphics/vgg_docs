@@ -9,6 +9,36 @@ sidebar_class_name: show
 
 </div>
 
+<div className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/layout/width#value'>Width.properties.value</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/layout/max-width#value'>MaxWidth.properties.value</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/layout/min-width#value'>MinWidth.properties.value</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/layout/height#value'>Height.properties.value</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/layout/max-height#value'>MaxHeight.properties.value</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/layout/min-height#value'>MinHeight.properties.value</Link>
+      </div>
+
+</div>
+
 
 
 <div className="property-preview">

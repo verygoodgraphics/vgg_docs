@@ -9,6 +9,20 @@ sidebar_class_name: show
 
 </div>
 
+<div className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/layout/flexbox-item#position'>FlexboxItem.properties.position</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/layout/grid-item#position'>GridItem.properties.position</Link>
+      </div>
+
+</div>
+
 This property is used to control the positioning of an element within the document flow. The top, right, bottom, and left properties determine the final location of positioned elements.
 
 <div className="property-preview">
