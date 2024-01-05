@@ -9,6 +9,16 @@ sidebar_class_name: show
 
 </div>
 
+<div className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/layout/object#width'>Object.properties.width</Link>
+      </div>
+
+</div>
+
 This property is used to set the width of an element. By setting the width property of an element, you control its size in the horizontal direction.
 
 <div className="property-preview">

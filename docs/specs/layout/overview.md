@@ -9,15 +9,21 @@ sidebar_class_name: hidden
 
 </div>
 
+<div className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+</div>
+
 VGG Layout Specification describes the layout information of an element. VGG Layout Specification does not contain hierarchical relationships between objects, which are described in VGG Vector Graphics Specification.
 
 <div className="property-preview">
 
 <div className="property-table">
 
-| Property    | Type                                                                | Required                                            |
-| :---------- | :------------------------------------------------------------------ | :-------------------------------------------------- |
-| [obj](#obj) | <code>Array&lt;<a href="/specs/layout/object">Object</a>&gt;</code> | <span className="property-required">Required</span> |
+| Property    | Type                                                                    | Required                                            |
+| :---------- | :---------------------------------------------------------------------- | :-------------------------------------------------- |
+| [obj](#obj) | <code>Array&lt;<Link to="/specs/layout/object">Object</Link>&gt;</code> | <span className="property-required">Required</span> |
 
 </div>
 
@@ -45,7 +51,7 @@ no description
 
 Type
 
-<code>Array&lt;<a href="/specs/layout/object">Object</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/layout/object">Object</Link>&gt;</code>
 
 </div>
 

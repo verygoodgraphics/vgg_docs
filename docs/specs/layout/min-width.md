@@ -9,6 +9,16 @@ sidebar_class_name: show
 
 </div>
 
+<div className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/layout/object#minwidth'>Object.properties.minWidth</Link>
+      </div>
+
+</div>
+
 This property is used to set the minimum width of an element and is only available when the size type is fixed or relative. By setting the min-width property of an element, you can specify the minimum width in the horizontal direction, ensuring that the element does not shrink below this width. This is useful for ensuring that content has adequate visual space.
 
 <div className="property-preview">

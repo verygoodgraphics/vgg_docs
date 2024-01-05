@@ -9,6 +9,16 @@ sidebar_class_name: show
 
 </div>
 
+<div className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/layout/object#maxwidth'>Object.properties.maxWidth</Link>
+      </div>
+
+</div>
+
 This property is used to set the maximum width of an element and is only available when the size type is fixed or relative. By setting the max-width property of an element, you can specify the maximum width of the element in the horizontal direction, so that it will not exceed this width. This is useful for ensuring that elements do not stretch excessively when displayed on different devices.
 
 <div className="property-preview">
