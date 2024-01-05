@@ -23,7 +23,7 @@ Define a border style of an object.
 | [fillType](#filltype)                                 | [`FillType`](/specs/vectorgraphics/fill-type)                                | <span className="property-required">Required</span> |
 | [position](#position)                                 | [`BorderPosition`](/specs/vectorgraphics/border-position)                    | <span className="property-required">Required</span> |
 | [thickness](#thickness)                               | `number`                                                                     | <span className="property-required">Required</span> |
-| [strokeWeightsIndependent](#strokeweightsindependent) | `boolean`                                                                    | <span className="property-optional">Optional</span> |
+| [borderWeightsIndependent](#borderweightsindependent) | `boolean`                                                                    | <span className="property-optional">Optional</span> |
 | [topWeight](#topweight)                               | `number`                                                                     | <span className="property-optional">Optional</span> |
 | [leftWeight](#leftweight)                             | `number`                                                                     | <span className="property-optional">Optional</span> |
 | [bottomWeight](#bottomweight)                         | `number`                                                                     | <span className="property-optional">Optional</span> |
@@ -209,7 +209,7 @@ Description
 
 The thickness of the border.
 Value `0` is acceptable, as it is interpreted as the thinnest line width that can be displayed at device resolution.
-This attribute only works if `strokeWeightsIndependent` is set to `false`.
+This attribute only works if `borderWeightsIndependent` is set to `false`.
 
 </div>
 
@@ -227,7 +227,7 @@ Type
 
 <div className="property-heading">
 
-## strokeWeightsIndependent
+## borderWeightsIndependent
 
 <span className="property-optional">Optional</span>
 
@@ -237,7 +237,7 @@ Type
 
 Description
 
-For rectangles only. If `true`, independent stroke weights for all four sides.
+For rectangles only. If `true`, independent border weights for all four sides.
 Default value is `false`.
 
 </div>
@@ -266,7 +266,7 @@ Type
 
 Description
 
-This is used only when `strokeWeightsIndependent` is set to true, in order to specify the stroke weight at the top of the rectangle. Default value is `0`.
+This is used only when `borderWeightsIndependent` is set to true, in order to specify the border weight at the top of the rectangle. Default value is `0`.
 
 </div>
 
@@ -294,7 +294,7 @@ Type
 
 Description
 
-This is used only when `strokeWeightsIndependent` is set to true, in order to specify the stroke weight at the left of the rectangle. Default value is `0`.
+This is used only when `borderWeightsIndependent` is set to true, in order to specify the border weight at the left of the rectangle. Default value is `0`.
 
 </div>
 
@@ -322,7 +322,7 @@ Type
 
 Description
 
-This is used only when `strokeWeightsIndependent` is set to true, in order to specify the stroke weight at the bottom of the rectangle. Default value is `0`.
+This is used only when `borderWeightsIndependent` is set to true, in order to specify the border weight at the bottom of the rectangle. Default value is `0`.
 
 </div>
 
@@ -350,7 +350,7 @@ Type
 
 Description
 
-This is used only when `strokeWeightsIndependent` is set to true, in order to specify the stroke weight at the right of the rectangle. Default value is `0`.
+This is used only when `borderWeightsIndependent` is set to true, in order to specify the border weight at the right of the rectangle. Default value is `0`.
 
 </div>
 
@@ -564,7 +564,7 @@ Type
 
 Description
 
-The shape styles at the end of stroked lines.
+The shape styles at the end of border lines.
 
 </div>
 
@@ -648,7 +648,7 @@ Type
 
 Description
 
-The shape style at the corner of two stroked lines.
+The shape style at the corner of two border lines.
 
 </div>
 
@@ -676,7 +676,7 @@ Type
 
 Description
 
-When the angle between two adjacent stroked lines is less than this value, a `miter` join is used instead.
+When the angle between two adjacent border lines is less than this value, a `miter` join is used instead.
 
 </div>
 

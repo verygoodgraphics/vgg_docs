@@ -1,5 +1,5 @@
 ---
-title: LineType
+title: TextLineType
 sidebar_class_name: show
 ---
 
@@ -53,7 +53,7 @@ Value
 **constant**: the value of this property must be equal to:
 
 ```json
-"lineType"
+"textLineType"
 ```
 
 </div>

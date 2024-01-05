@@ -129,7 +129,7 @@ Type
 Description
 
 A list of the character's border styles.
-Priority: The `borders` of the text fragment > the `borders` in `defaultAttr` of the text > the `borders` in the text object's `style`.
+Priority: The `borders` of the text fragment > the `borders` in `defaultFontAttr` of the text > the `borders` in the text object's `style`.
 
 </div>
 
@@ -207,7 +207,7 @@ Value
 
 | Value | Explanation                                                                                                                                                                                                                                                                                   |
 | :---- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `0`   | <div className="enum-description">The `fills` of the text fragment > the `fills` in `defaultAttr` of the text > the `fills` in the text object's `style`. (Default value)</div>                                                                                                               |
+| `0`   | <div className="enum-description">The `fills` of the text fragment > the `fills` in `defaultFontAttr` of the text > the `fills` in the text object's `style`. (Default value)</div>                                                                                                           |
 | `1`   | <div className="enum-description">The corresponding property of the object takes precedence over `fills`. When `style.fills` and `fills` each have only one valid solid color object, the opacity of the two solid color objects is combined into the `style.fills` solid color object.</div> |
 
 </div>

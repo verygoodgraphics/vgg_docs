@@ -24,7 +24,7 @@ Path represents a vector geometry which is formed by individual subpaths combine
 | [contextSettings](#contextsettings)           | [`GraphicsContextSettings`](/specs/vectorgraphics/graphics-context-settings)           | <span className="property-required">Required</span> |
 | [style](#style)                               | [`Style`](/specs/vectorgraphics/style)                                                 | <span className="property-required">Required</span> |
 | [bounds](#bounds)                             | [`Rect`](/specs/vectorgraphics/rect)                                                   | <span className="property-required">Required</span> |
-| [frame](#frame)                               | [`Rect`](/specs/vectorgraphics/rect)                                                   | <span className="property-required">Required</span> |
+| [frame](#frame)                               | [`Rect`](/specs/vectorgraphics/rect)                                                   | <span className="property-optional">Optional</span> |
 | [matrix](#matrix)                             | [`Matrix`](/specs/vectorgraphics/matrix)                                               | <span className="property-required">Required</span> |
 | [alphaMaskBy](#alphamaskby)                   | <code>Array&lt;<a href="/specs/vectorgraphics/alpha-mask">AlphaMask</a>&gt;</code>     | <span className="property-required">Required</span> |
 | [outlineMaskBy](#outlinemaskby)               | `Array<string>`                                                                        | <span className="property-required">Required</span> |
@@ -250,7 +250,7 @@ Type
 
 ## frame
 
-<span className="property-required">Required</span>
+<span className="property-optional">Optional</span>
 
 </div>
 
