@@ -77,7 +77,8 @@ Value
 Description
 
 The starting angle of the sector sweep.
-The three o'clock direction is defined as `0`, and increasing angles rotate clockwise.
+The three o'clock direction is defined as `0`, increasing in the clockwise direction.
+If `startingAngle` is less than `endingAngle`, the filled area spans from `startingAngle` to `endingAngle` clockwise; otherwise, counterclockwise.
 
 </div>
 
@@ -118,7 +119,8 @@ Type
 Description
 
 The ending angle of the sector sweep.
-The three o'clock direction is defined as `0`, and increasing angles rotate clockwise.
+The three o'clock direction is defined as `0`, increasing in the clockwise direction.
+If `startingAngle` is less than `endingAngle`, the filled area spans from `startingAngle` to `endingAngle` clockwise; otherwise, counterclockwise.
 
 </div>
 

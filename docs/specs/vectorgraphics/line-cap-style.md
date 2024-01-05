@@ -9,7 +9,7 @@ sidebar_class_name: show
 
 </div>
 
-The shape styles at the end of stroked lines.
+The shape styles at the end of border lines.
 
 <div className="property-item">
 

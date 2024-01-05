@@ -104,7 +104,7 @@ Type
 Description
 
 Describes how a referenced variable acts on a specific property of an object.
-When the `varType` of the variable is `2`, the field is fixed to `text_data`.
+When the `varType` of the variable is `2`, the field is fixed to `textData`.
 When the `varType` is anything else, the field points to a property of the object (check `overrideName` in `OverrideValue`).
 
 </div>
