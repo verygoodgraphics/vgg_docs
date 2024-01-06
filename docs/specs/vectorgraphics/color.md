@@ -3,9 +3,11 @@ title: Color
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/4-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -172,5 +174,27 @@ Type
 [`UnitInterval`](/specs/vectorgraphics/unit-interval)
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/border#color'>Border.color</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/gradient-stop#color'>GradientStop.color</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/fill#color'>Fill.color</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/shadow#color'>Shadow.color</Link>
+      </div>
 
 </div>

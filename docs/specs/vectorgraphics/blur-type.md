@@ -3,9 +3,11 @@ title: BlurType
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">integer</div>
+<div><img alt="integer" src="https://img.shields.io/badge/integer-integer?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/1-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -27,5 +29,15 @@ Value
 | `3`   | <div className="enum-description">background<div className="enum-images"><img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Blur/background.png" alt="" /></div></div> |
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/blur#type'>Blur.type</Link>
+      </div>
 
 </div>

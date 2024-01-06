@@ -3,9 +3,11 @@ title: SubShape
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/1-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -15,11 +17,11 @@ One subshape in a shape.
 
 <div className="property-table">
 
-| Property                              | Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Required                                            |
-| :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
-| [class](#class)                       | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | <span className="property-required">Required</span> |
-| [subGeometry](#subgeometry)           | <code className="type-merged separate">oneOf&lt;<span className="type-merged-types separate"><a href="contour"><code>Contour</code></a><a href="ellipse"><code>Ellipse</code></a><a href="polygon"><code>Polygon</code></a><a href="rectangle"><code>Rectangle</code></a><a href="star"><code>Star</code></a><a href="text"><code>Text</code></a><a href="image"><code>Image</code></a><a href="path"><code>Path</code></a><a href="group"><code>Group</code></a><a href="symbol-master"><code>SymbolMaster</code></a><a href="symbol-instance"><code>SymbolInstance</code></a><a href="frame"><code>Frame</code></a></span>&gt;</code> | <span className="property-required">Required</span> |
-| [booleanOperation](#booleanoperation) | `integer`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | <span className="property-required">Required</span> |
+| Property                              | Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Required                                            |
+| :------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| [class](#class)                       | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | <span className="property-required">Required</span> |
+| [subGeometry](#subgeometry)           | <code className="type-merged separate">oneOf&lt;<span className="type-merged-types separate"><Link to="contour"><code>Contour</code></Link><Link to="ellipse"><code>Ellipse</code></Link><Link to="polygon"><code>Polygon</code></Link><Link to="rectangle"><code>Rectangle</code></Link><Link to="star"><code>Star</code></Link><Link to="text"><code>Text</code></Link><Link to="image"><code>Image</code></Link><Link to="path"><code>Path</code></Link><Link to="group"><code>Group</code></Link><Link to="symbol-master"><code>SymbolMaster</code></Link><Link to="symbol-instance"><code>SymbolInstance</code></Link><Link to="frame"><code>Frame</code></Link></span>&gt;</code> | <span className="property-required">Required</span> |
+| [booleanOperation](#booleanoperation) | `integer`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | <span className="property-required">Required</span> |
 
 </div>
 
@@ -91,29 +93,29 @@ oneOf&lt;
 
 <span className="type-merged-types separate">
 
-<a href="contour"><code>Contour</code></a>
+<Link to="contour"><code>Contour</code></Link>
 
-<a href="ellipse"><code>Ellipse</code></a>
+<Link to="ellipse"><code>Ellipse</code></Link>
 
-<a href="polygon"><code>Polygon</code></a>
+<Link to="polygon"><code>Polygon</code></Link>
 
-<a href="rectangle"><code>Rectangle</code></a>
+<Link to="rectangle"><code>Rectangle</code></Link>
 
-<a href="star"><code>Star</code></a>
+<Link to="star"><code>Star</code></Link>
 
-<a href="text"><code>Text</code></a>
+<Link to="text"><code>Text</code></Link>
 
-<a href="image"><code>Image</code></a>
+<Link to="image"><code>Image</code></Link>
 
-<a href="path"><code>Path</code></a>
+<Link to="path"><code>Path</code></Link>
 
-<a href="group"><code>Group</code></a>
+<Link to="group"><code>Group</code></Link>
 
-<a href="symbol-master"><code>SymbolMaster</code></a>
+<Link to="symbol-master"><code>SymbolMaster</code></Link>
 
-<a href="symbol-instance"><code>SymbolInstance</code></a>
+<Link to="symbol-instance"><code>SymbolInstance</code></Link>
 
-<a href="frame"><code>Frame</code></a>
+<Link to="frame"><code>Frame</code></Link>
 
 </span>
 
@@ -170,5 +172,15 @@ Value
 </div>
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/shape#subshapes'>Shape.subshapes</Link>
+      </div>
 
 </div>

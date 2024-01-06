@@ -3,39 +3,11 @@ title: Length
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
 
-</div>
-
-<div className="section-backlinks">
-
-<div className="backlinks-title">Backlinks</div>
-
-<div className="backlink">
-      <Link to='/specs/layout/width#value'>Width.properties.value</Link>
-      </div>
-
-<div className="backlink">
-      <Link to='/specs/layout/max-width#value'>MaxWidth.properties.value</Link>
-      </div>
-
-<div className="backlink">
-      <Link to='/specs/layout/min-width#value'>MinWidth.properties.value</Link>
-      </div>
-
-<div className="backlink">
-      <Link to='/specs/layout/height#value'>Height.properties.value</Link>
-      </div>
-
-<div className="backlink">
-      <Link to='/specs/layout/max-height#value'>MaxHeight.properties.value</Link>
-      </div>
-
-<div className="backlink">
-      <Link to='/specs/layout/min-height#value'>MinHeight.properties.value</Link>
-      </div>
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/6-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -162,5 +134,35 @@ Value
 </div>
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/layout/width#value'>Width.value</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/layout/max-width#value'>MaxWidth.value</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/layout/min-width#value'>MinWidth.value</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/layout/height#value'>Height.value</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/layout/max-height#value'>MaxHeight.value</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/layout/min-height#value'>MinHeight.value</Link>
+      </div>
 
 </div>

@@ -3,9 +3,11 @@ title: GraphicsContextSettings
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/12-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -190,5 +192,59 @@ Value
 </div>
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/frame#contextsettings'>Frame.contextSettings</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/border#contextsettings'>Border.contextSettings</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/fill#contextsettings'>Fill.contextSettings</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/shadow#contextsettings'>Shadow.contextSettings</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/path#contextsettings'>Path.contextSettings</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/text#contextsettings'>Text.contextSettings</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/image#contextsettings'>Image.contextSettings</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/group#contextsettings'>Group.contextSettings</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-instance#contextsettings'>SymbolInstance.contextSettings</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-master#contextsettings'>SymbolMaster.contextSettings</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/referenced-style#contextsettings'>ReferencedStyle.contextSettings</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-layer-def#contextsettings'>PatternLayerDef.contextSettings</Link>
+      </div>
 
 </div>

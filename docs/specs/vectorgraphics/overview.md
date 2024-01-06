@@ -3,9 +3,9 @@ title: VectorGraphics
 sidebar_class_name: hidden
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
 
 </div>
 
@@ -15,14 +15,14 @@ VGG Vector Graphics Specification is a JSON-based spec for describing vector gra
 
 <div className="property-table">
 
-| Property                            | Type                                                                                                                                                                                                                                                      | Required                                            |
-| :---------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
-| [version](#version)                 | `string`                                                                                                                                                                                                                                                  | <span className="property-required">Required</span> |
-| [fileType](#filetype)               | `integer`                                                                                                                                                                                                                                                 | <span className="property-required">Required</span> |
-| [fileName](#filename)               | `string`                                                                                                                                                                                                                                                  | <span className="property-optional">Optional</span> |
-| [frames](#frames)                   | <code>Array&lt;<a href="/specs/vectorgraphics/frame">Frame</a>&gt;</code>                                                                                                                                                                                 | <span className="property-required">Required</span> |
-| [references](#references)           | <code className="type-merged">Array&lt;<span className="type-merged-types"><a href="/specs/vectorgraphics/referenced-style"><code>ReferencedStyle</code></a><a href="/specs/vectorgraphics/symbol-master"><code>SymbolMaster</code></a></span>&gt;</code> | <span className="property-optional">Optional</span> |
-| [patternLayerDef](#patternlayerdef) | <code>Array&lt;<a href="/specs/vectorgraphics/pattern-layer-def">PatternLayerDef</a>&gt;</code>                                                                                                                                                           | <span className="property-optional">Optional</span> |
+| Property                            | Type                                                                                                                                                                                                                                                                  | Required                                            |
+| :---------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| [version](#version)                 | `string`                                                                                                                                                                                                                                                              | <span className="property-required">Required</span> |
+| [fileType](#filetype)               | `integer`                                                                                                                                                                                                                                                             | <span className="property-required">Required</span> |
+| [fileName](#filename)               | `string`                                                                                                                                                                                                                                                              | <span className="property-optional">Optional</span> |
+| [frames](#frames)                   | <code>Array&lt;<Link to="/specs/vectorgraphics/frame">Frame</Link>&gt;</code>                                                                                                                                                                                         | <span className="property-required">Required</span> |
+| [references](#references)           | <code className="type-merged">Array&lt;<span className="type-merged-types"><Link href="/specs/vectorgraphics/referenced-style"><code>ReferencedStyle</code></Link><Link href="/specs/vectorgraphics/symbol-master"><code>SymbolMaster</code></Link></span>&gt;</code> | <span className="property-optional">Optional</span> |
+| [patternLayerDef](#patternlayerdef) | <code>Array&lt;<Link to="/specs/vectorgraphics/pattern-layer-def">PatternLayerDef</Link>&gt;</code>                                                                                                                                                                   | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -169,7 +169,7 @@ A list of the frames.
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/frame">Frame</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/frame">Frame</Link>&gt;</code>
 
 </div>
 
@@ -203,9 +203,9 @@ Array&lt;
 
 <span className="type-merged-types">
 
-<a href="/specs/vectorgraphics/referenced-style"><code>ReferencedStyle</code></a>
+<Link href="/specs/vectorgraphics/referenced-style"><code>ReferencedStyle</code></Link>
 
-<a href="/specs/vectorgraphics/symbol-master"><code>SymbolMaster</code></a>
+<Link href="/specs/vectorgraphics/symbol-master"><code>SymbolMaster</code></Link>
 
 </span>
 
@@ -239,7 +239,7 @@ no description
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/pattern-layer-def">PatternLayerDef</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/pattern-layer-def">PatternLayerDef</Link>&gt;</code>
 
 </div>
 

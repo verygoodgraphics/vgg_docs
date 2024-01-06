@@ -3,9 +3,11 @@ title: Pattern
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/2-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -15,10 +17,10 @@ Define a pattern.
 
 <div className="property-table">
 
-| Property              | Type                                                                                                                                                                                                                                                                                                                                                                                                                                              | Required                                            |
-| :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------- |
-| [class](#class)       | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                          | <span className="property-required">Required</span> |
-| [instance](#instance) | <code className="type-merged separate">oneOf&lt;<span className="type-merged-types separate"><a href="pattern-image-fill"><code>PatternImageFill</code></a><a href="pattern-image-stretch"><code>PatternImageStretch</code></a><a href="pattern-image-fit"><code>PatternImageFit</code></a><a href="pattern-image-tile"><code>PatternImageTile</code></a><a href="pattern-layer-instance"><code>PatternLayerInstance</code></a></span>&gt;</code> | <span className="property-required">Required</span> |
+| Property              | Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Required                                            |
+| :-------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| [class](#class)       | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                              | <span className="property-required">Required</span> |
+| [instance](#instance) | <code className="type-merged separate">oneOf&lt;<span className="type-merged-types separate"><Link to="pattern-image-fill"><code>PatternImageFill</code></Link><Link to="pattern-image-stretch"><code>PatternImageStretch</code></Link><Link to="pattern-image-fit"><code>PatternImageFit</code></Link><Link to="pattern-image-tile"><code>PatternImageTile</code></Link><Link to="pattern-layer-instance"><code>PatternLayerInstance</code></Link></span>&gt;</code> | <span className="property-required">Required</span> |
 
 </div>
 
@@ -88,15 +90,15 @@ oneOf&lt;
 
 <span className="type-merged-types separate">
 
-<a href="pattern-image-fill"><code>PatternImageFill</code></a>
+<Link to="pattern-image-fill"><code>PatternImageFill</code></Link>
 
-<a href="pattern-image-stretch"><code>PatternImageStretch</code></a>
+<Link to="pattern-image-stretch"><code>PatternImageStretch</code></Link>
 
-<a href="pattern-image-fit"><code>PatternImageFit</code></a>
+<Link to="pattern-image-fit"><code>PatternImageFit</code></Link>
 
-<a href="pattern-image-tile"><code>PatternImageTile</code></a>
+<Link to="pattern-image-tile"><code>PatternImageTile</code></Link>
 
-<a href="pattern-layer-instance"><code>PatternLayerInstance</code></a>
+<Link to="pattern-layer-instance"><code>PatternLayerInstance</code></Link>
 
 </span>
 
@@ -105,5 +107,19 @@ oneOf&lt;
 </code>
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/border#pattern'>Border.pattern</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/fill#pattern'>Fill.pattern</Link>
+      </div>
 
 </div>

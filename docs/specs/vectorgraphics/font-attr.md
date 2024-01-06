@@ -3,9 +3,11 @@ title: FontAttr
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/3-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -15,32 +17,32 @@ The font attributes of a text fragment.
 
 <div className="property-table">
 
-| Property                                    | Type                                                                                       | Required                                            |
-| :------------------------------------------ | :----------------------------------------------------------------------------------------- | :-------------------------------------------------- |
-| [class](#class)                             | `string`                                                                                   | <span className="property-required">Required</span> |
-| [length](#length)                           | `integer`                                                                                  | <span className="property-optional">Optional</span> |
-| [borders](#borders)                         | <code>Array&lt;<a href="/specs/vectorgraphics/border">Border</a>&gt;</code>                | <span className="property-optional">Optional</span> |
-| [fills](#fills)                             | <code>Array&lt;<a href="/specs/vectorgraphics/fill">Fill</a>&gt;</code>                    | <span className="property-optional">Optional</span> |
-| [fillUseType](#fillusetype)                 | `integer`                                                                                  | <span className="property-optional">Optional</span> |
-| [name](#name)                               | `string`                                                                                   | <span className="property-optional">Optional</span> |
-| [subFamilyName](#subfamilyname)             | `string`                                                                                   | <span className="property-optional">Optional</span> |
-| [postScript](#postscript)                   | `string`                                                                                   | <span className="property-optional">Optional</span> |
-| [fontVariations](#fontvariations)           | <code>Array&lt;<a href="/specs/vectorgraphics/font-variation">FontVariation</a>&gt;</code> | <span className="property-optional">Optional</span> |
-| [size](#size)                               | `number`                                                                                   | <span className="property-optional">Optional</span> |
-| [letterSpacingValue](#letterspacingvalue)   | `number`                                                                                   | <span className="property-optional">Optional</span> |
-| [letterSpacingUnit](#letterspacingunit)     | `integer`                                                                                  | <span className="property-optional">Optional</span> |
-| [lineSpacingValue](#linespacingvalue)       | `number`                                                                                   | <span className="property-optional">Optional</span> |
-| [lineSpacingUnit](#linespacingunit)         | `integer`                                                                                  | <span className="property-optional">Optional</span> |
-| [underline](#underline)                     | `integer`                                                                                  | <span className="property-optional">Optional</span> |
-| [linethrough](#linethrough)                 | `boolean`                                                                                  | <span className="property-optional">Optional</span> |
-| [textCase](#textcase)                       | `integer`                                                                                  | <span className="property-optional">Optional</span> |
-| [fontVariantCaps](#fontvariantcaps)         | `integer`                                                                                  | <span className="property-optional">Optional</span> |
-| [baselineShift](#baselineshift)             | `number`                                                                                   | <span className="property-optional">Optional</span> |
-| [fontVariantPosition](#fontvariantposition) | `integer`                                                                                  | <span className="property-optional">Optional</span> |
-| [horizontalScale](#horizontalscale)         | `number`                                                                                   | <span className="property-optional">Optional</span> |
-| [verticalScale](#verticalscale)             | `number`                                                                                   | <span className="property-optional">Optional</span> |
-| [rotate](#rotate)                           | `number`                                                                                   | <span className="property-optional">Optional</span> |
-| [textParagraph](#textparagraph)             | [`TextParagraph`](/specs/vectorgraphics/text-paragraph)                                    | <span className="property-optional">Optional</span> |
+| Property                                    | Type                                                                                           | Required                                            |
+| :------------------------------------------ | :--------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| [class](#class)                             | `string`                                                                                       | <span className="property-required">Required</span> |
+| [length](#length)                           | `integer`                                                                                      | <span className="property-optional">Optional</span> |
+| [borders](#borders)                         | <code>Array&lt;<Link to="/specs/vectorgraphics/border">Border</Link>&gt;</code>                | <span className="property-optional">Optional</span> |
+| [fills](#fills)                             | <code>Array&lt;<Link to="/specs/vectorgraphics/fill">Fill</Link>&gt;</code>                    | <span className="property-optional">Optional</span> |
+| [fillUseType](#fillusetype)                 | `integer`                                                                                      | <span className="property-optional">Optional</span> |
+| [name](#name)                               | `string`                                                                                       | <span className="property-optional">Optional</span> |
+| [subFamilyName](#subfamilyname)             | `string`                                                                                       | <span className="property-optional">Optional</span> |
+| [postScript](#postscript)                   | `string`                                                                                       | <span className="property-optional">Optional</span> |
+| [fontVariations](#fontvariations)           | <code>Array&lt;<Link to="/specs/vectorgraphics/font-variation">FontVariation</Link>&gt;</code> | <span className="property-optional">Optional</span> |
+| [size](#size)                               | `number`                                                                                       | <span className="property-optional">Optional</span> |
+| [letterSpacingValue](#letterspacingvalue)   | `number`                                                                                       | <span className="property-optional">Optional</span> |
+| [letterSpacingUnit](#letterspacingunit)     | `integer`                                                                                      | <span className="property-optional">Optional</span> |
+| [lineSpacingValue](#linespacingvalue)       | `number`                                                                                       | <span className="property-optional">Optional</span> |
+| [lineSpacingUnit](#linespacingunit)         | `integer`                                                                                      | <span className="property-optional">Optional</span> |
+| [underline](#underline)                     | `integer`                                                                                      | <span className="property-optional">Optional</span> |
+| [linethrough](#linethrough)                 | `boolean`                                                                                      | <span className="property-optional">Optional</span> |
+| [textCase](#textcase)                       | `integer`                                                                                      | <span className="property-optional">Optional</span> |
+| [fontVariantCaps](#fontvariantcaps)         | `integer`                                                                                      | <span className="property-optional">Optional</span> |
+| [baselineShift](#baselineshift)             | `number`                                                                                       | <span className="property-optional">Optional</span> |
+| [fontVariantPosition](#fontvariantposition) | `integer`                                                                                      | <span className="property-optional">Optional</span> |
+| [horizontalScale](#horizontalscale)         | `number`                                                                                       | <span className="property-optional">Optional</span> |
+| [verticalScale](#verticalscale)             | `number`                                                                                       | <span className="property-optional">Optional</span> |
+| [rotate](#rotate)                           | `number`                                                                                       | <span className="property-optional">Optional</span> |
+| [textParagraph](#textparagraph)             | [`TextParagraph`](/specs/vectorgraphics/text-paragraph)                                        | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -137,7 +139,7 @@ Priority: The `borders` of the text fragment > the `borders` in `defaultFontAttr
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/border">Border</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/border">Border</Link>&gt;</code>
 
 </div>
 
@@ -165,7 +167,7 @@ A list of the character's fill effects. The priority of `fills` is listed in `fi
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/fill">Fill</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/fill">Fill</Link>&gt;</code>
 
 </div>
 
@@ -326,7 +328,7 @@ A list of font variations.
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/font-variation">FontVariation</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/font-variation">FontVariation</Link>&gt;</code>
 
 </div>
 
@@ -891,5 +893,23 @@ Type
 [`TextParagraph`](/specs/vectorgraphics/text-paragraph)
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/text#defaultattr'>Text.defaultAttr</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/text#attr'>Text.attr</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/referenced-style#fontattr'>ReferencedStyle.fontAttr</Link>
+      </div>
 
 </div>

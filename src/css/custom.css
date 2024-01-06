@@ -22,6 +22,8 @@
 
   --vgg-color-warning: #d97706;
   --vgg-color-black: #000;
+
+  --vgg-target-highlight: #ffa;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -37,6 +39,7 @@
 
   --vgg-color-warning: #fbbf24;
   --vgg-color-black: #000;
+  --vgg-target-highlight: #f59e0b;
 }
 
 .badge-type {
@@ -61,14 +64,21 @@
   margin-top: 32px;
   margin-bottom: 24px;
   padding-bottom: 8px;
+  position: relative;
 }
 
 .property-heading > h2 {
   margin-bottom: 0;
+  width: 100%;
 }
 
 .property-required {
   color: var(--vgg-color-warning);
+}
+
+.property .property-required {
+  position: absolute;
+  right: 0;
 }
 
 .property-item {
@@ -145,4 +155,40 @@ code.type-merged {
   border-top: 1px solid var(--ifm-table-border-color);
   padding-top: 16px;
   margin-top: 16px;
+}
+
+.backlinks-title {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.section-badges {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section-badges > * {
+  margin-right: 8px;
+}
+
+.section-badges > *:last-child {
+  margin-right: 0;
+}
+
+:target {
+  background-color: var(--vgg-target-highlight);
+  /* animation: disappear 2s;
+  background-color: transparent; */
+}
+
+@keyframes disappear {
+  0% {
+    background-color: var(--vgg-target-highlight);
+  }
+  100% {
+    background-color: transparent;
+  }
 }

@@ -3,9 +3,11 @@ title: SymbolInstance
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/5-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -15,37 +17,37 @@ Symbol instance object is an instance of a symbol master which can be overriden.
 
 <div className="property-table">
 
-| Property                                      | Type                                                                                         | Required                                            |
-| :-------------------------------------------- | :------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
-| [id](#id)                                     | `string`                                                                                     | <span className="property-required">Required</span> |
-| [name](#name)                                 | `string`                                                                                     | <span className="property-optional">Optional</span> |
-| [isLocked](#islocked)                         | `boolean`                                                                                    | <span className="property-required">Required</span> |
-| [visible](#visible)                           | `boolean`                                                                                    | <span className="property-required">Required</span> |
-| [contextSettings](#contextsettings)           | [`GraphicsContextSettings`](/specs/vectorgraphics/graphics-context-settings)                 | <span className="property-required">Required</span> |
-| [style](#style)                               | [`Style`](/specs/vectorgraphics/style)                                                       | <span className="property-required">Required</span> |
-| [bounds](#bounds)                             | [`Rect`](/specs/vectorgraphics/rect)                                                         | <span className="property-required">Required</span> |
-| [frame](#frame)                               | [`Rect`](/specs/vectorgraphics/rect)                                                         | <span className="property-optional">Optional</span> |
-| [matrix](#matrix)                             | [`Matrix`](/specs/vectorgraphics/matrix)                                                     | <span className="property-required">Required</span> |
-| [alphaMaskBy](#alphamaskby)                   | <code>Array&lt;<a href="/specs/vectorgraphics/alpha-mask">AlphaMask</a>&gt;</code>           | <span className="property-required">Required</span> |
-| [outlineMaskBy](#outlinemaskby)               | `Array<string>`                                                                              | <span className="property-required">Required</span> |
-| [maskType](#masktype)                         | `integer`                                                                                    | <span className="property-required">Required</span> |
-| [styleEffectMaskArea](#styleeffectmaskarea)   | `integer`                                                                                    | <span className="property-required">Required</span> |
-| [maskShowType](#maskshowtype)                 | `integer`                                                                                    | <span className="property-optional">Optional</span> |
-| [overflow](#overflow)                         | `integer`                                                                                    | <span className="property-required">Required</span> |
-| [cornerSmoothing](#cornersmoothing)           | `number`                                                                                     | <span className="property-optional">Optional</span> |
-| [overrideKey](#overridekey)                   | `string`                                                                                     | <span className="property-optional">Optional</span> |
-| [horizontalConstraint](#horizontalconstraint) | [`Constraint`](/specs/vectorgraphics/constraint)                                             | <span className="property-optional">Optional</span> |
-| [verticalConstraint](#verticalconstraint)     | [`Constraint`](/specs/vectorgraphics/constraint)                                             | <span className="property-optional">Optional</span> |
-| [resizesContent](#resizescontent)             | `integer`                                                                                    | <span className="property-optional">Optional</span> |
-| [keepShapeWhenResize](#keepshapewhenresize)   | `boolean`                                                                                    | <span className="property-optional">Optional</span> |
-| [variableDefs](#variabledefs)                 | <code>Array&lt;<a href="/specs/vectorgraphics/variable-def">VariableDef</a>&gt;</code>       | <span className="property-optional">Optional</span> |
-| [variableRefs](#variablerefs)                 | <code>Array&lt;<a href="/specs/vectorgraphics/variable-ref">VariableRef</a>&gt;</code>       | <span className="property-optional">Optional</span> |
-| [styleEffectBoolean](#styleeffectboolean)     | `integer`                                                                                    | <span className="property-optional">Optional</span> |
-| [class](#class)                               | `string`                                                                                     | <span className="property-required">Required</span> |
-| [overrideValues](#overridevalues)             | <code>Array&lt;<a href="/specs/vectorgraphics/override-value">OverrideValue</a>&gt;</code>   | <span className="property-required">Required</span> |
-| [masterId](#masterid)                         | `string`                                                                                     | <span className="property-required">Required</span> |
-| [radius](#radius)                             | `Array<number>`                                                                              | <span className="property-optional">Optional</span> |
-| [variableAssignments](#variableassignments)   | <code>Array&lt;<a href="/specs/vectorgraphics/variable-assign">VariableAssign</a>&gt;</code> | <span className="property-optional">Optional</span> |
+| Property                                      | Type                                                                                             | Required                                            |
+| :-------------------------------------------- | :----------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| [id](#id)                                     | `string`                                                                                         | <span className="property-required">Required</span> |
+| [name](#name)                                 | `string`                                                                                         | <span className="property-optional">Optional</span> |
+| [isLocked](#islocked)                         | `boolean`                                                                                        | <span className="property-required">Required</span> |
+| [visible](#visible)                           | `boolean`                                                                                        | <span className="property-required">Required</span> |
+| [contextSettings](#contextsettings)           | [`GraphicsContextSettings`](/specs/vectorgraphics/graphics-context-settings)                     | <span className="property-required">Required</span> |
+| [style](#style)                               | [`Style`](/specs/vectorgraphics/style)                                                           | <span className="property-required">Required</span> |
+| [bounds](#bounds)                             | [`Rect`](/specs/vectorgraphics/rect)                                                             | <span className="property-required">Required</span> |
+| [frame](#frame)                               | [`Rect`](/specs/vectorgraphics/rect)                                                             | <span className="property-required">Required</span> |
+| [matrix](#matrix)                             | [`Matrix`](/specs/vectorgraphics/matrix)                                                         | <span className="property-required">Required</span> |
+| [alphaMaskBy](#alphamaskby)                   | <code>Array&lt;<Link to="/specs/vectorgraphics/alpha-mask">AlphaMask</Link>&gt;</code>           | <span className="property-required">Required</span> |
+| [outlineMaskBy](#outlinemaskby)               | `Array<string>`                                                                                  | <span className="property-required">Required</span> |
+| [maskType](#masktype)                         | `integer`                                                                                        | <span className="property-required">Required</span> |
+| [styleEffectMaskArea](#styleeffectmaskarea)   | `integer`                                                                                        | <span className="property-required">Required</span> |
+| [maskShowType](#maskshowtype)                 | `integer`                                                                                        | <span className="property-optional">Optional</span> |
+| [overflow](#overflow)                         | `integer`                                                                                        | <span className="property-required">Required</span> |
+| [cornerSmoothing](#cornersmoothing)           | `number`                                                                                         | <span className="property-optional">Optional</span> |
+| [overrideKey](#overridekey)                   | `string`                                                                                         | <span className="property-optional">Optional</span> |
+| [horizontalConstraint](#horizontalconstraint) | [`Constraint`](/specs/vectorgraphics/constraint)                                                 | <span className="property-optional">Optional</span> |
+| [verticalConstraint](#verticalconstraint)     | [`Constraint`](/specs/vectorgraphics/constraint)                                                 | <span className="property-optional">Optional</span> |
+| [resizesContent](#resizescontent)             | `integer`                                                                                        | <span className="property-optional">Optional</span> |
+| [keepShapeWhenResize](#keepshapewhenresize)   | `boolean`                                                                                        | <span className="property-optional">Optional</span> |
+| [variableDefs](#variabledefs)                 | <code>Array&lt;<Link to="/specs/vectorgraphics/variable-def">VariableDef</Link>&gt;</code>       | <span className="property-optional">Optional</span> |
+| [variableRefs](#variablerefs)                 | <code>Array&lt;<Link to="/specs/vectorgraphics/variable-ref">VariableRef</Link>&gt;</code>       | <span className="property-optional">Optional</span> |
+| [styleEffectBoolean](#styleeffectboolean)     | `integer`                                                                                        | <span className="property-optional">Optional</span> |
+| [class](#class)                               | `string`                                                                                         | <span className="property-required">Required</span> |
+| [overrideValues](#overridevalues)             | <code>Array&lt;<Link to="/specs/vectorgraphics/override-value">OverrideValue</Link>&gt;</code>   | <span className="property-required">Required</span> |
+| [masterId](#masterid)                         | `string`                                                                                         | <span className="property-required">Required</span> |
+| [radius](#radius)                             | `Array<number>`                                                                                  | <span className="property-optional">Optional</span> |
+| [variableAssignments](#variableassignments)   | <code>Array&lt;<Link to="/specs/vectorgraphics/variable-assign">VariableAssign</Link>&gt;</code> | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -325,7 +327,7 @@ A list of alpha masks applied to the object.
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/alpha-mask">AlphaMask</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/alpha-mask">AlphaMask</Link>&gt;</code>
 
 </div>
 
@@ -771,7 +773,7 @@ A list of variables that can be used by children.
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/variable-def">VariableDef</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/variable-def">VariableDef</Link>&gt;</code>
 
 </div>
 
@@ -799,7 +801,7 @@ A list of referenced variables.
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/variable-ref">VariableRef</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/variable-ref">VariableRef</Link>&gt;</code>
 
 </div>
 
@@ -908,7 +910,7 @@ A list of overridden values.
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/override-value">OverrideValue</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/override-value">OverrideValue</Link>&gt;</code>
 
 </div>
 
@@ -1007,8 +1009,34 @@ Reassign the value of the variable defined in symbol master.
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/variable-assign">VariableAssign</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/variable-assign">VariableAssign</Link>&gt;</code>
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/frame#childobjects'>Frame.childObjects</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/sub-shape#subgeometry'>SubShape.subGeometry</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/group#childobjects'>Group.childObjects</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-master#childobjects'>SymbolMaster.childObjects</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-layer-def#childobjects'>PatternLayerDef.childObjects</Link>
+      </div>
 
 </div>

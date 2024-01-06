@@ -3,15 +3,9 @@ title: Layout
 sidebar_class_name: hidden
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
-
-</div>
-
-<div className="section-backlinks">
-
-<div className="backlinks-title">Backlinks</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
 
 </div>
 

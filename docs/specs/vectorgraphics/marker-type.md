@@ -3,9 +3,11 @@ title: MarkerType
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">integer</div>
+<div><img alt="integer" src="https://img.shields.io/badge/integer-integer?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/2-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -47,5 +49,19 @@ Value
 <img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Border/markerType.png" alt="" />
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/border#startmarkertype'>Border.startMarkerType</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/border#endmarkertype'>Border.endMarkerType</Link>
+      </div>
 
 </div>

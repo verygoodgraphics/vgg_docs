@@ -3,9 +3,11 @@ title: Style
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/9-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -15,13 +17,13 @@ Define an object style.
 
 <div className="property-table">
 
-| Property            | Type                                                                        | Required                                            |
-| :------------------ | :-------------------------------------------------------------------------- | :-------------------------------------------------- |
-| [class](#class)     | `string`                                                                    | <span className="property-required">Required</span> |
-| [borders](#borders) | <code>Array&lt;<a href="/specs/vectorgraphics/border">Border</a>&gt;</code> | <span className="property-required">Required</span> |
-| [fills](#fills)     | <code>Array&lt;<a href="/specs/vectorgraphics/fill">Fill</a>&gt;</code>     | <span className="property-required">Required</span> |
-| [blurs](#blurs)     | <code>Array&lt;<a href="/specs/vectorgraphics/blur">Blur</a>&gt;</code>     | <span className="property-required">Required</span> |
-| [shadows](#shadows) | <code>Array&lt;<a href="/specs/vectorgraphics/shadow">Shadow</a>&gt;</code> | <span className="property-required">Required</span> |
+| Property            | Type                                                                            | Required                                            |
+| :------------------ | :------------------------------------------------------------------------------ | :-------------------------------------------------- |
+| [class](#class)     | `string`                                                                        | <span className="property-required">Required</span> |
+| [borders](#borders) | <code>Array&lt;<Link to="/specs/vectorgraphics/border">Border</Link>&gt;</code> | <span className="property-required">Required</span> |
+| [fills](#fills)     | <code>Array&lt;<Link to="/specs/vectorgraphics/fill">Fill</Link>&gt;</code>     | <span className="property-required">Required</span> |
+| [blurs](#blurs)     | <code>Array&lt;<Link to="/specs/vectorgraphics/blur">Blur</Link>&gt;</code>     | <span className="property-required">Required</span> |
+| [shadows](#shadows) | <code>Array&lt;<Link to="/specs/vectorgraphics/shadow">Shadow</Link>&gt;</code> | <span className="property-required">Required</span> |
 
 </div>
 
@@ -85,7 +87,7 @@ A list of the border styles of the object.
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/border">Border</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/border">Border</Link>&gt;</code>
 
 </div>
 
@@ -113,7 +115,7 @@ A list of the fill styles of the object.
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/fill">Fill</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/fill">Fill</Link>&gt;</code>
 
 </div>
 
@@ -141,7 +143,7 @@ A list of the blur styles of the object.
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/blur">Blur</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/blur">Blur</Link>&gt;</code>
 
 </div>
 
@@ -169,8 +171,50 @@ A list of the shadow styles of the object.
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/shadow">Shadow</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/shadow">Shadow</Link>&gt;</code>
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/frame#style'>Frame.style</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/path#style'>Path.style</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/text#style'>Text.style</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/image#style'>Image.style</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/group#style'>Group.style</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-instance#style'>SymbolInstance.style</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-master#style'>SymbolMaster.style</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/referenced-style#style'>ReferencedStyle.style</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-layer-def#style'>PatternLayerDef.style</Link>
+      </div>
 
 </div>

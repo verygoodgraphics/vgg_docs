@@ -3,9 +3,11 @@ title: AlphaMask
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/8-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -161,5 +163,43 @@ Type
 `boolean`
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/frame#alphamaskby'>Frame.alphaMaskBy</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/path#alphamaskby'>Path.alphaMaskBy</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/text#alphamaskby'>Text.alphaMaskBy</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/image#alphamaskby'>Image.alphaMaskBy</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/group#alphamaskby'>Group.alphaMaskBy</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-instance#alphamaskby'>SymbolInstance.alphaMaskBy</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-master#alphamaskby'>SymbolMaster.alphaMaskBy</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-layer-def#alphamaskby'>PatternLayerDef.alphaMaskBy</Link>
+      </div>
 
 </div>

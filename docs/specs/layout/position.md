@@ -3,23 +3,11 @@ title: Position
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
 
-</div>
-
-<div className="section-backlinks">
-
-<div className="backlinks-title">Backlinks</div>
-
-<div className="backlink">
-      <Link to='/specs/layout/flexbox-item#position'>FlexboxItem.properties.position</Link>
-      </div>
-
-<div className="backlink">
-      <Link to='/specs/layout/grid-item#position'>GridItem.properties.position</Link>
-      </div>
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/2-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -121,5 +109,19 @@ Value
 </div>
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/layout/flexbox-item#position'>FlexboxItem.position</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/layout/grid-item#position'>GridItem.position</Link>
+      </div>
 
 </div>

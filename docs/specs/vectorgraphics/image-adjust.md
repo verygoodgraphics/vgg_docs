@@ -3,9 +3,11 @@ title: ImageAdjust
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/5-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -15,10 +17,10 @@ Adjust the colors of an image.
 
 <div className="property-table">
 
-| Property              | Type                                                                                                                                                                                                      | Required                                            |
-| :-------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
-| [class](#class)       | `string`                                                                                                                                                                                                  | <span className="property-required">Required</span> |
-| [instance](#instance) | <code className="type-merged">oneOf&lt;<span className="type-merged-types"><a href="color-controls"><code>ColorControls</code></a><a href="image-filters"><code>ImageFilters</code></a></span>&gt;</code> | <span className="property-required">Required</span> |
+| Property              | Type                                                                                                                                                                                                              | Required                                            |
+| :-------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| [class](#class)       | `string`                                                                                                                                                                                                          | <span className="property-required">Required</span> |
+| [instance](#instance) | <code className="type-merged">oneOf&lt;<span className="type-merged-types"><Link to="color-controls"><code>ColorControls</code></Link><Link to="image-filters"><code>ImageFilters</code></Link></span>&gt;</code> | <span className="property-required">Required</span> |
 
 </div>
 
@@ -88,9 +90,9 @@ oneOf&lt;
 
 <span className="type-merged-types">
 
-<a href="color-controls"><code>ColorControls</code></a>
+<Link to="color-controls"><code>ColorControls</code></Link>
 
-<a href="image-filters"><code>ImageFilters</code></a>
+<Link to="image-filters"><code>ImageFilters</code></Link>
 
 </span>
 
@@ -99,5 +101,31 @@ oneOf&lt;
 </code>
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-image-fill#imageadjust'>PatternImageFill.imageAdjust</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-image-stretch#imageadjust'>PatternImageStretch.imageAdjust</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-image-fit#imageadjust'>PatternImageFit.imageAdjust</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-image-tile#imageadjust'>PatternImageTile.imageAdjust</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/image#imageadjust'>Image.imageAdjust</Link>
+      </div>
 
 </div>
