@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvgg_docs=self.webpackChunkvgg_docs||[]).push([[7918],{398:(s,c,e)=>{e.d(c,{Z:()=>g});e(5170);var k=e(9591);const g={...e(7722).Z,Link:k.Z}}}]);
