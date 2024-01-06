@@ -5,9 +5,15 @@ sidebar_class_name: show
 
 <div className="section-badges">
 
-<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+<div class="badge type">
+        <span class="label">Type</span>
+        <span class="value">object</span>
+      </div>
 
-<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/5-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
+<a href="#backlinks" class="badge backlinks">
+          <span class="label">Backlinks</span>
+          <span class="value">5</span>
+        </a>
 
 </div>
 
@@ -977,24 +983,28 @@ Type
 
 <div className="backlinks-title">Backlinks</div>
 
-<div className="backlink">
+<ul className="backlinks-list">
+
+<li className="backlink">
       <Link to='/specs/vectorgraphics/frame#childobjects'>Frame.childObjects</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/sub-shape#subgeometry'>SubShape.subGeometry</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/group#childobjects'>Group.childObjects</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/symbol-master#childobjects'>SymbolMaster.childObjects</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/pattern-layer-def#childobjects'>PatternLayerDef.childObjects</Link>
-      </div>
+      </li>
+
+</ul>
 
 </div>

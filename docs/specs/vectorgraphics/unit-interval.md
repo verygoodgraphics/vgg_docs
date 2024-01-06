@@ -5,9 +5,15 @@ sidebar_class_name: show
 
 <div className="section-badges">
 
-<div><img alt="number" src="https://img.shields.io/badge/number-number?label=Type" /></div>
+<div class="badge type">
+        <span class="label">Type</span>
+        <span class="value">number</span>
+      </div>
 
-<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/8-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
+<a href="#backlinks" class="badge backlinks">
+          <span class="label">Backlinks</span>
+          <span class="value">8</span>
+        </a>
 
 </div>
 
@@ -31,36 +37,40 @@ Value
 
 <div className="backlinks-title">Backlinks</div>
 
-<div className="backlink">
+<ul className="backlinks-list">
+
+<li className="backlink">
       <Link to='/specs/vectorgraphics/graphics-context-settings#opacity'>GraphicsContextSettings.opacity</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/color#alpha'>Color.alpha</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/color#red'>Color.red</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/color#green'>Color.green</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/color#blue'>Color.blue</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/gradient-stop#position'>GradientStop.position</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/gradient-stop#midpoint'>GradientStop.midPoint</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/gradient-hilight#length'>GradientHilight.length</Link>
-      </div>
+      </li>
+
+</ul>
 
 </div>

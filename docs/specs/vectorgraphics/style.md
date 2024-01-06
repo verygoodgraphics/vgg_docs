@@ -5,9 +5,15 @@ sidebar_class_name: show
 
 <div className="section-badges">
 
-<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+<div class="badge type">
+        <span class="label">Type</span>
+        <span class="value">object</span>
+      </div>
 
-<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/9-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
+<a href="#backlinks" class="badge backlinks">
+          <span class="label">Backlinks</span>
+          <span class="value">9</span>
+        </a>
 
 </div>
 
@@ -181,40 +187,44 @@ Type
 
 <div className="backlinks-title">Backlinks</div>
 
-<div className="backlink">
+<ul className="backlinks-list">
+
+<li className="backlink">
       <Link to='/specs/vectorgraphics/frame#style'>Frame.style</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/path#style'>Path.style</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/text#style'>Text.style</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/image#style'>Image.style</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/group#style'>Group.style</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/symbol-instance#style'>SymbolInstance.style</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/symbol-master#style'>SymbolMaster.style</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/referenced-style#style'>ReferencedStyle.style</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/pattern-layer-def#style'>PatternLayerDef.style</Link>
-      </div>
+      </li>
+
+</ul>
 
 </div>

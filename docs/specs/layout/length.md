@@ -5,9 +5,15 @@ sidebar_class_name: show
 
 <div className="section-badges">
 
-<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+<div class="badge type">
+        <span class="label">Type</span>
+        <span class="value">object</span>
+      </div>
 
-<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/6-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
+<a href="#backlinks" class="badge backlinks">
+          <span class="label">Backlinks</span>
+          <span class="value">6</span>
+        </a>
 
 </div>
 
@@ -141,28 +147,32 @@ Value
 
 <div className="backlinks-title">Backlinks</div>
 
-<div className="backlink">
+<ul className="backlinks-list">
+
+<li className="backlink">
       <Link to='/specs/layout/width#value'>Width.value</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/layout/max-width#value'>MaxWidth.value</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/layout/min-width#value'>MinWidth.value</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/layout/height#value'>Height.value</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/layout/max-height#value'>MaxHeight.value</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/layout/min-height#value'>MinHeight.value</Link>
-      </div>
+      </li>
+
+</ul>
 
 </div>

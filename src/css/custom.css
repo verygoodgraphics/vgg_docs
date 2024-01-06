@@ -178,6 +178,37 @@ code.type-merged {
   margin-right: 0;
 }
 
+.section-badges .badge {
+  font-size: 12px;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+  /* text-transform: uppercase; */
+  font-weight: 600;
+  background-color: #52525b;
+}
+
+.section-badges .badge:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.section-badges .badge span {
+  padding: 0.3rem 0.4rem;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.section-badges .badge.backlinks span.value {
+  background-color: #0ea5e9;
+}
+
+.section-badges .badge.type span.value {
+  background-color: #10b981;
+}
+
 :target {
   /* background-color: var(--vgg-target-highlight); */
   animation: disappear 2s;
@@ -191,4 +222,8 @@ code.type-merged {
   100% {
     background-color: transparent;
   }
+}
+
+ul.backlinks-list {
+  padding-left: 14px;
 }

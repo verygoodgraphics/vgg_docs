@@ -5,7 +5,10 @@ sidebar_class_name: hidden
 
 <div className="section-badges">
 
-<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+<div class="badge type">
+        <span class="label">Type</span>
+        <span class="value">object</span>
+      </div>
 
 </div>
 
