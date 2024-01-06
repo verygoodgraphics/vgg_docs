@@ -172,7 +172,7 @@ Type
 <div className="backlinks-title">Backlinks</div>
 
 <div className="backlink">
-      <Link to='/specs/vectorgraphics/text#linetype'>Text.lineType</Link>
+      <Link to='/specs/vectorgraphics/text#textlinetype'>Text.textLineType</Link>
       </div>
 
 </div>

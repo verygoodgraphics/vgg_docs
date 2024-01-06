@@ -901,11 +901,11 @@ Type
 <div className="backlinks-title">Backlinks</div>
 
 <div className="backlink">
-      <Link to='/specs/vectorgraphics/text#defaultattr'>Text.defaultAttr</Link>
+      <Link to='/specs/vectorgraphics/text#defaultfontattr'>Text.defaultFontAttr</Link>
       </div>
 
 <div className="backlink">
-      <Link to='/specs/vectorgraphics/text#attr'>Text.attr</Link>
+      <Link to='/specs/vectorgraphics/text#fontattr'>Text.fontAttr</Link>
       </div>
 
 <div className="backlink">
