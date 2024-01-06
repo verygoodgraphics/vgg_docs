@@ -5,14 +5,14 @@ sidebar_class_name: show
 
 <div className="section-badges">
 
-<div class="badge type">
-        <span class="label">Type</span>
-        <span class="value">integer</span>
+<div className="badge type">
+        <span className="label">Type</span>
+        <span className="value">integer</span>
       </div>
 
-<a href="#backlinks" class="badge backlinks">
-          <span class="label">Backlinks</span>
-          <span class="value">16</span>
+<a href="#backlinks" className="badge backlinks">
+          <span className="label">Backlinks</span>
+          <span className="value">16</span>
         </a>
 
 </div>
