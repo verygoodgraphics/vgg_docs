@@ -3,9 +3,11 @@ title: Shape
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/1-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -15,12 +17,12 @@ The shape of a path. Shape represents a vector geometry which is formed by indiv
 
 <div className="property-table">
 
-| Property                    | Type                                                                             | Required                                            |
-| :-------------------------- | :------------------------------------------------------------------------------- | :-------------------------------------------------- |
-| [class](#class)             | `string`                                                                         | <span className="property-required">Required</span> |
-| [subshapes](#subshapes)     | <code>Array&lt;<a href="/specs/vectorgraphics/sub-shape">SubShape</a>&gt;</code> | <span className="property-required">Required</span> |
-| [windingRule](#windingrule) | `integer`                                                                        | <span className="property-required">Required</span> |
-| [radius](#radius)           | `number`                                                                         | <span className="property-optional">Optional</span> |
+| Property                    | Type                                                                                 | Required                                            |
+| :-------------------------- | :----------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| [class](#class)             | `string`                                                                             | <span className="property-required">Required</span> |
+| [subshapes](#subshapes)     | <code>Array&lt;<Link to="/specs/vectorgraphics/sub-shape">SubShape</Link>&gt;</code> | <span className="property-required">Required</span> |
+| [windingRule](#windingrule) | `integer`                                                                            | <span className="property-required">Required</span> |
+| [radius](#radius)           | `number`                                                                             | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -84,7 +86,7 @@ A list of subshapes in the shape.
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/sub-shape">SubShape</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/sub-shape">SubShape</Link>&gt;</code>
 
 </div>
 
@@ -174,5 +176,15 @@ Type
 `number`
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/path#shape'>Path.shape</Link>
+      </div>
 
 </div>

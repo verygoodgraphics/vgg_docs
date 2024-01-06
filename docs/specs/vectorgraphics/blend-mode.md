@@ -3,9 +3,11 @@ title: BlendMode
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">integer</div>
+<div><img alt="integer" src="https://img.shields.io/badge/integer-integer?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/1-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -53,5 +55,15 @@ Value
 | `29`  | <div className="enum-description">vivid light</div>       |
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/graphics-context-settings#blendmode'>GraphicsContextSettings.blendMode</Link>
+      </div>
 
 </div>

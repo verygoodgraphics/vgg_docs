@@ -3,9 +3,11 @@ title: Rect
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/16-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -203,5 +205,75 @@ Type
 `number`
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/frame#bounds'>Frame.bounds</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/frame#frame'>Frame.frame</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/path#bounds'>Path.bounds</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/path#frame'>Path.frame</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/text#bounds'>Text.bounds</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/text#frame'>Text.frame</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/image#bounds'>Image.bounds</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/image#frame'>Image.frame</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/group#bounds'>Group.bounds</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/group#frame'>Group.frame</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-instance#bounds'>SymbolInstance.bounds</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-instance#frame'>SymbolInstance.frame</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-master#bounds'>SymbolMaster.bounds</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-master#frame'>SymbolMaster.frame</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-layer-def#bounds'>PatternLayerDef.bounds</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-layer-def#frame'>PatternLayerDef.frame</Link>
+      </div>
 
 </div>

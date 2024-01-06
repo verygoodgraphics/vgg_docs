@@ -3,9 +3,11 @@ title: Frame
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/5-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -19,6 +21,7 @@ The group's fills affect all of its children.
 
 <div className="property-table">
 
+<<<<<<< HEAD
 | Property                                      | Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Required                                            |
 | :-------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
 | [id](#id)                                     | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | <span className="property-required">Required</span> |
@@ -48,6 +51,37 @@ The group's fills affect all of its children.
 | [childObjects](#childobjects)                 | <code className="type-merged separate">Array&lt;<span className="type-merged-types separate"><a href="/specs/vectorgraphics/path"><code>Path</code></a><a href="/specs/vectorgraphics/image"><code>Image</code></a><a href="/specs/vectorgraphics/text"><code>Text</code></a><a href="/specs/vectorgraphics/group"><code>Group</code></a><a href="/specs/vectorgraphics/frame"><code>Frame</code></a><a href="/specs/vectorgraphics/symbol-instance"><code>SymbolInstance</code></a><a href="/specs/vectorgraphics/symbol-master"><code>SymbolMaster</code></a></span>&gt;</code> | <span className="property-required">Required</span> |
 | [class](#class)                               | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | <span className="property-required">Required</span> |
 | [radius](#radius)                             | `Array<number>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | <span className="property-optional">Optional</span> |
+=======
+| Property                                      | Type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Required                                            |
+| :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | :-------------------------------------------------- |
+| [id](#id)                                     | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | <span className="property-required">Required</span> |
+| [name](#name)                                 | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | <span className="property-optional">Optional</span> |
+| [isLocked](#islocked)                         | `boolean`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | <span className="property-required">Required</span> |
+| [visible](#visible)                           | `boolean`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | <span className="property-required">Required</span> |
+| [contextSettings](#contextsettings)           | [`GraphicsContextSettings`](/specs/vectorgraphics/graphics-context-settings)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | <span className="property-required">Required</span> |
+| [style](#style)                               | [`Style`](/specs/vectorgraphics/style)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | <span className="property-required">Required</span> |
+| [bounds](#bounds)                             | [`Rect`](/specs/vectorgraphics/rect)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | <span className="property-required">Required</span> |
+| [frame](#frame)                               | [`Rect`](/specs/vectorgraphics/rect)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | <span className="property-required">Required</span> |
+| [matrix](#matrix)                             | [`Matrix`](/specs/vectorgraphics/matrix)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | <span className="property-required">Required</span> |
+| [alphaMaskBy](#alphamaskby)                   | <code>Array&lt;<Link to="/specs/vectorgraphics/alpha-mask">AlphaMask</Link>&gt;</code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | <span className="property-required">Required</span> |
+| [outlineMaskBy](#outlinemaskby)               | `Array<string>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | <span className="property-required">Required</span> |
+| [maskType](#masktype)                         | `integer`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | <span className="property-required">Required</span> |
+| [styleEffectMaskArea](#styleeffectmaskarea)   | `integer`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | <span className="property-required">Required</span> |
+| [maskShowType](#maskshowtype)                 | `integer`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | <span className="property-optional">Optional</span> |
+| [overflow](#overflow)                         | `integer`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | <span className="property-required">Required</span> |
+| [cornerSmoothing](#cornersmoothing)           | `number`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | <span className="property-optional">Optional</span> |
+| [overrideKey](#overridekey)                   | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | <span className="property-optional">Optional</span> |
+| [horizontalConstraint](#horizontalconstraint) | [`Constraint`](/specs/vectorgraphics/constraint)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | <span className="property-optional">Optional</span> |
+| [verticalConstraint](#verticalconstraint)     | [`Constraint`](/specs/vectorgraphics/constraint)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | <span className="property-optional">Optional</span> |
+| [resizesContent](#resizescontent)             | `integer`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | <span className="property-optional">Optional</span> |
+| [keepShapeWhenResize](#keepshapewhenresize)   | `boolean`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | <span className="property-optional">Optional</span> |
+| [variableDefs](#variabledefs)                 | <code>Array&lt;<Link to="/specs/vectorgraphics/variable-def">VariableDef</Link>&gt;</code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | <span className="property-optional">Optional</span> |
+| [variableRefs](#variablerefs)                 | <code>Array&lt;<Link to="/specs/vectorgraphics/variable-ref">VariableRef</Link>&gt;</code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | <span className="property-optional">Optional</span> |
+| [styleEffectBoolean](#styleeffectboolean)     | `integer`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | <span className="property-optional">Optional</span> |
+| [childObjects](#childobjects)                 | <code className="type-merged separate">Array&lt;<span className="type-merged-types separate"><Link to="/specs/vectorgraphics/path"><code>Path</code></Link><Link to="/specs/vectorgraphics/image"><code>Image</code></Link><Link to="/specs/vectorgraphics/text"><code>Text</code></Link><Link to="/specs/vectorgraphics/group"><code>Group</code></Link><Link to="/specs/vectorgraphics/frame"><code>Frame</code></Link><Link to="/specs/vectorgraphics/symbol-instance"><code>SymbolInstance</code></Link><Link to="/specs/vectorgraphics/symbol-master"><code>SymbolMaster</code></Link></span>&gt;</code> | <span className="property-required">Required</span> |
+| [class](#class)                               | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | <span className="property-required">Required</span> |
+| [radius](#radius)                             | `Array<number>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | <span className="property-optional">Optional</span> |
+>>>>>>> 98c3624 (update: generate new docs content)
 
 </div>
 
@@ -327,7 +361,7 @@ A list of alpha masks applied to the object.
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/alpha-mask">AlphaMask</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/alpha-mask">AlphaMask</Link>&gt;</code>
 
 </div>
 
@@ -773,7 +807,7 @@ A list of variables that can be used by children.
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/variable-def">VariableDef</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/variable-def">VariableDef</Link>&gt;</code>
 
 </div>
 
@@ -801,7 +835,7 @@ A list of referenced variables.
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/variable-ref">VariableRef</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/variable-ref">VariableRef</Link>&gt;</code>
 
 </div>
 
@@ -881,19 +915,19 @@ Array&lt;
 
 <span className="type-merged-types separate">
 
-<a href="/specs/vectorgraphics/path"><code>Path</code></a>
+<Link to="/specs/vectorgraphics/path"><code>Path</code></Link>
 
-<a href="/specs/vectorgraphics/image"><code>Image</code></a>
+<Link to="/specs/vectorgraphics/image"><code>Image</code></Link>
 
-<a href="/specs/vectorgraphics/text"><code>Text</code></a>
+<Link to="/specs/vectorgraphics/text"><code>Text</code></Link>
 
-<a href="/specs/vectorgraphics/group"><code>Group</code></a>
+<Link to="/specs/vectorgraphics/group"><code>Group</code></Link>
 
-<a href="/specs/vectorgraphics/frame"><code>Frame</code></a>
+<Link to="/specs/vectorgraphics/frame"><code>Frame</code></Link>
 
-<a href="/specs/vectorgraphics/symbol-instance"><code>SymbolInstance</code></a>
+<Link to="/specs/vectorgraphics/symbol-instance"><code>SymbolInstance</code></Link>
 
-<a href="/specs/vectorgraphics/symbol-master"><code>SymbolMaster</code></a>
+<Link to="/specs/vectorgraphics/symbol-master"><code>SymbolMaster</code></Link>
 
 </span>
 
@@ -981,5 +1015,31 @@ Value
 </div>
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/frame#childobjects'>Frame.childObjects</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/sub-shape#subgeometry'>SubShape.subGeometry</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/group#childobjects'>Group.childObjects</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-master#childobjects'>SymbolMaster.childObjects</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-layer-def#childobjects'>PatternLayerDef.childObjects</Link>
+      </div>
 
 </div>

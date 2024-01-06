@@ -3,9 +3,11 @@ title: GradientLinear
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/1-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -15,13 +17,13 @@ A linear gradient refers to the effect of transitioning between two or more diff
 
 <div className="property-table">
 
-| Property          | Type                                                                                     | Required                                            |
-| :---------------- | :--------------------------------------------------------------------------------------- | :-------------------------------------------------- |
-| [class](#class)   | `string`                                                                                 | <span className="property-required">Required</span> |
-| [from](#from)     | [`Point`](/specs/vectorgraphics/point)                                                   | <span className="property-required">Required</span> |
-| [to](#to)         | [`Point`](/specs/vectorgraphics/point)                                                   | <span className="property-required">Required</span> |
-| [stops](#stops)   | <code>Array&lt;<a href="/specs/vectorgraphics/gradient-stop">GradientStop</a>&gt;</code> | <span className="property-required">Required</span> |
-| [invert](#invert) | `boolean`                                                                                | <span className="property-required">Required</span> |
+| Property          | Type                                                                                         | Required                                            |
+| :---------------- | :------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| [class](#class)   | `string`                                                                                     | <span className="property-required">Required</span> |
+| [from](#from)     | [`Point`](/specs/vectorgraphics/point)                                                       | <span className="property-required">Required</span> |
+| [to](#to)         | [`Point`](/specs/vectorgraphics/point)                                                       | <span className="property-required">Required</span> |
+| [stops](#stops)   | <code>Array&lt;<Link to="/specs/vectorgraphics/gradient-stop">GradientStop</Link>&gt;</code> | <span className="property-required">Required</span> |
+| [invert](#invert) | `boolean`                                                                                    | <span className="property-required">Required</span> |
 
 </div>
 
@@ -142,7 +144,7 @@ If the number of items is `1`, it means the color of the stop will not transitio
 
 Type
 
-<code>Array&lt;<a href="/specs/vectorgraphics/gradient-stop">GradientStop</a>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/gradient-stop">GradientStop</Link>&gt;</code>
 
 </div>
 
@@ -185,5 +187,15 @@ Type
 `boolean`
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/gradient#instance'>Gradient.instance</Link>
+      </div>
 
 </div>

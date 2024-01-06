@@ -3,35 +3,11 @@ title: Alignment
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">integer</div>
+<div><img alt="integer" src="https://img.shields.io/badge/integer-integer?label=Type" /></div>
 
-</div>
-
-<div className="section-backlinks">
-
-<div className="backlinks-title">Backlinks</div>
-
-<div className="backlink">
-      <Link to='/specs/layout/flexbox-layout#alignitems'>FlexboxLayout.properties.alignItems</Link>
-      </div>
-
-<div className="backlink">
-      <Link to='/specs/layout/flexbox-layout#aligncontent'>FlexboxLayout.properties.alignContent</Link>
-      </div>
-
-<div className="backlink">
-      <Link to='/specs/layout/grid-layout#cellalign'>GridLayout.properties.cellAlign</Link>
-      </div>
-
-<div className="backlink">
-      <Link to='/specs/layout/grid-item#rowalign'>GridItem.properties.rowAlign</Link>
-      </div>
-
-<div className="backlink">
-      <Link to='/specs/layout/grid-item#columnalign'>GridItem.properties.columnAlign</Link>
-      </div>
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/5-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -52,5 +28,31 @@ Value
 | `3`   | <div className="enum-description">end</div>    |
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/layout/flexbox-layout#alignitems'>FlexboxLayout.alignItems</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/layout/flexbox-layout#aligncontent'>FlexboxLayout.alignContent</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/layout/grid-layout#cellalign'>GridLayout.cellAlign</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/layout/grid-item#rowalign'>GridItem.rowAlign</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/layout/grid-item#columnalign'>GridItem.columnAlign</Link>
+      </div>
 
 </div>

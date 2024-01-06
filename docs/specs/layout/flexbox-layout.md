@@ -3,19 +3,11 @@ title: FlexboxLayout
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
 
-</div>
-
-<div className="section-backlinks">
-
-<div className="backlinks-title">Backlinks</div>
-
-<div className="backlink">
-      <Link to='/specs/layout/object#layout'>Object.properties.layout.oneOf.0</Link>
-      </div>
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/1-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -433,5 +425,15 @@ Type
 `boolean`
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/layout/object#layout'>Object.layout</Link>
+      </div>
 
 </div>

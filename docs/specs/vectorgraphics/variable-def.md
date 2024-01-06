@@ -3,9 +3,11 @@ title: VariableDef
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">object</div>
+<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/8-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -166,5 +168,43 @@ Type
 Not specified
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/frame#variabledefs'>Frame.variableDefs</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/path#variabledefs'>Path.variableDefs</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/text#variabledefs'>Text.variableDefs</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/image#variabledefs'>Image.variableDefs</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/group#variabledefs'>Group.variableDefs</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-instance#variabledefs'>SymbolInstance.variableDefs</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-master#variabledefs'>SymbolMaster.variableDefs</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-layer-def#variabledefs'>PatternLayerDef.variableDefs</Link>
+      </div>
 
 </div>

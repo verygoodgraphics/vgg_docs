@@ -3,9 +3,11 @@ title: Constraint
 sidebar_class_name: show
 ---
 
-<div className="section-type">
+<div className="section-badges">
 
-<div className="badge-type">integer</div>
+<div><img alt="integer" src="https://img.shields.io/badge/integer-integer?label=Type" /></div>
+
+<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/16-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
 
 </div>
 
@@ -33,5 +35,75 @@ Value
 | `7`   | <div className="enum-description">Keep the centerline distance between the child object and the parent container constant.&#xA;For example, let the parent container be `300` units wide, and the child object has an x-coordinate of `30` and a width of `120`. When the width of the parent container becomes `500`, the x-coordinate of the child object becomes `500 / 2 - (300 / 2 - (30 + 120 / 2)) - 120 / 2 = 130`, and the width remains `120`.<div className="enum-images"><img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Constraint/keep_centerline.png" alt="" /></div></div> |
 
 </div>
+
+</div>
+
+<div id="backlinks" className="section-backlinks">
+
+<div className="backlinks-title">Backlinks</div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/frame#horizontalconstraint'>Frame.horizontalConstraint</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/frame#verticalconstraint'>Frame.verticalConstraint</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/path#horizontalconstraint'>Path.horizontalConstraint</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/path#verticalconstraint'>Path.verticalConstraint</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/text#horizontalconstraint'>Text.horizontalConstraint</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/text#verticalconstraint'>Text.verticalConstraint</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/image#horizontalconstraint'>Image.horizontalConstraint</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/image#verticalconstraint'>Image.verticalConstraint</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/group#horizontalconstraint'>Group.horizontalConstraint</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/group#verticalconstraint'>Group.verticalConstraint</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-instance#horizontalconstraint'>SymbolInstance.horizontalConstraint</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-instance#verticalconstraint'>SymbolInstance.verticalConstraint</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-master#horizontalconstraint'>SymbolMaster.horizontalConstraint</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/symbol-master#verticalconstraint'>SymbolMaster.verticalConstraint</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-layer-def#horizontalconstraint'>PatternLayerDef.horizontalConstraint</Link>
+      </div>
+
+<div className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-layer-def#verticalconstraint'>PatternLayerDef.verticalConstraint</Link>
+      </div>
 
 </div>
