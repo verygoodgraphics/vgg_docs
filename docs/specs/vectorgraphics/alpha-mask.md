@@ -5,9 +5,15 @@ sidebar_class_name: show
 
 <div className="section-badges">
 
-<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+<div class="badge type">
+        <span class="label">Type</span>
+        <span class="value">object</span>
+      </div>
 
-<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/8-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
+<a href="#backlinks" class="badge backlinks">
+          <span class="label">Backlinks</span>
+          <span class="value">8</span>
+        </a>
 
 </div>
 
@@ -170,36 +176,40 @@ Type
 
 <div className="backlinks-title">Backlinks</div>
 
-<div className="backlink">
+<ul className="backlinks-list">
+
+<li className="backlink">
       <Link to='/specs/vectorgraphics/frame#alphamaskby'>Frame.alphaMaskBy</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/path#alphamaskby'>Path.alphaMaskBy</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/text#alphamaskby'>Text.alphaMaskBy</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/image#alphamaskby'>Image.alphaMaskBy</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/group#alphamaskby'>Group.alphaMaskBy</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/symbol-instance#alphamaskby'>SymbolInstance.alphaMaskBy</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/symbol-master#alphamaskby'>SymbolMaster.alphaMaskBy</Link>
-      </div>
+      </li>
 
-<div className="backlink">
+<li className="backlink">
       <Link to='/specs/vectorgraphics/pattern-layer-def#alphamaskby'>PatternLayerDef.alphaMaskBy</Link>
-      </div>
+      </li>
+
+</ul>
 
 </div>

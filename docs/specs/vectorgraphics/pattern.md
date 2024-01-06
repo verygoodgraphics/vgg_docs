@@ -5,9 +5,15 @@ sidebar_class_name: show
 
 <div className="section-badges">
 
-<div><img alt="object" src="https://img.shields.io/badge/object-object?label=Type" /></div>
+<div class="badge type">
+        <span class="label">Type</span>
+        <span class="value">object</span>
+      </div>
 
-<a href="#backlinks"><img alt="Backlinks" src="https://img.shields.io/badge/2-Backlinks?label=Backlinks&color=%230ea5e9" /></a>
+<a href="#backlinks" class="badge backlinks">
+          <span class="label">Backlinks</span>
+          <span class="value">2</span>
+        </a>
 
 </div>
 
@@ -114,12 +120,16 @@ oneOf&lt;
 
 <div className="backlinks-title">Backlinks</div>
 
-<div className="backlink">
-      <Link to='/specs/vectorgraphics/border#pattern'>Border.pattern</Link>
-      </div>
+<ul className="backlinks-list">
 
-<div className="backlink">
+<li className="backlink">
+      <Link to='/specs/vectorgraphics/border#pattern'>Border.pattern</Link>
+      </li>
+
+<li className="backlink">
       <Link to='/specs/vectorgraphics/fill#pattern'>Fill.pattern</Link>
-      </div>
+      </li>
+
+</ul>
 
 </div>
