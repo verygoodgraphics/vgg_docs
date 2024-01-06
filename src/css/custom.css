@@ -179,9 +179,9 @@ code.type-merged {
 }
 
 :target {
-  background-color: var(--vgg-target-highlight);
-  /* animation: disappear 2s;
-  background-color: transparent; */
+  /* background-color: var(--vgg-target-highlight); */
+  animation: disappear 2s;
+  background-color: transparent;
 }
 
 @keyframes disappear {
