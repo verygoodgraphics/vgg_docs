@@ -101,6 +101,10 @@
             "_img": ["/img/vector/Shadow/blur.png"]
         },
         {
+            "path": "properties/inner/type",
+            "_img": ["/img/vector/Shadow/inner.png"]
+        },
+        {
             "path": "properties/spread/type",
             "_img": ["/img/vector/Shadow/spread.png"]
         },
@@ -110,6 +114,10 @@
         }
     ],
     "#Border": [
+        {
+            "path": "properties/dashedPattern/type",
+            "_img": ["/img/vector/Border/dashedPattern.png"]
+        }
     ],
     "#BorderPosition": [
         {
@@ -126,7 +134,7 @@
     "#MarkerType": [
         {
             "path": "value",
-            "_img": ["/img/vector/Border/markerType.png"]
+            "_enumImg": [["/img/vector/Border/markerType_None.png"], ["/img/vector/Border/markerType_OpenArrow.png"], ["/img/vector/Border/markerType_FilledArrow.png"], ["/img/vector/Border/markerType_Line.png"], ["/img/vector/Border/markerType_OpenCircle.png"], ["/img/vector/Border/markerType_FilledCircle.png"], ["/img/vector/Border/markerType_OpenSquare.png"], ["/img/vector/Border/markerType_FilledSquare.png"], ["/img/vector/Border/markerType_ReversedTriangle.png"], ["/img/vector/Border/markerType_DiamondArrow.png"], ["/img/vector/Border/markerType_Round.png"], ["/img/vector/Border/markerType_Square.png"]]
         }
     ],
     "#LineJoinStyle": [
