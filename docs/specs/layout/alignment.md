@@ -27,11 +27,11 @@ Value
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value | Explanation                                    |
-| :---- | :--------------------------------------------- |
-| `1`   | <div className="enum-description">start</div>  |
-| `2`   | <div className="enum-description">center</div> |
-| `3`   | <div className="enum-description">end</div>    |
+| Value | Explanation                                                                                                                                                                                                    |
+| :---- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `1`   | <div className="enum-description">start<div className="enum-images"><img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/flexbox/alignment_start.png" alt="" /></div></div>   |
+| `2`   | <div className="enum-description">center<div className="enum-images"><img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/flexbox/alignment_center.png" alt="" /></div></div> |
+| `3`   | <div className="enum-description">end<div className="enum-images"><img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/flexbox/alignment_end.png" alt="" /></div></div>       |
 
 </div>
 

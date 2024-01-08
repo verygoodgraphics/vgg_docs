@@ -156,26 +156,14 @@ Value
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value | Explanation                                           |
-| :---- | :---------------------------------------------------- |
-| `1`   | <div className="enum-description">start</div>         |
-| `2`   | <div className="enum-description">center</div>        |
-| `3`   | <div className="enum-description">end</div>           |
-| `4`   | <div className="enum-description">space between</div> |
-| `5`   | <div className="enum-description">space around</div>  |
-| `6`   | <div className="enum-description">space evenly</div>  |
-
-</div>
-
-</div>
-
-<div className="property-item">
-
-<p></p>
-
-<div className="property-images">
-
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/flexbox/justifyContent.png" alt="" />
+| Value | Explanation                                                                                                                                                                                                                |
+| :---- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `1`   | <div className="enum-description">start<div className="enum-images"><img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/flexbox/justify_start.png" alt="" /></div></div>                 |
+| `2`   | <div className="enum-description">center<div className="enum-images"><img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/flexbox/justify_center.png" alt="" /></div></div>               |
+| `3`   | <div className="enum-description">end<div className="enum-images"><img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/flexbox/justify_end.png" alt="" /></div></div>                     |
+| `4`   | <div className="enum-description">space between<div className="enum-images"><img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/flexbox/justify_space-between.png" alt="" /></div></div> |
+| `5`   | <div className="enum-description">space around<div className="enum-images"><img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/flexbox/justify_space-around.png" alt="" /></div></div>   |
+| `6`   | <div className="enum-description">space evenly<div className="enum-images"><img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/flexbox/justify_space-evenly.png" alt="" /></div></div>   |
 
 </div>
 
@@ -209,18 +197,6 @@ Type
 
 </div>
 
-<div className="property-item">
-
-<p></p>
-
-<div className="property-images">
-
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/flexbox/alignItems.png" alt="" />
-
-</div>
-
-</div>
-
 </div>
 
 <div className="property">
@@ -246,18 +222,6 @@ This property is used to align the children of a flex container along the cross 
 Type
 
 [`Alignment`](/specs/layout/alignment)
-
-</div>
-
-<div className="property-item">
-
-<p></p>
-
-<div className="property-images">
-
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/flexbox/alignContent.png" alt="" />
-
-</div>
 
 </div>
 

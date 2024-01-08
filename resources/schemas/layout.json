@@ -2,15 +2,13 @@
     "#FlexboxLayout": [
         {
             "path": "properties/justifyContent/value",
-            "_img": ["/img/layout/flexbox/justifyContent.png"]
-        },
+            "_enumImg": [["/img/layout/flexbox/justify_start.png"], ["/img/layout/flexbox/justify_center.png"], ["/img/layout/flexbox/justify_end.png"], ["/img/layout/flexbox/justify_space-between.png"], ["/img/layout/flexbox/justify_space-around.png"], ["/img/layout/flexbox/justify_space-evenly.png"]]
+        }
+    ],
+    "#Alignment": [
         {
-            "path": "properties/alignItems/type",
-            "_img": ["/img/layout/flexbox/alignItems.png"]
-        },
-        {
-            "path": "properties/alignContent/type",
-            "_img": ["/img/layout/flexbox/alignContent.png"]
+            "path": "value",
+            "_enumImg": [["/img/layout/flexbox/alignment_start.png"], ["/img/layout/flexbox/alignment_center.png"], ["/img/layout/flexbox/alignment_end.png"]]
         }
     ],
     "#DynamicColumn": [
