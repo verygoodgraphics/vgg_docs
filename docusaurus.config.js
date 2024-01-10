@@ -168,12 +168,12 @@ const config = {
       },
       algolia: {
         // The application ID provided by Algolia
-        appId: "LIZCXVSFDV",
+        appId: "1HJINXV3SA",
 
         // Public API key: it is safe to commit it
-        apiKey: "fe24b11cdbf5f1ea2ade81747e2bb88d",
+        apiKey: "4cf05dfc7b460064ec89f84f81e6fe15",
 
-        indexName: "vgg_docs",
+        indexName: "verygoodgraphics",
 
         // Optional: see doc section below
         contextualSearch: true,
