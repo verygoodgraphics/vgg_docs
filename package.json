@@ -18,8 +18,8 @@
     "gen:search-records": "node --experimental-json-modules scripts/generateSearchRecords.mjs"
   },
   "dependencies": {
-    "@docusaurus/core": "3.0.1",
-    "@docusaurus/preset-classic": "3.0.1",
+    "@docusaurus/core": "3.1.0",
+    "@docusaurus/preset-classic": "3.1.0",
     "@heroicons/react": "^2.0.18",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
@@ -30,8 +30,8 @@
   },
   "devDependencies": {
     "@adobe/helix-log": "^6.0.1",
-    "@docusaurus/module-type-aliases": "3.0.1",
-    "@docusaurus/types": "3.0.1",
+    "@docusaurus/module-type-aliases": "3.1.0",
+    "@docusaurus/types": "3.1.0",
     "@types/jsonpath": "^0.2.4",
     "autoprefixer": "^10.4.16",
     "docusaurus-tailwindcss": "^0.1.0",
