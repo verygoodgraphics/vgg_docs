@@ -216,7 +216,6 @@ Type
 Description
 
 The thickness of the border.
-Value `0` is acceptable, as it is interpreted as the thinnest line width that can be displayed at device resolution.
 This attribute only works if `borderWeightsIndependent` is set to `false`.
 
 </div>

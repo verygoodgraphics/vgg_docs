@@ -225,7 +225,7 @@ Type
       </li>
 
 <li className="backlink">
-      <Link to='/specs/vectorgraphics/frame#frame'>Frame.frame</Link>
+      <Link to='/specs/vectorgraphics/frame#transformedbounds'>Frame.transformedBounds</Link>
       </li>
 
 <li className="backlink">
@@ -233,7 +233,7 @@ Type
       </li>
 
 <li className="backlink">
-      <Link to='/specs/vectorgraphics/path#frame'>Path.frame</Link>
+      <Link to='/specs/vectorgraphics/path#transformedbounds'>Path.transformedBounds</Link>
       </li>
 
 <li className="backlink">
@@ -241,7 +241,7 @@ Type
       </li>
 
 <li className="backlink">
-      <Link to='/specs/vectorgraphics/text#frame'>Text.frame</Link>
+      <Link to='/specs/vectorgraphics/text#transformedbounds'>Text.transformedBounds</Link>
       </li>
 
 <li className="backlink">
@@ -249,7 +249,7 @@ Type
       </li>
 
 <li className="backlink">
-      <Link to='/specs/vectorgraphics/image#frame'>Image.frame</Link>
+      <Link to='/specs/vectorgraphics/image#transformedbounds'>Image.transformedBounds</Link>
       </li>
 
 <li className="backlink">
@@ -257,7 +257,7 @@ Type
       </li>
 
 <li className="backlink">
-      <Link to='/specs/vectorgraphics/group#frame'>Group.frame</Link>
+      <Link to='/specs/vectorgraphics/group#transformedbounds'>Group.transformedBounds</Link>
       </li>
 
 <li className="backlink">
@@ -265,7 +265,7 @@ Type
       </li>
 
 <li className="backlink">
-      <Link to='/specs/vectorgraphics/symbol-instance#frame'>SymbolInstance.frame</Link>
+      <Link to='/specs/vectorgraphics/symbol-instance#transformedbounds'>SymbolInstance.transformedBounds</Link>
       </li>
 
 <li className="backlink">
@@ -273,7 +273,7 @@ Type
       </li>
 
 <li className="backlink">
-      <Link to='/specs/vectorgraphics/symbol-master#frame'>SymbolMaster.frame</Link>
+      <Link to='/specs/vectorgraphics/symbol-master#transformedbounds'>SymbolMaster.transformedBounds</Link>
       </li>
 
 <li className="backlink">
@@ -281,7 +281,7 @@ Type
       </li>
 
 <li className="backlink">
-      <Link to='/specs/vectorgraphics/pattern-layer-def#frame'>PatternLayerDef.frame</Link>
+      <Link to='/specs/vectorgraphics/pattern-layer-def#transformedbounds'>PatternLayerDef.transformedBounds</Link>
       </li>
 
 </ul>

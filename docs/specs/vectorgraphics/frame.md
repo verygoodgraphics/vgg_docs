@@ -36,7 +36,7 @@ The group's fills affect all of its children.
 | [contextSettings](#contextsettings)           | [`GraphicsContextSettings`](/specs/vectorgraphics/graphics-context-settings)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | <span className="property-required">Required</span> |
 | [style](#style)                               | [`Style`](/specs/vectorgraphics/style)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | <span className="property-required">Required</span> |
 | [bounds](#bounds)                             | [`Rect`](/specs/vectorgraphics/rect)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | <span className="property-required">Required</span> |
-| [frame](#frame)                               | [`Rect`](/specs/vectorgraphics/rect)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | <span className="property-optional">Optional</span> |
+| [transformedBounds](#transformedbounds)       | [`Rect`](/specs/vectorgraphics/rect)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | <span className="property-optional">Optional</span> |
 | [matrix](#matrix)                             | [`Matrix`](/specs/vectorgraphics/matrix)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | <span className="property-required">Required</span> |
 | [alphaMaskBy](#alphamaskby)                   | <code>Array&lt;<Link to="/specs/vectorgraphics/alpha-mask">AlphaMask</Link>&gt;</code>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | <span className="property-required">Required</span> |
 | [outlineMaskBy](#outlinemaskby)               | `Array<string>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | <span className="property-required">Required</span> |
@@ -56,6 +56,7 @@ The group's fills affect all of its children.
 | [childObjects](#childobjects)                 | <code className="type-merged separate">Array&lt;<span className="type-merged-types separate"><Link to="/specs/vectorgraphics/path"><code>Path</code></Link><Link to="/specs/vectorgraphics/image"><code>Image</code></Link><Link to="/specs/vectorgraphics/text"><code>Text</code></Link><Link to="/specs/vectorgraphics/group"><code>Group</code></Link><Link to="/specs/vectorgraphics/frame"><code>Frame</code></Link><Link to="/specs/vectorgraphics/symbol-instance"><code>SymbolInstance</code></Link><Link to="/specs/vectorgraphics/symbol-master"><code>SymbolMaster</code></Link></span>&gt;</code> | <span className="property-required">Required</span> |
 | [class](#class)                               | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | <span className="property-required">Required</span> |
 | [radius](#radius)                             | `Array<number>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | <span className="property-optional">Optional</span> |
+| [backgroundColor](#backgroundcolor)           | [`Color`](/specs/vectorgraphics/color)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -261,7 +262,7 @@ Type
 
 <div className="property-heading">
 
-## frame
+## transformedBounds
 
 <span className="property-optional">Optional</span>
 
@@ -987,6 +988,34 @@ Value
 **minimum number of items**: the minimum number of items for this array is: `4`
 
 </div>
+
+</div>
+
+</div>
+
+<div className="property">
+
+<div className="property-heading">
+
+## backgroundColor
+
+<span className="property-optional">Optional</span>
+
+</div>
+
+<div className="property-item">
+
+Description
+
+The background color of the canvas on which the frame is positioned. Exists only on the top-level frame.
+
+</div>
+
+<div className="property-item">
+
+Type
+
+[`Color`](/specs/vectorgraphics/color)
 
 </div>
 
