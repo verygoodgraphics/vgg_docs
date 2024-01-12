@@ -1,9 +1,13 @@
 ---
-title: VectorGraphics
+title: Vector Graphics Spec
 sidebar_class_name: hidden
 ---
 
 <div className="section-badges">
+
+<div className="badge beta">
+          <span className="label">Beta</span>
+        </div>
 
 <div className="badge type">
         <span className="label">Type</span>
@@ -11,6 +15,12 @@ sidebar_class_name: hidden
       </div>
 
 </div>
+
+:::warning[Disclaimer]
+
+Please note that _Vector Graphics Spec_ is in active development and is prone to change.
+
+:::
 
 VGG Vector Graphics Specification is a JSON-based spec for describing vector graphics.
 

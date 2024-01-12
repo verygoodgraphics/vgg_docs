@@ -5,12 +5,22 @@ sidebar_class_name: hidden
 
 <div className="section-badges">
 
+<div className="badge beta">
+          <span className="label">Beta</span>
+        </div>
+
 <div className="badge type">
         <span className="label">Type</span>
         <span className="value">object</span>
       </div>
 
 </div>
+
+:::warning[Disclaimer]
+
+undefined
+
+:::
 
 VGG Layout Specification describes the layout information of an element. VGG Layout Specification does not contain hierarchical relationships between objects, which are described in VGG Vector Graphics Specification.
 
