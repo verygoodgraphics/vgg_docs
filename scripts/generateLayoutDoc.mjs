@@ -4,6 +4,7 @@ import fs from "node:fs/promises"
 import { jsonschema2md } from "../lib/jsonschema2md/index.mjs"
 import schema from "../static/schemas/layout.schema.json" assert { type: "json" }
 import imagesMap from "../resources/schemas/layout.json" assert { type: "json" }
+import metaJSON from "../resources/schemas/meta.json" assert { type: "json" }
 
 const rootDir = path.resolve(process.cwd())
 const docDir = rootDir + "/docs/specs/layout"
@@ -23,6 +24,8 @@ jsonschema2md(schema, {
     assetPrefix:
       "https://raw.githubusercontent.com/verygoodgraphics/resource/main",
   },
+  disclaimer: metaJSON.layout.disclaimer,
+  isBeta: metaJSON.layout.status === "beta",
 })
 
 // const searchParamsJSON = JSON.stringify(

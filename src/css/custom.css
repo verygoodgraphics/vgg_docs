@@ -191,6 +191,10 @@ code.type-merged {
   background-color: #52525b;
 }
 
+.section-badges .beta {
+  background-color: #3b82f6;
+}
+
 .section-badges .badge:hover {
   color: #fff;
   text-decoration: none;

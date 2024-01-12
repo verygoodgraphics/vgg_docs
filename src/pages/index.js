@@ -15,6 +15,7 @@ const features = [
       "Descriptions of a set of JSON-based specifications for vector graphics.",
     href: "/specs/overview",
     icon: DocumentTextIcon,
+    badge: "Beta",
   },
   {
     name: "Guides",
@@ -43,7 +44,11 @@ export default function Home() {
   return (
     <Layout description="">
       <Head>
-        <script defer data-domain="docs.verygoodgraphics.com" src="https://t.vgg.cool/js/script.js"></script>
+        <script
+          defer
+          data-domain="docs.verygoodgraphics.com"
+          src="https://t.vgg.cool/js/script.js"
+        ></script>
       </Head>
       <main>
         <div className="py-12 sm:py-16">
@@ -66,9 +71,15 @@ export default function Home() {
                 {features.map((feature) => (
                   <a
                     key={feature.name}
-                    className="flex flex-col dark:bg-white/5 rounded-2xl p-6 bg-zinc-100 hover:no-underline border-solid border-transparent hover:border-[var(--ifm-color-primary)] hover:shadow-md"
+                    className="relative flex flex-col dark:bg-white/5 rounded-2xl p-6 bg-zinc-100 hover:no-underline border-solid border-transparent hover:border-[var(--ifm-color-primary)] hover:shadow-md"
                     href={feature.href}
                   >
+                    {/* 上标 */}
+                    {feature.badge && (
+                      <span className="absolute right-2 top-2 bg-zinc-200 text-zinc-500/80 dark:bg-zinc-700 dark:text-zinc-400 inline-block ml-2 px-2 py-0.5 text-xs font-medium leading-4 rounded-full">
+                        {feature.badge}
+                      </span>
+                    )}
                     <dt className="flex items-center gap-x-3 text-xl dark:text-white/50 text-zinc-500 leading-7 font-medium">
                       <feature.icon
                         className="h-8 w-8 flex-none text-zinc-500"
@@ -81,9 +92,7 @@ export default function Home() {
                         {feature.description}
                       </h2>
                       <div className="mt-6 mb-0">
-                        <div
-                          className="text-sm font-semibold leading-6 hover:underline"
-                        >
+                        <div className="text-sm font-semibold leading-6 hover:underline">
                           Learn more <span aria-hidden="true">→</span>
                         </div>
                       </div>
