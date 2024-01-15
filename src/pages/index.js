@@ -74,9 +74,8 @@ export default function Home() {
                     className="relative flex flex-col dark:bg-white/5 rounded-2xl p-6 bg-zinc-100 hover:no-underline border-solid border-transparent hover:border-[var(--ifm-color-primary)] hover:shadow-md"
                     href={feature.href}
                   >
-                    {/* 上标 */}
                     {feature.badge && (
-                      <span className="absolute right-2 top-2 bg-zinc-200 text-zinc-500/80 dark:bg-zinc-700 dark:text-zinc-400 inline-block ml-2 px-2 py-0.5 text-xs font-medium leading-4 rounded-full">
+                      <span className="absolute right-4 top-4 bg-zinc-200 text-zinc-500/80 dark:bg-zinc-700 dark:text-zinc-400 inline-block ml-2 px-2 py-0.5 text-xs font-medium leading-4 rounded-full">
                         {feature.badge}
                       </span>
                     )}
