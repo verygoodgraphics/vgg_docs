@@ -16,12 +16,6 @@ sidebar_class_name: hidden
 
 </div>
 
-:::warning[Disclaimer]
-
-undefined
-
-:::
-
 VGG Layout Specification describes the layout information of an element. VGG Layout Specification does not contain hierarchical relationships between objects, which are described in VGG Vector Graphics Specification.
 
 <div className="property-preview">
