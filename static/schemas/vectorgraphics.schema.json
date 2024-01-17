@@ -290,7 +290,7 @@
         "lighten dodge",
         "lighten light",
         "pass through",
-        "pin Light",
+        "pin light",
         "vivid light"
       ],
       "$id": "#BlendMode"

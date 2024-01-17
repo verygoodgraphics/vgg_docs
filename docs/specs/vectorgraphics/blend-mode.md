@@ -57,7 +57,7 @@ Value
 | `25`  | <div className="enum-description">lighten dodge</div>     |
 | `26`  | <div className="enum-description">lighten light</div>     |
 | `27`  | <div className="enum-description">pass through</div>      |
-| `28`  | <div className="enum-description">pin Light</div>         |
+| `28`  | <div className="enum-description">pin light</div>         |
 | `29`  | <div className="enum-description">vivid light</div>       |
 
 </div>
