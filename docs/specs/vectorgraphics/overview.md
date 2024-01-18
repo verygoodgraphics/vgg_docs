@@ -244,7 +244,7 @@ Array&lt;
 
 Description
 
-no description
+Illustrator-specific pattern definitions.
 
 </div>
 

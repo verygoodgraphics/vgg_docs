@@ -3617,6 +3617,7 @@
     },
     "patternLayerDef": {
       "type": "array",
+      "description": "Illustrator-specific pattern definitions.",
       "items": {
         "$ref": "#/definitions/PatternLayerDef"
       }
