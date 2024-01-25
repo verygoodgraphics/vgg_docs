@@ -141,7 +141,7 @@ const config = {
                 href: "https://discord.gg/89fFapjfgM",
               },
               {
-                label: "Twitter",
+                label: "X(Twitter)",
                 href: "https://twitter.com/VGG_Design",
               },
             ],
