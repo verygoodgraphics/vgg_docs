@@ -55,7 +55,7 @@
           "$ref": "#/definitions/Rect",
           "description": "The bounds of the object before undergoing matrix transformations."
         },
-        "frame": {
+        "transformedBounds": {
           "$ref": "#/definitions/Rect",
           "description": "An enclosing rectangle for the object. This property stores information about the object after the matrix transformation."
         },
@@ -207,6 +207,10 @@
           "items": {
             "type": "number"
           }
+        },
+        "backgroundColor": {
+          "$ref": "#/definitions/Color",
+          "description": "The background color of the canvas on which the frame is positioned. Exists only on the top-level frame."
         }
       },
       "additionalProperties": false
@@ -286,7 +290,7 @@
         "lighten dodge",
         "lighten light",
         "pass through",
-        "pin Light",
+        "pin light",
         "vivid light"
       ],
       "$id": "#BlendMode"
@@ -383,7 +387,7 @@
         },
         "thickness": {
           "type": "number",
-          "description": "The thickness of the border.\nValue `0` is acceptable, as it is interpreted as the thinnest line width that can be displayed at device resolution.\nThis attribute only works if `borderWeightsIndependent` is set to `false`."
+          "description": "The thickness of the border.\nThis attribute only works if `borderWeightsIndependent` is set to `false`."
         },
         "borderWeightsIndependent": {
           "type": "boolean",
@@ -1623,7 +1627,7 @@
           "$ref": "#/definitions/Rect",
           "description": "The bounds of the object before undergoing matrix transformations."
         },
-        "frame": {
+        "transformedBounds": {
           "$ref": "#/definitions/Rect",
           "description": "An enclosing rectangle for the object. This property stores information about the object after the matrix transformation."
         },
@@ -2064,7 +2068,7 @@
           "$ref": "#/definitions/Rect",
           "description": "The bounds of the object before undergoing matrix transformations."
         },
-        "frame": {
+        "transformedBounds": {
           "$ref": "#/definitions/Rect",
           "description": "An enclosing rectangle for the object. This property stores information about the object after the matrix transformation."
         },
@@ -2547,7 +2551,7 @@
           "$ref": "#/definitions/Rect",
           "description": "The bounds of the object before undergoing matrix transformations."
         },
-        "frame": {
+        "transformedBounds": {
           "$ref": "#/definitions/Rect",
           "description": "An enclosing rectangle for the object. This property stores information about the object after the matrix transformation."
         },
@@ -2727,7 +2731,7 @@
           "$ref": "#/definitions/Rect",
           "description": "The bounds of the object before undergoing matrix transformations."
         },
-        "frame": {
+        "transformedBounds": {
           "$ref": "#/definitions/Rect",
           "description": "An enclosing rectangle for the object. This property stores information about the object after the matrix transformation."
         },
@@ -2933,7 +2937,7 @@
           "$ref": "#/definitions/Rect",
           "description": "The bounds of the object before undergoing matrix transformations."
         },
-        "frame": {
+        "transformedBounds": {
           "$ref": "#/definitions/Rect",
           "description": "An enclosing rectangle for the object. This property stores information about the object after the matrix transformation."
         },
@@ -3181,7 +3185,7 @@
           "$ref": "#/definitions/Rect",
           "description": "The bounds of the object before undergoing matrix transformations."
         },
-        "frame": {
+        "transformedBounds": {
           "$ref": "#/definitions/Rect",
           "description": "An enclosing rectangle for the object. This property stores information about the object after the matrix transformation."
         },
@@ -3417,7 +3421,7 @@
           "$ref": "#/definitions/Rect",
           "description": "The bounds of the object before undergoing matrix transformations."
         },
-        "frame": {
+        "transformedBounds": {
           "$ref": "#/definitions/Rect",
           "description": "An enclosing rectangle for the object. This property stores information about the object after the matrix transformation."
         },
@@ -3577,7 +3581,7 @@
   "properties": {
     "version": {
       "type": "string",
-      "const": "1.0.11",
+      "const": "1.0.12",
       "description": "Current VGG specs version, conforming to semantic version format like `major.minor.patch`.\n"
     },
     "fileType": {
@@ -3613,6 +3617,7 @@
     },
     "patternLayerDef": {
       "type": "array",
+      "description": "Illustrator-specific pattern definitions.",
       "items": {
         "$ref": "#/definitions/PatternLayerDef"
       }
