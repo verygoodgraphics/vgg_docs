@@ -1,5 +1,5 @@
 ---
-title: VGG Home(Old)
+title: VGG Home(v1)
 ---
 
 [![Edit vgg-svelte-component-demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/devbox/vgg-svelte-component-demo-tx2kl6?embed=1)

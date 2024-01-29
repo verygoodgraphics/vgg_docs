@@ -1,5 +1,5 @@
 ---
-title: VGG Home(Old)
+title: VGG Home(v1)
 ---
 
 [![Edit vgg-vue-component-demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/devbox/pedantic-frog-d937jf?embed=1)

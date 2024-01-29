@@ -1,5 +1,5 @@
 ---
-title: VGG Home(Old)
+title: VGG Home(v1)
 ---
 
 [![Edit vgg-react-component-demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/devbox/vgg-react-component-demo-d96swg?embed=1&file=%2Fsrc%2FDemoComponent.tsx)
