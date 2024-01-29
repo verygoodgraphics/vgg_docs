@@ -145,7 +145,7 @@ Value
 
 <div id="backlinks" className="section-backlinks">
 
-<div className="backlinks-title">Backlinks</div>
+<div className="backlinks-title"><h2>Backlinks</h2></div>
 
 <ul className="backlinks-list">
 
