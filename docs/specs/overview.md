@@ -1,5 +1,5 @@
 ---
-title: Specs Overview
+title: VGG Specs
 ---
 
 VGG Specs is a set of JSON-based specifications for the next generation of vector graphics.

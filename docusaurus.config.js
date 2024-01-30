@@ -90,9 +90,15 @@ const config = {
           },
           {
             type: "docSidebar",
-            sidebarId: "guideSidebar",
+            sidebarId: "featSidebar",
             position: "left",
-            label: "Guides",
+            label: "Features",
+          },
+          {
+            type: "docSidebar",
+            sidebarId: "workflowSidebar",
+            position: "left",
+            label: "Workflow",
           },
           {
             type: "docSidebar",
