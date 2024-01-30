@@ -5,12 +5,13 @@ import {
   ArrowPathIcon,
   DocumentTextIcon,
   RectangleGroupIcon,
-  AcademicCapIcon,
+  CodeBracketSquareIcon,
+  SparklesIcon
 } from "@heroicons/react/20/solid"
 
 const features = [
   {
-    name: "Specs",
+    name: "VGG Specs",
     description:
       "Descriptions of a set of JSON-based specifications for vector graphics.",
     href: "/specs/overview",
@@ -18,24 +19,30 @@ const features = [
     badge: "Beta",
   },
   {
-    name: "Guides",
-    description:
-      "Introduces VGG's Design-as-Code workflow and describes how to integrate it well with your existing dev workflow.",
-    href: "/guides/overview",
-    icon: AcademicCapIcon,
+    name: "VGG Features",
+    description: "Illustrations of each feature defined by VGG Specs and implemented by VGG Runtime.",
+    href: "/features/overview",
+    icon: SparklesIcon,
   },
   {
-    name: "Containers",
+    name: "VGG Workflow",
     description:
-      "VGG containers for multiple platforms to help with both development and deployment of VGG applications.",
+      "Introduces VGG's Design-as-Code workflow and describes how to integrate it into your own develpment workflow.",
+    href: "/workflow/overview",
+    icon: ArrowPathIcon,
+  },
+  {
+    name: "VGG Containers",
+    description:
+      "VGG containers for multiple platforms for both development and deployment of VGG applications.",
     href: "/containers/overview",
     icon: RectangleGroupIcon,
   },
   {
-    name: "Examples",
+    name: "VGG Examples",
     description: "Various VGG examples demonstrating VGG capabilities.",
     href: "/examples/overview",
-    icon: ArrowPathIcon,
+    icon: CodeBracketSquareIcon,
   },
 ]
 
@@ -67,7 +74,7 @@ export default function Home() {
               </p>
             </div>
             <div className="mx-auto mt-12 max-w-2xl sm:mt-10 lg:mt-12 lg:max-w-none">
-              <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4">
+              <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
                 {features.map((feature) => (
                   <a
                     key={feature.name}

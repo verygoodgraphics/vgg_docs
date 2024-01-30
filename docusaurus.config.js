@@ -90,9 +90,15 @@ const config = {
           },
           {
             type: "docSidebar",
-            sidebarId: "guideSidebar",
+            sidebarId: "featSidebar",
             position: "left",
-            label: "Guides",
+            label: "Features",
+          },
+          {
+            type: "docSidebar",
+            sidebarId: "workflowSidebar",
+            position: "left",
+            label: "Workflow",
           },
           {
             type: "docSidebar",
@@ -122,10 +128,6 @@ const config = {
               {
                 label: "VGG Home",
                 href: "https://verygoodgraphics.com",
-              },
-              {
-                label: "VGG Playground",
-                href: "https://verygoodgraphics.com/playground",
               },
               {
                 label: "Daruma",
