@@ -23,15 +23,15 @@ Use an image as the content of the pattern. The pattern type is tile.
 
 <div className="property-table">
 
-| Property                        | Type                                                | Required                                            |
-| :------------------------------ | :-------------------------------------------------- | :-------------------------------------------------- |
-| [class](#class)                 | `string`                                            | <span className="property-required">Required</span> |
-| [mirror](#mirror)               | `boolean`                                           | <span className="property-optional">Optional</span> |
-| [scale](#scale)                 | `number`                                            | <span className="property-required">Required</span> |
-| [mode](#mode)                   | `integer`                                           | <span className="property-optional">Optional</span> |
-| [rotation](#rotation)           | `number`                                            | <span className="property-required">Required</span> |
-| [imageFileName](#imagefilename) | `string`                                            | <span className="property-required">Required</span> |
-| [imageAdjust](#imageadjust)     | [`ImageAdjust`](/specs/vectorgraphics/image-adjust) | <span className="property-optional">Optional</span> |
+| Property                        | Type                                                  | Required                                            |
+| :------------------------------ | :---------------------------------------------------- | :-------------------------------------------------- |
+| [class](#class)                 | `string`                                              | <span className="property-required">Required</span> |
+| [mirror](#mirror)               | `boolean`                                             | <span className="property-optional">Optional</span> |
+| [scale](#scale)                 | `number`                                              | <span className="property-required">Required</span> |
+| [mode](#mode)                   | `integer`                                             | <span className="property-optional">Optional</span> |
+| [rotation](#rotation)           | `number`                                              | <span className="property-required">Required</span> |
+| [imageFileName](#imagefilename) | `string`                                              | <span className="property-required">Required</span> |
+| [imageFilters](#imagefilters)   | [`ImageFilters`](/specs/vectorgraphics/image-filters) | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -237,7 +237,7 @@ Type
 
 <div className="property-heading">
 
-## imageAdjust
+## imageFilters
 
 <span className="property-optional">Optional</span>
 
@@ -255,7 +255,7 @@ Adjust the colors of the image.
 
 Type
 
-[`ImageAdjust`](/specs/vectorgraphics/image-adjust)
+[`ImageFilters`](/specs/vectorgraphics/image-filters)
 
 </div>
 

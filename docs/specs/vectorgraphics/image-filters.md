@@ -12,7 +12,7 @@ sidebar_class_name: show
 
 <a href="#backlinks" className="badge backlinks">
           <span className="label">Backlinks</span>
-          <span className="value">1</span>
+          <span className="value">5</span>
         </a>
 
 </div>
@@ -27,13 +27,14 @@ Adjust the detailed colors of an image.
 | :-------------------------- | :-------- | :-------------------------------------------------- |
 | [class](#class)             | `string`  | <span className="property-required">Required</span> |
 | [isEnabled](#isenabled)     | `boolean` | <span className="property-required">Required</span> |
-| [exposure](#exposure)       | `number`  | <span className="property-required">Required</span> |
-| [contrast](#contrast)       | `number`  | <span className="property-required">Required</span> |
-| [saturation](#saturation)   | `number`  | <span className="property-required">Required</span> |
-| [temperature](#temperature) | `number`  | <span className="property-required">Required</span> |
-| [tint](#tint)               | `number`  | <span className="property-required">Required</span> |
-| [highlights](#highlights)   | `number`  | <span className="property-required">Required</span> |
-| [shadows](#shadows)         | `number`  | <span className="property-required">Required</span> |
+| [exposure](#exposure)       | `number`  | <span className="property-optional">Optional</span> |
+| [contrast](#contrast)       | `number`  | <span className="property-optional">Optional</span> |
+| [saturation](#saturation)   | `number`  | <span className="property-optional">Optional</span> |
+| [temperature](#temperature) | `number`  | <span className="property-optional">Optional</span> |
+| [tint](#tint)               | `number`  | <span className="property-optional">Optional</span> |
+| [highlights](#highlights)   | `number`  | <span className="property-optional">Optional</span> |
+| [shadows](#shadows)         | `number`  | <span className="property-optional">Optional</span> |
+| [hue](#hue)                 | `number`  | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -66,7 +67,7 @@ Value
 **constant**: the value of this property must be equal to:
 
 ```json
-"imageFilter"
+"imageFilters"
 ```
 
 </div>
@@ -109,7 +110,7 @@ Type
 
 ## exposure
 
-<span className="property-required">Required</span>
+<span className="property-optional">Optional</span>
 
 </div>
 
@@ -151,7 +152,7 @@ Value
 
 ## contrast
 
-<span className="property-required">Required</span>
+<span className="property-optional">Optional</span>
 
 </div>
 
@@ -193,7 +194,7 @@ Value
 
 ## saturation
 
-<span className="property-required">Required</span>
+<span className="property-optional">Optional</span>
 
 </div>
 
@@ -235,7 +236,7 @@ Value
 
 ## temperature
 
-<span className="property-required">Required</span>
+<span className="property-optional">Optional</span>
 
 </div>
 
@@ -277,7 +278,7 @@ Value
 
 ## tint
 
-<span className="property-required">Required</span>
+<span className="property-optional">Optional</span>
 
 </div>
 
@@ -319,7 +320,7 @@ Value
 
 ## highlights
 
-<span className="property-required">Required</span>
+<span className="property-optional">Optional</span>
 
 </div>
 
@@ -361,7 +362,49 @@ Value
 
 ## shadows
 
-<span className="property-required">Required</span>
+<span className="property-optional">Optional</span>
+
+</div>
+
+<div className="property-item">
+
+Description
+
+no description
+
+</div>
+
+<div className="property-item">
+
+Type
+
+`number`
+
+</div>
+
+<div className="property-item">
+
+Value
+
+<div className="value-description">
+
+**maximum**: the value of this number must smaller than or equal to: `1`
+
+**minimum**: the value of this number must greater than or equal to: `-1`
+
+</div>
+
+</div>
+
+</div>
+
+<div className="property">
+
+<div className="property-heading">
+
+## hue
+
+<span className="property-optional">Optional</span>
 
 </div>
 
@@ -404,7 +447,23 @@ Value
 <ul className="backlinks-list">
 
 <li className="backlink">
-      <Link to='/specs/vectorgraphics/image-adjust#instance'>ImageAdjust.instance</Link>
+      <Link to='/specs/vectorgraphics/pattern-image-fill#imagefilters'>PatternImageFill.imageFilters</Link>
+      </li>
+
+<li className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-image-stretch#imagefilters'>PatternImageStretch.imageFilters</Link>
+      </li>
+
+<li className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-image-fit#imagefilters'>PatternImageFit.imageFilters</Link>
+      </li>
+
+<li className="backlink">
+      <Link to='/specs/vectorgraphics/pattern-image-tile#imagefilters'>PatternImageTile.imageFilters</Link>
+      </li>
+
+<li className="backlink">
+      <Link to='/specs/vectorgraphics/image#imagefilters'>Image.imageFilters</Link>
       </li>
 
 </ul>

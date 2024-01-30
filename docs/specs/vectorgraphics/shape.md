@@ -113,6 +113,7 @@ Type
 Description
 
 The rule determining whether an area is inside or outside a path.
+Note: For `vectorNetwork`, this property should be ignored.
 
 </div>
 

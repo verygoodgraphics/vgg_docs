@@ -52,7 +52,7 @@ Details of an image.
 | [class](#class)                               | `string`                                                                                   | <span className="property-required">Required</span> |
 | [imageFileName](#imagefilename)               | `string`                                                                                   | <span className="property-required">Required</span> |
 | [fillReplacesImage](#fillreplacesimage)       | `boolean`                                                                                  | <span className="property-optional">Optional</span> |
-| [imageAdjust](#imageadjust)                   | [`ImageAdjust`](/specs/vectorgraphics/image-adjust)                                        | <span className="property-optional">Optional</span> |
+| [imageFilters](#imagefilters)                 | [`ImageFilters`](/specs/vectorgraphics/image-filters)                                      | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -623,7 +623,7 @@ Type
 
 Description
 
-Horizontal layout constraints for the object.
+Horizontal constraints for the object.
 Default value is `1`.
 
 </div>
@@ -652,7 +652,7 @@ Type
 
 Description
 
-Vertical layout constraints for the object.
+Vertical constraints for the object.
 Default value is `1`.
 
 </div>
@@ -955,7 +955,7 @@ Type
 
 <div className="property-heading">
 
-## imageAdjust
+## imageFilters
 
 <span className="property-optional">Optional</span>
 
@@ -973,7 +973,7 @@ Adjust the colors of the image.
 
 Type
 
-[`ImageAdjust`](/specs/vectorgraphics/image-adjust)
+[`ImageFilters`](/specs/vectorgraphics/image-filters)
 
 </div>
 

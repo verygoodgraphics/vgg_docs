@@ -49,6 +49,7 @@ The font attributes of a text fragment.
 | [verticalScale](#verticalscale)             | `number`                                                                                       | <span className="property-optional">Optional</span> |
 | [rotate](#rotate)                           | `number`                                                                                       | <span className="property-optional">Optional</span> |
 | [textParagraph](#textparagraph)             | [`TextParagraph`](/specs/vectorgraphics/text-paragraph)                                        | <span className="property-optional">Optional</span> |
+| [hyperlink](#hyperlink)                     | `string`                                                                                       | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -897,6 +898,34 @@ The properties of the text paragraph, which are consistent across the same text 
 Type
 
 [`TextParagraph`](/specs/vectorgraphics/text-paragraph)
+
+</div>
+
+</div>
+
+<div className="property">
+
+<div className="property-heading">
+
+## hyperlink
+
+<span className="property-optional">Optional</span>
+
+</div>
+
+<div className="property-item">
+
+Description
+
+Hyperlink for jump.
+
+</div>
+
+<div className="property-item">
+
+Type
+
+`string`
 
 </div>
 

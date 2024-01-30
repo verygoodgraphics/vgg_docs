@@ -12,7 +12,7 @@ sidebar_class_name: show
 
 <a href="#backlinks" className="badge backlinks">
           <span className="label">Backlinks</span>
-          <span className="value">2</span>
+          <span className="value">3</span>
         </a>
 
 </div>
@@ -249,6 +249,10 @@ Type
 
 <li className="backlink">
       <Link to='/specs/vectorgraphics/style#fills'>Style.fills</Link>
+      </li>
+
+<li className="backlink">
+      <Link to='/specs/vectorgraphics/region#fills'>Region.fills</Link>
       </li>
 
 <li className="backlink">

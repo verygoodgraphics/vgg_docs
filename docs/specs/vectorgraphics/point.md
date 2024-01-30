@@ -12,7 +12,7 @@ sidebar_class_name: show
 
 <a href="#backlinks" className="badge backlinks">
           <span className="label">Backlinks</span>
-          <span className="value">18</span>
+          <span className="value">21</span>
         </a>
 
 </div>
@@ -105,6 +105,18 @@ Value
 
 <li className="backlink">
       <Link to='/specs/vectorgraphics/point-attr#point'>PointAttr.point</Link>
+      </li>
+
+<li className="backlink">
+      <Link to='/specs/vectorgraphics/vertice#point'>Vertice.point</Link>
+      </li>
+
+<li className="backlink">
+      <Link to='/specs/vectorgraphics/segment#curvefrom'>Segment.curveFrom</Link>
+      </li>
+
+<li className="backlink">
+      <Link to='/specs/vectorgraphics/segment#curveto'>Segment.curveTo</Link>
       </li>
 
 <li className="backlink">

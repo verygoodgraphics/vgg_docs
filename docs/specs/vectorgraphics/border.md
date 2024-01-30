@@ -43,8 +43,6 @@ Define a border style of an object.
 | [dashedPattern](#dashedpattern)                       | `Array<number>`                                                              | <span className="property-required">Required</span> |
 | [dashedOffset](#dashedoffset)                         | `number`                                                                     | <span className="property-required">Required</span> |
 | [lineCapStyle](#linecapstyle)                         | [`LineCapStyle`](/specs/vectorgraphics/line-cap-style)                       | <span className="property-required">Required</span> |
-| [startMarkerType](#startmarkertype)                   | [`MarkerType`](/specs/vectorgraphics/marker-type)                            | <span className="property-optional">Optional</span> |
-| [endMarkerType](#endmarkertype)                       | [`MarkerType`](/specs/vectorgraphics/marker-type)                            | <span className="property-optional">Optional</span> |
 | [lineJoinStyle](#linejoinstyle)                       | [`LineJoinStyle`](/specs/vectorgraphics/line-join-style)                     | <span className="property-required">Required</span> |
 | [miterLimit](#miterlimit)                             | `number`                                                                     | <span className="property-required">Required</span> |
 | [flat](#flat)                                         | `number`                                                                     | <span className="property-required">Required</span> |
@@ -592,62 +590,6 @@ The shape styles at the end of border lines.
 Type
 
 [`LineCapStyle`](/specs/vectorgraphics/line-cap-style)
-
-</div>
-
-</div>
-
-<div className="property">
-
-<div className="property-heading">
-
-## startMarkerType
-
-<span className="property-optional">Optional</span>
-
-</div>
-
-<div className="property-item">
-
-Description
-
-The shape type of the border's starting point.
-
-</div>
-
-<div className="property-item">
-
-Type
-
-[`MarkerType`](/specs/vectorgraphics/marker-type)
-
-</div>
-
-</div>
-
-<div className="property">
-
-<div className="property-heading">
-
-## endMarkerType
-
-<span className="property-optional">Optional</span>
-
-</div>
-
-<div className="property-item">
-
-Description
-
-The shape type of the border's ending point.
-
-</div>
-
-<div className="property-item">
-
-Type
-
-[`MarkerType`](/specs/vectorgraphics/marker-type)
 
 </div>
 

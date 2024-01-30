@@ -23,14 +23,15 @@ One point on the contour of a shape.
 
 <div className="property-table">
 
-| Property                    | Type                                   | Required                                            |
-| :-------------------------- | :------------------------------------- | :-------------------------------------------------- |
-| [class](#class)             | `string`                               | <span className="property-required">Required</span> |
-| [radius](#radius)           | `number`                               | <span className="property-optional">Optional</span> |
-| [cornerStyle](#cornerstyle) | `integer`                              | <span className="property-optional">Optional</span> |
-| [curveFrom](#curvefrom)     | [`Point`](/specs/vectorgraphics/point) | <span className="property-optional">Optional</span> |
-| [curveTo](#curveto)         | [`Point`](/specs/vectorgraphics/point) | <span className="property-optional">Optional</span> |
-| [point](#point)             | [`Point`](/specs/vectorgraphics/point) | <span className="property-required">Required</span> |
+| Property                    | Type                                              | Required                                            |
+| :-------------------------- | :------------------------------------------------ | :-------------------------------------------------- |
+| [class](#class)             | `string`                                          | <span className="property-required">Required</span> |
+| [radius](#radius)           | `number`                                          | <span className="property-optional">Optional</span> |
+| [cornerStyle](#cornerstyle) | `integer`                                         | <span className="property-optional">Optional</span> |
+| [curveFrom](#curvefrom)     | [`Point`](/specs/vectorgraphics/point)            | <span className="property-optional">Optional</span> |
+| [curveTo](#curveto)         | [`Point`](/specs/vectorgraphics/point)            | <span className="property-optional">Optional</span> |
+| [point](#point)             | [`Point`](/specs/vectorgraphics/point)            | <span className="property-required">Required</span> |
+| [markType](#marktype)       | [`MarkerType`](/specs/vectorgraphics/marker-type) | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -238,6 +239,34 @@ The coordinates of the point before the matrix transformation.
 Type
 
 [`Point`](/specs/vectorgraphics/point)
+
+</div>
+
+</div>
+
+<div className="property">
+
+<div className="property-heading">
+
+## markType
+
+<span className="property-optional">Optional</span>
+
+</div>
+
+<div className="property-item">
+
+Description
+
+The shape type of the point. This property only applies to endpoints.
+
+</div>
+
+<div className="property-item">
+
+Type
+
+[`MarkerType`](/specs/vectorgraphics/marker-type)
 
 </div>
 

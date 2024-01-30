@@ -621,7 +621,7 @@ Type
 
 Description
 
-Horizontal layout constraints for the object.
+Horizontal constraints for the object.
 Default value is `1`.
 
 </div>
@@ -650,7 +650,7 @@ Type
 
 Description
 
-Vertical layout constraints for the object.
+Vertical constraints for the object.
 Default value is `1`.
 
 </div>

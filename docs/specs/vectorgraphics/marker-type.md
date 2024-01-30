@@ -53,11 +53,11 @@ Value
 <ul className="backlinks-list">
 
 <li className="backlink">
-      <Link to='/specs/vectorgraphics/border#startmarkertype'>Border.startMarkerType</Link>
+      <Link to='/specs/vectorgraphics/point-attr#marktype'>PointAttr.markType</Link>
       </li>
 
 <li className="backlink">
-      <Link to='/specs/vectorgraphics/border#endmarkertype'>Border.endMarkerType</Link>
+      <Link to='/specs/vectorgraphics/vertice#marktype'>Vertice.markType</Link>
       </li>
 
 </ul>
