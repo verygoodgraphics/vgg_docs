@@ -124,10 +124,6 @@ const config = {
                 href: "https://verygoodgraphics.com",
               },
               {
-                label: "VGG Playground",
-                href: "https://verygoodgraphics.com/playground",
-              },
-              {
                 label: "Daruma",
                 href: "https://verygoodgraphics.com/daruma",
               },
