@@ -1,5 +1,5 @@
 ---
-title: PatternImageFit
+title: Vertice
 sidebar_class_name: show
 ---
 
@@ -17,18 +17,18 @@ sidebar_class_name: show
 
 </div>
 
-Use an image as the content of the pattern. The pattern type is fit.
+A vertice in a vector netWork.
 
 <div className="property-preview">
 
 <div className="property-table">
 
-| Property                        | Type                                                  | Required                                            |
-| :------------------------------ | :---------------------------------------------------- | :-------------------------------------------------- |
-| [class](#class)                 | `string`                                              | <span className="property-required">Required</span> |
-| [imageFileName](#imagefilename) | `string`                                              | <span className="property-required">Required</span> |
-| [rotation](#rotation)           | `number`                                              | <span className="property-required">Required</span> |
-| [imageFilters](#imagefilters)   | [`ImageFilters`](/specs/vectorgraphics/image-filters) | <span className="property-optional">Optional</span> |
+| Property              | Type                                              | Required                                            |
+| :-------------------- | :------------------------------------------------ | :-------------------------------------------------- |
+| [class](#class)       | `string`                                          | <span className="property-required">Required</span> |
+| [radius](#radius)     | `number`                                          | <span className="property-optional">Optional</span> |
+| [point](#point)       | [`Point`](/specs/vectorgraphics/point)            | <span className="property-required">Required</span> |
+| [markType](#marktype) | [`MarkerType`](/specs/vectorgraphics/marker-type) | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -61,7 +61,7 @@ Value
 **constant**: the value of this property must be equal to:
 
 ```json
-"patternImageFit"
+"vertice"
 ```
 
 </div>
@@ -74,37 +74,9 @@ Value
 
 <div className="property-heading">
 
-## imageFileName
+## radius
 
-<span className="property-required">Required</span>
-
-</div>
-
-<div className="property-item">
-
-Description
-
-File name of the image.
-
-</div>
-
-<div className="property-item">
-
-Type
-
-`string`
-
-</div>
-
-</div>
-
-<div className="property">
-
-<div className="property-heading">
-
-## rotation
-
-<span className="property-required">Required</span>
+<span className="property-optional">Optional</span>
 
 </div>
 
@@ -112,7 +84,7 @@ Type
 
 Description
 
-Rotation of the image in degrees. Positive values represent counterclockwise rotation. Rotate around the center of the image.
+Corner radius at the vertice.
 
 </div>
 
@@ -130,7 +102,35 @@ Type
 
 <div className="property-heading">
 
-## imageFilters
+## point
+
+<span className="property-required">Required</span>
+
+</div>
+
+<div className="property-item">
+
+Description
+
+The coordinates of the point before the matrix transformation.
+
+</div>
+
+<div className="property-item">
+
+Type
+
+[`Point`](/specs/vectorgraphics/point)
+
+</div>
+
+</div>
+
+<div className="property">
+
+<div className="property-heading">
+
+## markType
 
 <span className="property-optional">Optional</span>
 
@@ -140,7 +140,7 @@ Type
 
 Description
 
-Adjust the colors of the image.
+The shape type of the vertice. This property only applies to endpoints.
 
 </div>
 
@@ -148,7 +148,7 @@ Adjust the colors of the image.
 
 Type
 
-[`ImageFilters`](/specs/vectorgraphics/image-filters)
+[`MarkerType`](/specs/vectorgraphics/marker-type)
 
 </div>
 
@@ -161,7 +161,7 @@ Type
 <ul className="backlinks-list">
 
 <li className="backlink">
-      <Link to='/specs/vectorgraphics/pattern#instance'>Pattern.instance</Link>
+      <Link to='/specs/vectorgraphics/vector-network#vertices'>VectorNetwork.vertices</Link>
       </li>
 
 </ul>

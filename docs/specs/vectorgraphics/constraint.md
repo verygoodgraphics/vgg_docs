@@ -17,7 +17,7 @@ sidebar_class_name: show
 
 </div>
 
-Horizontal and vertical layout constraints for the object relative to its parent container.
+Horizontal and vertical constraints for the object relative to its parent container.
 In the horizontal direction, `start` indicates the left, and `end` indicates the right.
 In the vertical direction, `start` identifies the top, and `end` identifies the bottom.
 
