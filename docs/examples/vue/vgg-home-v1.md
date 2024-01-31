@@ -4,7 +4,7 @@ title: VGG Home(v1)
 
 [![Edit vgg-vue-component-demo](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/devbox/pedantic-frog-d937jf?embed=1)
 
-<iframe src="https://codesandbox.io/p/devbox/pedantic-frog-d937jf?embed=1"
+<iframe src="https://codesandbox.io/p/devbox/pedantic-frog-d937jf?embed=1&file=%2Fsrc%2FVueExample.vue"
   width='100%'
   height='1120px'
   title="vgg-vue-component-demo"
