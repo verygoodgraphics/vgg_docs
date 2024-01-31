@@ -5,10 +5,6 @@ sidebar_class_name: hidden
 
 <div className="section-badges">
 
-<div className="badge beta">
-          <span className="label">Beta</span>
-        </div>
-
 <div className="badge type">
         <span className="label">Type</span>
         <span className="value">object</span>

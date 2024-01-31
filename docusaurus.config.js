@@ -4,6 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
+import { DocumentTextIcon } from "@heroicons/react/20/solid"
 import { themes as prismThemes } from "prism-react-renderer"
 
 /** @type {import('@docusaurus/types').Config} */
@@ -34,6 +35,8 @@ const config = {
     defaultLocale: "en",
     locales: ["en"],
   },
+
+  staticDirectories: ["static"],
 
   plugins: [
     // ....
@@ -87,6 +90,8 @@ const config = {
             sidebarId: "specSidebar",
             position: "left",
             label: "Specs",
+            className: "navbar__icon navbar__specs",
+            "aria-label": "Specs",
           },
           {
             type: "docSidebar",
@@ -143,7 +148,7 @@ const config = {
                 href: "https://discord.gg/89fFapjfgM",
               },
               {
-                label: "X(Twitter)",
+                label: "X (Twitter)",
                 href: "https://twitter.com/VGG_Design",
               },
             ],

@@ -231,3 +231,37 @@ code.type-merged {
 ul.backlinks-list {
   padding-left: 14px;
 }
+
+.navbar__icon {
+  height: 2rem;
+  /* width: 2rem; */
+}
+
+.navbar__specs {
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: background var(--ifm-transition-fast);
+  /* color: var(--ifm-navbar-link-color); */
+}
+
+.navbar__specs::after {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url("/img/icon-flask.svg");
+  filter: invert(50%);
+  background-size: contain;
+  color: var(--ifm-navbar-link-color);
+}
+
+html[data-theme="light"] .navbar__specs::after {
+  color: #000;
+}
+
+html[data-theme="dark"] .navbar__specs::after {
+  color: #fff;
+}
