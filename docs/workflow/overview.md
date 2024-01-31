@@ -2,18 +2,21 @@
 title: VGG Workflow
 ---
 
-_VGG Workflow_ is an innovative workflow for rapid application development
-(RAD), which is based on [VGG Specs](/specs/overview) and its implementation,
-[VGG Runtime](https://github.com/verygoodgraphics/vgg_runtime).
+The _VGG Workflow_ is an innovative workflow for rapid application development,
+made possible by [VGG Specs](/specs/overview) and its official open-source
+implementation, [VGG Runtime](https://github.com/verygoodgraphics/vgg_runtime).
 
 ## First Principle
 
 <img src="/img/principle.png" alt="first_principle" style={{ width: '40%', display: 'block', margin: '40px auto' }}/>
 
 The first principle of _VGG Workflow_ is to bridge the huge gap between the two
-worlds of design and development, eliminating duplicate development work
-(writing code to reimplement UI which is already created by designers using
-design tools) and accelerating the application development process.
+worlds of design and development. This is achieved by eliminating redundant
+development efforts—specifically, the rewriting of code to reimplement UI
+elements that designers have already created using design tools.
+
+The ultimate result is an accelerated application development process, a
+minimized R&D cycle, and a significantly improved ROI.
 
 ## Design-as-Code
 

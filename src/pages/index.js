@@ -13,34 +13,36 @@ const features = [
   {
     name: "VGG Specs",
     description:
-      "Descriptions of a set of JSON-based specifications for vector graphics.",
+      "Descriptions of a set of JSON-based specifications specially for vector graphics.",
     href: "/specs/overview",
     icon: DocumentTextIcon,
     badge: "Beta",
   },
   {
     name: "VGG Features",
-    description: "Illustrations of each feature defined by VGG Specs and implemented by VGG Runtime.",
+    description:
+      "Illustrations of each feature defined by VGG Specs and implemented by VGG Runtime.",
     href: "/features/overview",
     icon: SparklesIcon,
   },
   {
     name: "VGG Workflow",
     description:
-      "Introduces VGG's Design-as-Code workflow and describes how to integrate it into your own develpment workflow.",
+      "Explanations of concepts in VGG Workflow and descriptions of main steps to use it.",
     href: "/workflow/overview",
     icon: ArrowPathIcon,
   },
   {
     name: "VGG Containers",
     description:
-      "VGG containers for multiple platforms for both development and deployment of VGG applications.",
+      "Collection of VGG containers for multiple platforms to develop and deploy VGG applications.",
     href: "/containers/overview",
     icon: RectangleGroupIcon,
   },
   {
     name: "VGG Examples",
-    description: "Various VGG examples demonstrating VGG capabilities.",
+    description:
+      "Various VGG examples written with VGG web containers to demonstrate VGG capabilities.",
     href: "/examples/overview",
     icon: CodeBracketSquareIcon,
   },

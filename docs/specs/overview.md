@@ -33,7 +33,7 @@ VGG Specs is designed from the ground up with the following characteristics in m
   Curves](https://pomax.github.io/bezierinfo/) or [Vector
   Networks](https://help.figma.com/hc/en-us/articles/360040450213-Vector-Networks).
 
-As VGG Specs is extensible, more specs could be added separately, such as an upcoming
+As VGG Specs is extensible, more specs could be added separately, such as the upcoming
 animation specification and 3D specification.
 
 Additionally, VGG Specs comes along with an official implementation. VGG Runtime
