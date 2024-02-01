@@ -9,8 +9,8 @@ semantics](/specs/layout/overview).
 
 The JSON schemas could be downloaded here:
 
-- [Vector Graphics Spec](https://raw.githubusercontent.com/verygoodgraphics/resource/main/spec/vectorgraphics.schema.json)
-- [Layout Spec](https://raw.githubusercontent.com/verygoodgraphics/resource/main/spec/layout.schema.json)
+- [Vector Graphics Spec](https://docs.verygoodgraphics.com/schemas/vectorgraphics.schema.json)
+- [Layout Spec](https://docs.verygoodgraphics.com/schemas/layout.schema.json)
 
 VGG Specs is designed from the ground up with the following characteristics in mind:
 
