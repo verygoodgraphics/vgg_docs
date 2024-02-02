@@ -186,7 +186,7 @@ Type
 
 Description
 
-The vertical downward offset of the shadow in relation to the object.
+The vertical upward offset of the shadow in relation to the object.
 
 </div>
 

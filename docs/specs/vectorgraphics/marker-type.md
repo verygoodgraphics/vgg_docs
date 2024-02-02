@@ -57,7 +57,7 @@ Value
       </li>
 
 <li className="backlink">
-      <Link to='/specs/vectorgraphics/vertice#marktype'>Vertice.markType</Link>
+      <Link to='/specs/vectorgraphics/vertex#marktype'>Vertex.markType</Link>
       </li>
 
 </ul>

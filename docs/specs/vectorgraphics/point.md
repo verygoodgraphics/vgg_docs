@@ -108,7 +108,7 @@ Value
       </li>
 
 <li className="backlink">
-      <Link to='/specs/vectorgraphics/vertice#point'>Vertice.point</Link>
+      <Link to='/specs/vectorgraphics/vertex#point'>Vertex.point</Link>
       </li>
 
 <li className="backlink">

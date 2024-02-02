@@ -1,5 +1,5 @@
 ---
-title: Vertice
+title: Vertex
 sidebar_class_name: show
 ---
 
@@ -17,7 +17,7 @@ sidebar_class_name: show
 
 </div>
 
-A vertice in a vector netWork.
+A vertex in a vector network.
 
 <div className="property-preview">
 
@@ -61,7 +61,7 @@ Value
 **constant**: the value of this property must be equal to:
 
 ```json
-"vertice"
+"vertex"
 ```
 
 </div>
@@ -84,7 +84,7 @@ Value
 
 Description
 
-Corner radius at the vertice.
+Corner radius at the vertex.
 
 </div>
 
@@ -140,7 +140,7 @@ Type
 
 Description
 
-The shape type of the vertice. This property only applies to endpoints.
+The shape type of the vertex. This property only applies to endpoints.
 
 </div>
 

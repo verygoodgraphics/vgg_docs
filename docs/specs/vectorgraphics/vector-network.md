@@ -26,7 +26,7 @@ A vector network improves on the path model by allowing lines and curves between
 | Property              | Type                                                                              | Required                                            |
 | :-------------------- | :-------------------------------------------------------------------------------- | :-------------------------------------------------- |
 | [class](#class)       | `string`                                                                          | <span className="property-required">Required</span> |
-| [vertices](#vertices) | <code>Array&lt;<Link to="/specs/vectorgraphics/vertice">Vertice</Link>&gt;</code> | <span className="property-required">Required</span> |
+| [vertices](#vertices) | <code>Array&lt;<Link to="/specs/vectorgraphics/vertex">Vertex</Link>&gt;</code>   | <span className="property-required">Required</span> |
 | [segments](#segments) | <code>Array&lt;<Link to="/specs/vectorgraphics/segment">Segment</Link>&gt;</code> | <span className="property-required">Required</span> |
 | [regions](#regions)   | <code>Array&lt;<Link to="/specs/vectorgraphics/region">Region</Link>&gt;</code>   | <span className="property-required">Required</span> |
 
@@ -92,7 +92,7 @@ A list of vertices used in the vector network.
 
 Type
 
-<code>Array&lt;<Link to="/specs/vectorgraphics/vertice">Vertice</Link>&gt;</code>
+<code>Array&lt;<Link to="/specs/vectorgraphics/vertex">Vertex</Link>&gt;</code>
 
 </div>
 
