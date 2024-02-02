@@ -17,7 +17,7 @@ sidebar_class_name: show
 
 </div>
 
-A region in a vector netWork.
+A region in a vector network.
 
 <div className="property-preview">
 

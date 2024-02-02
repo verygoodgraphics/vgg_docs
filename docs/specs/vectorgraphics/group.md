@@ -995,7 +995,7 @@ Type
 
 Description
 
-Currently, the vector network is represented by a group and identified by this field.
+This field is reserved for `vector-network` compatibility and is only true if `vector-network` is converted to a group.
 Default value is `false`.
 
 </div>

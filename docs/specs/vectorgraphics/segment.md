@@ -17,7 +17,7 @@ sidebar_class_name: show
 
 </div>
 
-A segment in a vector netWork.
+A segment in a vector network.
 
 <div className="property-preview">
 

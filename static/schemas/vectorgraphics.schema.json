@@ -440,7 +440,7 @@
         },
         "flat": {
           "type": "number",
-          "description": "The flatness parameter specifies the accuracy or smoothness with which curves are rendered as a sequence of flat line segments.",
+          "description": "The flatness parameter specifies the accuracy or smoothness with which curves are rendered as a sequence of flat line segments.\nDefault value is `0`.",
           "maximum": 100,
           "minimum": 0
         }
@@ -1245,7 +1245,9 @@
         },
         "center": {
           "$ref": "#/definitions/Point",
-          "description": "The center of the blur applies only to the `zoom` blur."
+          "description": "The center of the blur applies only to the `zoom` blur.",
+          "minimum": 0,
+          "maximum": 1
         },
         "saturation": {
           "type": "number",
@@ -1296,7 +1298,7 @@
         },
         "offsetY": {
           "type": "number",
-          "description": "The vertical downward offset of the shadow in relation to the object."
+          "description": "The vertical upward offset of the shadow in relation to the object."
         },
         "blur": {
           "type": "number",
@@ -1842,7 +1844,7 @@
           "type": "array",
           "description": "A list of vertices used in the vector network.",
           "items": {
-            "$ref": "#/definitions/Vertice"
+            "$ref": "#/definitions/Vertex"
           }
         },
         "segments": {
@@ -1862,20 +1864,20 @@
       },
       "additionalProperties": false
     },
-    "Vertice": {
-      "title": "Vertice",
-      "description": "A vertice in a vector netWork.",
+    "Vertex": {
+      "title": "Vertex",
+      "description": "A vertex in a vector network.",
       "type": "object",
-      "$id": "#Vertice",
+      "$id": "#Vertex",
       "required": ["class", "point"],
       "properties": {
         "class": {
           "type": "string",
-          "const": "vertice"
+          "const": "vertex"
         },
         "radius": {
           "type": "number",
-          "description": "Corner radius at the vertice."
+          "description": "Corner radius at the vertex."
         },
         "point": {
           "$ref": "#/definitions/Point",
@@ -1883,14 +1885,14 @@
         },
         "markType": {
           "$ref": "#/definitions/MarkerType",
-          "description": "The shape type of the vertice. This property only applies to endpoints."
+          "description": "The shape type of the vertex. This property only applies to endpoints."
         }
       },
       "additionalProperties": false
     },
     "Segment": {
       "title": "Segment",
-      "description": "A segment in a vector netWork.",
+      "description": "A segment in a vector network.",
       "type": "object",
       "$id": "#Segment",
       "required": ["class", "start", "end"],
@@ -1920,7 +1922,7 @@
     },
     "Region": {
       "title": "Region",
-      "description": "A region in a vector netWork.",
+      "description": "A region in a vector network.",
       "type": "object",
       "$id": "#Region",
       "required": ["class", "loops", "windingRule"],
@@ -2925,7 +2927,7 @@
         },
         "isVectorNetwork": {
           "type": "boolean",
-          "description": "Currently, the vector network is represented by a group and identified by this field.\nDefault value is `false`."
+          "description": "This field is reserved for `vector-network` compatibility and is only true if `vector-network` is converted to a group.\nDefault value is `false`."
         }
       },
       "additionalProperties": false
@@ -3625,7 +3627,7 @@
   "properties": {
     "version": {
       "type": "string",
-      "const": "1.0.13",
+      "const": "1.0.14",
       "description": "Current VGG specs version, conforming to semantic version format like `major.minor.patch`.\n"
     },
     "fileType": {

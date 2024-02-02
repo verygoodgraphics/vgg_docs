@@ -666,6 +666,7 @@ Type
 Description
 
 The flatness parameter specifies the accuracy or smoothness with which curves are rendered as a sequence of flat line segments.
+Default value is `0`.
 
 </div>
 
