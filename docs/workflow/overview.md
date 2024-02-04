@@ -1,5 +1,6 @@
 ---
 title: VGG Workflow
+sidebar_label: Overview
 ---
 
 The _VGG Workflow_ is an innovative workflow for rapid application development,
