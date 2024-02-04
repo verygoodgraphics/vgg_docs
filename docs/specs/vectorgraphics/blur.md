@@ -223,7 +223,7 @@ Type
 
 Description
 
-The center of the blur applies only to the `zoom` blur.
+The center of the blur applies only to the `zoom` blur. The coordinate point is in normalized coordinates.
 
 </div>
 
@@ -242,20 +242,6 @@ Type
 <div className="property-images">
 
 <img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Blur/center.png" alt="" />
-
-</div>
-
-</div>
-
-<div className="property-item">
-
-Value
-
-<div className="value-description">
-
-**maximum**: the value of this number must smaller than or equal to: `1`
-
-**minimum**: the value of this number must greater than or equal to: `0`
 
 </div>
 
