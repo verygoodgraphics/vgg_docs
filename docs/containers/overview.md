@@ -1,5 +1,6 @@
 ---
 title: VGG Containers
+sidebar_label: Overview
 ---
 
 | Platform | Supported Framework         | Supported Languages             | Container                                              |

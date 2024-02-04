@@ -179,7 +179,11 @@ const sidebars = {
   exampleSidebar: [
     {
       Examples: [
-        "examples/overview",
+        {
+          type: "doc",
+          id: "examples/overview",
+          label: "Overview",
+        },
         {
           type: "category",
           label: "JS/TS",
