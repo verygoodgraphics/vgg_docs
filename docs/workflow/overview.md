@@ -8,7 +8,7 @@ implementation, [VGG Runtime](https://github.com/verygoodgraphics/vgg_runtime).
 
 ## First Principle
 
-<img src="/img/principle.png" alt="first_principle" style={{ width: '40%', display: 'block', margin: '40px auto' }}/>
+<img src="/img/principle.png" alt="first_principle" class='doc-image'/>
 
 The first principle of _VGG Workflow_ is to bridge the huge gap between the two
 worlds of design and development. This is achieved by eliminating redundant
@@ -20,7 +20,7 @@ minimized R&D cycle, and a significantly improved ROI.
 
 ## Design-as-Code
 
-<img src="/img/dac.svg" alt="design-as-code" style={{ width: '50%', display: 'block', margin: '0 auto' }}/>
+<img src="/img/dac.svg" alt="design-as-code" class='doc-image' />
 
 The concept of _Design-as-Code_ is simple and intuitive. As _VGG Workflow_
 allows developers to focus on writing business logic code using their familiar
@@ -36,7 +36,7 @@ frameworks. This means it is completely compatible with the existing code base
 and doesn't even have vendor lock-in problems that are commonly identified in
 low-code tools.
 
-<img src="/img/platform.svg" alt="platform" style={{ width: '50%', display: 'block', margin: '0 auto' }}/>
+<img src="/img/platform.svg" alt="platform" class='doc-image' />
 
 In short, it is an enhancement to your original workflow, not a burden.
 

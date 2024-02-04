@@ -241,10 +241,16 @@ ul.backlinks-list {
   -webkit-tap-highlight-color: transparent;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   gap: 4px;
   transition: background var(--ifm-transition-fast);
   /* color: var(--ifm-navbar-link-color); */
+}
+
+@media (max-width: 996px) {
+  .navbar__inner .navbar__specs {
+    display: none;
+  }
 }
 
 .navbar__specs::after {
@@ -264,4 +270,22 @@ html[data-theme="light"] .navbar__specs::after {
 
 html[data-theme="dark"] .navbar__specs::after {
   color: #fff;
+}
+
+.doc-image {
+  max-width: 100%;
+  margin: 10px auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .doc-image {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 540px and max-width: 767px) {
+  .doc-image {
+    max-width: 80%;
+  }
 }
