@@ -1,10 +1,8 @@
 ---
-title: VGG Home(v2)
+title: VGG Home (v2)
 ---
 
-[![Edit vgg-home-v2 (react)](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/devbox/vgg-react-component-demo-forked-c7c9n7?embed=1&file=%2Fsrc%2FDemoComponent.tsx)
-
-<iframe src="https://codesandbox.io/p/devbox/vgg-react-component-demo-forked-c7c9n7?embed=1&file=%2Fsrc%2FDemoComponent.tsx"
+<iframe src="https://stackblitz.com/edit/stackblitz-starters-ixpw9r?embed=1&file=src%2FPreview.tsx"
   width='100%'
   height='1120px'
   title="vgg-home-v2-react"
