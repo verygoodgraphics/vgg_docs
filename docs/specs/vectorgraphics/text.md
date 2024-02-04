@@ -1132,6 +1132,29 @@ Type
 
 </div>
 
+<div className="property-item">
+
+Value
+
+<div className="value-description">
+
+**enum**: the value of this property must be equal to one of the following values:
+
+| Value | Explanation                                                                        |
+| :---- | :--------------------------------------------------------------------------------- |
+| `0`   | <div className="enum-description">left</div>                                       |
+| `1`   | <div className="enum-description">right</div>                                      |
+| `2`   | <div className="enum-description">center</div>                                     |
+| `3`   | <div className="enum-description">justified</div>                                  |
+| `4`   | <div className="enum-description">natural</div>                                    |
+| `5`   | <div className="enum-description">justified, and the last line to the left</div>   |
+| `6`   | <div className="enum-description">justified, and the last line to the center</div> |
+| `7`   | <div className="enum-description">justified, and the last line to the right</div>  |
+
+</div>
+
+</div>
+
 </div>
 
 <div className="property">
