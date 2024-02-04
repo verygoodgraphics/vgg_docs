@@ -20,6 +20,11 @@ Please note that _Vector Graphics Spec_ is in active development and is prone to
 
 VGG Vector Graphics Specification is a JSON-based spec for describing vector graphics.
 
+In the coordinate system defined by VGG, the X-axis increases to the right, and the Y-axis increases upwards. For a given coordinate point:
+
+* If it is specified as normalized coordinates, it is normalized relative to the width and height in the `bounds`.
+* Otherwise, the point is non-normalized and in the same coordinate system as the object `bounds`.
+
 <div className="property-preview">
 
 <div className="property-table">

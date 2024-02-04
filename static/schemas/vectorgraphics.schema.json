@@ -1,6 +1,6 @@
 {
   "title": "VGG Vector Graphics Specification",
-  "description": "VGG Vector Graphics Specification is a JSON-based spec for describing vector graphics.",
+  "description": "VGG Vector Graphics Specification is a JSON-based spec for describing vector graphics.\n\nIn the coordinate system defined by VGG, the X-axis increases to the right, and the Y-axis increases upwards. For a given coordinate point:\n- If it is specified as normalized coordinates, it is normalized relative to the width and height in the `bounds`.\n- Otherwise, the point is non-normalized and in the same coordinate system as the object `bounds`.",
   "type": "object",
   "$id": "https://docs.verygoodgraphics.com/schemas/vectorgraphics.schema.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
@@ -1245,9 +1245,7 @@
         },
         "center": {
           "$ref": "#/definitions/Point",
-          "description": "The center of the blur applies only to the `zoom` blur.",
-          "minimum": 0,
-          "maximum": 1
+          "description": "The center of the blur applies only to the `zoom` blur. The coordinate point is in normalized coordinates."
         },
         "saturation": {
           "type": "number",
