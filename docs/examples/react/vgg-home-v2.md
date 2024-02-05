@@ -1,6 +1,9 @@
 ---
 title: VGG Home (v2)
+hide_table_of_contents: true
 ---
+
+[View on StackBlitz](https://stackblitz.com/edit/stackblitz-starters-ixpw9r?embed=1&file=src%2FPreview.tsx)
 
 <iframe src="https://stackblitz.com/edit/stackblitz-starters-ixpw9r?embed=1&file=src%2FPreview.tsx"
   width='100%'
