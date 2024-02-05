@@ -1,6 +1,9 @@
 ---
 title: Counter
+hide_table_of_contents: true
 ---
+
+[View on StackBlitz](https://stackblitz.com/edit/vitejs-vite-nee2dl?embed=1&file=src%2Fmain.ts)
 
 <iframe src="https://stackblitz.com/edit/vitejs-vite-nee2dl?embed=1&file=src%2Fmain.ts"
   width='100%'

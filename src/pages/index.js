@@ -6,7 +6,7 @@ import {
   DocumentTextIcon,
   RectangleGroupIcon,
   CodeBracketSquareIcon,
-  SparklesIcon
+  SparklesIcon,
 } from "@heroicons/react/20/solid"
 
 const features = [
