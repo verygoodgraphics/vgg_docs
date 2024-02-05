@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { usePlaygroundStore } from "../store/playground"
 import { useVGG } from "@verygoodgraphics/vgg-react"
 
 import { Panel } from "./ui/panel"
@@ -37,26 +36,25 @@ const spinner = (
 export function LivePreview({
   src,
   runtime,
+  onSelect,
 }: {
-  src: string
+  src: string | Int8Array
   runtime: string
+  onSelect: (event: any) => void
 }) {
-  const setSelectedElement = usePlaygroundStore(
-    (state) => state.setSelectedElement
-  )
   const { canvasRef, vgg, isLoading } = useVGG({
     src: src,
     runtime: runtime,
     verbose: true,
-    // editMode: true,
+    editMode: true,
     onSelect: async (event) => {
       const { type, data } = event
       // @ts-ignore
-      setSelectedElement({ id: data?.id })
+      onSelect?.({ id: data?.id })
     },
   })
-  const zipFile = usePlaygroundStore((state) => state.zipFile)
-  const reloadKey = usePlaygroundStore((state) => state.reloadKey)
+  // const zipFile = usePlaygroundStore((state) => state.zipFile)
+  // const reloadKey = usePlaygroundStore((state) => state.reloadKey)
   const [renderType, setRenderType] = useState("vgg")
 
   return (
