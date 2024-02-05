@@ -130,10 +130,12 @@ export const CodeEditor = React.forwardRef<CodeEditorRef, CodeEditorProps>(
             onMount={async (editor, _monaco) => {
               if (ref.current) {
                 const relayout = ([e]: any) => {
-                  editor.layout({
-                    width: e.borderBoxSize[0].inlineSize,
-                    height: e.borderBoxSize[0].blockSize,
-                  })
+                  window.requestAnimationFrame(() =>
+                    editor.layout({
+                      width: e.borderBoxSize[0].inlineSize,
+                      height: e.borderBoxSize[0].blockSize,
+                    })
+                  )
                 }
                 const resizeObserver = new ResizeObserver(relayout)
                 resizeObserver.observe(ref.current)

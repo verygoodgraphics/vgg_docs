@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useState } from "react"
 import { usePlaygroundStore } from "../store/playground"
-import { EventType, useVGG } from "@verygoodgraphics/vgg-react"
+import { useVGG } from "@verygoodgraphics/vgg-react"
 
 import { Panel } from "./ui/panel"
 
@@ -41,7 +41,6 @@ export function LivePreview({
   src: string
   runtime: string
 }) {
-  const [renderedTimeSpent, setRenderTime] = useState(0)
   const setSelectedElement = usePlaygroundStore(
     (state) => state.setSelectedElement
   )
@@ -59,46 +58,6 @@ export function LivePreview({
   const zipFile = usePlaygroundStore((state) => state.zipFile)
   const reloadKey = usePlaygroundStore((state) => state.reloadKey)
   const [renderType, setRenderType] = useState("vgg")
-  const [width, setWidth] = useState(400 * 2)
-  const [height, setHeight] = useState(200 * 2)
-  const previewContainerRef = useRef<HTMLDivElement>(null)
-  const [scaleRatio, setScaleRatio] = useState(1)
-  const [loadingResources, setLoadingResources] = useState(true)
-
-  const sizeRef = useRef([width, height])
-  sizeRef.current = [width, height]
-
-  function updateScaleRatio() {
-    if (!previewContainerRef.current) return
-
-    const [w, h] = sizeRef.current
-    const containerWidth = previewContainerRef.current.clientWidth
-    const containerHeight = previewContainerRef.current.clientHeight
-    setScaleRatio(
-      Math.min(1, Math.min(containerWidth / w, containerHeight / h))
-    )
-  }
-
-  useEffect(() => {
-    ;(async () => {
-      setLoadingResources(false)
-    })()
-  }, [])
-
-  useEffect(() => {
-    if (!previewContainerRef.current) return
-
-    const observer = new ResizeObserver(updateScaleRatio)
-    observer.observe(previewContainerRef.current)
-
-    return () => {
-      observer.disconnect()
-    }
-  }, [])
-
-  useEffect(() => {
-    updateScaleRatio()
-  }, [width, height])
 
   return (
     <Panel
