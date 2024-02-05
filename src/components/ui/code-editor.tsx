@@ -4,6 +4,7 @@ import type { editor } from "monaco-editor/esm/vs/editor/editor.api"
 
 interface CodeEditorProps {
   code: string
+  path?: string
   onChange: (val: string) => void
 }
 
@@ -12,7 +13,7 @@ export interface CodeEditorRef {
 }
 
 export const CodeEditor = React.forwardRef<CodeEditorRef, CodeEditorProps>(
-  function CodeEditor({ code, onChange }, codeEditorRef) {
+  function CodeEditor({ code, onChange, path }, codeEditorRef) {
     const monaco = useMonaco()
 
     useEffect(() => {
@@ -122,6 +123,7 @@ export const CodeEditor = React.forwardRef<CodeEditorRef, CodeEditorProps>(
             theme="IDLE"
             defaultLanguage="json"
             value={code}
+            path={path}
             onChange={(newCode) => {
               onChange(newCode ?? "")
             }}

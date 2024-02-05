@@ -5,7 +5,7 @@ interface PanelProps {
   title?: string
   activeTab: string
   tabs: string[]
-  onChange: (value: string) => void
+  onChange?: (value: string) => void
   children: React.ReactNode
   rightElement?: React.ReactNode
   noHeader?: boolean
@@ -42,7 +42,7 @@ export function Panel({
                 )}
                 key={option}
                 onClick={() => {
-                  onChange(option)
+                  onChange?.(option)
                 }}
               >
                 {option}

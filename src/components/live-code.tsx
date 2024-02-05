@@ -12,50 +12,52 @@ import { CodeEditor, CodeEditorRef } from "./ui/code-editor"
 import { IconPlay } from "./icons"
 import { Panel } from "./ui/panel"
 
-export function LiveCode() {
-  const code = usePlaygroundStore((state) => state.code)
-  const setCode = usePlaygroundStore((state) => state.setCode)
-  const tabs = usePlaygroundStore((state) => state.tabs)
-  const currentTab = usePlaygroundStore((state) => state.currentTab)
-  const setCurrentTab = usePlaygroundStore((state) => state.setCurrentTab)
-  const setReloadKey = usePlaygroundStore((state) => state.setReloadKey)
-  const setFileUrl = usePlaygroundStore((state) => state.setFileUrl)
+export function LiveCode({
+  path,
+  code,
+  setCode,
+}: {
+  path?: string
+  code: string
+  setCode: (val: string) => void
+}) {
+  // const setReloadKey = usePlaygroundStore((state) => state.setReloadKey)
+  // const setFileUrl = usePlaygroundStore((state) => state.setFileUrl)
   const codeRef = useRef<CodeEditorRef>(null)
-  const selectedElement = usePlaygroundStore((state) => state.selectedElement)
+  // const selectedElement = usePlaygroundStore((state) => state.selectedElement)
 
-  useEffect(() => {
-    codeRef.current?.editor
-      ?.getEditors()[0]
-      ?.setScrollPosition({ scrollTop: 0 })
-    codeRef.current?.editor?.getEditors()[0]?.focus()
-  }, [currentTab])
+  // useEffect(() => {
+  //   codeRef.current?.editor
+  //     ?.getEditors()[0]
+  //     ?.setScrollPosition({ scrollTop: 0 })
+  //   codeRef.current?.editor?.getEditors()[0]?.focus()
+  // }, [currentTab])
 
-  useEffect(() => {
-    const editor = codeRef.current?.editor?.getEditors()[0]
+  // useEffect(() => {
+  //   const editor = codeRef.current?.editor?.getEditors()[0]
 
-    if (editor && selectedElement.id) {
-      const model = editor?.getModel()
-      const position = model?.getPositionAt(
-        code.indexOf(`"id": "${selectedElement.id}"`)
-      )
-      if (!position) return
-      editor.revealPositionInCenter(position)
-      editor?.setSelection({
-        startLineNumber: position?.lineNumber || 0,
-        startColumn: position?.column || 0,
-        endLineNumber: position?.lineNumber || 0,
-        endColumn: position?.column || 0,
-      })
-    }
-  }, [selectedElement])
+  //   if (editor && selectedElement.id) {
+  //     const model = editor?.getModel()
+  //     const position = model?.getPositionAt(
+  //       code.indexOf(`"id": "${selectedElement.id}"`)
+  //     )
+  //     if (!position) return
+  //     editor.revealPositionInCenter(position)
+  //     editor?.setSelection({
+  //       startLineNumber: position?.lineNumber || 0,
+  //       startColumn: position?.column || 0,
+  //       endLineNumber: position?.lineNumber || 0,
+  //       endColumn: position?.column || 0,
+  //     })
+  //   }
+  // }, [selectedElement])
 
   return (
     <Panel
       title="Live Editor"
-      activeTab={currentTab[1]}
-      // tabs={tabs}
+      activeTab={"design.json"}
       tabs={["design.json"]}
-      onChange={(tab) => setCurrentTab([currentTab[0], tab])}
+      // onChange={(tab) => setCurrentTab([currentTab[0], tab])}
       rightElement={
         <div className="flex items-center justify-start gap-3">
           {/* <DemoDropdown
@@ -65,7 +67,7 @@ export function LiveCode() {
           /> */}
           <button
             className="flex items-center justify-start space-x-1.5 cursor-pointer rounded bg-zinc-900 px-2 py-1 text-white transition-all hover:bg-zinc-800 ring-0 shadow-none border-none"
-            onClick={() => setReloadKey(new Date().getTime())}
+            // onClick={() => setReloadKey(new Date().getTime())}
           >
             <IconPlay className="h-2.5 w-2.5" />
             <span className="font-bold">Run</span>
@@ -99,7 +101,12 @@ export function LiveCode() {
           </button>
         </div> */}
         <div className="monaco-container h-full">
-          <CodeEditor code={code} onChange={setCode} ref={codeRef} />
+          <CodeEditor
+            code={code}
+            onChange={setCode}
+            ref={codeRef}
+            path={path}
+          />
         </div>
       </div>
     </Panel>
