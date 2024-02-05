@@ -127,17 +127,6 @@ export function LivePreview({
           }}
           className="bg-black outline-none"
         />
-        {/* <footer className="absolute bottom-0 left-0 w-full">
-          <span className="ellipsis">
-            {renderType === "html"
-              ? "[HTML] Rendered."
-              : `[${renderType.toUpperCase()}] Generated in `}
-          </span>
-          <span className="data">
-            {`${~~(renderedTimeSpent * 100) / 100}ms.`}
-          </span>
-          <span>{`[${width}×${height}]`}</span>
-        </footer> */}
       </div>
     </Panel>
   )

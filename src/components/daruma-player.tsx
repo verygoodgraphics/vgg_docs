@@ -23,20 +23,17 @@ function generateJsonObjectFromUint8Array(uint8array: Uint8Array) {
 export function DarumaPlayer({
   runtime = "https://s5.vgg.cool/runtime/latest",
   src,
+  id,
 }: {
+  id?: string
   runtime?: string
   src: string
 }) {
-  const [isMobileView, setIsMobileView] = useState(false)
-  const code = usePlaygroundStore((state) => state.code)
-  const setCode = usePlaygroundStore((state) => state.setCode)
-  const zipFile = usePlaygroundStore((state) => state.zipFile)
-  const setZipFile = usePlaygroundStore((state) => state.setZipFile)
+  console.log("DarumaPlayer", src, id)
+  // const [isMobileView, setIsMobileView] = useState(false)
+  const [code, setCode] = useState("")
+  const [zipFile, setZipFile] = useState<Int8Array | null>(null)
   const decompressed = useRef<any>(null)
-  const setTabs = usePlaygroundStore((state) => state.setTabs)
-  const currentTab = usePlaygroundStore((state) => state.currentTab)
-  const setCurrentTab = usePlaygroundStore((state) => state.setCurrentTab)
-  // const reloadKey = usePlaygroundStore((state) => state.reloadKey)
 
   useEffect(() => {
     if (!src) return
@@ -59,43 +56,51 @@ export function DarumaPlayer({
       // )
       const firstJsonFile = jsonFiles[0]
 
-      setTabs(jsonFiles)
-      setCurrentTab([src, firstJsonFile])
+      // console.log(firstJsonFile)
+      // setCode(firstJsonFile)
+
+      if (!decompressed.current) return
+
+      const jsonUint8Array = decompressed.current["design.json"]
+      const jsonObject = generateJsonObjectFromUint8Array(jsonUint8Array)
+
+      setCode(JSON.stringify(jsonObject, null, 2))
+
       setZipFile(int8array)
       // setReloadKey(new Date().getTime())
     })()
   }, [src])
 
-  useEffect(() => {
-    if (!decompressed.current) return
+  // useEffect(() => {
+  //   if (!decompressed.current) return
 
-    const jsonUint8Array = decompressed.current[currentTab[1]]
-    const jsonObject = generateJsonObjectFromUint8Array(jsonUint8Array)
+  //   const jsonUint8Array = decompressed.current[currentTab[1]]
+  //   const jsonObject = generateJsonObjectFromUint8Array(jsonUint8Array)
 
-    setCode(JSON.stringify(jsonObject, null, 2))
-  }, [currentTab])
+  //   setCode(JSON.stringify(jsonObject, null, 2))
+  // }, [currentTab])
 
-  useUpdateEffect(() => {
-    if (!decompressed.current) return
+  // useUpdateEffect(() => {
+  //   if (!decompressed.current) return
 
-    const uint8array = new TextEncoder().encode(code)
-    decompressed.current[currentTab[1]] = uint8array
-    const compressed = fflate.zipSync(decompressed.current, {})
+  //   const uint8array = new TextEncoder().encode(code)
+  //   decompressed.current[currentTab[1]] = uint8array
+  //   const compressed = fflate.zipSync(decompressed.current, {})
 
-    if (new Int8Array(compressed.buffer) !== zipFile) {
-      setZipFile(new Int8Array(compressed.buffer))
-    }
-  }, [code])
+  //   if (new Int8Array(compressed.buffer) !== zipFile) {
+  //     setZipFile(new Int8Array(compressed.buffer))
+  //   }
+  // }, [code])
 
   // set isMobileView to true if the screen is less than 600px wide
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobileView(window.innerWidth < 600)
-    }
-    handleResize()
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [])
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsMobileView(window.innerWidth < 600)
+  //   }
+  //   handleResize()
+  //   window.addEventListener("resize", handleResize)
+  //   return () => window.removeEventListener("resize", handleResize)
+  // }, [])
 
   const [hydrated, setHydrated] = useState(false)
 
@@ -130,16 +135,12 @@ export function DarumaPlayer({
         </ul> */}
       </nav>
       <div className="box-border flex h-[640px] w-full items-start justify-between">
-        {hydrated && (
-          <>
-            <div className="h-full w-1/2 min-w-1/2">
-              <LiveCode />
-            </div>
-            <div className="h-full w-1/2 min-w-1/2">
-              <LivePreview runtime={runtime} src={src} />
-            </div>
-          </>
-        )}
+        <div className="h-full w-1/2 min-w-1/2">
+          <LiveCode path={id ?? src} code={code} setCode={setCode} />
+        </div>
+        <div className="h-full w-1/2 min-w-1/2">
+          <LivePreview runtime={runtime} src={src} />
+        </div>
       </div>
     </div>
   )
