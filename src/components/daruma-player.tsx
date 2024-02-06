@@ -30,8 +30,7 @@ type TabItem = {
 }
 
 export function DarumaPlayer({
-  // runtime = "https://s5.vgg.cool/runtime/latest",
-  runtime = "https://s3.vgg.cool/test/runtime/202402061557",
+  runtime = "https://s5.vgg.cool/runtime/latest",
   src,
   id,
   tabs = [],
@@ -51,6 +50,24 @@ export function DarumaPlayer({
   }>({
     id: "",
   })
+
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768)
+
+    window.addEventListener("resize", () => {
+      requestAnimationFrame(() => {
+        setIsMobile(window.innerWidth < 768)
+      })
+    })
+
+    return () => {
+      window.removeEventListener("resize", () => {
+        setIsMobile(window.innerWidth < 768)
+      })
+    }
+  }, [])
 
   useEffect(() => {
     if (!src && tabs?.length > 0) return
@@ -123,7 +140,12 @@ export function DarumaPlayer({
       <div className="box-border flex h-[640px] w-full items-start justify-between">
         {darumaSource ? (
           <>
-            <ResizablePanelGroup direction="horizontal">
+            <ResizablePanelGroup
+              direction={isMobile ? "vertical" : "horizontal"}
+              className={cn({
+                "!flex-col-reverse": isMobile,
+              })}
+            >
               <ResizablePanel>
                 <div className="h-[640px]">
                   <LiveCode
@@ -143,7 +165,7 @@ export function DarumaPlayer({
                     runtime={runtime}
                     src={darumaSource}
                     onSelect={setSelectedElement}
-                    minHeight={640}
+                    minHeight={isMobile ? 300 : 640}
                   />
                 </div>
               </ResizablePanel>
@@ -169,12 +191,12 @@ function Tabs({
   const [activeTab, setActiveTab] = useState(tabs[0])
 
   return (
-    <div className="flex items-center justify-start gap-2 p-2 bg-zinc-50 border-b border-zinc-200 border-solid border-0">
+    <div className="flex items-center justify-start flex-wrap gap-2 p-2 bg-zinc-50 border-b border-zinc-200 border-solid border-0">
       {tabs.map((tab, index) => (
         <button
           key={index.toString()}
           className={cn(
-            "flex items-center justify-start space-x-1.5 cursor-pointer rounded bg-zinc-200/60 px-2 py-1 text-zinc-500 transition-all hover:bg-zinc-800 hover:text-white ring-0 shadow-none border-none",
+            "flex items-center justify-start space-x-1.5 cursor-pointer rounded bg-zinc-200/60 px-[14px] py-[6px] text-zinc-500 transition-all hover:bg-zinc-800 hover:text-white ring-0 shadow-none border-none",
             {
               "bg-zinc-800 text-white": activeTab.src === tab.src,
             }

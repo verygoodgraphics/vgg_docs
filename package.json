@@ -24,7 +24,7 @@
     "@mdx-js/react": "^3.0.0",
     "@monaco-editor/react": "^4.6.0",
     "@radix-ui/react-icons": "^1.3.0",
-    "@verygoodgraphics/vgg-react": "^0.1.12",
+    "@verygoodgraphics/vgg-react": "^0.1.13",
     "clsx": "^2.0.0",
     "docusaurus-plugin-image-zoom": "^1.0.1",
     "fflate": "^0.8.1",
