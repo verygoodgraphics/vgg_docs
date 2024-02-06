@@ -1,5 +1,6 @@
 ---
 title: Drop Shadows
+sidebar_position: 0
 ---
 
 <DarumaPlayer

@@ -1,5 +1,6 @@
 ---
 title: Boolean Operation
+sidebar_position: 8
 ---
 
 <DarumaPlayer

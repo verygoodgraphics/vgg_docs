@@ -1,5 +1,6 @@
 ---
 title: Line Join
+sidebar_position: 2
 ---
 
 <DarumaPlayer
