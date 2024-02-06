@@ -1,5 +1,6 @@
 ---
 title: Inner Shadows
+sidebar_position: 1
 ---
 
 <DarumaPlayer

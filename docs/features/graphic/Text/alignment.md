@@ -1,35 +1,51 @@
 ---
 title: Alignment
+sidebar_position: 5
 ---
 
 ## Horizontal Alignment
 
-### Left
-
-<DarumaPlayer src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__horizontal_alignment__left.daruma' />
-
-### Right
-
-<DarumaPlayer src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__horizontal_alignment__right.daruma' />
-
-### Center
-
-<DarumaPlayer src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__horizontal_alignment__center.daruma' />
-
-### Justified
-
-<DarumaPlayer src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__horizontal_alignment__justified.daruma' />
-
+<DarumaPlayer
+  tabs={
+    [
+      {
+        label: 'Left',
+        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__horizontal_alignment__left.daruma'
+      },
+      {
+        label: 'Right',
+        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__horizontal_alignment__right.daruma'
+      },
+      {
+        label: 'Center',
+        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__horizontal_alignment__center.daruma'
+      },
+      {
+        label: 'Justified',
+        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__horizontal_alignment__justified.daruma'
+      }
+    ]
+  }
+ />
+ 
 ## Vertical Alignment
 
-### Top
-
-<DarumaPlayer src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__vertical_alignment__top.daruma' />
-
-### Center
-
-<DarumaPlayer src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__vertical_alignment__center.daruma' />
-
-### Bottom
-
-<DarumaPlayer src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__vertical_alignment__bottom.daruma' />
+<DarumaPlayer
+  tabs={
+    [
+      {
+        label: 'Top',
+        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__vertical_alignment__top.daruma'
+      },
+      {
+        label: 'Center',
+        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__vertical_alignment__center.daruma'
+      },
+      {
+        label: 'Bottom',
+        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__vertical_alignment__bottom.daruma'
+      }
+    ]
+  }
+ />
+ 

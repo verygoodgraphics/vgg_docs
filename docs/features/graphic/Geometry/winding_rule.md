@@ -1,5 +1,6 @@
 ---
 title: Winding Rule
+sidebar_position: 6
 ---
 
 <DarumaPlayer

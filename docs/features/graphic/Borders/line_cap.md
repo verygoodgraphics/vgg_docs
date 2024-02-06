@@ -1,5 +1,6 @@
 ---
 title: Line Cap
+sidebar_position: 1
 ---
 
 <DarumaPlayer

@@ -1,5 +1,6 @@
 ---
 title: Border Position
+sidebar_position: 3
 ---
 
 <DarumaPlayer
@@ -7,20 +8,16 @@ title: Border Position
     [
       {
         label: 'Center',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border__daruma/border__position__center.daruma',
-        id: 'demo-1'
+        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border__daruma/border__position__center.daruma'
       },
       {
         label: 'Inside',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border__daruma/border__position__inside.daruma',
-        id: 'demo-2'
+        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border__daruma/border__position__inside.daruma'
       },
       {
         label: 'Outside',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border__daruma/border__position__outside.daruma',
-        id: 'demo-3'
+        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border__daruma/border__position__outside.daruma'
       }
     ]
   }
  />
-
