@@ -7,9 +7,15 @@ export function LivePreview({
   src,
   runtime,
   onSelect,
+  width,
+  height,
+  minHeight,
 }: {
   src: string | Int8Array
   runtime: string
+  width?: number
+  height?: number
+  minHeight?: number
   onSelect: (event: any) => void
 }) {
   return (
@@ -31,8 +37,10 @@ export function LivePreview({
             onSelect?.({ id: data?.id })
           }}
           canvasStyle={{
-            width: "100%",
-            height: "100%",
+            width: width ?? "100%",
+            height: height ?? "100%",
+            minHeight: minHeight,
+            maxHeight: "100%",
             top: 0,
             left: 0,
             zIndex: 0,

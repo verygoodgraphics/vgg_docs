@@ -47,7 +47,7 @@ export function LiveCode({
       rightElement={
         <div className="flex items-center justify-start gap-3">
           <button
-            className="flex items-center justify-start space-x-1.5 cursor-pointer rounded bg-zinc-900 px-2 py-1 text-white transition-all hover:bg-zinc-800 ring-0 shadow-none border-none"
+            className="flex items-center justify-start space-x-1.5 cursor-pointer rounded bg-white px-2 py-1 text-zinc-800 shadow-sm transition-all hover:shadow active:bg-zinc-100 ring-0 border border-zinc-200 border-solid"
             onClick={() => onRun?.()}
           >
             <IconPlay className="h-2.5 w-2.5" />
@@ -57,7 +57,7 @@ export function LiveCode({
       }
     >
       <div className="editor flex h-full flex-col overflow-auto border border-zinc-200 bg-white shadow">
-        <div className="monaco-container h-full">
+        <div className="monaco-container h-full overflow-hidden">
           <CodeEditor
             code={code}
             onChange={setCode}
