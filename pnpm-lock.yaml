@@ -20,9 +20,12 @@ dependencies:
   '@monaco-editor/react':
     specifier: ^4.6.0
     version: 4.6.0(monaco-editor@0.45.0)(react-dom@18.2.0)(react@18.2.0)
+  '@radix-ui/react-icons':
+    specifier: ^1.3.0
+    version: 1.3.0(react@18.2.0)
   '@verygoodgraphics/vgg-react':
-    specifier: ^0.1.11
-    version: 0.1.11
+    specifier: ^0.1.12
+    version: 0.1.12
   clsx:
     specifier: ^2.0.0
     version: 2.0.0
@@ -50,6 +53,9 @@ dependencies:
   react-hot-toast:
     specifier: ^2.4.1
     version: 2.4.1(csstype@3.1.3)(react-dom@18.2.0)(react@18.2.0)
+  react-resizable-panels:
+    specifier: ^2.0.3
+    version: 2.0.3(react-dom@18.2.0)(react@18.2.0)
   tailwind-merge:
     specifier: ^2.2.1
     version: 2.2.1
@@ -2448,6 +2454,14 @@ packages:
   /@polka/url@1.0.0-next.24:
     resolution: {integrity: sha512-2LuNTFBIO0m7kKIQvvPHN6UE63VjpmL9rnEEaOOaiSPbZK+zUOYIzBAWcED+3XYzhYsd/0mD57VdxAEqqV52CQ==}
 
+  /@radix-ui/react-icons@1.3.0(react@18.2.0):
+    resolution: {integrity: sha512-jQxj/0LKgp+j9BiTXz3O3sgs26RNet2iLWmsPyRz2SIcR4q/4SbazXfnYwbAr+vLYKSfc7qxzyGQA1HLlYiuNw==}
+    peerDependencies:
+      react: ^16.x || ^17.x || ^18.x
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /@sideway/address@4.1.4:
     resolution: {integrity: sha512-7vwq+rOHVWjyXxVlR76Agnvhy8I9rpzjosTESvmhNeXOXdZZB15Fl+TI9x1SiHZH5Jv2wTGduSxFDIaq0m3DUw==}
     dependencies:
@@ -2879,16 +2893,16 @@ packages:
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
-  /@verygoodgraphics/vgg-react@0.1.11:
-    resolution: {integrity: sha512-4V+OMSD8xtkg1P4bhKgMopYIeKPQHSa5npVHls5DM/erAv9z7zkNBsB00C2mkA+9KaL89ufZQtkwFH1YuvApDA==}
+  /@verygoodgraphics/vgg-react@0.1.12:
+    resolution: {integrity: sha512-ew+Af9NA/UwnFKKFOZuZWuqOtvXFdk8Yu93EfQy5v5WHlydR1w2OnYaoZ7fTzHC7cTdTPWBGfmxiOYyx9bKLkQ==}
     dependencies:
-      '@verygoodgraphics/vgg-wasm': 0.1.8
+      '@verygoodgraphics/vgg-wasm': 0.1.9
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@verygoodgraphics/vgg-wasm@0.1.8:
-    resolution: {integrity: sha512-YmQmMY0Q/T08RndsWQJTIkSze31oPYBeRLvYgc8sXFOGRgdkoaFtZLM4cN4m+j4jg51ZxNXy0VvF0m96F4W+kg==}
+  /@verygoodgraphics/vgg-wasm@0.1.9:
+    resolution: {integrity: sha512-u2lOIzB/yiUK1R8BNfvfQUDPe0G+QglwirTROy08BFKsz+p1uqfgSlcF7P2rNdk6aODnwA5tagZM6MQVBXLJaA==}
     dev: false
 
   /@webassemblyjs/ast@1.11.6:
@@ -7472,6 +7486,16 @@ packages:
       '@babel/runtime': 7.23.9
       react-loadable: /@docusaurus/react-loadable@5.5.2(react@18.2.0)
       webpack: 5.89.0
+
+  /react-resizable-panels@2.0.3(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-m0upi03cdqCt/g/dUxRQkHiBzo0UDtMIYwcf8qhKM+QG0cnpusOVFKOD2ElpGrtxB/oIxTItuKYsDOeu76JHvg==}
+    peerDependencies:
+      react: ^16.14.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.14.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
 
   /react-router-config@5.1.1(react-router@5.3.4)(react@18.2.0):
     resolution: {integrity: sha512-DuanZjaD8mQp1ppHjgnnUnyOlqYXZVjnov/JzFhjLEwd3Z4dYjMSnqrEzzGThH47vpCOqPPwJM2FtthLeJ8Pbg==}

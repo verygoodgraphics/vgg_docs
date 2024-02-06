@@ -8,6 +8,11 @@ import { fetchZipFile } from "../../lib/utils/fetch_zip_file"
 import { LiveCode } from "../components/live-code"
 import { LivePreview } from "../components/live-preview"
 import { cn } from "../../lib/utils/cn"
+import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from "./ui/resizable"
 
 function generateJsonObjectFromUint8Array(uint8array: Uint8Array) {
   // Convert the Uint8Array to a string (assuming the data is in UTF-8 encoding)
@@ -25,7 +30,8 @@ type TabItem = {
 }
 
 export function DarumaPlayer({
-  runtime = "https://s5.vgg.cool/runtime/latest",
+  // runtime = "https://s5.vgg.cool/runtime/latest",
+  runtime = "https://s3.vgg.cool/test/runtime/202402061557",
   src,
   id,
   tabs = [],
@@ -112,30 +118,36 @@ export function DarumaPlayer({
         </h1>
       </nav>
       {tabs.length > 0 && (
-        <div className="flex items-center justify-start gap-2 p-2 bg-zinc-100 border-b border-zinc-200 border-solid border-0">
-          <Tabs tabs={tabs} onSelect={(tab) => loadSource(tab.src)} />
-        </div>
+        <Tabs tabs={tabs} onSelect={(tab) => loadSource(tab.src)} />
       )}
       <div className="box-border flex h-[640px] w-full items-start justify-between">
         {darumaSource ? (
           <>
-            <div className="h-full w-1/2 min-w-1/2">
-              <LiveCode
-                code={code}
-                setCode={setCode}
-                onRun={handleRun}
-                selectedElement={selectedElement}
-                path={id}
-                key={id}
-              />
-            </div>
-            <div className="h-full w-1/2 min-w-1/2">
-              <LivePreview
-                runtime={runtime}
-                src={darumaSource}
-                onSelect={setSelectedElement}
-              />
-            </div>
+            <ResizablePanelGroup direction="horizontal">
+              <ResizablePanel>
+                <div className="h-[640px]">
+                  <LiveCode
+                    code={code}
+                    setCode={setCode}
+                    onRun={handleRun}
+                    selectedElement={selectedElement}
+                    path={id}
+                    key={id}
+                  />
+                </div>
+              </ResizablePanel>
+              <ResizableHandle withHandle />
+              <ResizablePanel>
+                <div className="h-[640px]">
+                  <LivePreview
+                    runtime={runtime}
+                    src={darumaSource}
+                    onSelect={setSelectedElement}
+                    minHeight={640}
+                  />
+                </div>
+              </ResizablePanel>
+            </ResizablePanelGroup>
           </>
         ) : (
           <div className="flex items-center justify-center h-full w-full">
@@ -157,12 +169,12 @@ function Tabs({
   const [activeTab, setActiveTab] = useState(tabs[0])
 
   return (
-    <div className="flex items-center justify-start gap-2 p-2 bg-zinc-100 border-b border-zinc-200 border-solid border-0">
+    <div className="flex items-center justify-start gap-2 p-2 bg-zinc-50 border-b border-zinc-200 border-solid border-0">
       {tabs.map((tab, index) => (
         <button
           key={index.toString()}
           className={cn(
-            "flex items-center justify-start space-x-1.5 cursor-pointer rounded bg-zinc-200 px-2 py-1 text-zinc-500 transition-all hover:bg-zinc-800 hover:text-white ring-0 shadow-none border-none",
+            "flex items-center justify-start space-x-1.5 cursor-pointer rounded bg-zinc-200/60 px-2 py-1 text-zinc-500 transition-all hover:bg-zinc-800 hover:text-white ring-0 shadow-none border-none",
             {
               "bg-zinc-800 text-white": activeTab.src === tab.src,
             }
