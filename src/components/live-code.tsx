@@ -21,7 +21,7 @@ export function LiveCode({
   const codeRef = useRef<CodeEditorRef>(null)
 
   useEffect(() => {
-    const editor = codeRef.current?.editor?.getEditors()[0]
+    const editor = codeRef.current?.editorRef?.current
 
     if (editor && selectedElement?.id) {
       const model = editor?.getModel()
@@ -62,7 +62,7 @@ export function LiveCode({
             code={code}
             onChange={setCode}
             ref={codeRef}
-            path={path}
+            // path={path}
           />
         </div>
       </div>

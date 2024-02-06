@@ -1,6 +1,6 @@
 import React, { useEffect, useImperativeHandle, useRef } from "react"
 import Editor, { useMonaco } from "@monaco-editor/react"
-import type { editor } from "monaco-editor/esm/vs/editor/editor.api"
+import type Monaco from "monaco-editor/esm/vs/editor/editor.api"
 
 interface CodeEditorProps {
   code: string
@@ -9,14 +9,24 @@ interface CodeEditorProps {
 }
 
 export interface CodeEditorRef {
-  editor: typeof editor | undefined
+  monaco: React.MutableRefObject<typeof Monaco | undefined>
+  editorRef: React.MutableRefObject<
+    Monaco.editor.IStandaloneCodeEditor | undefined
+  >
 }
 
 export const CodeEditor = React.forwardRef<CodeEditorRef, CodeEditorProps>(
   function CodeEditor({ code, onChange, path }, codeEditorRef) {
-    const monaco = useMonaco()
+    const monacoRef = useRef<typeof Monaco>()
+    const ref = useRef<HTMLDivElement>(null)
+    const editorRef = useRef<Monaco.editor.IStandaloneCodeEditor>()
 
-    useEffect(() => {
+    useImperativeHandle(codeEditorRef, () => ({
+      monaco: monacoRef,
+      editorRef: editorRef,
+    }))
+
+    function init(monaco: typeof Monaco) {
       if (monaco) {
         monaco.editor.defineTheme("IDLE", {
           base: "vs",
@@ -107,13 +117,7 @@ export const CodeEditor = React.forwardRef<CodeEditorRef, CodeEditorProps>(
         })
         monaco.editor.setTheme("IDLE")
       }
-    }, [monaco])
-
-    const ref = useRef<HTMLDivElement>(null)
-
-    useImperativeHandle(codeEditorRef, () => ({
-      editor: monaco?.editor,
-    }))
+    }
 
     return (
       <div ref={ref} style={{ height: "100%", position: "relative" }}>
@@ -139,6 +143,10 @@ export const CodeEditor = React.forwardRef<CodeEditorRef, CodeEditorProps>(
                 }
                 const resizeObserver = new ResizeObserver(relayout)
                 resizeObserver.observe(ref.current)
+                editorRef.current = editor
+                monacoRef.current = _monaco
+
+                init(_monaco)
               }
             }}
             options={{
