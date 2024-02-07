@@ -1,30 +1,31 @@
-import React, { useEffect, useImperativeHandle, useRef } from "react"
-import Editor, { useMonaco } from "@monaco-editor/react"
-import type Monaco from "monaco-editor/esm/vs/editor/editor.api"
+import React, { useEffect, useImperativeHandle, useRef } from "react";
+import Editor, { useMonaco } from "@monaco-editor/react";
+import type Monaco from "monaco-editor/esm/vs/editor/editor.api";
 
 interface CodeEditorProps {
-  code: string
-  path?: string
-  onChange: (val: string) => void
+  code: string;
+  path?: string;
+  onChange: (val: string) => void;
 }
 
 export interface CodeEditorRef {
-  monaco: React.MutableRefObject<typeof Monaco | undefined>
+  monaco: React.MutableRefObject<typeof Monaco | undefined>;
   editorRef: React.MutableRefObject<
     Monaco.editor.IStandaloneCodeEditor | undefined
-  >
+  >;
 }
 
 export const CodeEditor = React.forwardRef<CodeEditorRef, CodeEditorProps>(
   function CodeEditor({ code, onChange, path }, codeEditorRef) {
-    const monacoRef = useRef<typeof Monaco>()
-    const ref = useRef<HTMLDivElement>(null)
-    const editorRef = useRef<Monaco.editor.IStandaloneCodeEditor>()
+    const monacoRef = useRef<typeof Monaco>();
+    const ref = useRef<HTMLDivElement>(null);
+    const editorRef = useRef<Monaco.editor.IStandaloneCodeEditor>();
+    const reqeustAnimation = useRef<number>();
 
     useImperativeHandle(codeEditorRef, () => ({
       monaco: monacoRef,
       editorRef: editorRef,
-    }))
+    }));
 
     function init(monaco: typeof Monaco) {
       if (monaco) {
@@ -114,10 +115,18 @@ export const CodeEditor = React.forwardRef<CodeEditorRef, CodeEditorProps>(
             "editorCursor.foreground": "#000000",
             "editorWhitespace.foreground": "#BFBFBF",
           },
-        })
-        monaco.editor.setTheme("IDLE")
+        });
+        monaco.editor.setTheme("IDLE");
       }
     }
+
+    useEffect(() => {
+      return () => {
+        if (reqeustAnimation.current) {
+          window.cancelAnimationFrame(reqeustAnimation.current);
+        }
+      };
+    }, []);
 
     return (
       <div ref={ref} style={{ height: "100%", position: "relative" }}>
@@ -129,24 +138,24 @@ export const CodeEditor = React.forwardRef<CodeEditorRef, CodeEditorProps>(
             value={code}
             path={path}
             onChange={(newCode) => {
-              onChange(newCode ?? "")
+              onChange(newCode ?? "");
             }}
             onMount={async (editor, _monaco) => {
               if (ref.current) {
                 const relayout = ([e]: any) => {
-                  window.requestAnimationFrame(() =>
+                  reqeustAnimation.current = window.requestAnimationFrame(() =>
                     editor.layout({
                       width: e.borderBoxSize[0].inlineSize,
                       height: e.borderBoxSize[0].blockSize,
                     })
-                  )
-                }
-                const resizeObserver = new ResizeObserver(relayout)
-                resizeObserver.observe(ref.current)
-                editorRef.current = editor
-                monacoRef.current = _monaco
+                  );
+                };
+                const resizeObserver = new ResizeObserver(relayout);
+                resizeObserver.observe(ref.current);
+                editorRef.current = editor;
+                monacoRef.current = _monaco;
 
-                init(_monaco)
+                init(_monaco);
               }
             }}
             options={{
@@ -165,6 +174,6 @@ export const CodeEditor = React.forwardRef<CodeEditorRef, CodeEditorProps>(
           />
         </div>
       </div>
-    )
+    );
   }
-)
+);
