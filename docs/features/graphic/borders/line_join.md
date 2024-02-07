@@ -1,6 +1,7 @@
 ---
 title: Line Join
 sidebar_position: 2
+hide_table_of_contents: true
 ---
 
 <DarumaPlayer
@@ -21,3 +22,8 @@ sidebar_position: 2
     ]
   }
  />
+ 
+<br />
+**Related Specs**
+- [Border](/specs/vectorgraphics/border#linejoinstyle)
+- [LineJoinStyle](/specs/vectorgraphics/line-join-style)

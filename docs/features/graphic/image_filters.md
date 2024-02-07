@@ -1,5 +1,6 @@
 ---
 title: Image Filters
+hide_table_of_contents: true
 ---
 
 <DarumaPlayer
@@ -44,3 +45,6 @@ title: Image Filters
   }
  />
  
+<br />
+**Related Specs**
+- [ImageFilters](/specs/vectorgraphics/image-filters)

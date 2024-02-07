@@ -1,6 +1,7 @@
 ---
 title: Text Decoration Lines
 sidebar_position: 4
+hide_table_of_contents: true
 ---
 
 <DarumaPlayer
@@ -18,3 +19,6 @@ sidebar_position: 4
   }
  />
  
+<br />
+**Related Specs**
+- [FontAttr](/specs/vectorgraphics/font-attr#underline)

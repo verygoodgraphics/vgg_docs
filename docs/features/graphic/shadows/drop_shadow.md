@@ -1,6 +1,7 @@
 ---
 title: Drop Shadows
 sidebar_position: 0
+hide_table_of_contents: true
 ---
 
 <DarumaPlayer
@@ -21,3 +22,7 @@ sidebar_position: 0
     ]
   }
  />
+ 
+<br />
+**Related Specs**
+- [Shadow](/specs/vectorgraphics/shadow)

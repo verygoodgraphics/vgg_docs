@@ -1,6 +1,7 @@
 ---
 title: Inner Shadows
 sidebar_position: 1
+hide_table_of_contents: true
 ---
 
 <DarumaPlayer
@@ -23,3 +24,7 @@ sidebar_position: 1
     ]
   }
  />
+ 
+<br />
+**Related Specs**
+- [Shadow](/specs/vectorgraphics/shadow)

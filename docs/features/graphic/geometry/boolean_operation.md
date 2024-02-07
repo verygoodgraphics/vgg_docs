@@ -1,6 +1,7 @@
 ---
 title: Boolean Operation
 sidebar_position: 8
+hide_table_of_contents: true
 ---
 
 <DarumaPlayer
@@ -29,3 +30,7 @@ sidebar_position: 8
     ]
   }
  />
+ 
+<br />
+**Related Specs**
+- [SubShape](/specs/vectorgraphics/sub-shape#booleanoperation)

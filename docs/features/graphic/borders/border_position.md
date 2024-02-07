@@ -1,6 +1,7 @@
 ---
 title: Border Position
 sidebar_position: 3
+hide_table_of_contents: true
 ---
 
 <DarumaPlayer
@@ -21,3 +22,8 @@ sidebar_position: 3
     ]
   }
  />
+
+<br />
+**Related Specs**
+- [Border](/specs/vectorgraphics/border#position)
+- [BorderPosition](/specs/vectorgraphics/border-position)
