@@ -1,6 +1,7 @@
 ---
 title: Winding Rule
 sidebar_position: 6
+hide_table_of_contents: true
 ---
 
 <DarumaPlayer
@@ -17,3 +18,7 @@ sidebar_position: 6
     ]
   }
  />
+ 
+<br />
+**Related Specs**
+- [Shape](/specs/vectorgraphics/shape)

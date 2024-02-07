@@ -1,6 +1,7 @@
 ---
 title: Alignment
 sidebar_position: 5
+hide_table_of_contents: false
 ---
 
 ## Horizontal Alignment
@@ -49,3 +50,6 @@ sidebar_position: 5
   }
  />
  
+<br />
+**Related Specs**
+- [Text](/specs/vectorgraphics/text#verticalalignment)

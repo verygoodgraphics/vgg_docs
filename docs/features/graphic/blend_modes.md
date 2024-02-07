@@ -1,5 +1,6 @@
 ---
 title: Blend Modes
+hide_table_of_contents: true
 ---
 
 <DarumaPlayer
@@ -85,3 +86,6 @@ title: Blend Modes
   }
  />
  
+<br />
+**Related Specs**
+- [BlendMode](/specs/vectorgraphics/blend-mode)

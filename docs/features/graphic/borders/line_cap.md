@@ -1,6 +1,7 @@
 ---
 title: Line Cap
 sidebar_position: 1
+hide_table_of_contents: true
 ---
 
 <DarumaPlayer
@@ -12,3 +13,8 @@ sidebar_position: 1
     ]
   }
  />
+ 
+<br />
+**Related Specs**
+- [Border](/specs/vectorgraphics/border#linecapstyle)
+- [LineCapStyle](/specs/vectorgraphics/line-cap-style)
