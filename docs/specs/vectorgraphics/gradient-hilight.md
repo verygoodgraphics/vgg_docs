@@ -87,7 +87,11 @@ Value
 
 Description
 
+<div>
+
 `xHilight` and `yHilight` specify the hilight placement, in x and y offsets from the gradient vector origin.
+
+</div>
 
 </div>
 
@@ -115,7 +119,11 @@ Type
 
 Description
 
+<div>
+
 Refer to `xHilight` for details.
+
+</div>
 
 </div>
 
@@ -143,7 +151,11 @@ Type
 
 Description
 
+<div>
+
 This argument is the angle (in degrees) to the hilight point, measured counterclockwise from the X axis.
+
+</div>
 
 </div>
 
@@ -171,7 +183,11 @@ Type
 
 Description
 
+<div>
+
 This argument is the distance of the hilight from the origin, expressed as a fraction of the radius—a value between 0 and 1.
+
+</div>
 
 </div>
 

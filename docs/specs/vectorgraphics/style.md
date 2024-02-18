@@ -85,7 +85,11 @@ Value
 
 Description
 
+<div>
+
 A list of the border styles of the object.
+
+</div>
 
 </div>
 
@@ -113,7 +117,11 @@ Type
 
 Description
 
+<div>
+
 A list of the fill styles of the object.
+
+</div>
 
 </div>
 
@@ -141,7 +149,11 @@ Type
 
 Description
 
+<div>
+
 A list of the blur styles of the object.
+
+</div>
 
 </div>
 
@@ -169,7 +181,11 @@ Type
 
 Description
 
+<div>
+
 A list of the shadow styles of the object.
+
+</div>
 
 </div>
 

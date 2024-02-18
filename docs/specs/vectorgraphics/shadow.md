@@ -90,7 +90,11 @@ Value
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -118,7 +122,11 @@ Type
 
 Description
 
+<div>
+
 The color of the shadow.
+
+</div>
 
 </div>
 
@@ -146,7 +154,11 @@ Type
 
 Description
 
+<div>
+
 The horizontal offset of the shadow in relation to the object. Direction to the right.
+
+</div>
 
 </div>
 
@@ -186,7 +198,11 @@ Type
 
 Description
 
+<div>
+
 The vertical upward offset of the shadow in relation to the object.
+
+</div>
 
 </div>
 
@@ -214,7 +230,11 @@ Type
 
 Description
 
+<div>
+
 The degree of shadow blur.
+
+</div>
 
 </div>
 
@@ -254,7 +274,11 @@ Type
 
 Description
 
+<div>
+
 The distance that the shadow spreads from the object, the farther it is, the larger the shadow.
+
+</div>
 
 </div>
 
@@ -294,7 +318,11 @@ Type
 
 Description
 
+<div>
+
 The opacity and blending-related configurations of the shadow.
+
+</div>
 
 </div>
 
@@ -322,7 +350,11 @@ Type
 
 Description
 
+<div>
+
 If `true`, it's an inner shadow.
+
+</div>
 
 </div>
 
@@ -362,8 +394,12 @@ Type
 
 Description
 
+<div>
+
 When the object has a transparent fill and a non-inner shadow, whether the shadow is visible through the transparent area.
 Default value is `false`.
+
+</div>
 
 </div>
 

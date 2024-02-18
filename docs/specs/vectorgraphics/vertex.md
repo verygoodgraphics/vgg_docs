@@ -84,7 +84,11 @@ Value
 
 Description
 
+<div>
+
 Corner radius at the vertex.
+
+</div>
 
 </div>
 
@@ -112,7 +116,11 @@ Type
 
 Description
 
+<div>
+
 The coordinates of the point before the matrix transformation.
+
+</div>
 
 </div>
 
@@ -140,7 +148,11 @@ Type
 
 Description
 
+<div>
+
 The shape type of the vertex. This property only applies to endpoints.
+
+</div>
 
 </div>
 

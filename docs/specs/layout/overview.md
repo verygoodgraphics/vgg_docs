@@ -40,7 +40,11 @@ VGG Layout Specification describes the layout information of an element. VGG Lay
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 

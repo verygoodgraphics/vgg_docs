@@ -82,8 +82,12 @@ Value
 
 Description
 
+<div>
+
 Additional spacing between paragraphs, in addition to line spacing.
 Default value is `0`.
+
+</div>
 
 </div>
 

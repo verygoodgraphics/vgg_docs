@@ -87,7 +87,11 @@ Value
 
 Description
 
+<div>
+
 Corner radius at the point.
+
+</div>
 
 </div>
 
@@ -115,7 +119,11 @@ Type
 
 Description
 
+<div>
+
 Corner shapes of the point.
+
+</div>
 
 </div>
 
@@ -174,7 +182,11 @@ Value
 
 Description
 
+<div>
+
 When the current point is the starting point of the Bezier curve, this attribute represents its control point.
+
+</div>
 
 </div>
 
@@ -202,7 +214,11 @@ Type
 
 Description
 
+<div>
+
 When the current point is the end point of the Bezier curve, this attribute represents its control point.
+
+</div>
 
 </div>
 
@@ -230,7 +246,11 @@ Type
 
 Description
 
+<div>
+
 The coordinates of the point before the matrix transformation.
+
+</div>
 
 </div>
 
@@ -258,7 +278,11 @@ Type
 
 Description
 
+<div>
+
 The shape type of the point. This property only applies to endpoints.
+
+</div>
 
 </div>
 

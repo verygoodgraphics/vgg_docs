@@ -88,7 +88,11 @@ Value
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -133,7 +137,11 @@ Value
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -173,7 +181,11 @@ Value
 
 Description
 
+<div>
+
 Flag indicating whether the gradient has been inverted.
+
+</div>
 
 </div>
 
@@ -201,7 +213,11 @@ Type
 
 Description
 
+<div>
+
 The meaning of the gradient vector is different for radial gradients than for linear gradients. The vector origin is the center of the circle containing the radial gradient; the vector length is the radius of the that circle. The vector angle is not used by radial blends, but is preserved and used if the user changes the gradient from radial to linear.
+
+</div>
 
 </div>
 
@@ -229,7 +245,11 @@ Type
 
 Description
 
+<div>
+
 Only exists in radial mode.
+
+</div>
 
 </div>
 
@@ -257,7 +277,11 @@ Type
 
 Description
 
+<div>
+
 Its parameters are six floating point values, which describe the overall matrix applied to the gradient.
+
+</div>
 
 </div>
 
@@ -285,7 +309,11 @@ Type
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 

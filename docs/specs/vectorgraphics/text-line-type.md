@@ -84,7 +84,11 @@ Value
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -130,7 +134,11 @@ Value
 
 Description
 
+<div>
+
 The hierarchy level of the text line, starting with `0`(default value).
+
+</div>
 
 </div>
 
@@ -158,8 +166,12 @@ Type
 
 Description
 
+<div>
+
 Whether the text line is the first line in the text list of the same hierarchy level.
 Only has meaning for an ordered list.
+
+</div>
 
 </div>
 

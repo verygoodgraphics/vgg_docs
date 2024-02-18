@@ -90,7 +90,11 @@ Value
 
 Description
 
+<div>
+
 The name (UTF-8) of the referenced pattern layer. Note that this is the name of the pattern layer, not its ID. The pattern layer name is unique.
+
+</div>
 
 </div>
 
@@ -118,7 +122,11 @@ Type
 
 Description
 
+<div>
+
 Specify the offset from the ruler origin to be used for tiling the pattern. Each distance is specified in points.
+
+</div>
 
 </div>
 
@@ -146,7 +154,11 @@ Type
 
 Description
 
+<div>
+
 Specify the scale factors to be applied to the x and y dimensions, respectively, of the pattern.
+
+</div>
 
 </div>
 
@@ -174,7 +186,11 @@ Type
 
 Description
 
+<div>
+
 Specifies the angle in counterclockwise degrees to rotate the pattern.
+
+</div>
 
 </div>
 
@@ -202,7 +218,11 @@ Type
 
 Description
 
+<div>
+
 Whether to apply a reflection to the pattern.
+
+</div>
 
 </div>
 
@@ -230,7 +250,11 @@ Type
 
 Description
 
+<div>
+
 Specifies the angle of the line about which the pattern is reflected, measured in degrees counterclockwise from the origin. This is used if the `reflection` operand is `true`.
+
+</div>
 
 </div>
 
@@ -258,7 +282,11 @@ Type
 
 Description
 
+<div>
+
 Specifies the shear angle.
+
+</div>
 
 </div>
 
@@ -286,7 +314,11 @@ Type
 
 Description
 
+<div>
+
 Specifies the shear axis.
+
+</div>
 
 </div>
 
@@ -314,7 +346,11 @@ Type
 
 Description
 
+<div>
+
 Specifies the initial matrix to which all other pattern transformations are to be applied. This matrix describes transformations that are not otherwise expressible as the single combination of the other transformations.
+
+</div>
 
 </div>
 

@@ -82,7 +82,11 @@ Value
 
 Description
 
+<div>
+
 Available types include only fixed and relative.
+
+</div>
 
 </div>
 

@@ -87,7 +87,11 @@ Value
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -115,7 +119,11 @@ Type
 
 Description
 
+<div>
+
 The color of the fill.
+
+</div>
 
 </div>
 
@@ -143,7 +151,11 @@ Type
 
 Description
 
+<div>
+
 The content type of the fill.
+
+</div>
 
 </div>
 
@@ -171,7 +183,11 @@ Type
 
 Description
 
+<div>
+
 The opacity and blending-related configurations of the fill.
+
+</div>
 
 </div>
 
@@ -199,7 +215,11 @@ Type
 
 Description
 
+<div>
+
 The gradient of the fill.
+
+</div>
 
 </div>
 
@@ -227,7 +247,11 @@ Type
 
 Description
 
+<div>
+
 The pattern of the fill.
+
+</div>
 
 </div>
 

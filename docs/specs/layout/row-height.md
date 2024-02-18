@@ -84,7 +84,11 @@ Value
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -142,7 +146,11 @@ Value
 
 Description
 
+<div>
+
 Only applies when strategy is fixed, indicating a fixed row height value.
+
+</div>
 
 </div>
 

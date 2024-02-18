@@ -105,11 +105,15 @@ Value
 
 Description
 
+<div>
+
 The number of characters(UTF-8) that these attributes apply to.
 If this property is missing, it means these attributes apply to all remaining characters in the text.
 **Note**:
 If a UTF-8 character is `4` bytes, its length counts as `2`.
 If a UTF-8 character is `1 ~ 3` bytes, its length counts as `1`.
+
+</div>
 
 </div>
 
@@ -137,8 +141,12 @@ Type
 
 Description
 
+<div>
+
 A list of the character's border styles.
 Priority: The `borders` of the text fragment > the `borders` in `defaultFontAttr` of the text > the `borders` in the text object's `style`.
+
+</div>
 
 </div>
 
@@ -166,7 +174,11 @@ Type
 
 Description
 
+<div>
+
 A list of the character's fill effects. The priority of `fills` is listed in `fillUseType`.
+
+</div>
 
 </div>
 
@@ -194,7 +206,11 @@ Type
 
 Description
 
+<div>
+
 The priority of `fills`.
+
+</div>
 
 </div>
 
@@ -239,9 +255,13 @@ Value
 
 Description
 
+<div>
+
 Common name of the font.
 The font name may contain subfamily, in which case the `subFamilyName` will not appear.
 If this property does not exist or is empty, the application can fall back to using its default font name.
+
+</div>
 
 </div>
 
@@ -269,8 +289,12 @@ Type
 
 Description
 
+<div>
+
 Subfamily name or font type.
 The value may be empty.
+
+</div>
 
 </div>
 
@@ -298,8 +322,12 @@ Type
 
 Description
 
+<div>
+
 The PostScript name of the font.
 The value may be empty.
+
+</div>
 
 </div>
 
@@ -327,7 +355,11 @@ Type
 
 Description
 
+<div>
+
 A list of font variations.
+
+</div>
 
 </div>
 
@@ -355,8 +387,12 @@ Type
 
 Description
 
+<div>
+
 Font size.
 Default value is `1`.
+
+</div>
 
 </div>
 
@@ -384,9 +420,13 @@ Type
 
 Description
 
+<div>
+
 Text character spacing value (can be negative).
 Must be used together with `letterSpacingUnit`.
 Default value is `0`.
+
+</div>
 
 </div>
 
@@ -414,7 +454,11 @@ Type
 
 Description
 
+<div>
+
 The unit of `letterSpacingValue` value.
+
+</div>
 
 </div>
 
@@ -459,9 +503,13 @@ Value
 
 Description
 
+<div>
+
 The spacing value of the text lines.
 Must be used together with `lineSpacingUnit`.
 Default value is `0`.
+
+</div>
 
 </div>
 
@@ -489,7 +537,11 @@ Type
 
 Description
 
+<div>
+
 The unit of `lineSpacingValue` value.
+
+</div>
 
 </div>
 
@@ -535,7 +587,11 @@ Value
 
 Description
 
+<div>
+
 The underline type of the text.
+
+</div>
 
 </div>
 
@@ -581,8 +637,12 @@ Value
 
 Description
 
+<div>
+
 Whether the text has a line through.
 Default value is `false`.
+
+</div>
 
 </div>
 
@@ -610,9 +670,13 @@ Type
 
 Description
 
+<div>
+
 The type of text case.
 **Note**:
 `textCase` and `fontVariantCaps` are mutually exclusive. If either item is nonzero, you can ignore the value of the other, as they will not be nonzero at the same time.
+
+</div>
 
 </div>
 
@@ -659,9 +723,13 @@ Value
 
 Description
 
+<div>
+
 The type of small caps.
 **Note**:
 `textCase` and `fontVariantCaps` are mutually exclusive. If either item is nonzero, you can ignore the value of the other, as they will not be nonzero at the same time.
+
+</div>
 
 </div>
 
@@ -707,8 +775,12 @@ Value
 
 Description
 
+<div>
+
 Vertical offset of the text baseline.
 Default value is `0`.
+
+</div>
 
 </div>
 
@@ -736,7 +808,11 @@ Type
 
 Description
 
+<div>
+
 The position of the text characters.
+
+</div>
 
 </div>
 
@@ -782,6 +858,8 @@ Value
 
 Description
 
+<div>
+
 Scale the text characters horizontally.
 Default value is `1`.
 Value examples:
@@ -789,6 +867,8 @@ Value examples:
 1:    not scale
 1.75: 175%
 2:    200%
+
+</div>
 
 </div>
 
@@ -816,9 +896,13 @@ Type
 
 Description
 
+<div>
+
 Scale the text characters vertically.
 Default value is `1`.
 Refer to `horizontalScale` for value examples.
+
+</div>
 
 </div>
 
@@ -846,8 +930,12 @@ Type
 
 Description
 
+<div>
+
 Rotation angle of the text characters.
 Default value is `0`.
+
+</div>
 
 </div>
 
@@ -889,7 +977,11 @@ Value
 
 Description
 
+<div>
+
 The properties of the text paragraph, which are consistent across the same text paragraph.
+
+</div>
 
 </div>
 
@@ -917,7 +1009,11 @@ Type
 
 Description
 
+<div>
+
 Hyperlink for jump.
+
+</div>
 
 </div>
 

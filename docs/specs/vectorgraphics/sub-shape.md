@@ -83,9 +83,13 @@ Value
 
 Description
 
+<div>
+
 Describes the detailed shape of the subshape through a contour with a list of points, a specified geometry, or another object.
 When the `frame`, `symbol-instance`, and `symbol-master` are in `subGeometry`, only the `childObjects` will be used, and the bounding box will be ignored.
 Any mask nested within this object will be invalidated.
+
+</div>
 
 </div>
 
@@ -149,7 +153,11 @@ oneOf&lt;
 
 Description
 
+<div>
+
 Boolean operations that combine the current subshape with the previous subshape in the array.
+
+</div>
 
 </div>
 

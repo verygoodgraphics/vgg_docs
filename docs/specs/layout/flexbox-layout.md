@@ -91,7 +91,11 @@ Value
 
 Description
 
+<div>
+
 This property is used to set the arrangement of child elements within a flex container.
+
+</div>
 
 </div>
 
@@ -136,7 +140,11 @@ Value
 
 Description
 
+<div>
+
 This property is used to set the alignment of flex container's child elements along the main axis.
+
+</div>
 
 </div>
 
@@ -185,7 +193,11 @@ Value
 
 Description
 
+<div>
+
 This property is used to set the alignment of flex container's children along the cross axis.
+
+</div>
 
 </div>
 
@@ -213,7 +225,11 @@ Type
 
 Description
 
+<div>
+
 This property is used to align the children of a flex container along the cross axis. It applies to multi-line flex containers and affects the alignment of multiple lines.
+
+</div>
 
 </div>
 
@@ -241,7 +257,11 @@ Type
 
 Description
 
+<div>
+
 This property sets whether flex items are forced to be placed on a single line or can wrap onto multiple lines.
+
+</div>
 
 </div>
 
@@ -286,7 +306,11 @@ Value
 
 Description
 
+<div>
+
 This property is used to set the size of the gap between rows in a grid layout. It defines the whitespace distance between adjacent rows within the grid container, allowing for a certain vertical spacing between grid items. This property accepts values in pixels (px) as units.
+
+</div>
 
 </div>
 
@@ -314,7 +338,11 @@ Type
 
 Description
 
+<div>
+
 This property is used to set the size of the gap between columns in a grid layout. It defines the whitespace distance between adjacent columns within the grid container, allowing for a certain amount of spacing horizontally for grid items. This property accepts values in pixels (px) as units.
+
+</div>
 
 </div>
 
@@ -342,7 +370,11 @@ Type
 
 Description
 
+<div>
+
 This property is used to control the whitespace area between an element's content and its border. It is commonly used to increase the visual space of an element, preventing the content from being too close to the border. Padding can be set as one value (indicating that all four directions have the same padding), four values (representing top, right, bottom, left padding respectively), or two or three values for specific specifications. This property accepts values in pixels (px) as units.
+
+</div>
 
 </div>
 
@@ -384,7 +416,11 @@ Value
 
 Description
 
+<div>
+
 This property is used in the layout to define the arrangement order of child elements within a flex container. By default, all child elements have an order value of false, and you can change their display order to reverse by setting the order value to true.
+
+</div>
 
 </div>
 

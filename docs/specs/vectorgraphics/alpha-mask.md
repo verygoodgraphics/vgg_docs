@@ -84,7 +84,11 @@ Value
 
 Description
 
+<div>
+
 Object ID of the mask.
+
+</div>
 
 </div>
 
@@ -112,7 +116,11 @@ Type
 
 Description
 
+<div>
+
 The data type whose values are used to control the transparency of the object.
+
+</div>
 
 </div>
 
@@ -158,7 +166,11 @@ Value
 
 Description
 
+<div>
+
 Whether to use the mask's boundary to crop the masked object.
+
+</div>
 
 </div>
 

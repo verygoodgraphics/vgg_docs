@@ -84,7 +84,11 @@ Value
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -129,7 +133,11 @@ Value
 
 Description
 
+<div>
+
 You can set this value to a uniform fixed width value or minimum width value for all columns in the grid, with a minimum column width of 1. This property accepts values in pixels (px) as units.
+
+</div>
 
 </div>
 

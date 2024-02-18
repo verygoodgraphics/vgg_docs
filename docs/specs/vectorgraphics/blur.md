@@ -87,7 +87,11 @@ Value
 
 Description
 
+<div>
+
 The type of blur.
+
+</div>
 
 </div>
 
@@ -115,7 +119,11 @@ Type
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -143,7 +151,11 @@ Type
 
 Description
 
+<div>
+
 The range of the area where the blur takes effect.
+
+</div>
 
 </div>
 
@@ -183,7 +195,11 @@ Type
 
 Description
 
+<div>
+
 The angle of the blur direction applies only to the `motion` blur.
+
+</div>
 
 </div>
 
@@ -223,7 +239,11 @@ Type
 
 Description
 
+<div>
+
 The center of the blur applies only to the `zoom` blur. The coordinate point is in normalized coordinates.
+
+</div>
 
 </div>
 
@@ -263,7 +283,11 @@ Type
 
 Description
 
+<div>
+
 The saturation level of the blur applies only to the `background` blur.
+
+</div>
 
 </div>
 

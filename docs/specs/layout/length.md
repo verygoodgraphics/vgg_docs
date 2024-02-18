@@ -83,7 +83,11 @@ Value
 
 Description
 
+<div>
+
 This property is used to describe the type of behavior for distance or size values in various properties. Length properties can be applied with different units to set the width, height, etc. of elements. The units and meaning of values depend on their types.
+
+</div>
 
 </div>
 
@@ -111,7 +115,11 @@ Type
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 

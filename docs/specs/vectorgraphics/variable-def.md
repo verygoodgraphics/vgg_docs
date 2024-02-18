@@ -84,7 +84,11 @@ Value
 
 Description
 
+<div>
+
 The ID of the variable is not globally unique but unique under the object tree.
+
+</div>
 
 </div>
 
@@ -112,7 +116,11 @@ Type
 
 Description
 
+<div>
+
 The value type of the variable.
+
+</div>
 
 </div>
 
@@ -159,11 +167,15 @@ Value
 
 Description
 
+<div>
+
 The value of the variable, whose type is determined by `varType`.
 In the master, the object refers to a variable, and you don't need to care about the value of the variable; you just use its own value.
 In an instance, if the variable is not reassigned, the value of the corresponding variable in the master is used.
 In an instance, reassigning a variable affects all objects in that instance that reference the variable.
 In an instance, the direct override of a property takes precedence over the value of the corresponding variable.
+
+</div>
 
 </div>
 

@@ -87,7 +87,11 @@ Value
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -115,7 +119,11 @@ Type
 
 Description
 
+<div>
+
 The number of rows occupied by the element.
+
+</div>
 
 </div>
 
@@ -155,7 +163,11 @@ Value
 
 Description
 
+<div>
+
 The number of columns occupied by the element.
+
+</div>
 
 </div>
 
@@ -195,7 +207,11 @@ Value
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -223,7 +239,11 @@ Type
 
 Description
 
+<div>
+
 Valid when the position type is relative or sticky, specifies how the element's row direction is aligned to it.
+
+</div>
 
 </div>
 
@@ -251,7 +271,11 @@ Type
 
 Description
 
+<div>
+
 Valid when the position type is relative or sticky, specifies how the element's column direction is aligned to it.
+
+</div>
 
 </div>
 

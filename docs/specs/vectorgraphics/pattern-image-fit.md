@@ -84,7 +84,11 @@ Value
 
 Description
 
+<div>
+
 File name of the image.
+
+</div>
 
 </div>
 
@@ -112,7 +116,11 @@ Type
 
 Description
 
+<div>
+
 Rotation of the image in degrees. Positive values represent counterclockwise rotation. Rotate around the center of the image.
+
+</div>
 
 </div>
 
@@ -140,7 +148,11 @@ Type
 
 Description
 
+<div>
+
 Adjust the colors of the image.
+
+</div>
 
 </div>
 

@@ -83,8 +83,12 @@ Value
 
 Description
 
+<div>
+
 The radius of all the corners of the polygon.
 Default value is `0`.
+
+</div>
 
 </div>
 
@@ -112,7 +116,11 @@ Type
 
 Description
 
+<div>
+
 The number of polygon vertices, which can determine the positions of the vertices on the object's bounds.
+
+</div>
 
 </div>
 

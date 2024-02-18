@@ -84,7 +84,11 @@ Value
 
 Description
 
+<div>
+
 This property is used to define the position of grid items on the row and column axes in a grid.  By default, grid items will be automatically placed from left to right in the direction of rows.  However, you can also specify specific fixed positions for grid items on both rows and columns.
+
+</div>
 
 </div>
 
@@ -129,7 +133,11 @@ Value
 
 Description
 
+<div>
+
 Takes effect only in fix mode, specifies the element start row coordinates. Value start with 0.
+
+</div>
 
 </div>
 
@@ -169,7 +177,11 @@ Value
 
 Description
 
+<div>
+
 Takes effect only in fix mode, specifies the element start column coordinates. Value start with 0.
+
+</div>
 
 </div>
 

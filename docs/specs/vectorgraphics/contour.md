@@ -83,7 +83,11 @@ Value
 
 Description
 
+<div>
+
 Whether the path is open or closed.
+
+</div>
 
 </div>
 
@@ -111,7 +115,11 @@ Type
 
 Description
 
+<div>
+
 An array of points representing the contour of the shape.
+
+</div>
 
 </div>
 

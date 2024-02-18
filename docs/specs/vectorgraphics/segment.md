@@ -85,7 +85,11 @@ Value
 
 Description
 
+<div>
+
 The starting point of the segment. The number is the index of the `vertices` list in `Vector NetWork`, starting from `0`.
+
+</div>
 
 </div>
 
@@ -113,7 +117,11 @@ Type
 
 Description
 
+<div>
+
 The ending point of the segment. The number is the index of the `vertices` list in `Vector NetWork`, starting from `0`.
+
+</div>
 
 </div>
 
@@ -141,7 +149,11 @@ Type
 
 Description
 
+<div>
+
 The control point of the starting point of the Bezier curve.
+
+</div>
 
 </div>
 
@@ -169,7 +181,11 @@ Type
 
 Description
 
+<div>
+
 The control point of the ending point of the Bezier curve.
+
+</div>
 
 </div>
 

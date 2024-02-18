@@ -84,8 +84,12 @@ Value
 
 Description
 
+<div>
+
 A list of loops of the region.
 Note: A loop is a part of the region, which is not necessarily closed.
+
+</div>
 
 </div>
 
@@ -113,7 +117,11 @@ Type
 
 Description
 
+<div>
+
 A list of the fill styles of the region. If it's missing, the `style.fills` of the top-level object is uesd.
+
+</div>
 
 </div>
 
@@ -141,7 +149,11 @@ Type
 
 Description
 
+<div>
+
 The rule determining whether an area is inside or outside a region.
+
+</div>
 
 </div>
 
