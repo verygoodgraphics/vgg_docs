@@ -80,7 +80,11 @@ Details of a text.
 
 Description
 
+<div>
+
 ID of the object, globally unique.
+
+</div>
 
 </div>
 
@@ -108,7 +112,11 @@ Type
 
 Description
 
+<div>
+
 Name of the object, for user identification, encoded in UTF-8.
+
+</div>
 
 </div>
 
@@ -136,7 +144,11 @@ Type
 
 Description
 
+<div>
+
 If `true`, the object will be unable to be edited.
+
+</div>
 
 </div>
 
@@ -164,7 +176,11 @@ Type
 
 Description
 
+<div>
+
 If `false`, the object will be invisible.
+
+</div>
 
 </div>
 
@@ -192,7 +208,11 @@ Type
 
 Description
 
+<div>
+
 The opacity and blending-related configurations of the object.
+
+</div>
 
 </div>
 
@@ -220,7 +240,11 @@ Type
 
 Description
 
+<div>
+
 The borders, fills, and other styles of the object.
+
+</div>
 
 </div>
 
@@ -248,7 +272,11 @@ Type
 
 Description
 
+<div>
+
 The bounds of the object before undergoing matrix transformations.
+
+</div>
 
 </div>
 
@@ -276,7 +304,11 @@ Type
 
 Description
 
+<div>
+
 An enclosing rectangle for the object. This property stores information about the object after the matrix transformation.
+
+</div>
 
 </div>
 
@@ -304,7 +336,11 @@ Type
 
 Description
 
+<div>
+
 Matrix used for translating, rotating, and scaling the object.
+
+</div>
 
 </div>
 
@@ -332,7 +368,11 @@ Type
 
 Description
 
+<div>
+
 A list of alpha masks applied to the object.
+
+</div>
 
 </div>
 
@@ -360,8 +400,12 @@ Type
 
 Description
 
+<div>
+
 A list of outline masks applied to the object, clipped by the intersection of their outlines.
 The items in the list are object IDs of the masks.
+
+</div>
 
 </div>
 
@@ -389,7 +433,11 @@ Type
 
 Description
 
+<div>
+
 The mask type of the object.
+
+</div>
 
 </div>
 
@@ -435,7 +483,11 @@ Value
 
 Description
 
+<div>
+
 How the `style` and `visible` of the mask object affect the area of the mask.
+
+</div>
 
 </div>
 
@@ -481,7 +533,11 @@ Value
 
 Description
 
+<div>
+
 How the mask object is displayed.
+
+</div>
 
 </div>
 
@@ -527,7 +583,11 @@ Value
 
 Description
 
+<div>
+
 How to display the child element of the object when it overflows its container.
+
+</div>
 
 </div>
 
@@ -573,8 +633,12 @@ Value
 
 Description
 
+<div>
+
 Smoothness of rounded corners. Range: `[0, 1]`.
 `0` is the default value, indicating no smoothing for rounded corners.
+
+</div>
 
 </div>
 
@@ -602,8 +666,12 @@ Type
 
 Description
 
+<div>
+
 Used to be associated with the object by symbol instances for overriding its attributes. Check the `objectId` in the `OverrideValue` for details.
 If `overrideKey` exists, find a symbol master through upward traversal (which could be the object itself); `overrideKey` is unique within the symbol master.
+
+</div>
 
 </div>
 
@@ -631,8 +699,12 @@ Type
 
 Description
 
+<div>
+
 Horizontal constraints for the object.
 Default value is `1`.
+
+</div>
 
 </div>
 
@@ -660,8 +732,12 @@ Type
 
 Description
 
+<div>
+
 Vertical constraints for the object.
 Default value is `1`.
+
+</div>
 
 </div>
 
@@ -689,7 +765,11 @@ Type
 
 Description
 
+<div>
+
 How child objects behave when the object is resized.
+
+</div>
 
 </div>
 
@@ -735,8 +815,12 @@ Value
 
 Description
 
+<div>
+
 `False`: When resizing occurs, the object scales according to the `horizontalConstraint` and `verticalConstraint`. (Default value.)
 `True`: When resizing occurs, the object itself maintains its angle, and the center position is scaled. The scaling occurs along both the length and width directions.
+
+</div>
 
 </div>
 
@@ -764,7 +848,11 @@ Type
 
 Description
 
+<div>
+
 A list of variables that can be used by children.
+
+</div>
 
 </div>
 
@@ -792,7 +880,11 @@ Type
 
 Description
 
+<div>
+
 A list of referenced variables.
+
+</div>
 
 </div>
 
@@ -820,7 +912,11 @@ Type
 
 Description
 
+<div>
+
 How the `style` of the object affects the region participating in a Boolean operation with another object.
+
+</div>
 
 </div>
 
@@ -901,8 +997,12 @@ Value
 
 Description
 
+<div>
+
 The text content of the text object.
 The encoding format is UTF-8.
+
+</div>
 
 </div>
 
@@ -930,9 +1030,13 @@ Type
 
 Description
 
+<div>
+
 The position of the first character baseline when text is drawn.
 Horizontal and vertical alignments have been considered. The given coordinates are in the object's own coordinate system.
 If this property doesn't exist, text is drawn using `bounds`.
+
+</div>
 
 </div>
 
@@ -960,7 +1064,11 @@ Type
 
 Description
 
+<div>
+
 The text is arranged along the path.
+
+</div>
 
 </div>
 
@@ -988,7 +1096,11 @@ Type
 
 Description
 
+<div>
+
 The mode of the text frame size.
+
+</div>
 
 </div>
 
@@ -1034,7 +1146,11 @@ Value
 
 Description
 
+<div>
+
 The maximum height that can be displayed inside the text frame, with any text exceeding this height being truncated.
+
+</div>
 
 </div>
 
@@ -1074,7 +1190,11 @@ Type
 
 Description
 
+<div>
+
 The type of vertical alignment for the text.
+
+</div>
 
 </div>
 
@@ -1120,7 +1240,11 @@ Value
 
 Description
 
+<div>
+
 The type of horizontal alignment for the text. When the number of items is less than the number of rows, the last value is reused.
+
+</div>
 
 </div>
 
@@ -1171,8 +1295,12 @@ Value
 
 Description
 
+<div>
+
 The default font attributes of the text. If some font attributes are missing in `fontAttr`, take the font attributes here.
 The value of `length` in this field is meaningless.
+
+</div>
 
 </div>
 
@@ -1200,8 +1328,12 @@ Type
 
 Description
 
+<div>
+
 An ordered list, where each item sequentially describes the font attributes of a text fragment.
 If some font attributes are missing in an item, take the font attributes from `defaultFontAttr`.
+
+</div>
 
 </div>
 
@@ -1229,7 +1361,11 @@ Type
 
 Description
 
+<div>
+
 A list with a length equals to the number of text lines, where each item describes the index preceding each line of text.
+
+</div>
 
 </div>
 
@@ -1257,8 +1393,12 @@ Type
 
 Description
 
+<div>
+
 If true, trim the text portion that extends beyond the text frame starting from the baseline, based on `verticalAlignment`
 Default value is `false`.
+
+</div>
 
 </div>
 

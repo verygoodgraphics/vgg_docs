@@ -83,7 +83,11 @@ Value
 
 Description
 
+<div>
+
 The ID of the reassigned variable defined in `VariableDefine`.
+
+</div>
 
 </div>
 
@@ -111,7 +115,11 @@ Type
 
 Description
 
+<div>
+
 The new value of the variable.
+
+</div>
 
 </div>
 

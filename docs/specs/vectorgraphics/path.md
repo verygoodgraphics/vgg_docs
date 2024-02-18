@@ -70,7 +70,11 @@ Path represents a vector geometry which is formed by individual subpaths combine
 
 Description
 
+<div>
+
 ID of the object, globally unique.
+
+</div>
 
 </div>
 
@@ -98,7 +102,11 @@ Type
 
 Description
 
+<div>
+
 Name of the object, for user identification, encoded in UTF-8.
+
+</div>
 
 </div>
 
@@ -126,7 +134,11 @@ Type
 
 Description
 
+<div>
+
 If `true`, the object will be unable to be edited.
+
+</div>
 
 </div>
 
@@ -154,7 +166,11 @@ Type
 
 Description
 
+<div>
+
 If `false`, the object will be invisible.
+
+</div>
 
 </div>
 
@@ -182,7 +198,11 @@ Type
 
 Description
 
+<div>
+
 The opacity and blending-related configurations of the object.
+
+</div>
 
 </div>
 
@@ -210,7 +230,11 @@ Type
 
 Description
 
+<div>
+
 The borders, fills, and other styles of the object.
+
+</div>
 
 </div>
 
@@ -238,7 +262,11 @@ Type
 
 Description
 
+<div>
+
 The bounds of the object before undergoing matrix transformations.
+
+</div>
 
 </div>
 
@@ -266,7 +294,11 @@ Type
 
 Description
 
+<div>
+
 An enclosing rectangle for the object. This property stores information about the object after the matrix transformation.
+
+</div>
 
 </div>
 
@@ -294,7 +326,11 @@ Type
 
 Description
 
+<div>
+
 Matrix used for translating, rotating, and scaling the object.
+
+</div>
 
 </div>
 
@@ -322,7 +358,11 @@ Type
 
 Description
 
+<div>
+
 A list of alpha masks applied to the object.
+
+</div>
 
 </div>
 
@@ -350,8 +390,12 @@ Type
 
 Description
 
+<div>
+
 A list of outline masks applied to the object, clipped by the intersection of their outlines.
 The items in the list are object IDs of the masks.
+
+</div>
 
 </div>
 
@@ -379,7 +423,11 @@ Type
 
 Description
 
+<div>
+
 The mask type of the object.
+
+</div>
 
 </div>
 
@@ -425,7 +473,11 @@ Value
 
 Description
 
+<div>
+
 How the `style` and `visible` of the mask object affect the area of the mask.
+
+</div>
 
 </div>
 
@@ -471,7 +523,11 @@ Value
 
 Description
 
+<div>
+
 How the mask object is displayed.
+
+</div>
 
 </div>
 
@@ -517,7 +573,11 @@ Value
 
 Description
 
+<div>
+
 How to display the child element of the object when it overflows its container.
+
+</div>
 
 </div>
 
@@ -563,8 +623,12 @@ Value
 
 Description
 
+<div>
+
 Smoothness of rounded corners. Range: `[0, 1]`.
 `0` is the default value, indicating no smoothing for rounded corners.
+
+</div>
 
 </div>
 
@@ -592,8 +656,12 @@ Type
 
 Description
 
+<div>
+
 Used to be associated with the object by symbol instances for overriding its attributes. Check the `objectId` in the `OverrideValue` for details.
 If `overrideKey` exists, find a symbol master through upward traversal (which could be the object itself); `overrideKey` is unique within the symbol master.
+
+</div>
 
 </div>
 
@@ -621,8 +689,12 @@ Type
 
 Description
 
+<div>
+
 Horizontal constraints for the object.
 Default value is `1`.
+
+</div>
 
 </div>
 
@@ -650,8 +722,12 @@ Type
 
 Description
 
+<div>
+
 Vertical constraints for the object.
 Default value is `1`.
+
+</div>
 
 </div>
 
@@ -679,7 +755,11 @@ Type
 
 Description
 
+<div>
+
 How child objects behave when the object is resized.
+
+</div>
 
 </div>
 
@@ -725,8 +805,12 @@ Value
 
 Description
 
+<div>
+
 `False`: When resizing occurs, the object scales according to the `horizontalConstraint` and `verticalConstraint`. (Default value.)
 `True`: When resizing occurs, the object itself maintains its angle, and the center position is scaled. The scaling occurs along both the length and width directions.
+
+</div>
 
 </div>
 
@@ -754,7 +838,11 @@ Type
 
 Description
 
+<div>
+
 A list of variables that can be used by children.
+
+</div>
 
 </div>
 
@@ -782,7 +870,11 @@ Type
 
 Description
 
+<div>
+
 A list of referenced variables.
+
+</div>
 
 </div>
 
@@ -810,7 +902,11 @@ Type
 
 Description
 
+<div>
+
 How the `style` of the object affects the region participating in a Boolean operation with another object.
+
+</div>
 
 </div>
 
@@ -891,7 +987,11 @@ Value
 
 Description
 
+<div>
+
 The shape of the path, describing the details of the path.
+
+</div>
 
 </div>
 

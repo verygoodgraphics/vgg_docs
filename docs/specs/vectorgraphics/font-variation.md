@@ -83,12 +83,16 @@ Value
 
 Description
 
+<div>
+
 The official name of the font variation.
 For example:
 
 * `wght` means weight
 * `wdth` means width
 * `slnt` means slant
+
+</div>
 
 </div>
 
@@ -116,7 +120,11 @@ Type
 
 Description
 
+<div>
+
 The value of the font variation.
+
+</div>
 
 </div>
 

@@ -85,7 +85,11 @@ Value
 
 Description
 
+<div>
+
 The blend mode of the object.
+
+</div>
 
 </div>
 
@@ -113,7 +117,11 @@ Type
 
 Description
 
+<div>
+
 The opacity of the object. `0` represents transparent, and `1` represents opaque.
+
+</div>
 
 </div>
 
@@ -141,7 +149,11 @@ Type
 
 Description
 
+<div>
+
 To leave objects beneath unaffected, you can isolate the blending mode to a targeted layer or group.
+
+</div>
 
 </div>
 
@@ -169,7 +181,11 @@ Type
 
 Description
 
+<div>
+
 In a transparency knockout group, the elements of a group don't show through each other.
+
+</div>
 
 </div>
 

@@ -83,7 +83,11 @@ Value
 
 Description
 
+<div>
+
 The ID of the referenced variable which defined in `VariableDefine`.
+
+</div>
 
 </div>
 
@@ -111,9 +115,13 @@ Type
 
 Description
 
+<div>
+
 Describes how a referenced variable acts on a specific property of an object.
 When the `varType` of the variable is `2`, the field is fixed to `textData`.
 When the `varType` is anything else, the field points to a property of the object (check `overrideName` in `OverrideValue`).
+
+</div>
 
 </div>
 

@@ -84,7 +84,11 @@ Value
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -112,7 +116,11 @@ Type
 
 Description
 
+<div>
+
 This property is used to control the growth or shrinkage ratio of child elements in the allocation of remaining space within a flex container. The values of flex-grow and flex-shrink for all Flex items are the same, and based on the size of the remaining space in the container, flex items will automatically adjust its size to grow or shrink base on this property value.
+
+</div>
 
 </div>
 

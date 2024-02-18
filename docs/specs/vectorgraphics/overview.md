@@ -56,7 +56,11 @@ In the coordinate system defined by VGG, the X-axis increases to the right, and 
 
 Description
 
+<div>
+
 Current VGG specs version, conforming to semantic version format like `major.minor.patch`.
+
+</div>
 
 </div>
 
@@ -100,7 +104,11 @@ Value
 
 Description
 
+<div>
+
 The file type of current file.
+
+</div>
 
 </div>
 
@@ -147,7 +155,11 @@ Value
 
 Description
 
+<div>
+
 The file name of the input design file, encoding in UTF-8.
+
+</div>
 
 </div>
 
@@ -175,7 +187,11 @@ Type
 
 Description
 
+<div>
+
 A list of the frames.
+
+</div>
 
 </div>
 
@@ -203,7 +219,11 @@ Type
 
 Description
 
+<div>
+
 A list of the referenced resources.
+
+</div>
 
 </div>
 
@@ -245,7 +265,11 @@ Array&lt;
 
 Description
 
+<div>
+
 Illustrator-specific pattern definitions.
+
+</div>
 
 </div>
 

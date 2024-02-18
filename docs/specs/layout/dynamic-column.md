@@ -87,7 +87,11 @@ Value
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -132,7 +136,11 @@ Value
 
 Description
 
+<div>
+
 Takes effect only in fix-column mode and indicates the minimum number of rows.
+
+</div>
 
 </div>
 
@@ -160,7 +168,11 @@ Type
 
 Description
 
+<div>
+
 Takes effect only in fix-column mode, indicating a fixed number of columns.
+
+</div>
 
 </div>
 

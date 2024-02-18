@@ -101,7 +101,11 @@ Value
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -129,7 +133,11 @@ Type
 
 Description
 
+<div>
+
 The color of the border's fill.
+
+</div>
 
 </div>
 
@@ -157,7 +165,11 @@ Type
 
 Description
 
+<div>
+
 The content types of the border's fill.
+
+</div>
 
 </div>
 
@@ -185,7 +197,11 @@ Type
 
 Description
 
+<div>
+
 The position types of the border relative to the boundary.
+
+</div>
 
 </div>
 
@@ -213,8 +229,12 @@ Type
 
 Description
 
+<div>
+
 The thickness of the border.
 This attribute only works if `borderWeightsIndependent` is set to `false`.
+
+</div>
 
 </div>
 
@@ -242,8 +262,12 @@ Type
 
 Description
 
+<div>
+
 For rectangles only. If `true`, independent border weights for all four sides.
 Default value is `false`.
+
+</div>
 
 </div>
 
@@ -271,7 +295,11 @@ Type
 
 Description
 
+<div>
+
 This is used only when `borderWeightsIndependent` is set to true, in order to specify the border weight at the top of the rectangle. Default value is `0`.
+
+</div>
 
 </div>
 
@@ -299,7 +327,11 @@ Type
 
 Description
 
+<div>
+
 This is used only when `borderWeightsIndependent` is set to true, in order to specify the border weight at the left of the rectangle. Default value is `0`.
+
+</div>
 
 </div>
 
@@ -327,7 +359,11 @@ Type
 
 Description
 
+<div>
+
 This is used only when `borderWeightsIndependent` is set to true, in order to specify the border weight at the bottom of the rectangle. Default value is `0`.
+
+</div>
 
 </div>
 
@@ -355,7 +391,11 @@ Type
 
 Description
 
+<div>
+
 This is used only when `borderWeightsIndependent` is set to true, in order to specify the border weight at the right of the rectangle. Default value is `0`.
+
+</div>
 
 </div>
 
@@ -383,7 +423,11 @@ Type
 
 Description
 
+<div>
+
 The opacity and blending-related configurations of the border.
+
+</div>
 
 </div>
 
@@ -411,7 +455,11 @@ Type
 
 Description
 
+<div>
+
 The gradient of the border's fill.
+
+</div>
 
 </div>
 
@@ -439,7 +487,11 @@ Type
 
 Description
 
+<div>
+
 The pattern of the border's fill.
+
+</div>
 
 </div>
 
@@ -467,7 +519,11 @@ Type
 
 Description
 
+<div>
+
 The type of the border style. The dashed style is further specified in `dashedOffset` and `dashedPattern`.
+
+</div>
 
 </div>
 
@@ -513,7 +569,11 @@ Value
 
 Description
 
+<div>
+
 A list of values that describe the lengths of dashes (filled regions) and gaps (empty regions) in a `dashed` border by repeating themselves.
+
+</div>
 
 </div>
 
@@ -553,7 +613,11 @@ Type
 
 Description
 
+<div>
+
 Border dash initial offset. (applies to `dashed` borders)
+
+</div>
 
 </div>
 
@@ -581,7 +645,11 @@ Type
 
 Description
 
+<div>
+
 The shape styles at the end of border lines.
+
+</div>
 
 </div>
 
@@ -609,7 +677,11 @@ Type
 
 Description
 
+<div>
+
 The shape style at the corner of two border lines.
+
+</div>
 
 </div>
 
@@ -637,7 +709,11 @@ Type
 
 Description
 
+<div>
+
 When the angle between two adjacent border lines is less than this value, a `miter` join is used instead.
+
+</div>
 
 </div>
 
@@ -665,8 +741,12 @@ Type
 
 Description
 
+<div>
+
 The flatness parameter specifies the accuracy or smoothness with which curves are rendered as a sequence of flat line segments.
 Default value is `0`.
+
+</div>
 
 </div>
 

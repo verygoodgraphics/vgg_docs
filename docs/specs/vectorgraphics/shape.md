@@ -84,7 +84,11 @@ Value
 
 Description
 
+<div>
+
 A list of subshapes in the shape.
+
+</div>
 
 </div>
 
@@ -112,8 +116,12 @@ Type
 
 Description
 
+<div>
+
 The rule determining whether an area is inside or outside a path.
 Note: For `vectorNetwork`, this property should be ignored.
+
+</div>
 
 </div>
 
@@ -170,9 +178,13 @@ Value
 
 Description
 
+<div>
+
 The radius of the shape, when the `subshapes` have boolean operations.
 Affects the corners of all `subshapes` under the shape, as well as the corners of the overlapping region of the `subshapes`.
 The `radius` of the subshapes override this radius.
+
+</div>
 
 </div>
 

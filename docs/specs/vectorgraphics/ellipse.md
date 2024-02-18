@@ -84,9 +84,13 @@ Value
 
 Description
 
+<div>
+
 The starting angle of the sector sweep.
 The three o'clock direction is defined as `0`, increasing in the clockwise direction.
 If `startingAngle` is less than `endingAngle`, the filled area spans from `startingAngle` to `endingAngle` clockwise; otherwise, counterclockwise.
+
+</div>
 
 </div>
 
@@ -126,9 +130,13 @@ Type
 
 Description
 
+<div>
+
 The ending angle of the sector sweep.
 The three o'clock direction is defined as `0`, increasing in the clockwise direction.
 If `startingAngle` is less than `endingAngle`, the filled area spans from `startingAngle` to `endingAngle` clockwise; otherwise, counterclockwise.
+
+</div>
 
 </div>
 
@@ -156,7 +164,11 @@ Type
 
 Description
 
+<div>
+
 A ratio of inner radius to the outer radius.
+
+</div>
 
 </div>
 

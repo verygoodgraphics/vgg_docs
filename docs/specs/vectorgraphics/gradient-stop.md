@@ -84,7 +84,11 @@ Value
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -112,7 +116,11 @@ Type
 
 Description
 
+<div>
+
 A number giving the position of the color stop on the gradient ramp.
+
+</div>
 
 </div>
 
@@ -140,9 +148,13 @@ Type
 
 Description
 
+<div>
+
 A position between the current color stop and the next one, where there is an equal mix of the two colors.
 `midPoint` is a percentage of the distance between the two color stops. ***Default value is `0.5`.***
 The `midPoint` is ignored for the last color stop, except in the case of angular gradients.
+
+</div>
 
 </div>
 

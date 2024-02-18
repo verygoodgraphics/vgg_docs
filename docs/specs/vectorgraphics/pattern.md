@@ -82,7 +82,11 @@ Value
 
 Description
 
+<div>
+
 One of the patterns listed below.
+
+</div>
 
 </div>
 

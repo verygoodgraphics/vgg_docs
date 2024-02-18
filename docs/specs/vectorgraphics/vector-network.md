@@ -84,7 +84,11 @@ Value
 
 Description
 
+<div>
+
 A list of vertices used in the vector network.
+
+</div>
 
 </div>
 
@@ -112,7 +116,11 @@ Type
 
 Description
 
+<div>
+
 A list of segments used in the vector network.
+
+</div>
 
 </div>
 
@@ -140,9 +148,13 @@ Type
 
 Description
 
+<div>
+
 A list of regions used in the vector network.
 When `regions` are empty, all `segments` automatically form a region, and all closed areas composed of `segments` will be filled according to the filling rules of the path object.
 When `regions` are not empty, for `segments` that are not used in `regions`, it is sufficient to draw them directly without considering the filling.
+
+</div>
 
 </div>
 

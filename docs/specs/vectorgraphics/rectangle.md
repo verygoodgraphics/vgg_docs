@@ -82,8 +82,12 @@ Value
 
 Description
 
+<div>
+
 The radius values correspond to the corners in the following order: left-top, right-top, right-bottom, left-bottom.
 Default value is `[0, 0, 0, 0]`.
+
+</div>
 
 </div>
 

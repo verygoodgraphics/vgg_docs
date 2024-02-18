@@ -90,7 +90,11 @@ Value
 
 Description
 
+<div>
+
 This argument defines how the gradient will be rendered.For simple filled paths, flag takes the value 1.
+
+</div>
 
 </div>
 
@@ -136,7 +140,11 @@ Value
 
 Description
 
+<div>
+
 `xOrigin` and `yOrigin` give the origin of the gradient in page coordinates. The origin can be located anywhere on the artwork, and corresponds to 0 on the gradient ramp.
+
+</div>
 
 </div>
 
@@ -164,7 +172,11 @@ Type
 
 Description
 
+<div>
+
 Refer to xOriginal for details.
+
+</div>
 
 </div>
 
@@ -192,7 +204,11 @@ Type
 
 Description
 
+<div>
+
 This argument specifies the direction of the gradient vector, in degrees. The gradient ramp extends from the origin at the value of angle, which is measured counterclockwise from the X axis.
+
+</div>
 
 </div>
 
@@ -220,7 +236,11 @@ Type
 
 Description
 
+<div>
+
 This argument specifies the distance over which the gradient ramp is applied. The ramp will be scaled so that its 100% value is the end of the length. This parameter may be greater than 1.
+
+</div>
 
 </div>
 
@@ -248,9 +268,13 @@ Type
 
 Description
 
+<div>
+
 The six values make up a transformation matrix.
 When a gradient is first applied to an object, these values are the identity matrix.
 If the user transforms the object, the user transformation matrix is concatenated to the gradient instance's matrix.
+
+</div>
 
 </div>
 
@@ -278,9 +302,13 @@ Type
 
 Description
 
+<div>
+
 0.5 indicates that the width is half the length.
 2 indicates that the width is twice the length.
 And so on.
+
+</div>
 
 </div>
 

@@ -85,7 +85,11 @@ Value
 
 Description
 
+<div>
+
 ID of the referenced style, globally unique.
+
+</div>
 
 </div>
 
@@ -113,7 +117,11 @@ Type
 
 Description
 
+<div>
+
 The style attributes.
+
+</div>
 
 </div>
 
@@ -141,7 +149,11 @@ Type
 
 Description
 
+<div>
+
 The opacity and blending-related configurations.
+
+</div>
 
 </div>
 
@@ -169,7 +181,11 @@ Type
 
 Description
 
+<div>
+
 Font attributes only affect for text objects.
+
+</div>
 
 </div>
 

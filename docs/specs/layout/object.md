@@ -91,7 +91,11 @@ Value
 
 Description
 
+<div>
+
 This property is used in the layout to uniquely identify a specific object. Use this value to associate objects in VGG Vector Graphics Specification.
+
+</div>
 
 </div>
 
@@ -119,7 +123,11 @@ Type
 
 Description
 
+<div>
+
 This property describes the layout characteristics of the current object and can be used to determine its layout type.
+
+</div>
 
 </div>
 
@@ -161,7 +169,11 @@ oneOf&lt;
 
 Description
 
+<div>
+
 This property refers to the layout information of the current object in the layout, which can be adjusted in terms of its position and style through corresponding layout properties. In Flex layout, it refers to the flex items within a flex container. In grid layout, it refers to individual grid items within a grid container.
+
+</div>
 
 </div>
 
@@ -203,7 +215,11 @@ oneOf&lt;
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -231,7 +247,11 @@ Type
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -259,7 +279,11 @@ Type
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -287,7 +311,11 @@ Type
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -315,7 +343,11 @@ Type
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -343,7 +375,11 @@ Type
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -371,7 +407,11 @@ Type
 
 Description
 
+<div>
+
 This property refers to the proportional relationship between the width and height of an element. This property can be used to define the aspect ratio of an element, allowing you to set the desired width-to-height ratio. It ensures that the element maintains the same aspect ratio in containers of different sizes.
+
+</div>
 
 </div>
 

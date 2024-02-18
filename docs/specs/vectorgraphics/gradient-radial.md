@@ -86,7 +86,11 @@ Value
 
 Description
 
+<div>
+
 A relative coordinate according to the `bounds`, where `(0, 0)` represents the top-left corner of the `bounds`, and `(1, -1)` represents the bottom-right corner of the `bounds`.
+
+</div>
 
 </div>
 
@@ -114,7 +118,11 @@ Type
 
 Description
 
+<div>
+
 A relative coordinate according to the `bounds`, where `(0, 0)` represents the top-left corner of the `bounds`, and `(1, -1)` represents the bottom-right corner of the `bounds`.
+
+</div>
 
 </div>
 
@@ -142,8 +150,12 @@ Type
 
 Description
 
+<div>
+
 A list of positions shows how the colors transition from one to another.
 If the number of items is `1`, it means the color of the stop will not transition.
+
+</div>
 
 </div>
 
@@ -183,7 +195,11 @@ Value
 
 Description
 
+<div>
+
 Whether the gradient has been inverted.
+
+</div>
 
 </div>
 
@@ -211,8 +227,12 @@ Type
 
 Description
 
+<div>
+
 When the type is set to `number`, the line connecting `from` to `to` is regarded as one semi-axis of the ellipse, denoted as `A`. The length of the other semi-axis of the ellipse is denoted as `B`. Then, `ellipse = B / A`, which is used to represent the shape of the gradient. The semi-axis `B` is perpendicular to `A` and takes the counterclockwise direction.
 When the type is set to `point`, it represents another point on the ellipse with a relative coordinate according to the `bounds`, where `(0, 0)` represents the top-left corner of the `bounds`, and `(1, -1)` represents the bottom-right corner of the `bounds`.
+
+</div>
 
 </div>
 

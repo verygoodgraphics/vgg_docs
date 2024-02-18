@@ -84,8 +84,12 @@ Value
 
 Description
 
+<div>
+
 The radius of all the corners of the star.
 Default value is `0`.
+
+</div>
 
 </div>
 
@@ -125,7 +129,11 @@ Type
 
 Description
 
+<div>
+
 Ratio refers to the size of the star within the polygon shape.
+
+</div>
 
 </div>
 
@@ -179,7 +187,11 @@ Value
 
 Description
 
+<div>
+
 The number of star vertices, which can determine the positions of the vertices on the object's bounds.
+
+</div>
 
 </div>
 

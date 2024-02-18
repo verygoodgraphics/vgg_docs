@@ -87,8 +87,12 @@ Value
 
 Description
 
+<div>
+
 Whether to mirror the image repetitively.
 Default value is `false`.
+
+</div>
 
 </div>
 
@@ -116,8 +120,12 @@ Type
 
 Description
 
+<div>
+
 Image scaling ratio.
 `0.5` means `50%`, `2` means `200%`, and so on.
+
+</div>
 
 </div>
 
@@ -145,7 +153,11 @@ Type
 
 Description
 
+<div>
+
 Tile the image in which direction.
+
+</div>
 
 </div>
 
@@ -191,7 +203,11 @@ Value
 
 Description
 
+<div>
+
 Rotation of the image in degrees. Positive values represent counterclockwise rotation. Rotate around the center of the image.
+
+</div>
 
 </div>
 
@@ -219,7 +235,11 @@ Type
 
 Description
 
+<div>
+
 File name of the image.
+
+</div>
 
 </div>
 
@@ -247,7 +267,11 @@ Type
 
 Description
 
+<div>
+
 Adjust the colors of the image.
+
+</div>
 
 </div>
 

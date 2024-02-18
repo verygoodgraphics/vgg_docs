@@ -85,7 +85,11 @@ Value
 
 Description
 
+<div>
+
 A relative coordinate according to the `bounds`, where `(0, 0)` represents the top-left corner of the `bounds`, and `(1, -1)` represents the bottom-right corner of the `bounds`.
+
+</div>
 
 </div>
 
@@ -113,7 +117,11 @@ Type
 
 Description
 
+<div>
+
 A relative coordinate according to the `bounds`, where `(0, 0)` represents the top-left corner of the `bounds`, and `(1, -1)` represents the bottom-right corner of the `bounds`.
+
+</div>
 
 </div>
 
@@ -141,8 +149,12 @@ Type
 
 Description
 
+<div>
+
 A list of positions shows how the colors transition from one to another.
 If the number of items is `1`, it means the color of the stop will not transition.
+
+</div>
 
 </div>
 
@@ -182,7 +194,11 @@ Value
 
 Description
 
+<div>
+
 Whether the gradient has been inverted.
+
+</div>
 
 </div>
 

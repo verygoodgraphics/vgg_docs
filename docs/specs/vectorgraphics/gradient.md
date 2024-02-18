@@ -82,7 +82,11 @@ Value
 
 Description
 
+<div>
+
 One of the gradients listed below.
+
+</div>
 
 </div>
 

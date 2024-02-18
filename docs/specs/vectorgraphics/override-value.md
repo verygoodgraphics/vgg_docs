@@ -85,6 +85,8 @@ Value
 
 Description
 
+<div>
+
 A list of IDs or keys that refer to objects, describing an overridden chain. The value of the last object will be overridden. The other objects on the chain are instances.
 **For example**:
 Suppose this array is `[D456, 6516, FB09]`.
@@ -93,6 +95,8 @@ And this instance (of ID `D456`) points to another symbol-master (of ID `0739`),
 Recursively, this instance (of ID `6516`) points to yet another symbol-master (of ID `59B5`), which contains the final object (of ID `FB09`).
 So the current instance (of ID `XXXX`) will override the value of the final object (of ID `FB09`) according to `overrideName` and `overrideValue`.
 **Note**: Each item in the array is associated with the object's `overrideKey` first. If `overrideKey` does not exist, the object's ID is associated.
+
+</div>
 
 </div>
 
@@ -132,6 +136,8 @@ Type
 
 Description
 
+<div>
+
 Starting with the top-level property of the object, use `.` as a separator.
 If the property is an array, it contains the index of the array, starting at `0`, and `*` is valid for all items.
 For example:
@@ -140,6 +146,8 @@ For example:
 `style.fills.0`: override the first item of `style.fills`.
 `style.fills.0.color`: override the color of the first `style.fills`.
 `style.fills.*.color`: override the color of all items in `style.fills`.
+
+</div>
 
 </div>
 
@@ -167,9 +175,13 @@ Type
 
 Description
 
+<div>
+
 The value of the overridden attribute, whose type depends on the concrete property. There are two special cases:
 When `overrideName` ends with `style` and `overrideValue` conforms to `referenced_style_<id>`, then it uses the corresponding value in references (top-level attribute).
 When the value is `null`, it indicates deletion.
+
+</div>
 
 </div>
 
@@ -197,9 +209,13 @@ Not specified
 
 Description
 
+<div>
+
 If the value of this property is `true`, the current override applies to the layout.
 Default value is `false`.
 **Note**: Layout information is defined in `layout.json`, not `design.json`.
+
+</div>
 
 </div>
 

@@ -90,7 +90,11 @@ Value
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -118,7 +122,11 @@ Type
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -146,7 +154,11 @@ Type
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -174,7 +186,11 @@ Type
 
 Description
 
+<div>
+
 When there are empty rows or row height cyclic dependencies within the grid container, this value is used as a reference value. To avoid this issue, it is generally recommended that you explicitly set the height of subgrids or elements in the grid layout, either by using fixed heights or automatic heights to avoid height cyclic dependencies.
+
+</div>
 
 </div>
 
@@ -202,7 +218,11 @@ Type
 
 Description
 
+<div>
+
 This property sets the size of the gap (gutter) between an element's columns. This property accepts values in pixels (px) as units.
+
+</div>
 
 </div>
 
@@ -230,7 +250,11 @@ Type
 
 Description
 
+<div>
+
 This property sets the size of the gap (gutter) between an element's rows. This property accepts values in pixels (px) as units.
+
+</div>
 
 </div>
 
@@ -258,8 +282,12 @@ Type
 
 Description
 
+<div>
+
 This property used to set the automatic placement behavior of items in a grid layout.
 This property defines how items are automatically placed within the grid container when their position is not explicitly specified.
+
+</div>
 
 </div>
 
@@ -304,7 +332,11 @@ Value
 
 Description
 
+<div>
+
 This property is used to set the inner spacing for grid containers and grid items, increasing the space between them and around their content. You can adjust the value of padding as needed. This property accepts values in pixels (px) as units.
+
+</div>
 
 </div>
 
@@ -346,9 +378,13 @@ Value
 
 Description
 
+<div>
+
 This property is used to control the alignment of content within cells in the horizontal direction.
 It is effective when the sum of column widths is less than the container width. Columns are fixed at "start" by default.
 This property applies to all grid items, allowing you to uniformly adjust the position of all content within cells in the horizontal direction.
+
+</div>
 
 </div>
 

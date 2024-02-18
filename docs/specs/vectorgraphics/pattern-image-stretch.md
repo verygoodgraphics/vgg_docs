@@ -84,7 +84,11 @@ Value
 
 Description
 
+<div>
+
 File name of the image.
+
+</div>
 
 </div>
 
@@ -112,10 +116,14 @@ Type
 
 Description
 
+<div>
+
 Image matrix.
 Let the width and height of the widget be `w` and `h`, the width and height of the image be `iw` and `ih`.
 Define `Mw = [[w, 0, 0], [0, h, 0], [0, 0, 1]]`, and `Mi = [[1 / iw, 0, 0], [0, 1 / ih, 0], [0, 0, 1]]`.
 Finally, apply the `Mw * matrix * Mi * P` transformation to each of the four vertices of the image `(0, 0), (0, iw), (iw, -ih), (0, -ih)`, where `P` represents a vertex of the image, to obtain the position of the image in the widget coordinate system.
+
+</div>
 
 </div>
 
@@ -143,7 +151,11 @@ Type
 
 Description
 
+<div>
+
 Adjust the colors of the image.
+
+</div>
 
 </div>
 

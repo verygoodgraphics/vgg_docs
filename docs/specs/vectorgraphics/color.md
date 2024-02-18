@@ -85,7 +85,11 @@ Value
 
 Description
 
+<div>
+
 The opacity of the object. `0` represents transparent, and `1` represents opaque.
+
+</div>
 
 </div>
 
@@ -113,7 +117,11 @@ Type
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -141,7 +149,11 @@ Type
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
@@ -169,7 +181,11 @@ Type
 
 Description
 
+<div>
+
 no description
+
+</div>
 
 </div>
 
