@@ -9,7 +9,6 @@ export function LivePreview({
   onSelect,
   width,
   height,
-  minHeight,
 }: {
   src: string | Int8Array
   runtime: string
@@ -27,6 +26,7 @@ export function LivePreview({
     >
       <div className="preview-card relative flex flex-1 flex-col overflow-hidden border border-zinc-200 bg-white shadow h-full">
         <VGGRender
+          key={src.toString()}
           src={src}
           runtime={runtime}
           editMode
@@ -36,11 +36,10 @@ export function LivePreview({
             // @ts-ignore
             onSelect?.({ id: data?.id })
           }}
+          className="h-full w-full flex justify-center items-center"
           canvasStyle={{
             width: width ?? "100%",
             height: height ?? "100%",
-            minHeight: minHeight,
-            maxHeight: "100%",
             top: 0,
             left: 0,
             zIndex: 0,

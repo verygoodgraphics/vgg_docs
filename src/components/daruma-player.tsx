@@ -111,9 +111,10 @@ export function DarumaPlayer({
     const uint8array = new TextEncoder().encode(codeCache.current)
     decompressed.current["design.json"] = uint8array
     const compressed = fflate.zipSync(decompressed.current, {})
+    const newDarumaSource = new Int8Array(compressed.buffer)
 
-    if (new Int8Array(compressed.buffer) !== darumaSource) {
-      setDarumaSource(new Int8Array(compressed.buffer))
+    if (newDarumaSource !== darumaSource) {
+      setDarumaSource(newDarumaSource)
     }
   }
 
@@ -146,8 +147,8 @@ export function DarumaPlayer({
                 "!flex-col-reverse": isMobile,
               })}
             >
-              <ResizablePanel>
-                <div className="h-[640px]">
+              <ResizablePanel minSize={30}>
+                <div className={isMobile ? "h-[320px]" : "h-[640px]"}>
                   <LiveCode
                     code={code}
                     setCode={setCode}
@@ -159,13 +160,14 @@ export function DarumaPlayer({
                 </div>
               </ResizablePanel>
               <ResizableHandle withHandle />
-              <ResizablePanel>
-                <div className="h-[640px]">
+              <ResizablePanel minSize={40}>
+                <div className={isMobile ? "h-[320px]" : "h-[640px]"}>
                   <LivePreview
                     runtime={runtime}
                     src={darumaSource}
                     onSelect={setSelectedElement}
-                    minHeight={isMobile ? 300 : 640}
+                    height={isMobile ? 300 : 640}
+                    width={isMobile ? 300 : 640}
                   />
                 </div>
               </ResizablePanel>
