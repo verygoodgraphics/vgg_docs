@@ -65,7 +65,7 @@ export default function Home() {
             <div
               className="text-white mx-auto w-full bg-top bg-cover lg:h-[480px] md:h-[360px] flex flex-col justify-center items-center py-16 lg:text-center border border-[var(--ifm-color-primary)] rounded-2xl px-8 bg-[var(--ifm-table-stripe-background)]"
               style={{
-                backgroundImage: "url(/img/vgg_docs_bg.png)",
+                backgroundImage: "url(/img/vgg_docs_bg.jpg)",
               }}
             >
               <h1 className="mt-2 font-bold tracking-tight lg:text-[96px] md:text-[56px] sm:text-[48px] text-[32px]">
