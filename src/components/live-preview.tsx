@@ -2,6 +2,7 @@ import React from "react"
 import { VGGRender } from "@verygoodgraphics/vgg-react"
 
 import { Panel } from "./ui/panel"
+import { ControlConfig, Controls } from "./controls"
 
 export function LivePreview({
   src,
@@ -9,6 +10,8 @@ export function LivePreview({
   onSelect,
   width,
   height,
+  controlsConfig,
+  onControlChange,
 }: {
   src: string | Int8Array
   runtime: string
@@ -16,6 +19,8 @@ export function LivePreview({
   height?: number
   minHeight?: number
   onSelect: (event: any) => void
+  controlsConfig?: ControlConfig[]
+  onControlChange?: (frameName: string, valuePath: string, value: any) => void
 }) {
   return (
     <Panel
@@ -26,13 +31,14 @@ export function LivePreview({
     >
       <div className="preview-card relative flex flex-1 flex-col overflow-hidden border border-zinc-200 bg-white shadow h-full">
         <VGGRender
-          key={src.toString()}
+          // key={src.toString()}
           src={src}
           runtime={runtime}
           editMode
           verbose
           onSelect={async (event) => {
             const { type, data } = event
+            console.log("onSelect", data)
             // @ts-ignore
             onSelect?.({ id: data?.id })
           }}
@@ -44,6 +50,11 @@ export function LivePreview({
             left: 0,
             zIndex: 0,
           }}
+        />
+        <Controls
+          className="absolute top-4 right-4"
+          config={controlsConfig}
+          onChange={onControlChange}
         />
       </div>
     </Panel>

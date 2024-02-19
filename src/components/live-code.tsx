@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react"
+import jp from "jsonpath"
 
 import { CodeEditor, CodeEditorRef } from "./ui/code-editor"
 
@@ -9,35 +10,82 @@ export function LiveCode({
   path,
   code,
   selectedElement,
+  activeLine,
   setCode,
   onRun,
 }: {
   path?: string
   code: string
   selectedElement?: { id: string }
+  activeLine?: string
   setCode: (val: string) => void
   onRun?: () => void
 }) {
   const codeRef = useRef<CodeEditorRef>(null)
+  const codeStringRef = useRef<string>("")
+
+  useEffect(() => {
+    codeStringRef.current = code
+  }, [code])
 
   useEffect(() => {
     const editor = codeRef.current?.editorRef?.current
 
     if (editor && selectedElement?.id) {
       const model = editor?.getModel()
-      const position = model?.getPositionAt(
-        code.indexOf(`"name": "${selectedElement.id}"`)
+      let matches = model?.findMatches(
+        `"${selectedElement.id}"`,
+        false,
+        true,
+        false,
+        null,
+        false
       )
-      if (!position) return
-      editor.revealPositionInCenter(position)
-      editor?.setSelection({
-        startLineNumber: position?.lineNumber || 0,
-        startColumn: position?.column || 0,
-        endLineNumber: position?.lineNumber || 0,
-        endColumn: position?.column || 0,
-      })
+
+      if (matches && matches.length > 0) {
+        let line = matches[0].range.startLineNumber
+        editor.revealLineInCenter(line)
+        editor.setPosition({ lineNumber: line, column: 0 })
+      }
     }
   }, [selectedElement])
+
+  useEffect(() => {
+    if (!activeLine) return
+
+    const valuePath = activeLine
+
+    const result = jp.nodes(JSON.parse(codeStringRef.current), valuePath)
+
+    if (result.length > 0) {
+      const editor = codeRef.current?.editorRef?.current
+      const lineNumber = getLineNumber(
+        codeStringRef.current,
+        result[0].path as string[]
+      )
+      editor?.revealLineInCenter(lineNumber)
+      editor?.setPosition({ lineNumber: lineNumber, column: 0 })
+      // console.log(`The node is on line ${lineNumber} in the JSON file.`)
+    }
+
+    function getLineNumber(jsonString: string, jsonPath: string[]) {
+      const lines = jsonString.split("\n")
+      const matchPath = jsonPath.filter(
+        (p) => p !== "$" && typeof p === "string"
+      )
+      for (let i = 0; i < lines.length; i++) {
+        if (lines[i].includes(matchPath[0])) {
+          if (matchPath.length === 1) {
+            return i + 1
+          }
+
+          matchPath.shift()
+        }
+      }
+
+      return -1
+    }
+  }, [activeLine])
 
   return (
     <Panel
