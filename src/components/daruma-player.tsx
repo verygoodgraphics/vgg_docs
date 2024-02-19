@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react"
 import * as fflate from "fflate"
 import toast, { Toaster } from "react-hot-toast"
+import jp from "jsonpath"
 
 import { fetchZipFile } from "../../lib/utils/fetch_zip_file"
 import { LiveCode } from "../components/live-code"
@@ -13,6 +14,7 @@ import {
   ResizablePanel,
   ResizablePanelGroup,
 } from "./ui/resizable"
+import { ControlConfig } from "./controls"
 
 function generateJsonObjectFromUint8Array(uint8array: Uint8Array) {
   // Convert the Uint8Array to a string (assuming the data is in UTF-8 encoding)
@@ -34,11 +36,13 @@ export function DarumaPlayer({
   src,
   id,
   tabs = [],
+  controlsConfig,
 }: {
   id?: string
   runtime?: string
   src: string
   tabs?: TabItem[]
+  controlsConfig?: ControlConfig[]
 }) {
   const [code, setCode] = useState("")
   const decompressed = useRef<any>(null)
@@ -50,6 +54,7 @@ export function DarumaPlayer({
   }>({
     id: "",
   })
+  const [activeLine, setActiveLine] = React.useState<string>("")
 
   const [isMobile, setIsMobile] = useState(false)
 
@@ -154,6 +159,7 @@ export function DarumaPlayer({
                     setCode={setCode}
                     onRun={handleRun}
                     selectedElement={selectedElement}
+                    activeLine={activeLine}
                     path={id}
                     key={id}
                   />
@@ -168,6 +174,20 @@ export function DarumaPlayer({
                     onSelect={setSelectedElement}
                     height={isMobile ? 300 : 640}
                     width={isMobile ? 300 : 640}
+                    controlsConfig={controlsConfig}
+                    onControlChange={(frameName, valuePath, value) => {
+                      const codeJSON = JSON.parse(code)
+                      jp.value(codeJSON, valuePath, value)
+
+                      setCode(JSON.stringify(codeJSON, null, 2))
+                      setTimeout(() => {
+                        setActiveLine(valuePath)
+                        handleRun()
+                        setTimeout(() => {
+                          setActiveLine("")
+                        })
+                      }, 100)
+                    }}
                   />
                 </div>
               </ResizablePanel>
