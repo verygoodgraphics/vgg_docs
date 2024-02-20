@@ -54,7 +54,7 @@ export function DarumaPlayer({
   }>({
     id: "",
   })
-  const [activeLine, setActiveLine] = React.useState<string>("")
+  const [activeLine, setActiveLine] = React.useState<[string, number]>(["", -1])
 
   const [isMobile, setIsMobile] = useState(false)
 
@@ -175,33 +175,27 @@ export function DarumaPlayer({
                     height={isMobile ? 300 : 640}
                     width={isMobile ? 300 : 640}
                     controlsConfig={controlsConfig}
-                    onControlChange={(frameName, valuePath, value) => {
+                    onControlChange={(
+                      frameName,
+                      valuePath,
+                      value,
+                      lineNumber
+                    ) => {
                       const codeJSON = JSON.parse(code)
                       JSONPath({
                         json: codeJSON,
                         path: valuePath,
                         resultType: "all",
-                        // callback: function (obj: any, path: string) {
-                        //   console.log(
-                        //     "obj",
-                        //     obj,
-                        //     "path",
-                        //     path,
-                        //     obj[path],
-                        //     value
-                        //   )
-                        //   obj[path] = value
-                        // },
                       }).forEach(({ parent, parentProperty }) => {
                         parent[parentProperty] = value
                       })
 
                       setCode(JSON.stringify(codeJSON, null, 2))
                       setTimeout(() => {
-                        setActiveLine(valuePath)
+                        setActiveLine([valuePath, lineNumber ?? -1])
                         handleRun()
                         setTimeout(() => {
-                          setActiveLine("")
+                          setActiveLine(["", -1])
                         })
                       }, 100)
                     }}

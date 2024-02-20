@@ -5,14 +5,32 @@ hide_table_of_contents: true
 ---
 
 <DarumaPlayer
-  tabs={
-    [
-      {label: 'Butt', src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border__daruma/border__line_cap__butt.daruma'},
-      {label: 'Round', src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border__daruma/border__line_cap__round.daruma'},
-      {label: 'Square', src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border__daruma/border__line_cap__square.daruma'}
-    ]
-  }
- />
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border__daruma/border__line_cap__butt.daruma'
+  controlsConfig={[
+    {
+      label:  'Line Cap',
+      type: 'Line Cap',
+      controlType: 'select',
+      value: 0,
+      valuePath: '$.frames[0].childObjects[0].style.borders[0].lineCapStyle',
+      frameName: 'Rectangle 1',
+      options: [
+        {
+          label: 'Butt',
+          value: 0
+        },
+        {
+          label: 'Round',
+          value: 1
+        },
+        {
+          label: 'Square',
+          value: 2
+        },
+      ]
+    }
+  ]}
+/>
  
 <br />
 **Related Specs**

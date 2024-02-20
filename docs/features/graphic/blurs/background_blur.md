@@ -4,7 +4,21 @@ sidebar_position: 3
 hide_table_of_contents: true
 ---
 
-<DarumaPlayer src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blur__daruma/blur__background_blur.daruma' />
+<DarumaPlayer 
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blur__daruma/blur__background_blur.daruma'
+  controlsConfig={[
+    {
+      label:  'Background Blur',
+      type: 'Background Blur',
+      controlType: 'slider',
+      value: 10,
+      valuePath: '$.frames[0].childObjects[1].style.blurs[0].radius',
+      frameName: 'Rectangle',
+      min:0,
+      max:100
+    }
+  ]}
+/>
 
 <br />
 **Related Specs**

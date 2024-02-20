@@ -88,11 +88,9 @@ hide_table_of_contents: true
         },
         {
           label: 'Pass Through',
-          value: 18
+          value: 27
         }
-      ],
-      min:0,
-      max:18
+      ]
     }
   ]}
  />
