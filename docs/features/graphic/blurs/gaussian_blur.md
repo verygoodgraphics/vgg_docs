@@ -6,7 +6,6 @@ hide_table_of_contents: true
 
 <DarumaPlayer src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blur__daruma/blur__gaussian_blur.daruma' controlsConfig={[
   {
-    
     label:  'Gaussian Blur',
     type: 'Gaussian Blur',
     controlType: 'slider',
