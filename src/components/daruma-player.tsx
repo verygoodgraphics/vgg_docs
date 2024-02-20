@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from "react"
 import * as fflate from "fflate"
 import toast, { Toaster } from "react-hot-toast"
-import jp from "jsonpath"
+import { JSONPath } from "jsonpath-plus"
 
 import { fetchZipFile } from "../../lib/utils/fetch_zip_file"
 import { LiveCode } from "../components/live-code"
@@ -14,7 +14,7 @@ import {
   ResizablePanel,
   ResizablePanelGroup,
 } from "./ui/resizable"
-import { ControlConfig } from "./controls"
+import { type ControlConfig } from "./controls"
 
 function generateJsonObjectFromUint8Array(uint8array: Uint8Array) {
   // Convert the Uint8Array to a string (assuming the data is in UTF-8 encoding)
@@ -177,7 +177,24 @@ export function DarumaPlayer({
                     controlsConfig={controlsConfig}
                     onControlChange={(frameName, valuePath, value) => {
                       const codeJSON = JSON.parse(code)
-                      jp.value(codeJSON, valuePath, value)
+                      JSONPath({
+                        json: codeJSON,
+                        path: valuePath,
+                        resultType: "all",
+                        // callback: function (obj: any, path: string) {
+                        //   console.log(
+                        //     "obj",
+                        //     obj,
+                        //     "path",
+                        //     path,
+                        //     obj[path],
+                        //     value
+                        //   )
+                        //   obj[path] = value
+                        // },
+                      }).forEach(({ parent, parentProperty }) => {
+                        parent[parentProperty] = value
+                      })
 
                       setCode(JSON.stringify(codeJSON, null, 2))
                       setTimeout(() => {

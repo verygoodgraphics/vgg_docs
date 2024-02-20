@@ -4,86 +4,97 @@ hide_table_of_contents: true
 ---
 
 <DarumaPlayer
-  tabs={
-    [
-      {
-        label: 'normal',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__normal.daruma'
-      },
-      {
-        label: 'darken',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__darken.daruma'
-      },
-      {
-        label: 'multiply',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__multiply.daruma'
-      },
-      {
-        label: 'color burn',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__color_burn.daruma'
-      },
-      {
-        label: 'lighten',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__lighten.daruma'
-      },
-      {
-        label: 'screen',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__screen.daruma'
-      },
-      {
-        label: 'color dodge',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__color_dodge.daruma'
-      },
-      {
-        label: 'overlay',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__overlay.daruma'
-      },
-      {
-        label: 'soft light',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__soft_light.daruma'
-      },
-      {
-        label: 'hard light',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__hard_light.daruma'
-      },
-      {
-        label: 'difference',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__difference.daruma'
-      },
-      {
-        label: 'exclusion',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__exclusion.daruma'
-      },
-      {
-        label: 'hue',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__hue.daruma'
-      },
-      {
-        label: 'saturation',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__saturation.daruma'
-      },
-      {
-        label: 'color',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__color.daruma'
-      },
-      {
-        label: 'luminosity',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__luminosity.daruma'
-      },
-      {
-        label: 'plus darker',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__plus_darker.daruma'
-      },
-      {
-        label: 'plus lighter',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__plus_lighter.daruma'
-      },
-      {
-        label: 'pass through',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__pass_through.daruma'
-      }
-    ]
-  }
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__normal.daruma'
+  controlsConfig={[
+    {
+      label:  'Blend Mode',
+      type: 'Blend Mode',
+      controlType: 'select',
+      value: 0,
+      valuePath: '$.frames[0].childObjects[0].contextSettings.blendMode',
+      frameName: 'Rectangle 1',
+      options: [
+        {
+          label: 'Normal',
+          value: 0
+        },
+        {
+          label: 'Darken',
+          value: 1
+        },
+        {
+          label: 'Multiply',
+          value: 2
+        },
+        {
+          label: 'Color Burn',
+          value: 3
+        },
+        {
+          label: 'Lighten',
+          value: 4
+        },
+        {
+          label: 'Screen',
+          value: 5
+        },
+        {
+          label: 'Color Dodge',
+          value: 6
+        },
+        {
+          label: 'Overlay',
+          value: 7
+        },
+        {
+          label: 'Soft Light',
+          value: 8
+        },
+        {
+          label: 'Hard Light',
+          value: 9
+        },
+        {
+          label: 'Difference',
+          value: 10
+        },
+        {
+          label: 'Exclusion',
+          value: 11
+        },
+        {
+          label: 'Hue',
+          value: 12
+        },
+        {
+          label: 'Saturation',
+          value: 13
+        },
+        {
+          label: 'Color',
+          value: 14
+        },
+        {
+          label: 'Luminosity',
+          value: 15
+        },
+        {
+          label: 'Plus Darker',
+          value: 16
+        },
+        {
+          label: 'Plus Lighter',
+          value: 17
+        },
+        {
+          label: 'Pass Through',
+          value: 18
+        }
+      ],
+      min:0,
+      max:18
+    }
+  ]}
  />
  
 <br />

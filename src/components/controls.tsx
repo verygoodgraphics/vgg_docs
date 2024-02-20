@@ -2,6 +2,13 @@ import React from "react"
 import { cn } from "../../lib/utils/cn"
 import { ChevronDownIcon } from "@radix-ui/react-icons"
 import { Slider } from "./ui/slider"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "./ui/select"
 
 export type ControlConfig = {
   frameName: string
@@ -17,7 +24,10 @@ export type ControlConfig = {
     | "radio"
   value: any
   valuePath: string
-  options?: string[]
+  options?: {
+    label: string
+    value: any
+  }[]
   min?: number
   max?: number
   step?: number
@@ -86,27 +96,33 @@ export function Controls({
               )
             case "select":
               return (
-                <div key={index.toString()} className="flex items-center">
+                <div
+                  key={index.toString()}
+                  className="flex items-center gap-x-4"
+                >
                   <label className="text-xs text-zinc-600 font-medium">
                     {control.label}
                   </label>
-                  <select
-                    value={control.value}
-                    onChange={(event) => {
-                      control.onChange?.(event.target.value)
-                    }}
-                  >
-                    {control.options?.map((option, index) => (
-                      <option key={index.toString()} value={option}>
-                        {option}
-                      </option>
-                    ))}
-                  </select>
+                  <Select onValueChange={debouncedOnChange}>
+                    <SelectTrigger className="w-[120px]">
+                      <SelectValue placeholder={control.options?.[0].label} />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {control.options?.map((option, index) => (
+                        <SelectItem key={index.toString()} value={option.value}>
+                          {option.label}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
                 </div>
               )
             case "input":
               return (
-                <div key={index.toString()} className="flex items-center">
+                <div
+                  key={index.toString()}
+                  className="flex items-center gap-x-4"
+                >
                   <label className="text-xs text-zinc-600 font-medium">
                     {control.label}
                   </label>
@@ -121,7 +137,10 @@ export function Controls({
               )
             case "color":
               return (
-                <div key={index.toString()} className="flex items-center">
+                <div
+                  key={index.toString()}
+                  className="flex items-center gap-x-4"
+                >
                   <label className="text-xs text-zinc-600 font-medium">
                     {control.label}
                   </label>
@@ -136,7 +155,10 @@ export function Controls({
               )
             case "checkbox":
               return (
-                <div key={index.toString()} className="flex items-center">
+                <div
+                  key={index.toString()}
+                  className="flex items-center gap-x-4"
+                >
                   <label className="text-xs text-zinc-600 font-medium">
                     {control.label}
                   </label>
@@ -151,7 +173,10 @@ export function Controls({
               )
             case "button":
               return (
-                <div key={index.toString()} className="flex items-center">
+                <div
+                  key={index.toString()}
+                  className="flex items-center gap-x-4"
+                >
                   <button
                     onClick={() => {
                       control.onChange?.(control.value)
@@ -163,7 +188,10 @@ export function Controls({
               )
             case "radio":
               return (
-                <div key={index.toString()} className="flex items-center">
+                <div
+                  key={index.toString()}
+                  className="flex items-center gap-x-4"
+                >
                   <label className="text-xs text-zinc-600 font-medium">
                     {control.label}
                   </label>
@@ -171,13 +199,13 @@ export function Controls({
                     <div key={index.toString()} className="flex items-center">
                       <input
                         type="radio"
-                        value={option}
+                        value={option.value}
                         checked={control.value === option}
                         onChange={(event) => {
                           control.onChange?.(event.target.value)
                         }}
                       />
-                      <label>{option}</label>
+                      <label>{option.label}</label>
                     </div>
                   ))}
                 </div>
