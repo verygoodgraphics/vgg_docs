@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react"
-import jp from "jsonpath"
+import { JSONPath } from "jsonpath-plus"
 
 import { CodeEditor, CodeEditorRef } from "./ui/code-editor"
 
@@ -55,24 +55,28 @@ export function LiveCode({
 
     const valuePath = activeLine
 
-    const result = jp.nodes(JSON.parse(codeStringRef.current), valuePath)
+    const result = JSONPath({
+      json: JSON.parse(codeStringRef.current),
+      path: valuePath,
+      resultType: "all",
+    })
 
     if (result.length > 0) {
       const editor = codeRef.current?.editorRef?.current
       const lineNumber = getLineNumber(
         codeStringRef.current,
-        result[0].path as string[]
+        result[0].pointer.split("/") as string[]
       )
       editor?.revealLineInCenter(lineNumber)
       editor?.setPosition({ lineNumber: lineNumber, column: 0 })
-      // console.log(`The node is on line ${lineNumber} in the JSON file.`)
     }
 
     function getLineNumber(jsonString: string, jsonPath: string[]) {
       const lines = jsonString.split("\n")
       const matchPath = jsonPath.filter(
-        (p) => p !== "$" && typeof p === "string"
+        (p) => !!p && p !== "$" && typeof p === "string" && isNaN(Number(p))
       )
+      console.log({ jsonPath, matchPath })
       for (let i = 0; i < lines.length; i++) {
         if (lines[i].includes(matchPath[0])) {
           if (matchPath.length === 1) {
