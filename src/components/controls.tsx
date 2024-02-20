@@ -14,6 +14,7 @@ export type ControlConfig = {
   frameName: string
   label: string
   type: string
+  lineNumber?: number
   controlType:
     | "slider"
     | "select"
@@ -51,7 +52,12 @@ export function Controls({
 }: {
   className?: string
   config?: ControlConfig[]
-  onChange?: (frameName: string, valuePath: string, value: any) => void
+  onChange?: (
+    frameName: string,
+    valuePath: string,
+    value: any,
+    lineNumber?: number
+  ) => void
 }) {
   if (!config || config.length === 0) return null
 
@@ -70,7 +76,12 @@ export function Controls({
         {config.map((control, index) => {
           const debouncedOnChange = unbounce((value: number) => {
             control.onChange?.(value)
-            onChange?.(control.frameName, control.valuePath, value)
+            onChange?.(
+              control.frameName,
+              control.valuePath,
+              value,
+              control.lineNumber
+            )
           }, 100)
 
           switch (control.controlType) {

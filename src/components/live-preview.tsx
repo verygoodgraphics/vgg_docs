@@ -20,7 +20,12 @@ export function LivePreview({
   minHeight?: number
   onSelect: (event: any) => void
   controlsConfig?: ControlConfig[]
-  onControlChange?: (frameName: string, valuePath: string, value: any) => void
+  onControlChange?: (
+    frameName: string,
+    valuePath: string,
+    value: any,
+    lineNumber?: number
+  ) => void
 }) {
   return (
     <Panel

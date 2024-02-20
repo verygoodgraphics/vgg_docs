@@ -17,7 +17,7 @@ export function LiveCode({
   path?: string
   code: string
   selectedElement?: { id: string }
-  activeLine?: string
+  activeLine?: [string, number]
   setCode: (val: string) => void
   onRun?: () => void
 }) {
@@ -51,9 +51,9 @@ export function LiveCode({
   }, [selectedElement])
 
   useEffect(() => {
-    if (!activeLine) return
+    if (!activeLine?.[0]) return
 
-    const valuePath = activeLine
+    const [valuePath, _lineNumber] = activeLine
 
     const result = JSONPath({
       json: JSON.parse(codeStringRef.current),
@@ -74,13 +74,37 @@ export function LiveCode({
     function getLineNumber(jsonString: string, jsonPath: string[]) {
       const lines = jsonString.split("\n")
       const matchPath = jsonPath.filter(
-        (p) => !!p && p !== "$" && typeof p === "string" && isNaN(Number(p))
+        (p) => !!p && p !== "$" && typeof p === "string"
       )
-      console.log({ jsonPath, matchPath })
+      // console.log({ jsonPath, matchPath: [...matchPath] })
       for (let i = 0; i < lines.length; i++) {
-        if (lines[i].includes(matchPath[0])) {
+        const pointer = Number(matchPath[0])
+
+        if (!isNaN(pointer)) {
+          if (!lines[i].trim().startsWith(`"${matchPath[1]}":`)) continue
+
+          if (pointer > 0) {
+            matchPath[0] = String(pointer - 1)
+          } else {
+            if (matchPath.length === 2) {
+              if (_lineNumber - 6 < i && i < _lineNumber + 4) {
+                return i + 1
+              }
+
+              continue
+            }
+
+            matchPath.splice(0, 2)
+          }
+
+          continue
+        } else if (lines[i].trim().startsWith(`"${matchPath[0]}":`)) {
           if (matchPath.length === 1) {
-            return i + 1
+            if (_lineNumber - 6 < i && i < _lineNumber + 4) {
+              return i + 1
+            }
+
+            continue
           }
 
           matchPath.shift()
