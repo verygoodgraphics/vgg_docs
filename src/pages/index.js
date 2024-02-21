@@ -33,7 +33,7 @@ const features = [
     icon: ArrowPathIcon,
   },
   {
-    name: "VGG Containers",
+    name: "VGG Containers - UI Component",
     description:
       "Collection of VGG containers for multiple platforms to develop and deploy VGG applications.",
     href: "/containers/overview",
@@ -68,11 +68,14 @@ export default function Home() {
                 backgroundImage: "url(/img/vgg_docs_bg.png)",
               }}
             >
-              <h1 className="mt-2 font-bold tracking-tight lg:text-[96px] md:text-[56px] sm:text-[48px] text-[32px]">
+              <h1 className="mt-24 font-bold tracking-tight lg:text-[96px] md:text-[56px] sm:text-[48px] text-[32px]">
                 VeryGoodGraphics
               </h1>
-              <p className="sm:mt-6 mt-1 text-lg leading-8 sm:text-3xl">
+              <h2 className="sm:mt-6 mt-1 leading-8 sm:text-3xl">
                 Documentation Center
+              </h2>
+              <p className="mt-4 lg:text-lg md:text-base sm:text-sm">
+                The next-gen vector graphics and its toolkit for cross-platform UI development which is compatible with any framework and any platform.
               </p>
             </div>
             <div className="mx-auto mt-12 max-w-2xl sm:mt-10 lg:mt-12 lg:max-w-none">
