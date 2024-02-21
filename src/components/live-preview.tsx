@@ -24,7 +24,8 @@ export function LivePreview({
     frameName: string,
     valuePath: string,
     value: any,
-    lineNumber?: number
+    lineNumber?: number,
+    lineNumberMatchType?: "exact" | "range"
   ) => void
 }) {
   return (

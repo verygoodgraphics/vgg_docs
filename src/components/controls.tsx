@@ -12,12 +12,14 @@ import {
 import { Switch } from "./ui/switch"
 import { RangeSlider } from "./ui/range-slider"
 import { GradientSlider } from "./ui/gradient-slider"
+import { MultiSlider } from "./ui/multi-slider"
 
 export type ControlConfig = {
   frameName: string
   label: string
   type: string
   lineNumber?: number
+  lineNumberMatchType?: "exact" | "range"
   controlType:
     | "slider"
     | "select"
@@ -29,8 +31,10 @@ export type ControlConfig = {
     | "switch"
     | "range-slider"
     | "gradient-slider"
+    | "multi-slider"
   value: any
   valuePath: string
+  valueLabels?: string[]
   options?: {
     label: string
     value: any
@@ -62,7 +66,8 @@ export function Controls({
     frameName: string,
     valuePath: string,
     value: any,
-    lineNumber?: number
+    lineNumber?: number,
+    lineNumberMatchType?: "exact" | "range"
   ) => void
 }) {
   if (!config || config.length === 0) return null
@@ -86,7 +91,8 @@ export function Controls({
               control.frameName,
               control.valuePath,
               value,
-              control.lineNumber
+              control.lineNumber,
+              control.lineNumberMatchType
             )
           }, 100)
 
@@ -293,6 +299,48 @@ export function Controls({
                     }}
                     // thumbLabels={["start", "end"]}
                   />
+                </div>
+              )
+            case "multi-slider":
+              return (
+                <div
+                  key={index.toString()}
+                  className="flex items-center gap-x-2"
+                >
+                  {/* <label className="text-xs text-zinc-600 font-medium flex-none w-[50%]">
+                    {control.label}
+                  </label> */}
+                  <MultiSlider
+                    sliderLabels={control.valueLabels ?? []}
+                    defaultValue={control.value}
+                    onChange={(value) => {
+                      console.log(111, value)
+                      debouncedOnChange(value)
+                    }}
+                    min={control.min}
+                    max={control.max}
+                    step={control.step || 1}
+                  />
+                  {/* <GradientSlider
+                    maxValue={control.max}
+                    minValue={control.min}
+                    step={control.step}
+                    defaultValue={control.value}
+                    thumbColors={control.value.map(
+                      (v) =>
+                        `rgba(${v.color.red * 255},${v.color.green * 255},${
+                          v.color.blue * 255
+                        },${v.color.alpha})`
+                    )}
+                    onChange={(values) => {
+                      const newValues = control.value.map((v, i) => {
+                        return { ...v, position: values[i] }
+                      })
+
+                      debouncedOnChange(newValues)
+                    }}
+                    // thumbLabels={["start", "end"]}
+                  /> */}
                 </div>
               )
             default:

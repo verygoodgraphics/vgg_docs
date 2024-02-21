@@ -55,6 +55,9 @@ export function DarumaPlayer({
     id: "",
   })
   const [activeLine, setActiveLine] = React.useState<[string, number]>(["", -1])
+  const [lineNumberMatchType, setLineNumberMatchType] = React.useState<
+    "exact" | "range"
+  >("range")
 
   const [isMobile, setIsMobile] = useState(false)
 
@@ -160,6 +163,7 @@ export function DarumaPlayer({
                     onRun={handleRun}
                     selectedElement={selectedElement}
                     activeLine={activeLine}
+                    lineNumberMatchType={lineNumberMatchType}
                     path={id}
                     key={id}
                   />
@@ -179,7 +183,8 @@ export function DarumaPlayer({
                       frameName,
                       valuePath,
                       value,
-                      lineNumber
+                      lineNumber,
+                      lineNumberMatchType
                     ) => {
                       const codeJSON = JSON.parse(code)
                       JSONPath({
@@ -191,11 +196,17 @@ export function DarumaPlayer({
                       })
 
                       setCode(JSON.stringify(codeJSON, null, 2))
+
+                      if (lineNumberMatchType) {
+                        setLineNumberMatchType(lineNumberMatchType)
+                      }
+
                       setTimeout(() => {
                         setActiveLine([valuePath, lineNumber ?? -1])
                         handleRun()
                         setTimeout(() => {
                           setActiveLine(["", -1])
+                          setLineNumberMatchType("range")
                         })
                       }, 100)
                     }}
