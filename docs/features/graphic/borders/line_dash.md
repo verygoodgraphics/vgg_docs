@@ -8,8 +8,8 @@ hide_table_of_contents: true
   src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border__daruma/border__line_dash.daruma'
   controlsConfig={[
     {
-      label:  'Line Dash',
-      type: 'Line Dash',
+      label:  'Thickness',
+      type: 'Line Dash Thickness',
       controlType: 'slider',
       value: 10,
       valuePath: '$.frames[0].childObjects[0].style.borders[0].thickness',

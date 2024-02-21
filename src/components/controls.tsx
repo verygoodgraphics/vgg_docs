@@ -9,6 +9,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "./ui/select"
+import { Switch } from "./ui/switch"
+import { RangeSlider } from "./ui/range-slider"
+import { GradientSlider } from "./ui/gradient-slider"
 
 export type ControlConfig = {
   frameName: string
@@ -23,6 +26,9 @@ export type ControlConfig = {
     | "checkbox"
     | "button"
     | "radio"
+    | "switch"
+    | "range-slider"
+    | "gradient-slider"
   value: any
   valuePath: string
   options?: {
@@ -64,7 +70,7 @@ export function Controls({
   return (
     <div
       className={cn(
-        "border rounded-lg px-2 py-1.5 border-zinc-200 border-solid min-w-[200px] bg-white shadow-sm z-10",
+        "border rounded-lg px-2 py-1.5 border-zinc-200 border-solid min-w-[240px] bg-white shadow-sm z-10",
         className
       )}
     >
@@ -72,7 +78,7 @@ export function Controls({
         <h2 className="text-[13px] text-zinc-600 font-bold mb-0">Controls</h2>
         <ChevronDownIcon className="w-[14px] h-[14px] text-zinc-400" />
       </div>
-      <div>
+      <div className="flex flex-col gap-y-2">
         {config.map((control, index) => {
           const debouncedOnChange = unbounce((value: number) => {
             control.onChange?.(value)
@@ -89,9 +95,9 @@ export function Controls({
               return (
                 <div
                   key={index.toString()}
-                  className="flex items-center gap-x-4"
+                  className="flex items-center gap-x-2"
                 >
-                  <label className="text-xs text-zinc-600 font-medium flex-none">
+                  <label className="text-xs text-zinc-600 font-medium flex-none w-[50%]">
                     {control.label}
                   </label>
                   <Slider
@@ -109,12 +115,19 @@ export function Controls({
               return (
                 <div
                   key={index.toString()}
-                  className="flex items-center gap-x-4"
+                  className="flex items-center gap-x-2"
                 >
-                  <label className="text-xs text-zinc-600 font-medium">
+                  <label className="text-xs text-zinc-600 font-medium flex-none w-[50%]">
                     {control.label}
                   </label>
-                  <Select onValueChange={debouncedOnChange}>
+                  <Select
+                    defaultValue={
+                      typeof control.value === "string"
+                        ? control.value
+                        : undefined
+                    }
+                    onValueChange={debouncedOnChange}
+                  >
                     <SelectTrigger className="w-[120px]">
                       <SelectValue placeholder={control.options?.[0].label} />
                     </SelectTrigger>
@@ -132,7 +145,7 @@ export function Controls({
               return (
                 <div
                   key={index.toString()}
-                  className="flex items-center gap-x-4"
+                  className="flex items-center gap-x-2"
                 >
                   <label className="text-xs text-zinc-600 font-medium">
                     {control.label}
@@ -150,9 +163,9 @@ export function Controls({
               return (
                 <div
                   key={index.toString()}
-                  className="flex items-center gap-x-4"
+                  className="flex items-center gap-x-2"
                 >
-                  <label className="text-xs text-zinc-600 font-medium">
+                  <label className="text-xs text-zinc-600 font-medium flex-none w-[50%]">
                     {control.label}
                   </label>
                   <input
@@ -168,9 +181,9 @@ export function Controls({
               return (
                 <div
                   key={index.toString()}
-                  className="flex items-center gap-x-4"
+                  className="flex items-center gap-x-2"
                 >
-                  <label className="text-xs text-zinc-600 font-medium">
+                  <label className="text-xs text-zinc-600 font-medium flex-none w-[50%]">
                     {control.label}
                   </label>
                   <input
@@ -186,7 +199,7 @@ export function Controls({
               return (
                 <div
                   key={index.toString()}
-                  className="flex items-center gap-x-4"
+                  className="flex items-center gap-x-2"
                 >
                   <button
                     onClick={() => {
@@ -201,9 +214,9 @@ export function Controls({
               return (
                 <div
                   key={index.toString()}
-                  className="flex items-center gap-x-4"
+                  className="flex items-center gap-x-2"
                 >
-                  <label className="text-xs text-zinc-600 font-medium">
+                  <label className="text-xs text-zinc-600 font-medium flex-none w-[50%]">
                     {control.label}
                   </label>
                   {control.options?.map((option, index) => (
@@ -219,6 +232,67 @@ export function Controls({
                       <label>{option.label}</label>
                     </div>
                   ))}
+                </div>
+              )
+            case "switch":
+              return (
+                <div
+                  key={index.toString()}
+                  className="flex items-center gap-x-2"
+                >
+                  <label className="text-xs text-zinc-600 font-medium flex-none w-[50%]">
+                    {control.label}
+                  </label>
+                  <Switch
+                    onCheckedChange={debouncedOnChange}
+                    defaultChecked={control.value}
+                  />
+                </div>
+              )
+            case "range-slider":
+              return (
+                <div
+                  key={index.toString()}
+                  className="flex items-center gap-x-2"
+                >
+                  <label className="text-xs text-zinc-600 font-medium flex-none w-[50%]">
+                    {control.label}
+                  </label>
+                  <RangeSlider
+                    defaultValue={[30, 60]}
+                    thumbLabels={["start", "end"]}
+                  />
+                </div>
+              )
+            case "gradient-slider":
+              return (
+                <div
+                  key={index.toString()}
+                  className="flex items-center gap-x-2"
+                >
+                  <label className="text-xs text-zinc-600 font-medium flex-none w-[50%]">
+                    {control.label}
+                  </label>
+                  <GradientSlider
+                    maxValue={control.max}
+                    minValue={control.min}
+                    step={control.step}
+                    defaultValue={control.value}
+                    thumbColors={control.value.map(
+                      (v) =>
+                        `rgba(${v.color.red * 255},${v.color.green * 255},${
+                          v.color.blue * 255
+                        },${v.color.alpha})`
+                    )}
+                    onChange={(values) => {
+                      const newValues = control.value.map((v, i) => {
+                        return { ...v, position: values[i] }
+                      })
+
+                      debouncedOnChange(newValues)
+                    }}
+                    // thumbLabels={["start", "end"]}
+                  />
                 </div>
               )
             default:
