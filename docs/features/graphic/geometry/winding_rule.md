@@ -5,20 +5,28 @@ hide_table_of_contents: true
 ---
 
 <DarumaPlayer
-  tabs={
-    [
-      {
-        label: 'Non-zero',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/geometry__daruma/geometry__winding_rule__non_zero.daruma'
-      },
-      {
-        label: 'Even-odd',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/geometry__daruma/geometry__winding_rule__even_odd.daruma'
-      }
-    ]
-  }
- />
- 
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/geometry__daruma/geometry__winding_rule__non_zero.daruma'
+  controlsConfig={[
+    {
+      label:  'Winding Rule',
+      type: 'Winding Rule',
+      controlType: 'select',
+      value: 0,
+      valuePath: '$.frames[0].childObjects[0].shape.windingRule',
+      options: [
+        {
+          label: 'Non-zero',
+          value: 0
+        },
+        {
+          label: 'Even-odd',
+          value: 1
+        },
+      ]
+    }
+  ]}
+/>
+
 <br />
 **Related Specs**
 - [Shape](/specs/vectorgraphics/shape)

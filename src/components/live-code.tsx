@@ -11,6 +11,7 @@ export function LiveCode({
   code,
   selectedElement,
   activeLine,
+  lineNumberMatchType,
   setCode,
   onRun,
 }: {
@@ -18,6 +19,7 @@ export function LiveCode({
   code: string
   selectedElement?: { id: string }
   activeLine?: [string, number]
+  lineNumberMatchType?: "exact" | "range"
   setCode: (val: string) => void
   onRun?: () => void
 }) {
@@ -63,10 +65,13 @@ export function LiveCode({
 
     if (result.length > 0) {
       const editor = codeRef.current?.editorRef?.current
-      const lineNumber = getLineNumber(
-        codeStringRef.current,
-        result[0].pointer.split("/") as string[]
-      )
+      const lineNumber =
+        lineNumberMatchType === "range"
+          ? getLineNumber(
+              codeStringRef.current,
+              result[0].pointer.split("/") as string[]
+            )
+          : _lineNumber
       editor?.revealLineInCenter(lineNumber)
       editor?.setPosition({ lineNumber: lineNumber, column: 0 })
     }

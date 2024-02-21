@@ -1,7 +1,7 @@
 ---
 title: Alignment
 sidebar_position: 5
-hide_table_of_contents: false
+hide_table_of_contents: true
 ---
 
 ## Horizontal Alignment
@@ -56,32 +56,20 @@ hide_table_of_contents: false
       label: 'Vertical Alignment',
       type: 'Alignment',
       controlType: 'select',
-      value: [
-            0,
-            17.545454025268555
-          ],
-      valuePath: '$.frames[0].childObjects[0].anchorPoint',
+      value: 0,
+      valuePath: '$.frames[0].childObjects[0].verticalAlignment',
       options: [
         {
           label: 'Top',
-          value: [
-            0,
-            17.545454025268555
-          ]
+          value: 0
         },
         {
           label: 'Center',
-          value: [
-            0,
-            51.54545593261719
-          ]
+          value: 1
         },
         {
           label: 'Down',
-          value: [
-            0,
-            85.54545593261719
-          ]
+          value: 2
         },
       ]
     }

@@ -13,9 +13,9 @@ hide_table_of_contents: true
       controlType: 'slider',
       value: 1,
       valuePath: '$.frames[0].childObjects[0].style.borders[0].miterLimit',
-      frameName: 'Rectangle 1',
       min:0,
-      max:100
+      max:1.42,
+      step:0.001
     }
   ]}
 />
