@@ -2,15 +2,17 @@
 title: VGG Specs
 ---
 
-VGG Specs is a set of JSON-based specifications for the next generation of vector graphics.
-It currently includes specs for VGG [file](/specs/file), general [vector
-graphics](/specs/vectorgraphics/overview), and [layout
-semantics](/specs/layout/overview).
+VGG Specs is a set of JSON-based specifications for the next generation of vector graphics. As a
+kind of vector graphics, VGG has application across various domains, with user interface being just
+one of its many uses, because of the advanced UI effects supported by VGG including gradients, shadows, blurs
+and masks.
 
-The JSON schemas could be downloaded here:
-
-- [Vector Graphics Spec](https://docs.verygoodgraphics.com/schemas/vectorgraphics.schema.json)
-- [Layout Spec](https://docs.verygoodgraphics.com/schemas/layout.schema.json)
+VGG Specs currently includes specs for
+- [VGG File Spec](/specs/file)
+- [VGG Vector Graphics Spec](/specs/vectorgraphics/overview), with the complete JSON schema
+  [here](https://docs.verygoodgraphics.com/schemas/vectorgraphics.schema.json)
+- [VGG Layout Spec](/specs/layout/overview), with the complete JSON schema
+  [here](https://docs.verygoodgraphics.com/schemas/layout.schema.json)
 
 VGG Specs is designed from the ground up with the following characteristics in mind:
 

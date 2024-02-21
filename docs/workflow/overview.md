@@ -4,8 +4,14 @@ sidebar_label: Overview
 ---
 
 The _VGG Workflow_ is an innovative workflow for rapid application development,
-made possible by [VGG Specs](/specs/overview) and its official open-source
-implementation, [VGG Runtime](https://github.com/verygoodgraphics/vgg_runtime).
+made possible by [VGG Specs](/specs/overview) with the official open-source
+implementation, [VGG Runtime](https://github.com/verygoodgraphics/vgg_runtime),
+and various [VGG Containers](/containers/overview) for different frameworks and
+platforms.
+
+Before we discuss the details of _VGG Workflow_, let's first learn some concepts
+including its first principle, the concept of _Design-as-Code_, and its
+ecosystem compatibility.
 
 ## First Principle
 
@@ -23,11 +29,17 @@ minimized R&D cycle, and a significantly improved ROI.
 
 <img src="/img/dac.svg" alt="design-as-code" className='doc-image' />
 
-The concept of _Design-as-Code_ is simple and intuitive. As _VGG Workflow_
-allows developers to focus on writing business logic code using their familiar
-and preferred development tools and languages directly on top of the design
-files. Developers don't have to endure various style sheets including CSS or its
-derivatives.
+The concept of _Design-as-Code_ is straightforward and intuitive, with _Code_
+specifically referring to __UI code__.
+
+The _VGG Workflow_ allows developers to focus on writing business logic code
+using their familiar and preferred development tools and languages directly on
+top of the design files.
+
+As a result, developers will no longer need to repeatedly implement or fine-tune
+the UI using various style sheets like CSS or its derivatives. They can simply
+take the design as the source of truth for the UI, and the rest will be handled
+by VGG.
 
 ## Ecosystem Compatibility
 
@@ -41,7 +53,7 @@ low-code tools.
 
 In short, it is an enhancement to your original workflow, not a burden.
 
-## Workflow Division
+## Workflow Steps
 
 _VGG Workflow_ could be divided into three steps:
 
