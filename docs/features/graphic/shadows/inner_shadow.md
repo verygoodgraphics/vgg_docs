@@ -3,28 +3,54 @@ title: Inner Shadows
 sidebar_position: 1
 hide_table_of_contents: true
 ---
-
 <DarumaPlayer
-  tabs={
-    [
-      {
-        label: 'Inner Shadow',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/shadow__daruma/shadow__inner_shadow.daruma'
-      },
-      {
-        label: 'Blur',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/shadow__daruma/shadow__inner_shadow__blur.daruma'
-      },
-      /**
-      {
-        label: 'Spread',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/shadow__daruma/shadow__inner_shadow__spread.daruma'
-      }
-       */
-    ]
-  }
- />
- 
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/shadow__daruma/shadow__inner_shadow.daruma'
+  controlsConfig={[
+    {
+      label:  'X',
+      type: 'Inner Shadow X',
+      controlType: 'slider',
+      value: 10,
+      valuePath: '$.frames[0].childObjects[0].style.shadows[0].offsetX',
+      frameName: 'Rectangle',
+      min:-50,
+      max:50
+    },
+    {
+      label:  'Y',
+      type: 'Inner Shadow Y',
+      controlType: 'slider',
+      value: -10,
+      valuePath: '$.frames[0].childObjects[0].style.shadows[0].offsetY',
+      frameName: 'Rectangle',
+      min:-50,
+      max:50
+    },
+    {
+      label:  'Blur',
+      type: 'Inner Shadow Blur',
+      controlType: 'slider',
+      value: 0,
+      valuePath: '$.frames[0].childObjects[0].style.shadows[0].blur',
+      frameName: 'Rectangle',
+      min:0,
+      max:100
+    },
+    /**
+    {
+      label:  'Spread',
+      type: 'Inner Shadow Spread',
+      controlType: 'slider',
+      value: 0,
+      valuePath: '$.frames[0].childObjects[0].style.shadows[0].spread',
+      frameName: 'Rectangle',
+      min:0,
+      max:100
+    }
+     */
+  ]}
+/>
+
 <br />
 **Related Specs**
 - [Shadow](/specs/vectorgraphics/shadow)

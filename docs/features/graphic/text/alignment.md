@@ -7,48 +7,86 @@ hide_table_of_contents: false
 ## Horizontal Alignment
 
 <DarumaPlayer
-  tabs={
-    [
-      {
-        label: 'Left',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__horizontal_alignment__left.daruma'
-      },
-      {
-        label: 'Right',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__horizontal_alignment__right.daruma'
-      },
-      {
-        label: 'Center',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__horizontal_alignment__center.daruma'
-      },
-      {
-        label: 'Justified',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__horizontal_alignment__justified.daruma'
-      }
-    ]
-  }
- />
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__horizontal_alignment__left.daruma'
+  controlsConfig={[
+    {
+      label: 'Horizontal Alignment',
+      type: 'Alignment',
+      controlType: 'select',
+      value: [
+            0,
+          ],
+      valuePath: '$.frames[0].childObjects[0].horizontalAlignment',
+      options: [
+        {
+          label: 'Left',
+          value: [
+            0,
+          ]
+        },
+        {
+          label: 'Right',
+          value: [
+            1
+          ]
+        },
+        {
+          label: 'Center',
+          value: [
+            2
+          ]
+        },
+        {
+          label: 'Justified',
+          value: [
+            3
+          ]
+        },
+      ]
+    }
+  ]}
+/>
  
 ## Vertical Alignment
 
 <DarumaPlayer
-  tabs={
-    [
-      {
-        label: 'Top',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__vertical_alignment__top.daruma'
-      },
-      {
-        label: 'Center',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__vertical_alignment__center.daruma'
-      },
-      {
-        label: 'Bottom',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__vertical_alignment__bottom.daruma'
-      }
-    ]
-  }
- />
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__vertical_alignment__top.daruma'
+  controlsConfig={[
+    {
+      label: 'Vertical Alignment',
+      type: 'Alignment',
+      controlType: 'select',
+      value: [
+            0,
+            17.545454025268555
+          ],
+      valuePath: '$.frames[0].childObjects[0].anchorPoint',
+      options: [
+        {
+          label: 'Top',
+          value: [
+            0,
+            17.545454025268555
+          ]
+        },
+        {
+          label: 'Center',
+          value: [
+            0,
+            51.54545593261719
+          ]
+        },
+        {
+          label: 'Down',
+          value: [
+            0,
+            85.54545593261719
+          ]
+        },
+      ]
+    }
+  ]}
+/>
  
 <br />
 **Related Specs**

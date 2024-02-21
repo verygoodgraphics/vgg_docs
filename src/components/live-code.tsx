@@ -87,6 +87,10 @@ export function LiveCode({
             matchPath[0] = String(pointer - 1)
           } else {
             if (matchPath.length === 2) {
+              if (_lineNumber === -1) {
+                return i + 1
+              }
+
               if (_lineNumber - 6 < i && i < _lineNumber + 4) {
                 return i + 1
               }
@@ -100,6 +104,10 @@ export function LiveCode({
           continue
         } else if (lines[i].trim().startsWith(`"${matchPath[0]}":`)) {
           if (matchPath.length === 1) {
+            if (_lineNumber === -1) {
+              return i + 1
+            }
+
             if (_lineNumber - 6 < i && i < _lineNumber + 4) {
               return i + 1
             }
