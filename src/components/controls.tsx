@@ -20,6 +20,7 @@ export type ControlConfig = {
   type: string
   lineNumber?: number
   lineNumberMatchType?: "exact" | "range"
+  lineNumbers?: number[]
   controlType:
     | "slider"
     | "select"
@@ -85,16 +86,19 @@ export function Controls({
       </div>
       <div className="flex flex-col gap-y-2">
         {config.map((control, index) => {
-          const debouncedOnChange = unbounce((value: number) => {
-            control.onChange?.(value)
-            onChange?.(
-              control.frameName,
-              control.valuePath,
-              value,
-              control.lineNumber,
-              control.lineNumberMatchType
-            )
-          }, 100)
+          const debouncedOnChange = unbounce(
+            (value: number, lineNumber?: number) => {
+              control.onChange?.(value)
+              onChange?.(
+                control.frameName,
+                control.valuePath,
+                value,
+                lineNumber ?? control.lineNumber,
+                control.lineNumberMatchType
+              )
+            },
+            100
+          )
 
           switch (control.controlType) {
             case "slider":
@@ -291,11 +295,20 @@ export function Controls({
                         },${v.color.alpha})`
                     )}
                     onChange={(values) => {
+                      let diffValueIndex = 0
+
                       const newValues = control.value.map((v, i) => {
+                        if (values[i] !== v.position) {
+                          diffValueIndex = i
+                        }
+
                         return { ...v, position: values[i] }
                       })
 
-                      debouncedOnChange(newValues)
+                      debouncedOnChange(
+                        newValues,
+                        control.lineNumbers?.[diffValueIndex]
+                      )
                     }}
                     // thumbLabels={["start", "end"]}
                   />
@@ -314,33 +327,12 @@ export function Controls({
                     sliderLabels={control.valueLabels ?? []}
                     defaultValue={control.value}
                     onChange={(value) => {
-                      console.log(111, value)
                       debouncedOnChange(value)
                     }}
                     min={control.min}
                     max={control.max}
                     step={control.step || 1}
                   />
-                  {/* <GradientSlider
-                    maxValue={control.max}
-                    minValue={control.min}
-                    step={control.step}
-                    defaultValue={control.value}
-                    thumbColors={control.value.map(
-                      (v) =>
-                        `rgba(${v.color.red * 255},${v.color.green * 255},${
-                          v.color.blue * 255
-                        },${v.color.alpha})`
-                    )}
-                    onChange={(values) => {
-                      const newValues = control.value.map((v, i) => {
-                        return { ...v, position: values[i] }
-                      })
-
-                      debouncedOnChange(newValues)
-                    }}
-                    // thumbLabels={["start", "end"]}
-                  /> */}
                 </div>
               )
             default:

@@ -26,8 +26,6 @@ export function GradientSlider<T extends number | number[]>({
     return ((defaultValue as any[])?.map((v) => v.position) ?? []) as T
   })
 
-  console.log({ thumbColors })
-
   return (
     <Slider {...props} defaultValue={value} className={cn("w-full", className)}>
       {/* <SliderOutput>
@@ -38,7 +36,7 @@ export function GradientSlider<T extends number | number[]>({
       <SliderTrack className="relative w-full h-7">
         {({ state }) => (
           <>
-            <div className="absolute h-[5px] top-[50%] translate-y-[-50%] w-full rounded-full bg-black/[0.08]" />
+            <div className="absolute h-1 top-[50%] translate-y-[-50%] w-full rounded-full bg-black/[0.08]" />
             {/* fill */}
             {/* <div
               className="absolute h-2 top-[50%] translate-y-[-50%] rounded-full bg-white"
@@ -51,9 +49,6 @@ export function GradientSlider<T extends number | number[]>({
                 key={i}
                 index={i}
                 aria-label={thumbLabels?.[i]}
-                // style={{
-                //   backgroundColor: thumbColors?.[i] ?? "inherit",
-                // }}
               >
                 <div
                   className="h-[10px] w-[10px] rounded-full z-20"
