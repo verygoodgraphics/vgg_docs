@@ -38,7 +38,8 @@ hide_table_of_contents: true
         }
       ],
       valuePath: '$.frames[0].childObjects[0].style.fills[0].gradient.instance.stops',
-      frameName: 'Rectangle',
+      lineNumbers: [153, 165],
+      lineNumberMatchType: 'exact',
       min: 0,
       max: 1
       ,step: 0.01
