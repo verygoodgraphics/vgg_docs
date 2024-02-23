@@ -53,6 +53,11 @@ const sidebars = {
         "specs/animation",
         "specs/3d",
         "specs/script",
+        {
+          type: "doc",
+          id: "specs/changelog",
+          label: "Changelog",
+        },
       ],
     },
   ],
