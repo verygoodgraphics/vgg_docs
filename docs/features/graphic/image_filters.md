@@ -4,7 +4,7 @@ hide_table_of_contents: true
 ---
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/image_filters__daruma/image_filters__exposure.daruma'
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/image_filters/image_filters__exposure.daruma'
   controlsConfig={[
     {
       label:  'Exposure',

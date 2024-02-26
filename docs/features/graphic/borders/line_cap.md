@@ -5,7 +5,7 @@ hide_table_of_contents: true
 ---
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border__daruma/border__line_cap__butt.daruma'
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border/border__line_cap__butt.daruma'
   controlsConfig={[
     {
       label:  'Line Cap',
@@ -31,7 +31,7 @@ hide_table_of_contents: true
     }
   ]}
 />
- 
+
 <br />
 **Related Specs**
 - [Border](/specs/vectorgraphics/border#linecapstyle)

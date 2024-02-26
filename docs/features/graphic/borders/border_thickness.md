@@ -5,7 +5,7 @@ hide_table_of_contents: true
 ---
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border__daruma/border__thickness.daruma'
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border/border__thickness.daruma'
   controlsConfig={[
     {
       label:  'Border Thickness',

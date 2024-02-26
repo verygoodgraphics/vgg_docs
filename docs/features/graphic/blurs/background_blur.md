@@ -4,8 +4,8 @@ sidebar_position: 3
 hide_table_of_contents: true
 ---
 
-<DarumaPlayer 
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blur__daruma/blur__background_blur.daruma'
+<DarumaPlayer
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blur/blur__background_blur.daruma'
   controlsConfig={[
     {
       label:  'Background Blur',

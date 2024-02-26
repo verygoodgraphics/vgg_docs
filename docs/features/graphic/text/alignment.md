@@ -7,7 +7,7 @@ hide_table_of_contents: true
 ## Horizontal Alignment
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__horizontal_alignment__left.daruma'
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text/text__horizontal_alignment__left.daruma'
   controlsConfig={[
     {
       label: 'Horizontal Alignment',
@@ -46,11 +46,11 @@ hide_table_of_contents: true
     }
   ]}
 />
- 
+
 ## Vertical Alignment
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__vertical_alignment__top.daruma'
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text/text__vertical_alignment__top.daruma'
   controlsConfig={[
     {
       label: 'Vertical Alignment',
@@ -75,7 +75,7 @@ hide_table_of_contents: true
     }
   ]}
 />
- 
+
 <br />
 **Related Specs**
 - [Text](/specs/vectorgraphics/text#verticalalignment)

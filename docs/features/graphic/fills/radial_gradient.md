@@ -4,8 +4,8 @@ sidebar_position: 2
 hide_table_of_contents: true
 ---
 
-<DarumaPlayer 
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/fill__daruma/fill__radial_gradient.daruma'
+<DarumaPlayer
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/fill/fill__radial_gradient.daruma'
   controlsConfig={[
     {
       label:  'Radial Gradient',
