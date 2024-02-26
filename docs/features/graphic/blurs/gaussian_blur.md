@@ -4,7 +4,7 @@ sidebar_position: 0
 hide_table_of_contents: true
 ---
 
-<DarumaPlayer src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blur__daruma/blur__gaussian_blur.daruma' controlsConfig={[
+<DarumaPlayer src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blur/blur__gaussian_blur.daruma' controlsConfig={[
   {
     label:  'Gaussian Blur',
     type: 'Gaussian Blur',

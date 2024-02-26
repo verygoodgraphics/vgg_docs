@@ -5,7 +5,7 @@ hide_table_of_contents: true
 ---
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border__daruma/border__position__center.daruma'
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border/border__position__center.daruma'
   controlsConfig={[
     {
       label:  'Border Position',

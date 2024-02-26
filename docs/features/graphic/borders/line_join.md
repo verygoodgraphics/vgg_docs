@@ -5,7 +5,7 @@ hide_table_of_contents: true
 ---
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border__daruma/border__line_join__miter.daruma'
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border/border__line_join__miter.daruma'
   controlsConfig={[
     {
       label:  'Line Join',
@@ -31,7 +31,7 @@ hide_table_of_contents: true
     }
   ]}
 />
- 
+
 <br />
 **Related Specs**
 - [Border](/specs/vectorgraphics/border#linejoinstyle)

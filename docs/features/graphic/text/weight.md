@@ -5,7 +5,7 @@ hide_table_of_contents: true
 ---
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text__daruma/text__weight.daruma'
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text/text__weight.daruma'
   controlsConfig={[
     {
       label:  'Font Weight',

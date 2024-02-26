@@ -4,8 +4,8 @@ sidebar_position: 1
 hide_table_of_contents: true
 ---
 
-<DarumaPlayer 
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/fill__daruma/fill__linear_gradient.daruma'
+<DarumaPlayer
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/fill/fill__linear_gradient.daruma'
   controlsConfig={[
     {
       label:  'Linear Gradient',

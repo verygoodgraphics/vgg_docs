@@ -4,7 +4,7 @@ hide_table_of_contents: true
 ---
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode__daruma/blend_mode__normal.daruma'
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blend_mode/blend_mode__normal.daruma'
   controlsConfig={[
     {
       label:  'Blend Mode',
@@ -94,7 +94,7 @@ hide_table_of_contents: true
     }
   ]}
  />
- 
+
 <br />
 **Related Specs**
 - [BlendMode](/specs/vectorgraphics/blend-mode)
