@@ -43,7 +43,7 @@ export type ControlConfig = {
   min?: number
   max?: number
   step?: number
-  onChange?: (value: any) => void
+  onBeforeChange?: (value: any) => void
 }
 
 const unbounce = (fn: any, delay: number) => {
@@ -88,11 +88,12 @@ export function Controls({
         {config.map((control, index) => {
           const debouncedOnChange = unbounce(
             (value: number, lineNumber?: number) => {
-              control.onChange?.(value)
+              const transformedValue = control.onBeforeChange?.(value)
+
               onChange?.(
                 control.frameName,
                 control.valuePath,
-                value,
+                transformedValue ?? value,
                 lineNumber ?? control.lineNumber,
                 control.lineNumberMatchType
               )
@@ -164,7 +165,7 @@ export function Controls({
                     type="text"
                     value={control.value}
                     onChange={(event) => {
-                      control.onChange?.(event.target.value)
+                      control.onBeforeChange?.(event.target.value)
                     }}
                   />
                 </div>
@@ -182,7 +183,7 @@ export function Controls({
                     type="color"
                     value={control.value}
                     onChange={(event) => {
-                      control.onChange?.(event.target.value)
+                      control.onBeforeChange?.(event.target.value)
                     }}
                   />
                 </div>
@@ -200,7 +201,7 @@ export function Controls({
                     type="checkbox"
                     checked={control.value}
                     onChange={(event) => {
-                      control.onChange?.(event.target.checked)
+                      control.onBeforeChange?.(event.target.checked)
                     }}
                   />
                 </div>
@@ -213,7 +214,7 @@ export function Controls({
                 >
                   <button
                     onClick={() => {
-                      control.onChange?.(control.value)
+                      control.onBeforeChange?.(control.value)
                     }}
                   >
                     {control.label}
@@ -236,7 +237,7 @@ export function Controls({
                         value={option.value}
                         checked={control.value === option}
                         onChange={(event) => {
-                          control.onChange?.(event.target.value)
+                          control.onBeforeChange?.(event.target.value)
                         }}
                       />
                       <label>{option.label}</label>

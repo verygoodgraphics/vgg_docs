@@ -5,6 +5,7 @@ import { Panel } from "./ui/panel"
 import { ControlConfig, Controls } from "./controls"
 
 export function LivePreview({
+  code,
   src,
   runtime,
   onSelect,
@@ -13,6 +14,7 @@ export function LivePreview({
   controlsConfig,
   onControlChange,
 }: {
+  code: string
   src: string | Int8Array
   runtime: string
   width?: number
@@ -20,13 +22,13 @@ export function LivePreview({
   minHeight?: number
   onSelect: (event: any) => void
   controlsConfig?: ControlConfig[]
-  onControlChange?: (
-    frameName: string,
-    valuePath: string,
-    value: any,
-    lineNumber?: number,
+  onControlChange?: (data: {
+    code?: string
+    valuePath: string
+    value: any
+    lineNumber?: number
     lineNumberMatchType?: "exact" | "range"
-  ) => void
+  }) => void
 }) {
   return (
     <Panel
@@ -59,6 +61,7 @@ export function LivePreview({
         />
         <Controls
           className="absolute top-4 right-4"
+          code={code}
           config={controlsConfig}
           onChange={onControlChange}
         />
