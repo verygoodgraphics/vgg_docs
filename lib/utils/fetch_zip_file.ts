@@ -4,7 +4,7 @@ export async function fetchZipFile(url: string) {
     const buffer = await response.arrayBuffer()
     return buffer
   } catch (error) {
-    console.error(error)
+    console.log(error)
     return null
   }
 }

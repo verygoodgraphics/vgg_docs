@@ -60,6 +60,7 @@ export function DarumaPlayer({
   >("range")
 
   const [isMobile, setIsMobile] = useState(false)
+  const [isError, setIsError] = useState(false)
 
   useEffect(() => {
     setIsMobile(window.innerWidth < 768)
@@ -98,18 +99,24 @@ export function DarumaPlayer({
 
     if (!response) return toast.error("Failed to fetch zip file")
 
-    const uint8array = new Uint8Array(response)
-    const int8array = new Int8Array(response)
+    try {
+      const uint8array = new Uint8Array(response)
+      const int8array = new Int8Array(response)
 
-    decompressed.current = fflate.unzipSync(uint8array)
+      decompressed.current = fflate.unzipSync(uint8array)
 
-    if (!decompressed.current) return
+      if (!decompressed.current) return
 
-    const jsonUint8Array = decompressed.current["design.json"]
-    const jsonObject = generateJsonObjectFromUint8Array(jsonUint8Array)
+      const jsonUint8Array = decompressed.current["design.json"]
+      const jsonObject = generateJsonObjectFromUint8Array(jsonUint8Array)
 
-    setCode(JSON.stringify(jsonObject, null, 2))
-    setDarumaSource(int8array)
+      setCode(JSON.stringify(jsonObject, null, 2))
+      setDarumaSource(int8array)
+    } catch (err) {
+      console.log(err)
+      // toast.error("Failed to load source")
+      setIsError(true)
+    }
   }
 
   function handleRun() {
@@ -179,14 +186,15 @@ export function DarumaPlayer({
                     height={isMobile ? 300 : 640}
                     width={isMobile ? 300 : 640}
                     controlsConfig={controlsConfig}
-                    onControlChange={(
-                      frameName,
+                    code={code}
+                    onControlChange={({
+                      code: updatedCode,
                       valuePath,
                       value,
                       lineNumber,
-                      lineNumberMatchType
-                    ) => {
-                      const codeJSON = JSON.parse(code)
+                      lineNumberMatchType,
+                    }) => {
+                      const codeJSON = JSON.parse(updatedCode ?? code)
                       JSONPath({
                         json: codeJSON,
                         path: valuePath,
@@ -215,6 +223,12 @@ export function DarumaPlayer({
               </ResizablePanel>
             </ResizablePanelGroup>
           </>
+        ) : isError ? (
+          <div className="flex items-center justify-center h-full w-full">
+            <p className="text-red-500 bg-red-50 px-2.5 py-0.5 rounded-lg">
+              Failed to load source
+            </p>
+          </div>
         ) : (
           <div className="flex items-center justify-center h-full w-full">
             <p>Loading...</p>
