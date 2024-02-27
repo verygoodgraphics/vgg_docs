@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { cn } from "../../lib/utils/cn"
 import { ChevronDownIcon } from "@radix-ui/react-icons"
 import { Slider } from "./ui/slider"
@@ -43,7 +43,13 @@ export type ControlConfig = {
   min?: number
   max?: number
   step?: number
-  onBeforeChange?: (value: any) => void
+  onBeforeChange?: (
+    value: any,
+    code?: string
+  ) => {
+    transformedValue?: any
+    updatedCode?: string
+  }
 }
 
 const unbounce = (fn: any, delay: number) => {
@@ -58,20 +64,27 @@ const unbounce = (fn: any, delay: number) => {
 
 export function Controls({
   className,
+  code,
   config,
   onChange,
 }: {
   className?: string
+  code?: string
   config?: ControlConfig[]
-  onChange?: (
-    frameName: string,
-    valuePath: string,
-    value: any,
-    lineNumber?: number,
+  onChange?: (data: {
+    code?: string
+    valuePath: string
+    value: any
+    lineNumber?: number
     lineNumberMatchType?: "exact" | "range"
-  ) => void
+  }) => void
 }) {
   if (!config || config.length === 0) return null
+  const codeCache = React.useRef(code)
+
+  useEffect(() => {
+    codeCache.current = code
+  }, [code])
 
   return (
     <div
@@ -88,15 +101,16 @@ export function Controls({
         {config.map((control, index) => {
           const debouncedOnChange = unbounce(
             (value: number, lineNumber?: number) => {
-              const transformedValue = control.onBeforeChange?.(value)
+              const { transformedValue, updatedCode } =
+                control.onBeforeChange?.(value, codeCache.current) ?? {}
 
-              onChange?.(
-                control.frameName,
-                control.valuePath,
-                transformedValue ?? value,
-                lineNumber ?? control.lineNumber,
-                control.lineNumberMatchType
-              )
+              onChange?.({
+                valuePath: control.valuePath,
+                value: transformedValue ?? value,
+                lineNumber: lineNumber ?? control.lineNumber,
+                lineNumberMatchType: control.lineNumberMatchType,
+                code: updatedCode,
+              })
             },
             100
           )
