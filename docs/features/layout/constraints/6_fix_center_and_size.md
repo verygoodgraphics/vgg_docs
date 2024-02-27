@@ -1,0 +1,13 @@
+---
+title: Fix Center and Size
+sidebar_position: 6
+hide_table_of_contents: true
+---
+
+<DarumaPlayer
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/constraint/constraint__fix_center_and_size.daruma'
+/>
+
+<br />
+**Related Specs**
+- [Constraint](/specs/vectorgraphics/constraint)

@@ -1,0 +1,13 @@
+---
+title: Keep Center-Line
+sidebar_position: 7
+hide_table_of_contents: true
+---
+
+<DarumaPlayer
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/constraint/constraint__keep_centerline.daruma'
+/>
+
+<br />
+**Related Specs**
+- [Constraint](/specs/vectorgraphics/constraint)
