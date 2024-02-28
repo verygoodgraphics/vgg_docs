@@ -31,6 +31,7 @@
     "clsx": "^2.0.0",
     "docusaurus-plugin-image-zoom": "^1.0.1",
     "fflate": "^0.8.1",
+    "gl-matrix": "^3.4.3",
     "js-base64": "^3.7.6",
     "jsonpath-plus": "^8.0.0",
     "monaco-editor": "^0.45.0",

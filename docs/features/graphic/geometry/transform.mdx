@@ -1,0 +1,68 @@
+---
+title: Transform
+sidebar_position: 7
+hide_table_of_contents: true
+---
+
+import { rotateAboutCenter } from "../../../../lib/utils/matrix-helper"
+import { mat2d } from "gl-matrix"
+
+## Flip
+
+<DarumaPlayer
+  src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/geometry/geometry__transform__flip.daruma"
+  controlsConfig={[
+    {
+      label: "Flip",
+      type: "Transform",
+      controlType: "switch",
+      value: false,
+      valuePath: "$.frames[0].childObjects[0].matrix",
+      onBeforeChange: (value) => {
+        return {
+          transformedValue: value
+            ? [1, 0, 0, 1, 50, -50]
+            : [1, 0, 0, -1, 50, -250],
+        }
+      },
+    },
+  ]}
+/>
+
+## Rotation
+
+<DarumaPlayer
+  src="https://pre.verygoodgraphics.com/d/clt5iru5m00w3l6pwesv96mex"
+  controlsConfig={[
+    {
+      label: "Rotation",
+      type: "Transform",
+      controlType: "slider",
+      value: 0,
+      valuePath: "$.frames[0].childObjects[0].matrix",
+      min: -180,
+      max: 180,
+      onBeforeChange: (value) => {
+        return {
+          transformedValue: rotateAboutCenter(
+            1,
+            0,
+            0,
+            1,
+            50,
+            -50,
+            150,
+            -150,
+            value
+          ),
+        }
+      },
+    },
+  ]}
+/>
+
+<br />
+**Related Specs**{" "}
+
+- [Path](/specs/vectorgraphics/path#matrix)
+- [Matrix](/specs/vectorgraphics/matrix)
