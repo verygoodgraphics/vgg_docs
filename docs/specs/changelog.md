@@ -2,6 +2,11 @@
 title: VGG Specs Changelog
 ---
 
+## v1.0.15 (Feb 26, 2024)
+
+* Add margin for layout.
+* Add new values for layout's align-content.
+
 ## v1.0.14 (Feb 2, 2024)
 * Update the description of coordinates.
 
