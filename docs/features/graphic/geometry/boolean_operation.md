@@ -9,7 +9,7 @@ hide_table_of_contents: true
     [
       {
         label: 'None',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/geometry/geometry__boolean_operation__none.daruma'
+        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/geometry/geometry__boolean_operation.daruma'
       },
       {
         label: 'Union',

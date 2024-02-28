@@ -14,8 +14,8 @@ hide_table_of_contents: true
       value: 1,
       valuePath: '$.frames[0].childObjects[0].style.borders[0].miterLimit',
       min:0,
-      max:1.42,
-      step:0.001
+      max:2,
+      step:0.01
     }
   ]}
 />
