@@ -32,7 +32,7 @@ type TabItem = {
 }
 
 export function DarumaPlayer({
-  runtime = "https://s5.vgg.cool/runtime/latest",
+  runtime = "https://s5.vgg.cool/runtime/20240226_1216",
   src,
   id,
   tabs = [],
