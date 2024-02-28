@@ -3625,7 +3625,7 @@
   "properties": {
     "version": {
       "type": "string",
-      "const": "1.0.14",
+      "const": "1.0.15",
       "description": "Current VGG specs version, conforming to semantic version format like `major.minor.patch`.\n"
     },
     "fileType": {
