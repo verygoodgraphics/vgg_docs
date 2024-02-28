@@ -81,6 +81,7 @@ export function Controls({
 }) {
   if (!config || config.length === 0) return null
   const codeCache = React.useRef(code)
+  const oldValueCache = React.useRef<any>(null)
 
   useEffect(() => {
     codeCache.current = code
@@ -312,13 +313,17 @@ export function Controls({
                     onChange={(values) => {
                       let diffValueIndex = 0
 
-                      const newValues = control.value.map((v, i) => {
+                      const newValues = (
+                        oldValueCache.current ?? control.value
+                      ).map((v, i) => {
                         if (values[i] !== v.position) {
                           diffValueIndex = i
                         }
 
                         return { ...v, position: values[i] }
                       })
+
+                      oldValueCache.current = newValues
 
                       debouncedOnChange(
                         newValues,
