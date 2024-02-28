@@ -12,7 +12,7 @@ sidebar_class_name: show
 
 <a href="#backlinks" className="badge backlinks">
           <span className="label">Backlinks</span>
-          <span className="value">5</span>
+          <span className="value">4</span>
         </a>
 
 </div>
@@ -45,10 +45,6 @@ Value
 
 <li className="backlink">
       <Link to='/specs/layout/flexbox-layout#alignitems'>FlexboxLayout.alignItems</Link>
-      </li>
-
-<li className="backlink">
-      <Link to='/specs/layout/flexbox-layout#aligncontent'>FlexboxLayout.alignContent</Link>
       </li>
 
 <li className="backlink">

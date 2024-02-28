@@ -30,7 +30,7 @@ Flexbox provides a more efficient and predictable way to arrange, align, and dis
 | [direction](#direction)           | `integer`                              | <span className="property-required">Required</span> |
 | [justifyContent](#justifycontent) | `integer`                              | <span className="property-required">Required</span> |
 | [alignItems](#alignitems)         | [`Alignment`](/specs/layout/alignment) | <span className="property-required">Required</span> |
-| [alignContent](#aligncontent)     | [`Alignment`](/specs/layout/alignment) | <span className="property-required">Required</span> |
+| [alignContent](#aligncontent)     | `integer`                              | <span className="property-required">Required</span> |
 | [wrap](#wrap)                     | `integer`                              | <span className="property-required">Required</span> |
 | [rowGap](#rowgap)                 | `number`                               | <span className="property-required">Required</span> |
 | [columnGap](#columngap)           | `number`                               | <span className="property-required">Required</span> |
@@ -237,7 +237,28 @@ This property is used to align the children of a flex container along the cross 
 
 Type
 
-[`Alignment`](/specs/layout/alignment)
+`integer`
+
+</div>
+
+<div className="property-item">
+
+Value
+
+<div className="value-description">
+
+**enum**: the value of this property must be equal to one of the following values:
+
+| Value | Explanation                                           |
+| :---- | :---------------------------------------------------- |
+| `1`   | <div className="enum-description">start</div>         |
+| `2`   | <div className="enum-description">center</div>        |
+| `3`   | <div className="enum-description">end</div>           |
+| `4`   | <div className="enum-description">space between</div> |
+| `5`   | <div className="enum-description">space around</div>  |
+| `6`   | <div className="enum-description">space evenly</div>  |
+
+</div>
 
 </div>
 
