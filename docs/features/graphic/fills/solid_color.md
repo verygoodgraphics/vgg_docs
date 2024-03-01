@@ -22,4 +22,5 @@ hide_table_of_contents: true
 <br />
 **Related Specs**
 - [Fill](/specs/vectorgraphics/fill)
+- [Border](/specs/vectorgraphics/border)
 - [FillType](/specs/vectorgraphics/fill-type)
