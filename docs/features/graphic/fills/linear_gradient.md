@@ -4,6 +4,8 @@ sidebar_position: 1
 hide_table_of_contents: true
 ---
 
+## Content
+
 <DarumaPlayer
   src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/fill/fill__linear_gradient.daruma'
   controlsConfig={[
@@ -46,6 +48,12 @@ hide_table_of_contents: true
       ,step: 0.01
     }
   ]}
+/>
+
+## Border
+
+<DarumaPlayer
+  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border/border__fill__linear_gradient.daruma'
 />
 
 <br />
