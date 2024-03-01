@@ -4,7 +4,20 @@ sidebar_position: 0
 hide_table_of_contents: true
 ---
 
-<DarumaPlayer src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/fill/fill__solid_color.daruma' />
+<DarumaPlayer
+  tabs={
+    [
+      {
+        label: 'Content',
+        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/fill/fill__solid_color.daruma'
+      },
+      {
+        label: 'Border',
+        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border/border__fill__color.daruma'
+      },
+    ]
+  }
+/>
 
 <br />
 **Related Specs**
