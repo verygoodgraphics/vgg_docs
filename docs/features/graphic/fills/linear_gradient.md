@@ -10,7 +10,7 @@ hide_table_of_contents: true
   src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/fill/fill__linear_gradient.daruma'
   controlsConfig={[
     {
-      label:  'Linear Gradient Content',
+      label:  'Linear Gradient',
       type: 'Gradient',
       controlType: 'gradient-slider',
       value: [
@@ -56,7 +56,7 @@ hide_table_of_contents: true
   src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border/border__fill__linear_gradient.daruma'
   controlsConfig={[
     {
-      label:  'Linear Gradient Border',
+      label:  'Linear Gradient',
       type: 'Gradient',
       controlType: 'gradient-slider',
       value: [

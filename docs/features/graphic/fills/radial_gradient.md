@@ -10,7 +10,7 @@ hide_table_of_contents: true
   src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/fill/fill__radial_gradient.daruma'
   controlsConfig={[
     {
-      label:  'Radial Gradient Content',
+      label:  'Radial Gradient',
       type: 'Gradient',
       controlType: 'gradient-slider',
       value: [
@@ -55,7 +55,7 @@ hide_table_of_contents: true
   src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border/border__fill__radial_gradient.daruma'
   controlsConfig={[
     {
-      label:  'Radial Gradient Border',
+      label:  'Radial Gradient',
       type: 'Gradient',
       controlType: 'gradient-slider',
       value: [
