@@ -10,7 +10,7 @@ hide_table_of_contents: true
   src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/fill/fill__angular_gradient.daruma'
   controlsConfig={[
     {
-      label: 'Angular Gradient Content',
+      label: 'Angular Gradient',
       type: 'Gradient',
       controlType: 'gradient-slider',
       value: [
@@ -55,7 +55,7 @@ hide_table_of_contents: true
   src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border/border__fill__angular_gradient.daruma'
   controlsConfig={[
     {
-      label: 'Angular Gradient Border',
+      label: 'Angular Gradient',
       type: 'Gradient',
       controlType: 'gradient-slider',
       value: [
