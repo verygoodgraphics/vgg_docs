@@ -1,0 +1,37 @@
+---
+title: Layout Direction
+sidebar_position: 2
+hide_table_of_contents: true
+---
+
+<DarumaPlayer
+  src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/flex_layout/flex_layout__direction.daruma"
+  codeTabs={["design.json", "layout.json"]}
+  activeCodeTab="layout.json"
+  controlsConfig={[
+    {
+      label: "Layout Direction",
+      type: "Flexbox",
+      controlType: "select",
+      value: 1,
+      valuePath: "$.obj[0].layout.direction",
+      lineNumber: 24,
+      fileName: "layout.json",
+      options: [
+        {
+          label: "Horizontal",
+          value: 1,
+        },
+        {
+          label: "Vertical",
+          value: 2,
+        },
+      ],
+    },
+  ]}
+/>
+
+<br />
+**Related Specs**
+
+- [FlexboxLayout](/specs/layout/flexbox-layout#direction)

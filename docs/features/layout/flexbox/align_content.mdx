@@ -1,0 +1,42 @@
+---
+title: Align Content
+sidebar_position: 0
+hide_table_of_contents: true
+---
+
+<DarumaPlayer
+  src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/flex_layout/flex_layout__align_content.daruma"
+  codeTabs={["design.json", "layout.json"]}
+  activeCodeTab="layout.json"
+  controlsConfig={[
+    {
+      label: "Align Content",
+      type: "Flexbox",
+      controlType: "select",
+      value: 1,
+      valuePath: "$.obj[0].layout.alignContent",
+      lineNumber: 27,
+      fileName: "layout.json",
+      options: [
+        {
+          label: "Start",
+          value: 1,
+        },
+        {
+          label: "Center",
+          value: 2,
+        },
+        {
+          label: "End",
+          value: 3,
+        },
+      ],
+    },
+  ]}
+/>
+
+<br />
+**Related Specs**{" "}
+
+- [FlexboxLayout](/specs/layout/flexbox-layout)
+- [Alignment](/specs/layout/alignment)

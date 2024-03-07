@@ -1,0 +1,36 @@
+---
+title: Layout Gap
+sidebar_position: 3
+hide_table_of_contents: true
+---
+
+<DarumaPlayer
+  src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/flex_layout/flex_layout__gap.daruma"
+  codeTabs={["design.json", "layout.json"]}
+  activeCodeTab="layout.json"
+  controlsConfig={[
+    {
+      label: "Row Gap",
+      type: "Flexbox",
+      controlType: "slider",
+      value: 36,
+      valuePath: "$.obj[0].layout.rowGap",
+      min: 0,
+      max: 50,
+    },
+    {
+      label: "Column Gap",
+      type: "Flexbox",
+      controlType: "slider",
+      value: 18,
+      valuePath: "$.obj[0].layout.columnGap",
+      min: 0,
+      max: 50,
+    },
+  ]}
+/>
+
+<br />
+**Related Specs**
+
+- [FlexboxLayout](specs/layout/flexbox-layout#rowgap)

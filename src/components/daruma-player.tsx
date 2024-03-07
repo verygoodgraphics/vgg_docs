@@ -15,6 +15,7 @@ import {
   ResizablePanelGroup,
 } from "./ui/resizable"
 import { type ControlConfig } from "./controls"
+import { DarumaPlayerLoader } from "./daruma-player-loader"
 
 function generateJsonObjectFromUint8Array(uint8array: Uint8Array) {
   // Convert the Uint8Array to a string (assuming the data is in UTF-8 encoding)
@@ -31,24 +32,31 @@ type TabItem = {
   src: string
 }
 
+type FileName = string
+type SourceCode = string
+
 export function DarumaPlayer({
   runtime = "https://s5.vgg.cool/runtime/20240226_1216",
   src,
   id,
   tabs = [],
+  codeTabs: defaultCodeTabs = ["design.json"],
+  activeCodeTab = "design.json",
   controlsConfig,
 }: {
   id?: string
   runtime?: string
   src: string
+  codeTabs?: string[]
+  activeCodeTab?: string
   tabs?: TabItem[]
   controlsConfig?: ControlConfig[]
 }) {
-  const [code, setCode] = useState("")
+  const [codeBase, setCodeBase] = useState<Record<FileName, SourceCode>>({})
+  const [sourceCode, setSourceCode] = useState<SourceCode>("")
   const decompressed = useRef<any>(null)
   const [darumaSource, setDarumaSource] = useState<string | Int8Array>("")
-  const codeCache = useRef<string>("")
-  const codeBackup = useRef<string>("")
+  // const codeCache = useRef<string>("")
   const [selectedElement, setSelectedElement] = React.useState<{
     id: string
   }>({
@@ -60,7 +68,12 @@ export function DarumaPlayer({
   >("range")
 
   const [isMobile, setIsMobile] = useState(false)
+  const [codeTabs] = useState<string[]>(() => defaultCodeTabs)
+  const [currentCodeTab, setCurrentCodeTab] = useState<string>(activeCodeTab)
+  const currentCodeCache = useRef<[FileName, SourceCode]>(["", ""])
+  const codeBackup = useRef<Record<FileName, SourceCode>>({})
   const [isError, setIsError] = useState(false)
+  const [sourceCodeForControl, setSourceCodeForControl] = useState("")
 
   useEffect(() => {
     setIsMobile(window.innerWidth < 768)
@@ -90,14 +103,44 @@ export function DarumaPlayer({
   }, [tabs])
 
   useEffect(() => {
-    codeBackup.current = codeCache.current
-    codeCache.current = code
-  }, [code])
+    if (!decompressed.current) return
+
+    const jsonUint8Array = decompressed.current[currentCodeTab]
+    const jsonObject = generateJsonObjectFromUint8Array(jsonUint8Array)
+
+    const newCode = {
+      [currentCodeTab]: JSON.stringify(jsonObject, null, 2),
+    }
+
+    setCodeBase((origin) => ({
+      ...origin,
+      ...newCode,
+    }))
+
+    currentCodeCache.current = [currentCodeTab, newCode[currentCodeTab]]
+  }, [currentCodeTab])
+
+  useEffect(() => {
+    const _currentCodeTab = currentCodeCache.current[0] || activeCodeTab
+    const newCode = codeBase[_currentCodeTab]
+
+    currentCodeCache.current = [_currentCodeTab, newCode]
+    codeBackup.current = {
+      ...codeBackup.current,
+      [_currentCodeTab]: newCode,
+    }
+
+    setSourceCode(newCode)
+  }, [codeBase])
 
   async function loadSource(source: string) {
     const response = await fetchZipFile(source)
 
-    if (!response) return toast.error("Failed to fetch zip file")
+    if (!response) {
+      toast.error("Failed to fetch zip file")
+      setIsError(true)
+      return
+    }
 
     try {
       const uint8array = new Uint8Array(response)
@@ -107,11 +150,24 @@ export function DarumaPlayer({
 
       if (!decompressed.current) return
 
-      const jsonUint8Array = decompressed.current["design.json"]
+      // const fileNames = Object.keys(decompressed.current)
+      // const jsonFiles = fileNames.filter((name) =>
+      //   ["design.json", "layout.json"].includes(name)
+      // )
+      // const firstJsonFile = jsonFiles[0]
+
+      const jsonUint8Array = decompressed.current[currentCodeTab]
       const jsonObject = generateJsonObjectFromUint8Array(jsonUint8Array)
 
-      setCode(JSON.stringify(jsonObject, null, 2))
+      // setCodeTabs(jsonFiles)
+      // setCurrentCodeTab(firstJsonFile)
+      const initSourceCode = JSON.stringify(jsonObject, null, 2)
+      setCodeBase((origin) => ({
+        ...origin,
+        [currentCodeTab]: initSourceCode,
+      }))
       setDarumaSource(int8array)
+      setSourceCodeForControl(initSourceCode)
     } catch (err) {
       console.log(err)
       // toast.error("Failed to load source")
@@ -121,16 +177,36 @@ export function DarumaPlayer({
 
   function handleRun() {
     if (!decompressed.current) return
-    if (codeCache.current === codeBackup.current) return
+    let isChanged = false
 
-    const uint8array = new TextEncoder().encode(codeCache.current)
-    decompressed.current["design.json"] = uint8array
+    for (const [fileName, sourceCode] of Object.entries(codeBackup.current)) {
+      if (decompressed.current[fileName] !== codeBackup.current[fileName]) {
+        isChanged = true
+      }
+    }
+
+    if (!isChanged) return
+
+    for (const [fileName, sourceCode] of Object.entries(codeBackup.current)) {
+      decompressed.current[fileName] = new TextEncoder().encode(
+        codeBackup.current[fileName]
+      )
+    }
+
     const compressed = fflate.zipSync(decompressed.current, {})
     const newDarumaSource = new Int8Array(compressed.buffer)
 
     if (newDarumaSource !== darumaSource) {
       setDarumaSource(newDarumaSource)
     }
+  }
+
+  function handleUpdateCode(newCode: string) {
+    const currentCodeTabName = currentCodeCache.current[0]
+    setCodeBase((origin) => ({
+      ...origin,
+      [currentCodeTabName]: newCode,
+    }))
   }
 
   return (
@@ -165,14 +241,17 @@ export function DarumaPlayer({
               <ResizablePanel minSize={30}>
                 <div className={isMobile ? "h-[320px]" : "h-[640px]"}>
                   <LiveCode
-                    code={code}
-                    setCode={setCode}
+                    code={sourceCode}
+                    setCode={handleUpdateCode}
                     onRun={handleRun}
                     selectedElement={selectedElement}
                     activeLine={activeLine}
                     lineNumberMatchType={lineNumberMatchType}
                     path={id}
                     key={id}
+                    tabs={codeTabs}
+                    currentTab={currentCodeTab}
+                    setCurrentTab={setCurrentCodeTab}
                   />
                 </div>
               </ResizablePanel>
@@ -186,7 +265,7 @@ export function DarumaPlayer({
                     height={isMobile ? 300 : 640}
                     width={isMobile ? 300 : 640}
                     controlsConfig={controlsConfig}
-                    code={code}
+                    code={sourceCodeForControl}
                     onControlChange={({
                       code: updatedCode,
                       valuePath,
@@ -194,7 +273,9 @@ export function DarumaPlayer({
                       lineNumber,
                       lineNumberMatchType,
                     }) => {
-                      const codeJSON = JSON.parse(updatedCode ?? code)
+                      const [fileName, sourceCode] = currentCodeCache.current
+                      const codeString = updatedCode ?? sourceCode
+                      const codeJSON = JSON.parse(codeString)
                       JSONPath({
                         json: codeJSON,
                         path: valuePath,
@@ -203,7 +284,10 @@ export function DarumaPlayer({
                         parent[parentProperty] = value
                       })
 
-                      setCode(JSON.stringify(codeJSON, null, 2))
+                      setCodeBase((origin) => ({
+                        ...origin,
+                        [fileName]: JSON.stringify(codeJSON, null, 2),
+                      }))
 
                       if (lineNumberMatchType) {
                         setLineNumberMatchType(lineNumberMatchType)
@@ -231,7 +315,7 @@ export function DarumaPlayer({
           </div>
         ) : (
           <div className="flex items-center justify-center h-full w-full">
-            <p>Loading...</p>
+            <DarumaPlayerLoader />
           </div>
         )}
       </div>

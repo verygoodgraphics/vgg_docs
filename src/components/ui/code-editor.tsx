@@ -130,7 +130,7 @@ export const CodeEditor = React.forwardRef<CodeEditorRef, CodeEditorProps>(
 
     return (
       <div ref={ref} style={{ height: "100%", position: "relative" }}>
-        <div style={{ position: "absolute" }}>
+        <div className="absolute w-full h-full">
           <Editor
             height="100%"
             theme="IDLE"

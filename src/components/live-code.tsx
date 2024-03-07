@@ -12,6 +12,9 @@ export function LiveCode({
   selectedElement,
   activeLine,
   lineNumberMatchType,
+  tabs,
+  currentTab,
+  setCurrentTab,
   setCode,
   onRun,
 }: {
@@ -20,11 +23,20 @@ export function LiveCode({
   selectedElement?: { id: string }
   activeLine?: [string, number]
   lineNumberMatchType?: "exact" | "range"
+  tabs?: string[]
+  currentTab: string
+  setCurrentTab: (val: string) => void
   setCode: (val: string) => void
   onRun?: () => void
 }) {
   const codeRef = useRef<CodeEditorRef>(null)
   const codeStringRef = useRef<string>("")
+
+  useEffect(() => {
+    const editor = codeRef.current?.editorRef?.current
+    editor?.setScrollPosition({ scrollTop: 0 })
+    editor?.focus()
+  }, [currentTab])
 
   useEffect(() => {
     codeStringRef.current = code
@@ -131,8 +143,10 @@ export function LiveCode({
   return (
     <Panel
       title="Live Editor"
-      activeTab={"design.json"}
-      tabs={["design.json"]}
+      activeTab={currentTab}
+      // tabs={["design.json"]}
+      tabs={tabs || ["design.json"]}
+      onChange={(tab) => setCurrentTab(tab)}
       rightElement={
         <div className="flex items-center justify-start gap-3">
           <button
@@ -147,12 +161,18 @@ export function LiveCode({
     >
       <div className="editor flex h-full flex-col overflow-auto border border-zinc-200 bg-white shadow">
         <div className="monaco-container h-full overflow-hidden">
-          <CodeEditor
-            code={code}
-            onChange={setCode}
-            ref={codeRef}
-            // path={path}
-          />
+          {code ? (
+            <CodeEditor
+              code={code}
+              onChange={setCode}
+              ref={codeRef}
+              // path={path}
+            />
+          ) : (
+            <div className="flex items-center justify-center h-full text-zinc-400">
+              No code to display
+            </div>
+          )}
         </div>
       </div>
     </Panel>

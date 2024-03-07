@@ -1,0 +1,53 @@
+---
+title: Justify Content
+sidebar_position: 7
+hide_table_of_contents: true
+---
+
+<DarumaPlayer
+  src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/flex_layout/flex_layout__justify_content.daruma"
+  codeTabs={["design.json", "layout.json"]}
+  activeCodeTab="layout.json"
+  controlsConfig={[
+    {
+      label: "Justify Content",
+      type: "Flexbox",
+      controlType: "select",
+      value: 2,
+      valuePath: "$.obj[0].layout.justifyContent",
+      lineNumber: 25,
+      fileName: "layout.json",
+      options: [
+        {
+          label: "Start",
+          value: 1,
+        },
+        {
+          label: "Center",
+          value: 2,
+        },
+        {
+          label: "End",
+          value: 3,
+        },
+        {
+          label: "Space Between",
+          value: 4,
+        },
+        {
+          label: "Space Around",
+          value: 5,
+        },
+        {
+          label: "Space Evenly",
+          value: 6,
+        },
+      ],
+    },
+  ]}
+/>
+
+<br />
+**Related Specs**
+
+- [FlexboxLayout](/specs/layout/flexbox-layout#justifycontent)
