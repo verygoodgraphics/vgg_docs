@@ -90,7 +90,7 @@ export function Controls({
   return (
     <div
       className={cn(
-        "border rounded-lg px-2 py-1.5 border-zinc-200 border-solid min-w-[240px] bg-white shadow-sm z-10",
+        "border rounded-lg px-2 py-1.5 border-zinc-200 border-solid min-w-[280px] bg-white shadow-sm z-10",
         className
       )}
     >
@@ -104,7 +104,6 @@ export function Controls({
             (value: number, lineNumber?: number) => {
               const { transformedValue, updatedCode } =
                 control.onBeforeChange?.(value, codeCache.current) ?? {}
-
               onChange?.({
                 valuePath: control.valuePath,
                 value: transformedValue ?? value,
@@ -147,11 +146,7 @@ export function Controls({
                     {control.label}
                   </label>
                   <Select
-                    defaultValue={
-                      typeof control.value === "string"
-                        ? control.value
-                        : undefined
-                    }
+                    defaultValue={control.value}
                     onValueChange={debouncedOnChange}
                   >
                     <SelectTrigger className="w-[120px]">

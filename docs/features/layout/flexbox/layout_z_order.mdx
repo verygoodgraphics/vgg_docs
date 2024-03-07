@@ -1,0 +1,25 @@
+---
+title: Layout Z-Order
+sidebar_position: 6
+hide_table_of_contents: true
+---
+
+<DarumaPlayer
+  src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/flex_layout/flex_layout__z_order.daruma"
+  codeTabs={["design.json", "layout.json"]}
+  activeCodeTab="layout.json"
+  controlsConfig={[
+    {
+      label: "Z-Order",
+      type: "Flexbox",
+      controlType: "switch",
+      value: true,
+      valuePath: "$.obj[0].layout.zOrder",
+    },
+  ]}
+/>
+
+<br />
+**Related Specs**
+
+- [FlexboxLayout](specs/layout/flexbox-layout#zorder)

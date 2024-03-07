@@ -34,9 +34,9 @@ export function Panel({
               <div
                 title={option}
                 className={cn(
-                  "tab ml-[-1px] cursor-pointer overflow-hidden text-ellipsis border-x border-zinc-200 bg-zinc-100 px-3 py-2.5 text-zinc-500 hover:bg-zinc-50",
+                  "tab ml-[-1px] cursor-pointer overflow-hidden text-ellipsis border-x border-zinc-200 bg-zinc-100 px-3 py-2.5 text-zinc-400 hover:bg-zinc-50 transition-all",
                   {
-                    "bg-white font-medium text-zinc-900 hover:bg-white":
+                    "bg-white font-bold text-zinc-900 hover:bg-white":
                       activeTab === option,
                   }
                 )}

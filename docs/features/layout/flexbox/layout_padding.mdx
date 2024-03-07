@@ -1,0 +1,28 @@
+---
+title: Layout Padding
+sidebar_position: 4
+hide_table_of_contents: true
+---
+
+<DarumaPlayer
+  src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/flex_layout/flex_layout__padding.daruma"
+  codeTabs={["design.json", "layout.json"]}
+  activeCodeTab="layout.json"
+  controlsConfig={[
+    {
+      label: "Padding",
+      type: "Flexbox",
+      controlType: "multi-slider",
+      value: [20, 10, 20, 10],
+      valuePath: "$.obj[0].layout.padding",
+      valueLabels: ["Top", "Right", "Bottom", "Left"],
+      min: 0,
+      max: 100,
+    },
+  ]}
+/>
+
+<br />
+**Related Specs**
+
+- [FlexboxLayout](specs/layout/flexbox-layout#padding)
