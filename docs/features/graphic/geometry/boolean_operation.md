@@ -26,6 +26,10 @@ hide_table_of_contents: true
       {
         label: 'Exclusion',
         src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/geometry/geometry__boolean_operation__exclusion.daruma'
+      },
+      {
+        label: 'UseWindingRule',
+        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/geometry/geometry__boolean_operation__use_winding_rule.daruma'
       }
     ]
   }
