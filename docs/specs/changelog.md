@@ -5,9 +5,9 @@ title: VGG Specs Changelog
 ## v1.0.16 (Mar 08, 2024)
 
 * Update some descriptions.
-* Change y direction of blur.center.
-* Remove `gradient-basic`
-* Remove the `invert` property from gradient.
+* Change y direction of `blur.center`.
+* Remove `gradient-basic`.
+* Remove the `invert` property of `gradient`.
 
 ## v1.0.15 (Feb 26, 2024)
 
