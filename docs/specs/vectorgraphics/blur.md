@@ -241,7 +241,8 @@ Description
 
 <div>
 
-The center of the blur applies only to the `zoom` blur. The coordinate point is in normalized coordinates.
+The center of the blur applies only to the `zoom` blur.
+A relative coordinate according to the `bounds`, where `(0, 0)` represents the top-left corner of the `bounds`, and `(1, -1)` represents the bottom-right corner of the `bounds`.
 
 </div>
 

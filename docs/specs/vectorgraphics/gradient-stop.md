@@ -12,7 +12,7 @@ sidebar_class_name: show
 
 <a href="#backlinks" className="badge backlinks">
           <span className="label">Backlinks</span>
-          <span className="value">5</span>
+          <span className="value">4</span>
         </a>
 
 </div>
@@ -188,10 +188,6 @@ Type
 
 <li className="backlink">
       <Link to='/specs/vectorgraphics/gradient-diamond#stops'>GradientDiamond.stops</Link>
-      </li>
-
-<li className="backlink">
-      <Link to='/specs/vectorgraphics/gradient-basic#stops'>GradientBasic.stops</Link>
       </li>
 
 </ul>

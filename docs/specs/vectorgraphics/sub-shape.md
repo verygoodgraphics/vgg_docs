@@ -177,13 +177,13 @@ Value
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value | Explanation                                         |
-| :---- | :-------------------------------------------------- |
-| `0`   | <div className="enum-description">union</div>       |
-| `1`   | <div className="enum-description">subtraction</div> |
-| `2`   | <div className="enum-description">intersecion</div> |
-| `3`   | <div className="enum-description">exclusion</div>   |
-| `4`   | <div className="enum-description">none</div>        |
+| Value | Explanation                                                                                                                                   |
+| :---- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
+| `0`   | <div className="enum-description">union</div>                                                                                                 |
+| `1`   | <div className="enum-description">subtraction</div>                                                                                           |
+| `2`   | <div className="enum-description">intersecion</div>                                                                                           |
+| `3`   | <div className="enum-description">exclusion</div>                                                                                             |
+| `4`   | <div className="enum-description">useWindingRule: The final display area is determined by the windingRule of the top-level path object.</div> |
 
 </div>
 

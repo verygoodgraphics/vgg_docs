@@ -23,10 +23,10 @@ Define a gradient.
 
 <div className="property-table">
 
-| Property              | Type                                                                                                                                                                                                                                                                                                                                                                                                                               | Required                                            |
-| :-------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
-| [class](#class)       | `string`                                                                                                                                                                                                                                                                                                                                                                                                                           | <span className="property-required">Required</span> |
-| [instance](#instance) | <code className="type-merged separate">oneOf&lt;<span className="type-merged-types separate"><Link to="gradient-angular"><code>GradientAngular</code></Link><Link to="gradient-linear"><code>GradientLinear</code></Link><Link to="gradient-radial"><code>GradientRadial</code></Link><Link to="gradient-diamond"><code>GradientDiamond</code></Link><Link to="gradient-basic"><code>GradientBasic</code></Link></span>&gt;</code> | <span className="property-required">Required</span> |
+| Property              | Type                                                                                                                                                                                                                                                                                                                                                                    | Required                                            |
+| :-------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| [class](#class)       | `string`                                                                                                                                                                                                                                                                                                                                                                | <span className="property-required">Required</span> |
+| [instance](#instance) | <code className="type-merged separate">oneOf&lt;<span className="type-merged-types separate"><Link to="gradient-angular"><code>GradientAngular</code></Link><Link to="gradient-linear"><code>GradientLinear</code></Link><Link to="gradient-radial"><code>GradientRadial</code></Link><Link to="gradient-diamond"><code>GradientDiamond</code></Link></span>&gt;</code> | <span className="property-required">Required</span> |
 
 </div>
 
@@ -107,8 +107,6 @@ oneOf&lt;
 <Link to="gradient-radial"><code>GradientRadial</code></Link>
 
 <Link to="gradient-diamond"><code>GradientDiamond</code></Link>
-
-<Link to="gradient-basic"><code>GradientBasic</code></Link>
 
 </span>
 

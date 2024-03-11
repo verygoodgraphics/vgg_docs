@@ -380,9 +380,9 @@ Description
 
 <div>
 
-This property is used to control the alignment of content within cells in the horizontal direction.
-It is effective when the sum of column widths is less than the container width. Columns are fixed at "start" by default.
-This property applies to all grid items, allowing you to uniformly adjust the position of all content within cells in the horizontal direction.
+This property uniformly controls the horizontal alignment of all subgrids within the grid container.
+It takes effect when the sum of the column widths of the subgrids is less than the width of the grid container.
+By default, the subgrids align at the start position, but you can adjust their horizontal position within the grid container.
 
 </div>
 
