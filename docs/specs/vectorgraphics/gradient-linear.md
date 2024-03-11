@@ -23,13 +23,12 @@ A linear gradient refers to the effect of transitioning between two or more diff
 
 <div className="property-table">
 
-| Property          | Type                                                                                         | Required                                            |
-| :---------------- | :------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
-| [class](#class)   | `string`                                                                                     | <span className="property-required">Required</span> |
-| [from](#from)     | [`Point`](/specs/vectorgraphics/point)                                                       | <span className="property-required">Required</span> |
-| [to](#to)         | [`Point`](/specs/vectorgraphics/point)                                                       | <span className="property-required">Required</span> |
-| [stops](#stops)   | <code>Array&lt;<Link to="/specs/vectorgraphics/gradient-stop">GradientStop</Link>&gt;</code> | <span className="property-required">Required</span> |
-| [invert](#invert) | `boolean`                                                                                    | <span className="property-required">Required</span> |
+| Property        | Type                                                                                         | Required                                            |
+| :-------------- | :------------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| [class](#class) | `string`                                                                                     | <span className="property-required">Required</span> |
+| [from](#from)   | [`Point`](/specs/vectorgraphics/point)                                                       | <span className="property-required">Required</span> |
+| [to](#to)       | [`Point`](/specs/vectorgraphics/point)                                                       | <span className="property-required">Required</span> |
+| [stops](#stops) | <code>Array&lt;<Link to="/specs/vectorgraphics/gradient-stop">GradientStop</Link>&gt;</code> | <span className="property-required">Required</span> |
 
 </div>
 
@@ -175,38 +174,6 @@ Value
 **minimum number of items**: the minimum number of items for this array is: `1`
 
 </div>
-
-</div>
-
-</div>
-
-<div className="property">
-
-<div className="property-heading">
-
-## invert
-
-<span className="property-required">Required</span>
-
-</div>
-
-<div className="property-item">
-
-Description
-
-<div>
-
-Whether the gradient has been inverted.
-
-</div>
-
-</div>
-
-<div className="property-item">
-
-Type
-
-`boolean`
 
 </div>
 

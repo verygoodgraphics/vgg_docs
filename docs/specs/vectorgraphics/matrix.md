@@ -12,7 +12,7 @@ sidebar_class_name: show
 
 <a href="#backlinks" className="badge backlinks">
           <span className="label">Backlinks</span>
-          <span className="value">13</span>
+          <span className="value">10</span>
         </a>
 
 </div>
@@ -41,18 +41,6 @@ Value
 
 <li className="backlink">
       <Link to='/specs/vectorgraphics/frame#matrix'>Frame.matrix</Link>
-      </li>
-
-<li className="backlink">
-      <Link to='/specs/vectorgraphics/gradient-basic#overallmatrix'>GradientBasic.overallMatrix</Link>
-      </li>
-
-<li className="backlink">
-      <Link to='/specs/vectorgraphics/gradient-basic#perpendicularmatrix'>GradientBasic.perpendicularMatrix</Link>
-      </li>
-
-<li className="backlink">
-      <Link to='/specs/vectorgraphics/gradient-basic-geometry#matrix'>GradientBasicGeometry.matrix</Link>
       </li>
 
 <li className="backlink">

@@ -561,11 +561,11 @@ Value
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value | Explanation                                                                                                          |
-| :---- | :------------------------------------------------------------------------------------------------------------------- |
-| `0`   | <div className="enum-description">pixel (default value)</div>                                                        |
-| `1`   | <div className="enum-description">percent. Final pixel value equals to `size * lineSpacingValue * 1.25 / 100`.</div> |
-| `2`   | <div className="enum-description">raw. Final pixel value equals to `size * lineSpacingValue`.</div>                  |
+| Value | Explanation                                                                                         |
+| :---- | :-------------------------------------------------------------------------------------------------- |
+| `0`   | <div className="enum-description">pixel (default value)</div>                                       |
+| `1`   | <div className="enum-description">auto. Use default font metrics height.</div>                      |
+| `2`   | <div className="enum-description">raw. Final pixel value equals to `size * lineSpacingValue`.</div> |
 
 </div>
 

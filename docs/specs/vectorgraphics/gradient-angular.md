@@ -29,7 +29,6 @@ An angular gradient is a color effect that transitions radially or angularly, ty
 | [from](#from)       | [`Point`](/specs/vectorgraphics/point)                                                                                                        | <span className="property-required">Required</span> |
 | [to](#to)           | [`Point`](/specs/vectorgraphics/point)                                                                                                        | <span className="property-required">Required</span> |
 | [stops](#stops)     | <code>Array&lt;<Link to="/specs/vectorgraphics/gradient-stop">GradientStop</Link>&gt;</code>                                                  | <span className="property-required">Required</span> |
-| [invert](#invert)   | `boolean`                                                                                                                                     | <span className="property-required">Required</span> |
 | [ellipse](#ellipse) | <code className="type-merged">oneOf&lt;<span className="type-merged-types">number<Link to="point"><code>Point</code></Link></span>&gt;</code> | <span className="property-required">Required</span> |
 
 </div>
@@ -176,38 +175,6 @@ Value
 **minimum number of items**: the minimum number of items for this array is: `1`
 
 </div>
-
-</div>
-
-</div>
-
-<div className="property">
-
-<div className="property-heading">
-
-## invert
-
-<span className="property-required">Required</span>
-
-</div>
-
-<div className="property-item">
-
-Description
-
-<div>
-
-Whether the gradient has been inverted.
-
-</div>
-
-</div>
-
-<div className="property-item">
-
-Type
-
-`boolean`
 
 </div>
 

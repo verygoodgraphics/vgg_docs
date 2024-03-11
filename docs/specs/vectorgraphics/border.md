@@ -616,6 +616,9 @@ Description
 <div>
 
 Border dash initial offset. (applies to `dashed` borders)
+If it is positive, it is offset to the left.
+If it is negative, it is offset to the right.
+Units: pixel.
 
 </div>
 
