@@ -255,31 +255,31 @@
     },
     "BlendMode": {
       "title": "Blend Mode",
-      "description": "Blend mode of the object.",
+      "description": "Blend mode of the object.\nIn the formula below:\n  `r` means result.\n  `s` means source.\n  `d` means destination.\n  `sa` means source alpha.\n  `da` means destination alpha.\n  `rc` means result RGB.\n  `ra` means result alpha.",
       "type": "integer",
       "enum": [
         0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 27
       ],
       "enumDescriptions": [
-        "normal",
-        "darken",
-        "multiply",
-        "color burn",
-        "lighten",
-        "screen",
-        "color dodge",
-        "overlay",
-        "soft light",
-        "hard light",
-        "difference",
-        "exclusion",
-        "hue",
-        "saturation",
-        "color",
-        "luminosity",
+        "normal: r = s + (1 - sa) * d",
+        "darken: rc = s + d - max(s * da, d * sa), ra = normal",
+        "multiply: r = s * (1 - da) + d * (1 - sa) + s * d",
+        "color burn: darken destination to reflect source",
+        "lighten: rc = s + d - min(s * da, d * sa), ra = normal",
+        "screen: r = s + d - s * d",
+        "color dodge: brighten destination to reflect source",
+        "overlay: multiply or screen, depending on destination",
+        "soft light: lighten or darken, depending on source",
+        "hard light: multiply or screen, depending on source",
+        "difference: rc = s + d - 2 * (min(s * da, d * sa)), ra = normal",
+        "exclusion: rc = s + d - two(s * d), ra = normal",
+        "hue: hue of source with saturation and luminosity of destination",
+        "saturation: saturation of source with hue and luminosity of destination",
+        "color: hue and saturation of source with luminosity of destination",
+        "luminosity: luminosity of source with hue and saturation of destination",
         "plus darker",
         "plus lighter",
-        "pass through"
+        "pass through: ignore now layer"
       ],
       "$id": "#BlendMode"
     },
@@ -424,7 +424,7 @@
         },
         "dashedOffset": {
           "type": "number",
-          "description": "Border dash initial offset. (applies to `dashed` borders)"
+          "description": "Border dash initial offset. (applies to `dashed` borders)\nIf it is positive, it is offset to the left.\nIf it is negative, it is offset to the right.\nUnits: pixel."
         },
         "lineCapStyle": {
           "$ref": "#/definitions/LineCapStyle",
@@ -515,9 +515,6 @@
             },
             {
               "$ref": "#/definitions/GradientDiamond"
-            },
-            {
-              "$ref": "#/definitions/GradientBasic"
             }
           ]
         }
@@ -529,7 +526,7 @@
       "description": "An angular gradient is a color effect that transitions radially or angularly, typically originating from a central point and expanding outward in a rotational pattern.",
       "type": "object",
       "$id": "#GradientAngular",
-      "required": ["class", "from", "to", "stops", "invert", "ellipse"],
+      "required": ["class", "from", "to", "stops", "ellipse"],
       "properties": {
         "class": {
           "type": "string",
@@ -550,10 +547,6 @@
           "items": {
             "$ref": "#/definitions/GradientStop"
           }
-        },
-        "invert": {
-          "type": "boolean",
-          "description": "Whether the gradient has been inverted."
         },
         "ellipse": {
           "oneOf": [
@@ -610,7 +603,7 @@
       "description": "A linear gradient refers to the effect of transitioning between two or more different colors in a straight line.",
       "type": "object",
       "$id": "#GradientLinear",
-      "required": ["class", "from", "to", "stops", "invert"],
+      "required": ["class", "from", "to", "stops"],
       "properties": {
         "class": {
           "type": "string",
@@ -631,10 +624,6 @@
           "items": {
             "$ref": "#/definitions/GradientStop"
           }
-        },
-        "invert": {
-          "type": "boolean",
-          "description": "Whether the gradient has been inverted."
         }
       },
       "additionalProperties": false
@@ -644,7 +633,7 @@
       "description": "A radial gradient is a color effect that transitions radially around a point.",
       "type": "object",
       "$id": "#GradientRadial",
-      "required": ["class", "from", "to", "stops", "invert", "ellipse"],
+      "required": ["class", "from", "to", "stops", "ellipse"],
       "properties": {
         "class": {
           "type": "string",
@@ -666,10 +655,6 @@
             "$ref": "#/definitions/GradientStop"
           }
         },
-        "invert": {
-          "type": "boolean",
-          "description": "Whether the gradient has been inverted."
-        },
         "ellipse": {
           "oneOf": [
             {
@@ -689,7 +674,7 @@
       "description": "A diamond gradient is a color effect that transitions similar to the luster of a diamond.",
       "type": "object",
       "$id": "#GradientDiamond",
-      "required": ["class", "from", "to", "stops", "invert", "ellipse"],
+      "required": ["class", "from", "to", "stops", "ellipse"],
       "properties": {
         "class": {
           "type": "string",
@@ -711,10 +696,6 @@
             "$ref": "#/definitions/GradientStop"
           }
         },
-        "invert": {
-          "type": "boolean",
-          "description": "Whether the gradient has been inverted."
-        },
         "ellipse": {
           "oneOf": [
             {
@@ -725,167 +706,6 @@
             }
           ],
           "description": "When the type is set to `number`, the line connecting `from` to `to` is regarded as one semi-axis of the ellipse, denoted as `A`. The length of the other semi-axis of the ellipse is denoted as `B`. Then, `ellipse = B / A`, which is used to represent the shape of the gradient. The semi-axis `B` is perpendicular to `A` and takes the counterclockwise direction.\nWhen the type is set to `point`, it represents another point on the ellipse with a relative coordinate according to the `bounds`, where `(0, 0)` represents the top-left corner of the `bounds`, and `(1, -1)` represents the bottom-right corner of the `bounds`."
-        }
-      },
-      "additionalProperties": false
-    },
-    "GradientBasic": {
-      "title": "Gradient Basic",
-      "description": "> ***Unstable.*** This gradient format is only used to represent the gradient effect converted from AI and is not the final format. It is likely to be modified in the future.",
-      "type": "object",
-      "$id": "#GradientBasic",
-      "required": ["class", "gradientType", "stops", "invert", "geometry"],
-      "properties": {
-        "class": {
-          "type": "string",
-          "const": "gradientBasic"
-        },
-        "gradientType": {
-          "type": "integer",
-          "enum": [0, 1],
-          "enumDescriptions": ["linear gradient", "radial gradient"]
-        },
-        "stops": {
-          "type": "array",
-          "minItems": 2,
-          "items": {
-            "$ref": "#/definitions/GradientStop"
-          }
-        },
-        "invert": {
-          "type": "boolean",
-          "description": "Flag indicating whether the gradient has been inverted."
-        },
-        "geometry": {
-          "$ref": "#/definitions/GradientBasicGeometry",
-          "description": "The meaning of the gradient vector is different for radial gradients than for linear gradients. The vector origin is the center of the circle containing the radial gradient; the vector length is the radius of the that circle. The vector angle is not used by radial blends, but is preserved and used if the user changes the gradient from radial to linear."
-        },
-        "hilight": {
-          "$ref": "#/definitions/GradientHilight",
-          "description": "Only exists in radial mode."
-        },
-        "overallMatrix": {
-          "$ref": "#/definitions/Matrix",
-          "description": "Its parameters are six floating point values, which describe the overall matrix applied to the gradient."
-        },
-        "perpendicularMatrix": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "required": ["flag", "matrix"],
-            "properties": {
-              "flag": {
-                "type": "integer",
-                "enum": [0, 1],
-                "enumDescriptions": [
-                  "specifies a gradient fill between two colors.",
-                  "specifies solid colors at either end of a linear gradient fill, known as gradient caps.It doesn't exist in radial gradient."
-                ]
-              },
-              "matrix": {
-                "$ref": "#/definitions/Matrix"
-              }
-            },
-            "additionalProperties": false
-          }
-        }
-      },
-      "additionalProperties": false
-    },
-    "GradientBasicGeometry": {
-      "title": "Gradient basic geometry",
-      "description": "> ***Unstable.*** It is only used to represent the gradient effect converted from AI and is not the final format. It is likely to be modified in the future.\n\nGradient geometry defines much of the appearance of the gradient within the path.",
-      "type": "object",
-      "$id": "#GradientBasicGeometry",
-      "required": [
-        "class",
-        "flag",
-        "xOrigin",
-        "yOrigin",
-        "angle",
-        "length",
-        "matrix",
-        "widthRatio"
-      ],
-      "properties": {
-        "class": {
-          "type": "string",
-          "const": "gradientBasicGeometry"
-        },
-        "flag": {
-          "type": "integer",
-          "description": "This argument defines how the gradient will be rendered.For simple filled paths, flag takes the value 1.",
-          "enum": [0, 1, 2],
-          "enumDescriptions": [
-            "Do not issue a clip.",
-            "Issue a clip.",
-            "Disable rendering."
-          ]
-        },
-        "xOrigin": {
-          "type": "number",
-          "description": "`xOrigin` and `yOrigin` give the origin of the gradient in page coordinates. The origin can be located anywhere on the artwork, and corresponds to 0 on the gradient ramp."
-        },
-        "yOrigin": {
-          "type": "number",
-          "description": "Refer to xOriginal for details."
-        },
-        "angle": {
-          "type": "number",
-          "description": "This argument specifies the direction of the gradient vector, in degrees. The gradient ramp extends from the origin at the value of angle, which is measured counterclockwise from the X axis."
-        },
-        "length": {
-          "type": "number",
-          "description": "This argument specifies the distance over which the gradient ramp is applied. The ramp will be scaled so that its 100% value is the end of the length. This parameter may be greater than 1."
-        },
-        "matrix": {
-          "$ref": "#/definitions/Matrix",
-          "description": "The six values make up a transformation matrix. \nWhen a gradient is first applied to an object, these values are the identity matrix. \nIf the user transforms the object, the user transformation matrix is concatenated to the gradient instance's matrix."
-        },
-        "widthRatio": {
-          "type": "number",
-          "description": "0.5 indicates that the width is half the length.\n2 indicates that the width is twice the length.\nAnd so on."
-        }
-      },
-      "additionalProperties": false
-    },
-    "Matrix": {
-      "title": "Matrix",
-      "description": "A list of six elements: `[a, b, c, d, tx, ty]`.",
-      "type": "array",
-      "maxItems": 6,
-      "minItems": 6,
-      "$id": "#Matrix",
-      "items": {
-        "type": "number"
-      }
-    },
-    "GradientHilight": {
-      "title": "Gradient Hilight",
-      "description": "> ***Unstable.*** It is only used to represent the gradient effect converted from AI and is not the final format. It is likely to be modified in the future.\n\nRadial gradients have an additional attribute called a hilight. The hilight serves at the starting point for the gradient ramp as it expands outward. It is still contained within the gradient vector circle.",
-      "type": "object",
-      "$id": "#GradientHilight",
-      "required": ["class", "xHilight", "yHilight", "angle", "length"],
-      "properties": {
-        "class": {
-          "type": "string",
-          "const": "gradientHilight"
-        },
-        "xHilight": {
-          "type": "number",
-          "description": "`xHilight` and `yHilight` specify the hilight placement, in x and y offsets from the gradient vector origin."
-        },
-        "yHilight": {
-          "type": "number",
-          "description": "Refer to `xHilight` for details."
-        },
-        "angle": {
-          "type": "number",
-          "description": "This argument is the angle (in degrees) to the hilight point, measured counterclockwise from the X axis."
-        },
-        "length": {
-          "$ref": "#/definitions/UnitInterval",
-          "description": "This argument is the distance of the hilight from the origin, expressed as a fraction of the radius—a value between 0 and 1."
         }
       },
       "additionalProperties": false
@@ -1032,6 +852,17 @@
         }
       },
       "additionalProperties": false
+    },
+    "Matrix": {
+      "title": "Matrix",
+      "description": "A list of six elements: `[a, b, c, d, tx, ty]`.",
+      "type": "array",
+      "maxItems": 6,
+      "minItems": 6,
+      "$id": "#Matrix",
+      "items": {
+        "type": "number"
+      }
     },
     "PatternImageFit": {
       "title": "Pattern Image Fit",
@@ -1245,7 +1076,7 @@
         },
         "center": {
           "$ref": "#/definitions/Point",
-          "description": "The center of the blur applies only to the `zoom` blur. The coordinate point is in normalized coordinates."
+          "description": "The center of the blur applies only to the `zoom` blur.\nA relative coordinate according to the `bounds`, where `(0, 0)` represents the top-left corner of the `bounds`, and `(1, -1)` represents the bottom-right corner of the `bounds`."
         },
         "saturation": {
           "type": "number",
@@ -1730,7 +1561,7 @@
             "subtraction",
             "intersecion",
             "exclusion",
-            "none"
+            "useWindingRule: The final display area is determined by the windingRule of the top-level path object."
           ]
         }
       },
@@ -2396,7 +2227,7 @@
           "enum": [0, 1, 2],
           "enumDescriptions": [
             "pixel (default value)",
-            "percent. Final pixel value equals to `size * lineSpacingValue * 1.25 / 100`.",
+            "auto. Use default font metrics height.",
             "raw. Final pixel value equals to `size * lineSpacingValue`."
           ]
         },
@@ -3625,7 +3456,7 @@
   "properties": {
     "version": {
       "type": "string",
-      "const": "1.0.15",
+      "const": "1.0.16",
       "description": "Current VGG specs version, conforming to semantic version format like `major.minor.patch`.\n"
     },
     "fileType": {
