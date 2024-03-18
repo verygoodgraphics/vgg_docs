@@ -33,8 +33,8 @@ dependencies:
     specifier: ^1.0.3
     version: 1.0.3(@types/react@18.2.51)(react-dom@18.2.0)(react@18.2.0)
   '@verygoodgraphics/vgg-react':
-    specifier: ^0.1.14
-    version: 0.1.14
+    specifier: ^0.1.17
+    version: 0.1.17
   clsx:
     specifier: ^2.0.0
     version: 2.0.0
@@ -4740,16 +4740,16 @@ packages:
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
 
-  /@verygoodgraphics/vgg-react@0.1.14:
-    resolution: {integrity: sha512-3Pw+lJkJkLzZu/qWIT0tcB792cYPGEuJ7ZPlrW4UaRipSbAzaUHQSg2b9WsvaydmKPzUlZVsa4LHAJ+bnPi1Dw==}
+  /@verygoodgraphics/vgg-react@0.1.17:
+    resolution: {integrity: sha512-1iNIevtbGuEknLoxl27cIPqbgNxBupVKvAFVHACXMq+RiL7P5dpQMWDqaV+siYRBKJ8vdeoYuRMlp+c68/07MA==}
     dependencies:
-      '@verygoodgraphics/vgg-wasm': 0.1.11
+      '@verygoodgraphics/vgg-wasm': 0.1.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@verygoodgraphics/vgg-wasm@0.1.11:
-    resolution: {integrity: sha512-+R9h21w0g9ZQ0H0uIRcs5iKyBud6KqC4CjO2pCIkyunWivq+5jKEhmoNGmrgULkmaJhn0tuYfiBrQeqd92Zgzg==}
+  /@verygoodgraphics/vgg-wasm@0.1.14:
+    resolution: {integrity: sha512-3QmChnqxGNe7a0jex+/w8t68P5AMqS+oiOp4uKOnlVgMb5cHdV+WNoOXw+4nJM+O2zWG6fgZAUayhdBzpoX80Q==}
     dev: false
 
   /@webassemblyjs/ast@1.11.6:
