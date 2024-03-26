@@ -1,0 +1,26 @@
+---
+title: Zoom Blur
+sidebar_position: 3
+hide_table_of_contents: true
+---
+
+<DarumaPlayer
+  src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/blur/blur__zoom_blur.daruma"
+  controlsConfig={[
+    {
+      label: "Zoom Blur",
+      type: "Zoom Blur",
+      controlType: "slider",
+      value: 10,
+      valuePath: "$.frames[0].childObjects[0].style.blurs[0].radius",
+      min: 0,
+      max: 100,
+    },
+  ]}
+/>
+
+<br />
+**Related Specs**
+
+- [Blur](/specs/vectorgraphics/blur)
+- [BlurType](/specs/vectorgraphics/blur-type)
