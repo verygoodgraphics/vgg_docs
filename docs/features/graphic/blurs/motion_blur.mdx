@@ -16,6 +16,15 @@ hide_table_of_contents: true
       min: 0,
       max: 100,
     },
+    {
+      label: "Motion Angle",
+      type: "Motion Blur",
+      controlType: "slider",
+      value: 90,
+      valuePath: "$.frames[0].childObjects[0].style.blurs[0].motionAngle",
+      min: -180,
+      max: 180,
+    },
   ]}
 />
 

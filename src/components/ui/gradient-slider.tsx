@@ -33,7 +33,7 @@ export function GradientSlider<T extends number | number[]>({
           state.values.map((_, i) => state.getThumbValueLabel(i)).join(" – ")
         }
       </SliderOutput> */}
-      <SliderTrack className="relative w-full h-7">
+      <SliderTrack className="relative w-[calc(100%_-_8px)] h-7">
         {({ state }) => (
           <>
             <div className="absolute h-1 top-[50%] translate-y-[-50%] w-full rounded-full bg-black/[0.08]" />
@@ -45,19 +45,19 @@ export function GradientSlider<T extends number | number[]>({
 
             {state.values.map((_, i) => (
               <SliderThumb
-                className="h-[14px] flex relative justify-center items-center w-[14px] top-[50%] rounded-full border border-solid border-zinc-200 bg-white transition dragging:shadow-md shadow outline-none focus-visible:ring-2 ring-black"
+                className="h-[14px] flex relative justify-center items-center w-[14px] top-[50%] rounded-sm border border-solid border-zinc-200 bg-white transition dragging:shadow-md shadow outline-none focus-visible:ring-2 ring-black"
                 key={i}
                 index={i}
                 aria-label={thumbLabels?.[i]}
               >
                 <div
-                  className="h-[10px] w-[10px] rounded-full z-20"
+                  className="h-[10px] w-[10px] rounded-sm z-20"
                   style={{
                     backgroundColor: thumbColors?.[i] ?? "inherit",
                   }}
                 />
                 <div
-                  className="absolute h-[10px] w-[10px] top-[1px] left-[1px] rounded-full overflow-hidden z-10"
+                  className="absolute h-[10px] w-[10px] top-[1px] left-[1px] rounded-sm overflow-hidden z-10"
                   style={{
                     backgroundColor: "#ffffff",
                     opacity: 0.8,

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useReducer } from "react"
 import { cn } from "../../lib/utils/cn"
 import { ChevronDownIcon } from "@radix-ui/react-icons"
 import { Slider } from "./ui/slider"
@@ -79,13 +79,15 @@ export function Controls({
     lineNumberMatchType?: "exact" | "range"
   }) => void
 }) {
-  if (!config || config.length === 0) return null
+  const [collapsed, toggleCollapsed] = useReducer((state) => !state, false)
   const codeCache = React.useRef(code)
   const oldValueCache = React.useRef<any>(null)
 
   useEffect(() => {
     codeCache.current = code
   }, [code])
+
+  if (!config || config.length === 0) return null
 
   return (
     <div
@@ -94,11 +96,18 @@ export function Controls({
         className
       )}
     >
-      <div className="flex justify-between items-center mb-2">
+      <div
+        className="flex justify-between items-center mb-2"
+        onClick={toggleCollapsed}
+      >
         <h2 className="text-[13px] text-zinc-600 font-bold mb-0">Controls</h2>
         <ChevronDownIcon className="w-[14px] h-[14px] text-zinc-400" />
       </div>
-      <div className="flex flex-col gap-y-2">
+      <div
+        className={cn("flex flex-col gap-y-2", {
+          height: collapsed ? "0" : "auto",
+        })}
+      >
         {config.map((control, index) => {
           const debouncedOnChange = unbounce(
             (value: number, lineNumber?: number) => {
