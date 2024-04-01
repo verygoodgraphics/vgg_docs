@@ -1,11 +1,8 @@
 ---
-title: VGG Examples
+title: Business Components
 ---
 
-## Composite components
-
-This is the Composite Components page where you will find a number of composite units assembled from basic components. These components are designed to make your development process easier. Currently shown are our existing composite components, we will continue to add new members, so stay tuned!
-
+This a collection of real-world applications. More demos are on the way, so stay tuned!
 
 
 | Example               |  UI  | Layout | Interaction |                         Source Code                          |
