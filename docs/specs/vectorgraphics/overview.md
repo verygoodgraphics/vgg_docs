@@ -12,12 +12,6 @@ sidebar_class_name: hidden
 
 </div>
 
-:::warning[Disclaimer]
-
-Please note that _Vector Graphics Spec_ is in active development and is prone to change.
-
-:::
-
 VGG Vector Graphics Specification is a JSON-based spec for describing vector graphics.
 
 In the coordinate system defined by VGG, the X-axis increases to the right, and the Y-axis increases upwards. For a given coordinate point:
