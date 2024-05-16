@@ -34,6 +34,7 @@ Flexbox provides a more efficient and predictable way to arrange, align, and dis
 | [wrap](#wrap)                     | `integer`                              | <span className="property-required">Required</span> |
 | [rowGap](#rowgap)                 | `number`                               | <span className="property-required">Required</span> |
 | [columnGap](#columngap)           | `number`                               | <span className="property-required">Required</span> |
+| [smartSpacing](#smartspacing)     | `boolean`                              | <span className="property-required">Required</span> |
 | [padding](#padding)               | `Array<number>`                        | <span className="property-required">Required</span> |
 | [zOrder](#zorder)                 | `boolean`                              | <span className="property-optional">Optional</span> |
 
@@ -329,7 +330,7 @@ Description
 
 <div>
 
-This property is used to set the size of the gap between rows in a grid layout. It defines the whitespace distance between adjacent rows within the grid container, allowing for a certain vertical spacing between grid items. This property accepts values in pixels (px) as units.
+This property is used to set the size of the gap between rows in a grid layout. It defines the whitespace distance between adjacent rows within the grid container, allowing for a certain vertical spacing between grid items. This property accepts values in pixels (px) as units. This value can be negative.
 
 </div>
 
@@ -361,7 +362,7 @@ Description
 
 <div>
 
-This property is used to set the size of the gap between columns in a grid layout. It defines the whitespace distance between adjacent columns within the grid container, allowing for a certain amount of spacing horizontally for grid items. This property accepts values in pixels (px) as units.
+This property is used to set the size of the gap between columns in a grid layout. It defines the whitespace distance between adjacent columns within the grid container, allowing for a certain amount of spacing horizontally for grid items. This property accepts values in pixels (px) as units. This value can be negative.
 
 </div>
 
@@ -372,6 +373,45 @@ This property is used to set the size of the gap between columns in a grid layou
 Type
 
 `number`
+
+</div>
+
+</div>
+
+<div className="property">
+
+<div className="property-heading">
+
+## smartSpacing
+
+<span className="property-required">Required</span>
+
+</div>
+
+<div className="property-item">
+
+Description
+
+<div>
+
+If `smartSpacing` is false, nothing is done.
+If `smartSpacing` is true, then
+A. when `justifyContent` is `space between` and wrap is `no wrap`, then
+1\. When the container has only one child, the margins on the main axis direction of that child are set to `auto`.
+2\. When the container has more than one child, the margins on the main axis are set to 0 for the start direction of the first child and the end direction of the last child, and `auto` for the rest.
+3\. Ignore the value of main axis gap and treat is as 0.
+B. when `justifyContent` is `space between` and wrap is `wrap`, ignore the value of main axis gap and treat is as 0.
+C. when `alignContent` is `space between`, ignore the value of cross axis gap and treat is as 0.
+
+</div>
+
+</div>
+
+<div className="property-item">
+
+Type
+
+`boolean`
 
 </div>
 

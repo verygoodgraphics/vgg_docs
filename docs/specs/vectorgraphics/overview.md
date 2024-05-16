@@ -75,7 +75,7 @@ Value
 **constant**: the value of this property must be equal to:
 
 ```json
-"1.0.16"
+"1.0.17"
 ```
 
 </div>

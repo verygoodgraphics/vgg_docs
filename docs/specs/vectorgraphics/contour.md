@@ -117,7 +117,7 @@ Description
 
 <div>
 
-An array of points representing the contour of the shape.
+An array of points that consist of the contour of the shape.
 
 </div>
 

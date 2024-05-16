@@ -38,7 +38,7 @@
     "#Length": [
         {
             "path": "properties/types/value",
-            "_enumImg": [["/img/layout/length/fixed.png"], ["/img/layout/length/relative.png"], ["/img/layout/length/fit.png"]]
+            "_enumImg": [["/img/layout/length/fixed.png"], ["/img/layout/length/relative.png"], ["/img/layout/length/auto.png"], ["/img/layout/length/fit.png"]]
         }
     ]
 }
