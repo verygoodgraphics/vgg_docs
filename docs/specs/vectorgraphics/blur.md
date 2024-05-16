@@ -28,10 +28,10 @@ Define a blur style of an object.
 | [class](#class)             | `string`                                      | <span className="property-required">Required</span> |
 | [type](#type)               | [`BlurType`](/specs/vectorgraphics/blur-type) | <span className="property-required">Required</span> |
 | [isEnabled](#isenabled)     | `boolean`                                     | <span className="property-required">Required</span> |
-| [radius](#radius)           | `number`                                      | <span className="property-optional">Optional</span> |
+| [radius](#radius)           | `number`                                      | <span className="property-required">Required</span> |
 | [motionAngle](#motionangle) | `number`                                      | <span className="property-optional">Optional</span> |
-| [center](#center)           | [`Point`](/specs/vectorgraphics/point)        | <span className="property-required">Required</span> |
-| [saturation](#saturation)   | `number`                                      | <span className="property-required">Required</span> |
+| [center](#center)           | [`Point`](/specs/vectorgraphics/point)        | <span className="property-optional">Optional</span> |
+| [saturation](#saturation)   | `number`                                      | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -143,7 +143,7 @@ Type
 
 ## radius
 
-<span className="property-optional">Optional</span>
+<span className="property-required">Required</span>
 
 </div>
 
@@ -198,6 +198,7 @@ Description
 <div>
 
 The angle of the blur direction applies only to the `motion` blur.
+Default value is `0`.
 
 </div>
 
@@ -231,7 +232,7 @@ Type
 
 ## center
 
-<span className="property-required">Required</span>
+<span className="property-optional">Optional</span>
 
 </div>
 
@@ -243,6 +244,7 @@ Description
 
 The center of the blur applies only to the `zoom` blur.
 A relative coordinate according to the `bounds`, where `(0, 0)` represents the top-left corner of the `bounds`, and `(1, -1)` represents the bottom-right corner of the `bounds`.
+Default value is `(0.5, -0.5)`.
 
 </div>
 
@@ -276,7 +278,7 @@ Type
 
 ## saturation
 
-<span className="property-required">Required</span>
+<span className="property-optional">Optional</span>
 
 </div>
 
@@ -287,6 +289,7 @@ Description
 <div>
 
 The saturation level of the blur applies only to the `background` blur.
+Default value is `1`.
 
 </div>
 

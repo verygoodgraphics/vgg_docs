@@ -17,7 +17,7 @@ sidebar_class_name: show
 
 </div>
 
-One point on the contour of a shape.
+The attributes of a point on the contour of a shape.
 
 <div className="property-preview">
 
