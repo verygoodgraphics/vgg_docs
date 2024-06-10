@@ -100,9 +100,9 @@ const config = {
           },
           {
             type: "docSidebar",
-            sidebarId: "workflowSidebar",
+            sidebarId: "startSidebar",
             position: "left",
-            label: "Workflow",
+            label: "Quick Start",
           },
           {
             type: "docSidebar",
@@ -115,6 +115,12 @@ const config = {
             sidebarId: "exampleSidebar",
             position: "left",
             label: "Examples",
+          },
+          {
+            type: "docSidebar",
+            sidebarId: "communitySidebar",
+            position: "left",
+            label: "Community",
           },
           {
             href: "https://github.com/verygoodgraphics",

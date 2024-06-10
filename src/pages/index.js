@@ -7,6 +7,7 @@ import {
   RectangleGroupIcon,
   CodeBracketSquareIcon,
   SparklesIcon,
+  ChatBubbleLeftIcon,
 } from "@heroicons/react/20/solid"
 
 const features = [
@@ -26,14 +27,14 @@ const features = [
     icon: SparklesIcon,
   },
   {
-    name: "VGG Workflow",
+    name: "Quick Start",
     description:
-      "Explanations of concepts in VGG Workflow and descriptions of main steps to use it.",
-    href: "/workflow/overview",
+      "Make your hands dirty by following VGG's quick start tutorial.",
+    href: "/start/overview",
     icon: ArrowPathIcon,
   },
   {
-    name: "VGG Containers - UI Component",
+    name: "VGG Containers",
     description:
       "Collection of VGG containers for multiple platforms to develop and deploy VGG applications.",
     href: "/containers/overview",
@@ -45,6 +46,13 @@ const features = [
       "Various VGG examples written with VGG web containers to demonstrate VGG capabilities.",
     href: "/examples/overview",
     icon: CodeBracketSquareIcon,
+  },
+  {
+    name: "VGG Community",
+    description:
+      "VGG community for building VGG tech stacks together!",
+    href: "/community/overview",
+    icon: ChatBubbleLeftIcon,
   },
 ]
 
