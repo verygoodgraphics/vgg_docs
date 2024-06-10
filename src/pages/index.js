@@ -83,7 +83,7 @@ export default function Home() {
                 Documentation Center
               </h2>
               <p className="mt-4 lg:text-lg md:text-base sm:text-sm">
-                The next-gen vector graphics and its toolkit for cross-platform UI development which is compatible with any framework and any platform.
+                The next-gen vector graphics and embeddable cross-platform UI framework that advocates the Design-as-Code paradigm.
               </p>
             </div>
             <div className="mx-auto mt-12 max-w-2xl sm:mt-10 lg:mt-12 lg:max-w-none">
