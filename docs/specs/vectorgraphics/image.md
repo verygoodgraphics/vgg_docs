@@ -1037,8 +1037,9 @@ Description
 
 <div>
 
-If the value is `true`, the image content is not displayed, and only the `fill` effect is shown.
-Otherwise, both the image content and the `fill` effect take effect simultaneously.
+If the value is `true`, the image content is not displayed, and only the `fills` effect is shown.
+Otherwise, both the image content and the `fills` effect take effect simultaneously.
+Note: The transparency of the image itself will always take effect.
 Default value is `false`.
 
 </div>

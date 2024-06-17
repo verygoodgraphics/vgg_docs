@@ -211,6 +211,15 @@
         "backgroundColor": {
           "$ref": "#/definitions/Color",
           "description": "The background color of the canvas on which the frame is positioned. Exists only on the top-level frame."
+        },
+        "frameType": {
+          "type": "integer",
+          "enum": [0, 1, 2],
+          "enumDescriptions": [
+            "normal frame.(Default value)",
+            " virtual frame.  In many design software, each page may have elements that are floating outside the top-level frame(artboard).  Organizing these elements into a new top-level frame would create a virtual frame. ",
+            " container of symbol master variants. In Figma, when creating multiple variants of a symbol master, it automatically creates a frame to contain them. "
+          ]
         }
       },
       "additionalProperties": false
@@ -2547,7 +2556,7 @@
         },
         "fillReplacesImage": {
           "type": "boolean",
-          "description": "If the value is `true`, the image content is not displayed, and only the `fill` effect is shown.\nOtherwise, both the image content and the `fill` effect take effect simultaneously.\nDefault value is `false`."
+          "description": "If the value is `true`, the image content is not displayed, and only the `fills` effect is shown.\nOtherwise, both the image content and the `fills` effect take effect simultaneously.\nNote: The transparency of the image itself will always take effect.\nDefault value is `false`."
         },
         "imageFilters": {
           "$ref": "#/definitions/ImageFilters",
