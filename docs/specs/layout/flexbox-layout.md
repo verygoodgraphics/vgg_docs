@@ -330,7 +330,7 @@ Description
 
 <div>
 
-This property is used to set the size of the gap between rows in a grid layout. It defines the whitespace distance between adjacent rows within the grid container, allowing for a certain vertical spacing between grid items. This property accepts values in pixels (px) as units. This value can be negative.
+This property is used to set the size of the gap between rows in a flexbox layout. It defines the whitespace distance between adjacent rows within the flexbox container, allowing for a certain vertical spacing between flexbox items. This property accepts values in pixels (px) as units. This value can be negative.
 
 </div>
 
@@ -362,7 +362,7 @@ Description
 
 <div>
 
-This property is used to set the size of the gap between columns in a grid layout. It defines the whitespace distance between adjacent columns within the grid container, allowing for a certain amount of spacing horizontally for grid items. This property accepts values in pixels (px) as units. This value can be negative.
+This property is used to set the size of the gap between columns in a flexbox layout. It defines the whitespace distance between adjacent columns within the flexbox container, allowing for a certain amount of spacing horizontally for flexbox items. This property accepts values in pixels (px) as units. This value can be negative.
 
 </div>
 
@@ -394,14 +394,14 @@ Description
 
 <div>
 
-If `smartSpacing` is false, nothing is done.
-If `smartSpacing` is true, then
-A. when `justifyContent` is `space between` and wrap is `no wrap`, then
-1\. When the container has only one child, the margins on the main axis direction of that child are set to `auto`.
-2\. When the container has more than one child, the margins on the main axis are set to 0 for the start direction of the first child and the end direction of the last child, and `auto` for the rest.
-3\. Ignore the value of main axis gap and treat is as 0.
-B. when `justifyContent` is `space between` and wrap is `wrap`, ignore the value of main axis gap and treat is as 0.
-C. when `alignContent` is `space between`, ignore the value of cross axis gap and treat is as 0.
+If this item is false, then no action is taken.
+If this item is true, then:
+A. When `justifyContent` is `space between`, and the container does not wrap, and all elements in the main axis direction have a length that is not `auto`, then:
+1\. When the container has only one child, the two margins of this child in the main axis direction will be set to `auto`.
+2\. When the container has more than one child, in the main axis direction, the start margin of the first child and the end margin of the last child will be set to 0, and the remaining margins will all be set to `auto`.
+3\. Ignore the value of the `gap` in the main axis direction, and treat its value as 0.
+B. When `justifyContent` is `space between`, and the container wraps, ignore the value of the `gap` in the main axis direction, and treat its value as 0.
+C. When `alignContent` is `space between`, ignore the value of the `gap` in the cross axis direction, and treat it as 0.
 
 </div>
 

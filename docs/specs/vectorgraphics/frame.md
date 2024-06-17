@@ -57,6 +57,7 @@ The group's fills affect all of its children.
 | [class](#class)                               | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | <span className="property-required">Required</span> |
 | [radius](#radius)                             | `Array<number>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | <span className="property-optional">Optional</span> |
 | [backgroundColor](#backgroundcolor)           | [`Color`](/specs/vectorgraphics/color)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | <span className="property-optional">Optional</span> |
+| [frameType](#frametype)                       | `integer`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | <span className="property-optional">Optional</span> |
 
 </div>
 
@@ -1124,6 +1125,56 @@ The background color of the canvas on which the frame is positioned. Exists only
 Type
 
 [`Color`](/specs/vectorgraphics/color)
+
+</div>
+
+</div>
+
+<div className="property">
+
+<div className="property-heading">
+
+## frameType
+
+<span className="property-optional">Optional</span>
+
+</div>
+
+<div className="property-item">
+
+Description
+
+<div>
+
+no description
+
+</div>
+
+</div>
+
+<div className="property-item">
+
+Type
+
+`integer`
+
+</div>
+
+<div className="property-item">
+
+Value
+
+<div className="value-description">
+
+**enum**: the value of this property must be equal to one of the following values:
+
+| Value | Explanation                                                                                                                                                                                                                                                 |
+| :---- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `0`   | <div className="enum-description">normal frame.(Default value)</div>                                                                                                                                                                                        |
+| `1`   | <div className="enum-description"> virtual frame.  In many design software, each page may have elements that are floating outside the top-level frame(artboard).  Organizing these elements into a new top-level frame would create a virtual frame. </div> |
+| `2`   | <div className="enum-description"> container of symbol master variants. In Figma, when creating multiple variants of a symbol master, it automatically creates a frame to contain them. </div>                                                              |
+
+</div>
 
 </div>
 

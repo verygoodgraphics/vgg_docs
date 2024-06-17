@@ -2,6 +2,11 @@
 title: VGG Specs Changelog
 ---
 
+## v1.0.18 (Jun 18, 2024)
+
+* Add `frameType` of `frame`.
+* Update some descriptions.
+
 ## v1.0.17 (May 21, 2024)
 
 * Support negative `gap`s in flexbox layout.
