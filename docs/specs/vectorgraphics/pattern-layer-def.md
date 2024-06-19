@@ -498,11 +498,11 @@ Value
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value | Explanation                                                                                                                                                                                                                                                                                                             |
-| :---- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `0`   | <div className="enum-description">The `style` and `visible` of the mask object do not affect the area of the mask, which depends on its bounds.<div className="enum-images"><img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Mask/styleEffectMaskArea_0.png" alt="" /></div></div> |
-| `1`   | <div className="enum-description">The `style` of the mask object does not affect the area of the mask, while the `visible` does.<div className="enum-images"><img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Mask/styleEffectMaskArea_1.png" alt="" /></div></div>                |
-| `2`   | <div className="enum-description">The `style` and `visible` of the mask object do affect the area of the mask.<div className="enum-images"><img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Mask/styleEffectMaskArea_2.png" alt="" /></div></div>                                  |
+| Value | Explanation                                                                                                                                                                                                                                             |
+| :---- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `0`   | <div className="enum-description">The `style` and `visible` of the mask object do not affect the area of the mask, which depends on its bounds.<div className="enum-images"><img src="/img/vector/Mask/styleEffectMaskArea_0.png" alt="" /></div></div> |
+| `1`   | <div className="enum-description">The `style` of the mask object does not affect the area of the mask, while the `visible` does.<div className="enum-images"><img src="/img/vector/Mask/styleEffectMaskArea_1.png" alt="" /></div></div>                |
+| `2`   | <div className="enum-description">The `style` and `visible` of the mask object do affect the area of the mask.<div className="enum-images"><img src="/img/vector/Mask/styleEffectMaskArea_2.png" alt="" /></div></div>                                  |
 
 </div>
 
@@ -829,9 +829,9 @@ Type
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Constraint/keepShapeWhenResize_false.png" alt="" />
+<img src="/img/vector/Constraint/keepShapeWhenResize_false.png" alt="" />
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Constraint/keepShapeWhenResize_true.png" alt="" />
+<img src="/img/vector/Constraint/keepShapeWhenResize_true.png" alt="" />
 
 </div>
 

@@ -5,7 +5,7 @@ hide_table_of_contents: true
 ---
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text/text__line_height.daruma'
+  src='/feature/text/text__line_height.daruma'
   controlsConfig={[
     {
       label:  'Size',

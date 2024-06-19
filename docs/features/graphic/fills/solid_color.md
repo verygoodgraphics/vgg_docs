@@ -9,11 +9,11 @@ hide_table_of_contents: true
     [
       {
         label: 'Content',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/fill/fill__solid_color.daruma'
+        src: '/feature/fill/fill__solid_color.daruma'
       },
       {
         label: 'Border',
-        src: 'https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border/border__fill__color.daruma'
+        src: '/feature/border/border__fill__color.daruma'
       },
     ]
   }

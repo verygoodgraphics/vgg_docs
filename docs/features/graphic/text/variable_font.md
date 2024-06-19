@@ -7,7 +7,7 @@ hide_table_of_contents: true
 ## Variable Font Weight & Width
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text/text__variable_font__width.daruma'
+  src='/feature/text/text__variable_font__width.daruma'
   controlsConfig={[
     {
       label:  'Weight',
@@ -36,7 +36,7 @@ hide_table_of_contents: true
 ## Variable Font Slant
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text/text__variable_font__slant.daruma'
+  src='/feature/text/text__variable_font__slant.daruma'
   controlsConfig={[
     {
       label:  'Slant',

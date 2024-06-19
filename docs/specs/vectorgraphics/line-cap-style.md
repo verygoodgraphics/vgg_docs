@@ -43,7 +43,7 @@ Value
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Border/lineCap.png" alt="" />
+<img src="/img/vector/Border/lineCap.png" alt="" />
 
 </div>
 

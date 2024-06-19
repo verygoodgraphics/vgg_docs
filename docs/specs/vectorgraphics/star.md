@@ -107,7 +107,7 @@ Type
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Path/radius_star.png" alt="" />
+<img src="/img/vector/Path/radius_star.png" alt="" />
 
 </div>
 
@@ -151,7 +151,7 @@ Type
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Path/star_ratio.png" alt="" />
+<img src="/img/vector/Path/star_ratio.png" alt="" />
 
 </div>
 

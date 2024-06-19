@@ -22,7 +22,7 @@ try {
     assets: {
       images: imagesMap,
       assetPrefix:
-        "https://raw.githubusercontent.com/verygoodgraphics/resource/main",
+        "",
     },
     disclaimer: metaJSON.layout.disclaimer,
     // isBeta: metaJSON.layout.status === "beta",

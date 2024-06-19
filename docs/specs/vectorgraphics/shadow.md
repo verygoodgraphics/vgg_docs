@@ -176,7 +176,7 @@ Type
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Shadow/offset.png" alt="" />
+<img src="/img/vector/Shadow/offset.png" alt="" />
 
 </div>
 
@@ -252,7 +252,7 @@ Type
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Shadow/blur.png" alt="" />
+<img src="/img/vector/Shadow/blur.png" alt="" />
 
 </div>
 
@@ -296,7 +296,7 @@ Type
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Shadow/spread.png" alt="" />
+<img src="/img/vector/Shadow/spread.png" alt="" />
 
 </div>
 
@@ -372,7 +372,7 @@ Type
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Shadow/inner.png" alt="" />
+<img src="/img/vector/Shadow/inner.png" alt="" />
 
 </div>
 
@@ -417,7 +417,7 @@ Type
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Shadow/showBehindTransparentAreas.png" alt="" />
+<img src="/img/vector/Shadow/showBehindTransparentAreas.png" alt="" />
 
 </div>
 
