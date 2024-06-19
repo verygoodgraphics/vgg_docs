@@ -124,7 +124,7 @@ Value
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/grid/rowHeight.png" alt="" />
+<img src="/img/layout/grid/rowHeight.png" alt="" />
 
 </div>
 

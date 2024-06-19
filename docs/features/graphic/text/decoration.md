@@ -6,7 +6,7 @@ hide_table_of_contents: true
 
 ## Underline
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text/text__decoration__underline.daruma'
+  src='/feature/text/text__decoration__underline.daruma'
   controlsConfig={[
     {
       label: 'Underline',
@@ -34,7 +34,7 @@ hide_table_of_contents: true
 
 ## Line Through
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/text/text__decoration__linethrough.daruma'
+  src='/feature/text/text__decoration__linethrough.daruma'
   controlsConfig={[
     {
       label: 'Line Through',

@@ -4,7 +4,7 @@ sidebar_position: 1
 hide_table_of_contents: true
 ---
 
-<DarumaPlayer src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/geometry/geometry__polygon_shape.daruma' />
+<DarumaPlayer src='/feature/geometry/geometry__polygon_shape.daruma' />
 
 <br />
 **Related Specs**

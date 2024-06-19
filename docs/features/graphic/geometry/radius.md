@@ -5,7 +5,7 @@ hide_table_of_contents: true
 ---
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/geometry/geometry__radius.daruma'
+  src='/feature/geometry/geometry__radius.daruma'
   controlsConfig={[
     {
       label: 'Point Radius 1',

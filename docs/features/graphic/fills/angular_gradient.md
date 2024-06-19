@@ -7,7 +7,7 @@ hide_table_of_contents: true
 ## Content
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/fill/fill__angular_gradient.daruma'
+  src='/feature/fill/fill__angular_gradient.daruma'
   controlsConfig={[
     {
       label: 'Angular Gradient',
@@ -52,7 +52,7 @@ hide_table_of_contents: true
 ## Border
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border/border__fill__angular_gradient.daruma'
+  src='/feature/border/border__fill__angular_gradient.daruma'
   controlsConfig={[
     {
       label: 'Angular Gradient',

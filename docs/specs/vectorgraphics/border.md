@@ -591,7 +591,7 @@ Type
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Border/dashedPattern.png" alt="" />
+<img src="/img/vector/Border/dashedPattern.png" alt="" />
 
 </div>
 

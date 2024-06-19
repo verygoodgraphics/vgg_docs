@@ -5,7 +5,7 @@ hide_table_of_contents: true
 ---
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/border/border__miter_limit.daruma'
+  src='/feature/border/border__miter_limit.daruma'
   controlsConfig={[
     {
       label: 'Miter Limit',

@@ -108,10 +108,10 @@ Value
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value | Explanation                                                                                                                                                                                                                                          |
-| :---- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `1`   | <div className="enum-description">min (Specifies the minimum width of the column.)<div className="enum-images"><img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/grid/columnWidth_min.png" alt="" /></div></div> |
-| `2`   | <div className="enum-description">fix (Specifies the fixed width of the column.)<div className="enum-images"><img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/layout/grid/columnWidth_fix.png" alt="" /></div></div>   |
+| Value | Explanation                                                                                                                                                                          |
+| :---- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `1`   | <div className="enum-description">min (Specifies the minimum width of the column.)<div className="enum-images"><img src="/img/layout/grid/columnWidth_min.png" alt="" /></div></div> |
+| `2`   | <div className="enum-description">fix (Specifies the fixed width of the column.)<div className="enum-images"><img src="/img/layout/grid/columnWidth_fix.png" alt="" /></div></div>   |
 
 </div>
 

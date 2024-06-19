@@ -5,7 +5,7 @@ hide_table_of_contents: true
 ---
 
 <DarumaPlayer
-  src='https://raw.githubusercontent.com/verygoodgraphics/resource/main/feature/geometry/geometry__corner_smoothing.daruma'
+  src='/feature/geometry/geometry__corner_smoothing.daruma'
   controlsConfig={[
     {
       label: 'Corner Smoothing',

@@ -173,7 +173,7 @@ Type
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Blur/radius.png" alt="" />
+<img src="/img/vector/Blur/radius.png" alt="" />
 
 </div>
 
@@ -218,7 +218,7 @@ Type
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Blur/motionAngle.png" alt="" />
+<img src="/img/vector/Blur/motionAngle.png" alt="" />
 
 </div>
 
@@ -264,7 +264,7 @@ Type
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Blur/center.png" alt="" />
+<img src="/img/vector/Blur/center.png" alt="" />
 
 </div>
 
@@ -309,7 +309,7 @@ Type
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Blur/saturation.png" alt="" />
+<img src="/img/vector/Blur/saturation.png" alt="" />
 
 </div>
 

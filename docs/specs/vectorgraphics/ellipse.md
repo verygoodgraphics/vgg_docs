@@ -108,7 +108,7 @@ Type
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Path/ellipse_angle.png" alt="" />
+<img src="/img/vector/Path/ellipse_angle.png" alt="" />
 
 </div>
 
@@ -186,7 +186,7 @@ Type
 
 <div className="property-images">
 
-<img src="https://raw.githubusercontent.com/verygoodgraphics/resource/main/img/vector/Path/ellispse_inner.png" alt="" />
+<img src="/img/vector/Path/ellispse_inner.png" alt="" />
 
 </div>
 
