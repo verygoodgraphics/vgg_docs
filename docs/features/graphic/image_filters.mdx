@@ -3,6 +3,8 @@ title: Image Filters
 hide_table_of_contents: true
 ---
 
+import { JSONPath } from "jsonpath-plus"
+
 <DarumaPlayer
   src="/feature/image_filters/image_filters__exposure.daruma"
   controlsConfig={[
@@ -92,8 +94,28 @@ hide_table_of_contents: true
       min: -1,
       max: 1,
       step: 0.01,
+      onBeforeChange: (value, code) => {
+        const parsedCode = JSON.parse(code)
+
+        JSONPath({
+          json: parsedCode,
+          path: "$.frames[0].childObjects[0].style.fills[0].pattern.instance.imageFilters",
+          resultType: "all",
+        }).forEach(({ parent, parentProperty }) => {
+          parent["imageFilters"] = {
+            ...parent["imageFilters"],
+            hue: value,
+          }
+        })
+
+        return {
+          transformedValue: value,
+          updatedCode: JSON.stringify(parsedCode),
+        }
+      },
     },
-  ]}
+
+]}
 />
 
 <br />
