@@ -3,11 +3,10 @@ title: VGG Specs
 ---
 
 VGG Specs is a set of JSON-based specifications for the next generation of vector graphics. As a
-kind of vector graphics, VGG has application across various domains, with user interface being just
-one of its many uses, because of the advanced UI effects supported by VGG including gradients, shadows, blurs
-and masks.
+kind of vector graphics, VGG could be applied to various domains, with user interface being the main
+use case, as it supports advanced UI effects including gradients, shadows, blurs and masks.
 
-VGG Specs currently includes specs for
+The current working specs within VGG Specs includes:
 - [VGG File Spec](/specs/file)
 - [VGG Vector Graphics Spec](/specs/vectorgraphics/overview), with the complete JSON schema
   [here](https://docs.verygoodgraphics.com/schemas/vectorgraphics.schema.json)
@@ -17,7 +16,7 @@ VGG Specs currently includes specs for
 VGG Specs is designed from the ground up with the following characteristics in mind:
 
 - **Open**: It should be an open standard for the next generation of vector graphics, led by
-  VGG and driven by the VGG community.
+  VGG and driven by the [VGG community](/community/overview).
 - **Readable**: It must be readable by ordinary users. Not only should the specs
   be well and clearly documented with illustrations, but also the data that
   conforms to the specs should be human-readable and parser-developable.
@@ -36,7 +35,7 @@ VGG Specs is designed from the ground up with the following characteristics in m
   Networks](https://help.figma.com/hc/en-us/articles/360040450213-Vector-Networks).
 
 As VGG Specs is extensible, more specs could be added separately, such as the upcoming
-animation specification and 3D specification.
+[animation specification](/specs/animation) and [3D specification](/specs/3d).
 
 Additionally, VGG Specs comes along with an official implementation. VGG Runtime
 is an open-source implementation of the VGG Specs with cross-platform rendering

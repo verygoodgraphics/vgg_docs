@@ -8,7 +8,7 @@ file.
 There are two forms of file format designed for VGG, namely
 
 - Form 1: Zip of JSONs
-- Form 2: Streaming binary blob (WIP)
+- Form 2: Streaming binary blob (🚧)
 
 Both forms are essentially equivalent, differing only in file size and usage
 scenarios. Form 2 is more compact and has better support for network streaming.
@@ -21,7 +21,7 @@ adopted Zip Spec can be found in [ISO/IEC
 21320-1:2015](https://www.iso.org/standard/60101.html) and many open source
 implementations are available.
 
-Currently [Daruma](https://verygoodgraphics.com/daruma) will produce `.daruma`
+Currently [Daruma](https://daruma.run) will produce `.daruma`
 file and [VGG Runtime](https://github.com/verygoodgraphics/vgg_runtime) reads
 it.  This `.daruma` file is actually of Form 1, with its own customization. The
 structure of a typical `.daruma` file looks like this after unzipping:
@@ -43,7 +43,7 @@ Spec](/specs/layout/overview). The images files under `resources` directory are
 referenced in `design.json` in some filed, like the `imageFileName` field in
 [PatternImageFill](/specs/vectorgraphics/pattern-image-fill#imagefilename).
 
-## Form 2: Streaming binary blob (WIP)
+## Form 2: Streaming binary blob (🚧)
 
 This form is optimized for file size and network streaming. It is still in the
 design phase. It will be like the [Kiwi](https://github.com/evanw/kiwi) format
