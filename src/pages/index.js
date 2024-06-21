@@ -36,7 +36,7 @@ const features = [
   {
     name: "VGG Containers",
     description:
-      "Collection of VGG containers for multiple platforms to develop and deploy VGG applications.",
+      "Collection of VGG containers for various platforms and frameworks.",
     href: "/containers/overview",
     icon: RectangleGroupIcon,
   },
@@ -50,7 +50,7 @@ const features = [
   {
     name: "VGG Community",
     description:
-      "VGG community for building VGG tech stacks together!",
+      "VGG community for building VGG ecosystem together!",
     href: "/community/overview",
     icon: ChatBubbleLeftIcon,
   },
