@@ -146,7 +146,7 @@ const config = {
               },
               {
                 label: "Daruma",
-                href: "https://verygoodgraphics.com/daruma",
+                href: "https://daruma.run",
               },
             ],
           },
