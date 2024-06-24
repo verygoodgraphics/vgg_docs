@@ -213,7 +213,7 @@ const config = {
         //... other Algolia params
       },
       zoom: {
-        selector: ".property img",
+        selector: ".property img, .doc-image",
         config: {
           // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
           background: {
