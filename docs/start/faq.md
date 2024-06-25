@@ -72,10 +72,10 @@ VGG solves the problems of SVG so the above workflow, called Design-as-Code by V
 
 ## Is VGG free?
 
-VGG comes with an open standard and an open source runtime which is licensed under a conditionally
-free VGG license. The only reason for non-totally-free is that VGG Group has contributed a lot
-(over least two years) and simply doesn't want it stolen by someone else. If you don't like this
-license, you are free and welcome to write a 3rd-party implementation.
+VGG comes with an open standard and an open source runtime which is licensed under a __conditionally
+free__ VGG license. The only reason for non-totally-free is that VGG Group has contributed a lot
+(over least two years) and simply doesn't want it stolen easily. If you don't like this license, you
+are free and welcome to write a 3rd-party implementation.
 
 In a word, you can take VGG runtime an almost-free product as VGG Group didn't expect to make profit
 simply from this license, as SaaS and technical support are how we expected to make money.
