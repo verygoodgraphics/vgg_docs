@@ -27,7 +27,7 @@
     "@radix-ui/react-select": "^2.0.0",
     "@radix-ui/react-slider": "^1.1.2",
     "@radix-ui/react-switch": "^1.0.3",
-    "@verygoodgraphics/vgg-react": "^0.1.17",
+    "@verygoodgraphics/vgg-react": "^0.1.25",
     "clsx": "^2.0.0",
     "docusaurus-plugin-image-zoom": "^1.0.1",
     "fflate": "^0.8.1",
