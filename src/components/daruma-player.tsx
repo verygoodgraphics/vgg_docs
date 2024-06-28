@@ -36,7 +36,7 @@ type FileName = string
 type SourceCode = string
 
 export function DarumaPlayer({
-  runtime = "https://s5.vgg.cool/runtime/latest",
+  runtime = "/runtime",
   src,
   id,
   tabs = [],
