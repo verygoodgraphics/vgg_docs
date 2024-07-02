@@ -2,6 +2,10 @@
 title: VGG Specs Changelog
 ---
 
+## v1.0.19 (Jul 5, 2024)
+
+* Update some descriptions.
+
 ## v1.0.18 (Jun 18, 2024)
 
 * Add `frameType` of `frame`.

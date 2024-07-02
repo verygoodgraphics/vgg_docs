@@ -55,7 +55,7 @@ Value
 | `15`  | <div className="enum-description">luminosity: luminosity of source with hue and saturation of destination</div> |
 | `16`  | <div className="enum-description">plus darker</div>                                                             |
 | `17`  | <div className="enum-description">plus lighter</div>                                                            |
-| `27`  | <div className="enum-description">pass through: ignore now layer</div>                                          |
+| `27`  | <div className="enum-description">pass through: ignore current layer</div>                                      |
 
 </div>
 
