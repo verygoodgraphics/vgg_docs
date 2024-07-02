@@ -32,5 +32,9 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Set env variables
+        run: |
+          echo "VGG_DOWNLOAD=https://s3.vgg.cool/test" >> $GITHUB_ENV
+
       - name: Test build website
         run: pnpm run build
