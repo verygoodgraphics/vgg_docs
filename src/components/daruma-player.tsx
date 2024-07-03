@@ -284,9 +284,11 @@ export function DarumaPlayer({
                         parent[parentProperty] = value
                       })
 
+                      const newCode = JSON.stringify(codeJSON, null, 2)
+
                       setCodeBase((origin) => ({
                         ...origin,
-                        [fileName]: JSON.stringify(codeJSON, null, 2),
+                        [fileName]: newCode,
                       }))
 
                       if (lineNumberMatchType) {
@@ -301,6 +303,8 @@ export function DarumaPlayer({
                           setLineNumberMatchType("range")
                         })
                       }, 100)
+
+                      return newCode
                     }}
                   />
                 </div>

@@ -113,13 +113,14 @@ export function Controls({
             (value: number, lineNumber?: number) => {
               const { transformedValue, updatedCode } =
                 control.onBeforeChange?.(value, codeCache.current) ?? {}
-              onChange?.({
+              const newCode = onChange?.({
                 valuePath: control.valuePath,
                 value: transformedValue ?? value,
                 lineNumber: lineNumber ?? control.lineNumber,
                 lineNumberMatchType: control.lineNumberMatchType,
                 code: updatedCode,
               })
+              codeCache.current = newCode ?? codeCache.current
             },
             100
           )
