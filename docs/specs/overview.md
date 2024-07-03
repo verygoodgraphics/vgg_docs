@@ -9,9 +9,9 @@ use case, as it supports advanced UI effects including gradients, shadows, blurs
 The current working specs within VGG Specs includes:
 - [VGG File Spec](/specs/file)
 - [VGG Vector Graphics Spec](/specs/vectorgraphics/overview), with the complete JSON schema
-  [here](/schemas/vectorgraphics.schema.json)
+  [here](https://docs.verygoodgraphics.com/schemas/vectorgraphics.schema.json)
 - [VGG Layout Spec](/specs/layout/overview), with the complete JSON schema
-  [here](/schemas/layout.schema.json)
+  [here](https://docs.verygoodgraphics.com/schemas/layout.schema.json)
 
 VGG Specs is designed from the ground up with the following characteristics in mind:
 
