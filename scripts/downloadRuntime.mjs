@@ -1,4 +1,4 @@
-// download files from https://s5.vgg.cool/runtime/latest/
+// download files from $VGG_DOWNLOAD in `.env`
 import fs from "node:fs"
 import path from "node:path"
 import fetch from "node-fetch"
