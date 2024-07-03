@@ -79,14 +79,6 @@ hide_table_of_contents: true
           value: 15
         },
         {
-          label: 'Plus Darker',
-          value: 16
-        },
-        {
-          label: 'Plus Lighter',
-          value: 17
-        },
-        {
           label: 'Pass Through',
           value: 27
         }
