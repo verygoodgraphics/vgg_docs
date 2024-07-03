@@ -15,7 +15,7 @@ import { JSONPath } from "jsonpath-plus"
       value: 0.23,
       valuePath:
         "$.frames[0].childObjects[0].style.fills[0].pattern.instance.imageFilters.exposure",
-      min: 0,
+      min: -1,
       max: 1,
       step: 0.01,
     },
@@ -26,7 +26,7 @@ import { JSONPath } from "jsonpath-plus"
       value: 0,
       valuePath:
         "$.frames[0].childObjects[0].style.fills[0].pattern.instance.imageFilters.contrast",
-      min: 0,
+      min: -1,
       max: 1,
       step: 0.01,
     },
@@ -37,7 +37,7 @@ import { JSONPath } from "jsonpath-plus"
       value: 0,
       valuePath:
         "$.frames[0].childObjects[0].style.fills[0].pattern.instance.imageFilters.saturation",
-      min: 0,
+      min: -1,
       max: 1,
       step: 0.01,
     },
@@ -48,7 +48,7 @@ import { JSONPath } from "jsonpath-plus"
       value: 0,
       valuePath:
         "$.frames[0].childObjects[0].style.fills[0].pattern.instance.imageFilters.temperature",
-      min: 0,
+      min: -1,
       max: 1,
       step: 0.01,
     },
@@ -58,7 +58,7 @@ import { JSONPath } from "jsonpath-plus"
       controlType: 'slider',
       value: 0,
       valuePath: '$.frames[0].childObjects[0].style.fills[0].pattern.instance.imageFilters.tint',
-      min:0,
+      min: -1,
       max:1,
       step: 0.01
     },
@@ -68,7 +68,7 @@ import { JSONPath } from "jsonpath-plus"
       controlType: 'slider',
       value: 0,
       valuePath: '$.frames[0].childObjects[0].style.fills[0].pattern.instance.imageFilters.highlights',
-      min:0,
+      min: -1,
       max:1,
       step: 0.01
     },
@@ -78,7 +78,7 @@ import { JSONPath } from "jsonpath-plus"
       controlType: 'slider',
       value: 0,
       valuePath: '$.frames[0].childObjects[0].style.fills[0].pattern.instance.imageFilters.shadows',
-      min:0,
+      min: -1,
       max:1,
       step: 0.01
     },
@@ -100,6 +100,7 @@ import { JSONPath } from "jsonpath-plus"
           path: "$.frames[0].childObjects[0].style.fills[0].pattern.instance.imageFilters",
           resultType: "all",
         }).forEach(({ parent, parentProperty }) => {
+          console.log(parent, parentProperty)
           parent["imageFilters"] = {
             ...parent["imageFilters"],
             hue: value,
