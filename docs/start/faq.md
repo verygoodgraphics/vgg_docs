@@ -7,81 +7,80 @@ sidebar_position: 2
 
 ## What is VGG?
 
-VGG, short for VeryGoodGraphics, is a next-gen vector graphics which focuses on the design
-and development of cross-platform user interface.
+VGG, short for VeryGoodGraphics, is next-gen vector graphics useful for the design and
+development of cross-platform user interfaces.
 
-VGG is so versatile that you can see it from at least two views:
-- As a kind of vector graphics, it could be compared to SVG (Scalable Vector Graphics).
-- As a cross-platform UI framework, it could be compared to Flutter.
+VGG is so versatile that you can view it from at least two perspectives:
+- As a type of vector graphics, it can be compared to SVG (Scalable Vector Graphics).
+- As a cross-platform UI framework, it can be compared to Flutter.
 
-You can take VGG a vectorized UI framework that use vector graphics heavily as general user
-interfaces.
+You can consider VGG a vectorized UI framework that uses vector graphics extensively for
+general user interfaces.
 
 ## What problem is VGG going to solve?
 
-The application development process, when involved with particularly UI design and
-development, can be tedious, monotonous and low efficient. For example,
+The application development process, particularly UI design and development, can be tedious,
+monotonous, and inefficient. For example,
 
-- There is a lot of unnecessary communication efforts between designers and developers.
-- There is a lot of unnecessary work efforts for developers, the most annoying being
-  writing code to implement a UI to be pixel-perfectly the same as the design draft.
+- There are many unnecessary communication efforts between designers and developers.
+- There are many unnecessary efforts for developers, the most annoying being writing code to
+  make a UI pixel-perfectly match the design draft.
 
-VGG tries to speed up this design & development process by eliminating those unnecessary
+VGG aims to speed up this design and development process by eliminating those unnecessary
 efforts as much as possible.
 
 ## How does VGG solve this problem?
 
-VGG solves this problem by providing Design-as-Code paradigm for UI development, that
-lets programmers to use any design drafts as the starting point for UI building by
-treating them as vector graphics resources.
+VGG solves this problem by providing a Design-as-Code paradigm for UI development, allowing
+programmers to use design drafts as the starting point for UI building by treating them as
+vector graphics resources.
 
-Meanwhile, VGG also tries to provide best cross-platform support, as well as design & development
-ecosystem support so as to bring developers the best developer experience.
+Meanwhile, VGG also aims to provide the best cross-platform support and design & development
+ecosystem support to offer developers the best experience.
 
 ## What's the difference between VGG and HTML/CSS?
 
-The UI design process and UI development process happens in two different levels of abstractions.
-The design language is expressing low-level vector graphics elements, while the programming
-language is expressing high-level UI concepts like components or widgets.
+The UI design and development processes happen at two different levels of abstraction. The design
+language expresses low-level vector graphics elements, while the programming language expresses
+high-level UI concepts like components or widgets.
 
-The common Design-to-Code process usually involves conversion from the low-level vector graphics to
-a higher level of code. It is similar to a lossy compression process that not only loses some details
-but also loses the control of converted details in higher level.
+The common Design-to-Code process usually involves converting low-level vector graphics to higher-level
+code. It is similar to a lossy compression process that loses some details and control of the converted
+details at a higher level.
 
-Since VGG is a kind of vector graphics, so the conversion from design to VGG is a lossless compression
-process, which gives you back the full details as well as the control of these details.
+Since VGG is a type of vector graphics, the conversion from design to VGG is a lossless process,
+retaining full details and control.
 
-And that's the most important discrepancy between VGG and HTML/CSS.
+This is the most important difference between VGG and HTML/CSS.
 
 ## What's the difference between VGG and SVG?
 
-SVG is a vector graphics that is based on XML, with many different implementations across different
-platforms so some rendering effects are not the same on different platforms. And SVG also lacks some
-graphic features, so the conversion result from design tools could be very poor.
+SVG is vector graphics based on XML, with many different implementations across platforms, leading to
+inconsistent rendering effects. SVG also lacks some graphic features, resulting in poor conversion
+from design tools.
 
-VGG is a next-gen vector graphics that is based on JSON, with an official cross-platform implementation
-that has consistent rendering effects and behaviors on all platforms with the help of runtime wrappers
-called VGG containers. VGG is also rich in graphic features that is good for conversion from common design
-tools.
+VGG is next-gen vector graphics based on JSON, with an official cross-platform implementation that ensures
+consistent rendering effects and behaviors on all platforms using runtime wrappers called VGG containers.
+VGG is also rich in graphic features, making it suitable for conversion from common design tools.
 
-Say, if designers could export their design as a SVG that is perfect in rendering effects and consistent
-across different platforms, the developers can just take it as the basis of further UI development, right?
-However, it is not possible because of those intrinsic pitfalls of SVG.
+If designers could export their designs as SVG with perfect rendering effects and consistency across
+platforms, developers could use it as the basis for further UI development. However, this is not possible
+due to the intrinsic pitfalls of SVG.
 
-VGG solves the problems of SVG so the above workflow, called Design-as-Code by VGG, becomes a reality.
+VGG solves SVG's problems, making the Design-as-Code workflow a reality.
 
 ## Is VGG free?
 
-VGG comes with an open standard and an open source runtime which is licensed under a __conditionally
-free__ VGG license. The only reason for non-totally-free is that VGG Group has contributed a lot
-(over least two years) and simply doesn't want it stolen easily. If you don't like this license, you
-are free and welcome to write a 3rd-party implementation.
+VGG comes with an open standard and an open-source runtime licensed under a conditionally free VGG
+license. The only reason it is not completely free is that VGG Group has contributed significantly
+(over at least two years) and doesn't want it easily stolen. If you don't like this license, you
+are free to write a third-party implementation.
 
-In a word, you can take VGG runtime an almost-free product as VGG Group didn't expect to make profit
-simply from this license, as SaaS and technical support are how we expected to make money.
+In short, you can consider VGG an almost-free product, as VGG Group does not expect to profit solely
+from this license, but rather from SaaS and technical support.
 
 ## So what's the condition of VGG license?
 
-You shall pay VGG a 2% royalty if and only if your VGG-applied product makes more than 10000 USD
-every quarter.
+You must pay VGG a 2% royalty only if your VGG-applied product makes more than $10,000 every quarter.
+You can read the full [VGG License](https://verygoodgraphics.com/licenses/LICENSE-latest) for more details.
 
