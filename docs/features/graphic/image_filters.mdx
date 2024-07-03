@@ -12,7 +12,7 @@ import { JSONPath } from "jsonpath-plus"
       label: "Exposure",
       type: "Image Filter Exposure",
       controlType: "slider",
-      value: 0.23,
+      value: 0,
       valuePath:
         "$.frames[0].childObjects[0].style.fills[0].pattern.instance.imageFilters.exposure",
       min: -1,
@@ -100,7 +100,7 @@ import { JSONPath } from "jsonpath-plus"
           path: "$.frames[0].childObjects[0].style.fills[0].pattern.instance.imageFilters",
           resultType: "all",
         }).forEach(({ parent, parentProperty }) => {
-          console.log(parent, parentProperty)
+          // console.log(parent, parentProperty)
           parent["imageFilters"] = {
             ...parent["imageFilters"],
             hue: value,
