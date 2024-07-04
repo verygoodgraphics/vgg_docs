@@ -12,7 +12,7 @@ VGG Community consists of different roles, including core members, contributors,
 ## As Core Members
 
 VGG Group is a group of people consisting of the core members of the VGG Project. You can learn
-more from [VGG Goverance](/community/goverance).
+more from [VGG Governance](/community/governance).
 
 ## As Contributors
 
