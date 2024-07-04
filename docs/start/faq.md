@@ -86,4 +86,4 @@ You can read the full [VGG License](https://verygoodgraphics.com/licenses/LICENS
 
 ## Who is behind VGG?
 
-VGG is initiated and developed by VGG Group. You can find the core members in the [VGG Goverance](/community/goverance) document.
+VGG is initiated and developed by VGG Group. You can find the core members in the [VGG Governance](/community/governance) document.
