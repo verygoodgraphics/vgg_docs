@@ -9,8 +9,6 @@ We welcome and appreciate your contributions in terms of bug fixes, enhancements
 
 Both core team members and external contributors send pull requests that undergo the same review process. Refer to [GitHub's pull request tutorial](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests) if you encounter any issues.
 
-Upon opening a pull request, you will be prompted to sign a [Contributor License Agreement (CLA)](https://raw.githubusercontent.com/verygoodgraphics/vgg_runtime/main/.github/CLA.md) by leaving a comment as instructed.
-
 ### Basic PR Requirements
 
 - Keep each commit atomic, and commit with clear messages.

@@ -84,3 +84,6 @@ from this license, but rather from SaaS and technical support.
 You must pay VGG a 2% royalty only if your VGG-applied product makes more than $10,000 every quarter.
 You can read the full [VGG License](https://verygoodgraphics.com/licenses/LICENSE-latest) for more details.
 
+## Who is behind VGG?
+
+VGG is initiated and developed by VGG Group. You can find the core members in the [VGG Goverance](/community/goverance) document.

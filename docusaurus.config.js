@@ -151,7 +151,7 @@ const config = {
             ],
           },
           {
-            title: "Community",
+            title: "Contacts",
             items: [
               {
                 label: "Discord",
