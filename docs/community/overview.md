@@ -4,17 +4,24 @@ sidebar_label: Overview
 sidebar_position: 0
 ---
 
-VeryGoodGraphics (VGG) Community is devoted to facilitating the development and adoption of the
-VGG Project, including VGG Specs, VGG Runtime, VGG Containers, and other VGG-related technologies.
+## Mission
+
+The mission of VGG Project aims to provide next-gen vector graphics and related tools and apps,
+including an embeddable cross-platform UI framework.
+
+While VGG Community is devoted to facilitating the development and adoption of the VGG Project,
+including VGG Specs, VGG Runtime, VGG Containers, and other VGG-related technologies.
+
+## Roles
 
 VGG Community consists of different roles, including core members, contributors, and users.
 
-## As Core Members
+### As Core Members
 
 VGG Group is a group of people consisting of the core members of the VGG Project. You can learn
 more from [VGG Governance](/community/governance).
 
-## As Contributors
+### As Contributors
 
 All developments happen in VGG's GitHub [organization](https://github.com/verygoodgraphics), where
 VGG core members and contributors work on the VGG Project together. Any contributor should read the
@@ -27,7 +34,7 @@ All VGG projects are open-sourced under the MIT license, except for VGG Runtime 
 under a conditionally free license. There is an [Contributor Reward Program](/community/contributor-reward-program)
 if you would like to contribute to the VGG Runtime.
 
-## As Users
+### As Users
 
 For newcomers willing to learn VGG framework, the following materials might be helpful:
 
