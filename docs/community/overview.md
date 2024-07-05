@@ -40,7 +40,7 @@ For newcomers willing to learn VGG framework, the following materials might be h
 
 - [Quick Start](/start/overview)
 - [FAQ](/start/faq)
-- [Examples](examples/overview)
+- [Examples](/examples/overview)
 
 If you are only interested in the vector graphics part, you can explore:
 
